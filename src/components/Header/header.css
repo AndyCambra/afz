@@ -1,6 +1,7 @@
 .headerBox{
     width: 100vw;
     height: 140px;
+    position: fixed;
     left: 0px;
     top: 0px;
 

@@ -1,0 +1,48 @@
+.homeBackgound{
+    background: linear-gradient(105.33deg, rgba(0, 0, 0, 0.65) 10.83%, rgba(0, 0, 0, 0) 81.77%), url(../../../public/img/FachadaAfz.jpeg);
+    background-size: cover;
+    height: 97vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.hero{
+    position: relative;
+    margin-left: 18vw;
+    
+    height: 97vh;
+    top: 30vh;
+
+}
+.hero h1{
+    font-family: 'Sora';
+    font-weight: 400;
+    color: #fff;
+    font-size: 4.7em;
+    line-height: 1em;
+    letter-spacing: -0.04em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   margin-bottom: .35em;
+
+}
+.bigButton{
+    margin-right: 20px;
+    background: rgba(217, 217, 217, 0.3);
+    border: 1.5px solid rgba(156, 153, 153, 0.1);
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.15), inset 3px 3px 5px 3px rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    width: 186px;
+    height: 44px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1em;
+
+}
+.bigButton:hover{
+    background: rgba(255, 255, 255, 0.4);
+    font-weight: 800;
+    color: #9B2743;
+    
+}

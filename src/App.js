@@ -1,14 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
-import Layout from './components/Layout/Layout';
+import Home from './components/Home/Home';
+import Nosotros from './components/Nosotros/Nosotros';
+import Header from "./components/Header/Header"
 
 function App() {
   return (
-    <div className="App">
-      <Layout />
-    </div>
+    <BrowserRouter>
+    <>
+ 
+      <Routes>
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/" element={<Home />} />
+      </Routes> 
+      <Header />
+      </>
+    </BrowserRouter>
+   
   );
 }
 

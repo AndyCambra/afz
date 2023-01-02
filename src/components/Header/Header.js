@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import "./header.css"
 
 const Header = () => {
@@ -8,7 +9,9 @@ const Header = () => {
             <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />
             <div className='headerMenu'>
             <div className='headerItem'>
+                <NavLink to="/Nosotros">
                 <h4 className='headerCategory'>NOSOTROS</h4>
+                </NavLink>
                 </div>
             <div className='headerItem'>
                 <h4 className='headerCategory'>PRODUCTOS</h4>
