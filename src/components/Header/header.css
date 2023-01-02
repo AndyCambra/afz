@@ -1,0 +1,79 @@
+.headerBox{
+    width: 100vw;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+
+}
+.headerIn{
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+   
+}
+.logoAfz{
+    width: 12vw;
+    padding-right: 40px;
+
+}
+.headerMenu{
+    background-color: #9B2743;
+    border-radius: 16px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    column-gap: 3em;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 30px;
+}
+.headerItem{
+    margin: 4px;
+    padding-left: 5px;
+}
+.headerItem:nth-child(4){
+    flex-grow: 2;
+    
+}
+.headerItem:last-child{
+    color: #fff;
+    font-weight: 800;
+    padding-top: 1px;
+}
+.headerCategory{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 14.5px;
+    display: inline-block;
+    position: relative;
+    color: #B7B6B6;
+    margin-bottom: 3px;
+    margin-top: 3px;
+   
+}
+.headerCategory::after{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    color: #B7B6B6;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -5px;
+    left:0;
+    background-color:#fff; 
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
+}
+.headerCategory:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.headerCategory:hover{
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
