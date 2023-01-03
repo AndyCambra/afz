@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Home from './components/Home/Home';
 import Nosotros from './components/Nosotros/Nosotros';
-import Header from "./components/Header/Header"
+import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/" element={<Home />} />
       </Routes> 
-      <Header />
+      <Footer />
       </>
     </BrowserRouter>
    

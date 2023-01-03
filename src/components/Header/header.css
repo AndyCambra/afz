@@ -1,21 +1,23 @@
 .headerBox{
     width: 100vw;
-    height: 140px;
-    position: fixed;
+    height: 12
+    0px;
     left: 0px;
     top: 0px;
 
 }
 .headerIn{
-    padding: 15px 40px;
+    padding-top: 10px;
+    margin: 0 40px;
     display: flex;
     align-items: center;
     justify-content: left;
    
 }
 .logoAfz{
-    width: 12vw;
-    padding-right: 40px;
+    width: 10vw;
+    padding: 0 40px 0 0;
+    margin: 0;
 
 }
 .headerMenu{

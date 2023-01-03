@@ -1,3 +1,5 @@
+
+
 .homeBackgound{
     background: linear-gradient(105.33deg, rgba(0, 0, 0, 0.65) 10.83%, rgba(0, 0, 0, 0) 81.77%), url(../../../public/img/FachadaAfz.jpeg);
     background-size: cover;
@@ -5,14 +7,12 @@
     width: 100vw;
     margin: 0;
     padding: 0;
-    position: absolute;
+  
 }
 .hero{
     position: relative;
     margin-left: 18vw;
-    
-    height: 97vh;
-    top: 30vh;
+    top: 15vh;
 
 }
 .hero h1{
