@@ -8,11 +8,13 @@
     padding: 20px 0;
     display: flex;
     align-items: flex-start;
-    justify-content: left;
+    justify-content: space-between;
     margin: 0 40px 0;
+    column-gap: 1em;
+
 }
 .logoAfz{
-    width: 11vw;
+    width: 10vw;
     padding: 0 40px 0 0;
     margin: 0;
 
@@ -20,7 +22,7 @@
 .footerMenu{
     display: flex;
     flex-direction: column;
-    padding: 15px 0;
+    padding: 13px 0;
 
 }
 .footerItem{
@@ -39,4 +41,44 @@
     color: #B7B6B6;
     margin-bottom: 5px;
     margin-top: 18px;
+}
+.contactBox{
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    flex-grow: 3;
+    padding: 0 0 0 30em;
+    align-self: flex-end;
+}
+.contactBox p{
+    margin: 0
+}
+.footerEmail{
+    font-weight: 800;
+}
+.iconCircle{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #9B2743;
+    padding: auto;
+    
+}
+.socialIcon{
+    width: 28px;
+    height: 28px;
+    padding: 6px 0 0 6px;
+   
+}
+.socialIconBig{
+    width: 30px;
+    height: 30px;
+    padding: 5px 0 0 5px;
+   
+}
+.socialBox{
+    margin: 20px 0 30px 0;
+    display: flex;
+    column-gap: 30px;
+
 }

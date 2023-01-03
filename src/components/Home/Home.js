@@ -2,6 +2,7 @@
 import React from 'react'
 import "./home.css"
 import Header from '../Header/Header'
+import Button from '../utils/Button'
 
 const Home = () => {
   return (
@@ -10,8 +11,8 @@ const Home = () => {
       <Header />
       <div  className='hero'>
         <h1>Somos líderes <br></br>en seguros de caución.</h1>
-       <button className='bigButton' type="button">CONOCÉ</button>
-       <button className='bigButton' type="button">COTIZÁ</button>
+        <Button name={'CONOCÉ'} />
+        <Button name={'COTIZÁ'} />
       </div>
     </div>
     
