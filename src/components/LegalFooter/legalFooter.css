@@ -1,0 +1,54 @@
+.legalFooterBox{
+    width: 100vw;
+    height: 156px;
+    background-color: #1e0606;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+   grid-gap: 30px;
+   padding: 20px 40px;
+   
+  
+}
+.dataFiscalLogo{
+    grid-column: 1/1;
+    margin-top: 10px;
+}
+.legalText{
+    grid-column: 2/6;
+    font-family:'Sora', sans-serif;
+    font-weight: 500;
+    font-size: .7em;
+    color: #fff;
+}
+.fiscalLogo{
+     width: 70px;
+}
+.ssnLogo{
+    width: 100px;
+    margin: auto;
+    padding-top: 2px;  
+}
+.ssnLogoBox{
+    grid-column: 6/7;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+}
+.ssnText{
+    grid-column: 7/10;
+    font-family:'Sora', sans-serif;
+    font-weight: 500;
+    font-size: .7em;
+    color: #fff;
+
+}
+.registroLogoBox{
+    grid-column: 10/13;
+}
+.registroLogo{
+    margin-top: 10px;
+    width: 400px;
+}
