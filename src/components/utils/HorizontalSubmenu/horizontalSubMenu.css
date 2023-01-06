@@ -1,0 +1,44 @@
+.horizontalBox{
+
+}
+.subMenuBox{
+    display: flex;
+    border-bottom: 1px solid #D8CECE;
+    justify-content: space-between;
+    
+}
+.subMenuBox h5{
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 18px;
+    color: #D8CECE;
+    padding-left: 3px;
+    margin: 5px 0;    
+}
+.subMenuBox h5:nth-child(7){
+    flex-grow: 2;
+   
+    
+}
+.subMenuBox h5:last-child{
+    font-weight: 600;
+   
+}
+.horizontalTitle{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    margin: 10px 0;
+
+}
+.horizontalText{
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0;
+    
+}

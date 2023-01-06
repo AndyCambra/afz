@@ -1,16 +1,31 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./header.css"
+import { useState } from 'react'
+
+
 
 const Header = () => {
+const [isActive, setIsActive] = useState(false)
+
+    const changeClass = () => {
+    setIsActive(!isActive)
+    } 
+    
+    const handleChange = () => {
+        setIsActive(false)
+        }
+
   return (
     <div className='headerBox'>
         <div className='headerIn'>
+            <NavLink to="/" onClick={handleChange}>
             <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />
+            </NavLink>
             <div className='headerMenu'>
             <div className='headerItem'>
                 <NavLink to="/Nosotros">
-                <h4 className='headerCategory'>NOSOTROS</h4>
+                <h4 className={isActive ? "headerCategorySelected" : "headerCategory"} onClick={changeClass}>NOSOTROS</h4>
                 </NavLink>
                 </div>
             <div className='headerItem'>

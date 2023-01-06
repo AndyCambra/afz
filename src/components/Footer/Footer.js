@@ -57,9 +57,10 @@ const Footer = () => {
         
         </div>
         
-        </div>
+        </div>    
+        <LegalFooter />
+
     </div>
-    <LegalFooter />
     </>
   )
 }

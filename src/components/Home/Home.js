@@ -1,19 +1,20 @@
 
 import React from 'react'
 import "./home.css"
-import Header from '../Header/Header'
-import Button from '../utils/Button'
+import Button from '../utils/BigButton/Button'
 
 const Home = () => {
   return (
-    
+    <div className='homeContainer'>
     <div className='homeBackgound'>
-      <Header />
       <div  className='hero'>
+        <div className='homeTitle'>
         <h1>Somos líderes <br></br>en seguros de caución.</h1>
         <Button name={'CONOCÉ'} />
         <Button name={'COTIZÁ'} />
+        </div>
       </div>
+    </div>
     </div>
     
     
