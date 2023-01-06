@@ -3,7 +3,6 @@
     position: absolute;
     margin: 0;
     width: 100vw;
-    height: 200vh;
 
 }
 .usBackgound{
@@ -11,7 +10,6 @@
     background-size: cover ;
     height: 97vh;
     width: 100vw;
-    margin: 0;
   
 }
 
@@ -28,9 +26,36 @@
     grid-column: 2/5;
     
 }
-.staffBackground{
-    
+.staffBackgound{
     background-color: #1E0606;
-    position: relative;
-    margin-top: 97%;
+    
+    
+}
+.staffHero{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    padding: 60px 40px 0 40px;
+
+}
+.staffBlock{
+    grid-column: 2/5;
+
+}
+.staffPositions{
+    font-weight: 600;
+    grid-column: 2/2;
+}
+.staffPositions h5{
+    font-weight: 600;
+   
+}
+.staffPositionsRight{
+    grid-column: 4/4;
+    grid-row: 2;
+    float: inline;
+}
+.staffPositionsRight h5{
+    font-weight: 600;
+
 }

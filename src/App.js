@@ -11,23 +11,15 @@ import Header from './components/Header/Header';
 function App() {
   return (
    
-   
     <BrowserRouter>
-    <div className='first'>
     <Header />
       <Routes>
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/" element={<Home />} />
       </Routes> 
-    </div>
-    <div className='last'>
     <Footer />
-    </div>
-    
     </BrowserRouter>
 
-  
-   
   );
 }
 
