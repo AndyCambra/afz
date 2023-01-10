@@ -5,7 +5,7 @@ import Button from '../utils/BigButton/Button'
 
 const Home = () => {
   return (
-    <div className='homeContainer'>
+    <div>
     <div className='homeBackgound'>
       <div  className='hero'>
         <div className='homeTitle'>

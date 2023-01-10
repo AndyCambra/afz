@@ -34,12 +34,8 @@
     border-bottom: none ;
 }
 .footerCategory{
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
-    font-size: 14.5px;
     display: inline-block;
     position: relative;
-    color: #B7B6B6;
     margin-bottom: 5px;
     margin-top: 18px;
 }

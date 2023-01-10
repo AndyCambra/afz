@@ -4,7 +4,7 @@ import './horizontalSubMenu.css'
 
 const HorizontalSubMenu = ({title, text}) => {
   return (
-    <div className='horizontalBox'>
+    <>
         <div className='subMenuBox'>
             <h5>EMPRESA</h5>
             <h5>|</h5>
@@ -20,7 +20,7 @@ const HorizontalSubMenu = ({title, text}) => {
         <h5 className='horizontalTitle'>{title}</h5>
         <p className='horizontalText'>{text}</p>
         
-        </div>
+        </>
   )
 }
 

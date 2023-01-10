@@ -15,7 +15,7 @@ const Nosotros = () => {
   }
 
   return (
-    <div className='UsContainer'>
+    <div>
       <div className='usBackgound'>
        
         <div className='usHero'>
