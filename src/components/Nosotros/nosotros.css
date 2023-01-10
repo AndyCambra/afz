@@ -1,6 +1,6 @@
 
 
-.usBackgound{
+.us-backgound{
     background: linear-gradient(105.33deg, rgba(0, 0, 0, 0.65) 10.83%, rgba(0, 0, 0, 0) 81.77%), url(../../../public/img/Empresa.png);
     background-size: cover ;
     height: 97vh;
@@ -8,7 +8,7 @@
   
 }
 
-.usHero{
+.grid{
     position: absolute;
     margin-top: 30%;
     display: grid;
@@ -17,7 +17,7 @@
     padding: 20px 40px 0 40px;
 
 }
-.usBlock{ 
+.us-block{ 
     grid-column: 2/5;
     
 }
@@ -30,26 +30,35 @@
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 30px;
     padding: 60px 40px 0 40px;
+    grid-column-start: 2;
 
 }
 .staffBlock{
     grid-column: 2/5;
 
 }
-.staffPositions{
-    font-weight: 600;
-    grid-column: 2/2;
-}
-.staffPositions h5{
-    font-weight: 600;
-   
-}
-.staffPositionsRight{
-    grid-column: 4/4;
-    grid-row: 2;
-    float: inline;
-}
-.staffPositionsRight h5{
-    font-weight: 600;
 
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    padding: 20px 40px 0 40px;
+    height: 300px;
+}
+.card-box{ 
+    grid-column: 2/7;  
+   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+
+}
+.group-photo{
+    width: 100vw;
+    margin: 60px 0;
+}
+.work-button{
+    display: flex;
+    padding: 0px 0 60px 0;
+    justify-content: center;
 }

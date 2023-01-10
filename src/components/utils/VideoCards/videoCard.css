@@ -1,0 +1,32 @@
+.card-container{
+    width: 100%;
+}
+.card-title{
+    width: 90%;
+    background-color: #9b2743;
+    border-radius: 30px;
+    margin: -40% 5% 20%;
+    position: relative;
+    text-align: center;
+    padding: 2px;
+  
+}
+.card-name{
+    font-size: 14px;
+   font-weight: 700;
+   color: #fff;
+  
+}
+.card-position{
+    font-weight: 400;
+    font-size: 12px;
+   
+}
+.staffPositions{
+    font-weight: 600;
+    height: 30px;
+}
+.staffPositions h5{
+    font-weight: 600;
+   
+}
