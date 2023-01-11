@@ -2,9 +2,15 @@ import React, { forwardRef } from 'react'
 import { Link } from 'react-router-dom'
 import './horizontalSubMenu.css'
 import { useState } from 'react'
+import { useImperativeHandle } from 'react'
 
 const HorizontalSubMenu = forwardRef(({title, text},ref) => {
   const [isActive, setIsActive]=useState(false)
+  const [goTo, setGoTo]=useState('')
+
+  useImperativeHandle(ref, () => ({
+    empresa: () => setGoTo("#section1") })
+  );
 
  const handleClick=() => {
   setIsActive(!isActive)
@@ -12,15 +18,15 @@ const HorizontalSubMenu = forwardRef(({title, text},ref) => {
   return (
     <>
         <div className='subMenuBox'>
-            <Link to={ref={ref}} onClick={handleClick}>
-            <h5>EMPRESA</h5>
+            <Link to={goTo} onClick={handleClick} className={isActive?'menu-item':"menu-item-selected"}>
+            <p>EMPRESA</p>
             </Link>
-            <h5>|</h5>
-            <h5>EQUIPO</h5>
-            <h5>|</h5>
-            <h5>REASEGURADORES</h5>
-            <h5>|</h5>
-            <h5>COMPROMISO</h5>
+            <h5 className='menu-item'>|</h5>
+            <h5 className='menu-item'>EQUIPO</h5>
+            <h5 className='menu-item'>|</h5>
+            <h5 className='menu-item'>REASEGURADORES</h5>
+            <h5 className='menu-item'>|</h5>
+            <h5 className='menu-item'>COMPROMISO</h5>
             <Link to="/">
             <h5>HOME</h5>
             </Link>
