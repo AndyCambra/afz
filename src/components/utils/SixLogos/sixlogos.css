@@ -2,7 +2,7 @@
 .six-logos-start{
     grid-row: 2;
     grid-column: 4/7;
-    margin-top: 30%;
+    margin-top: 20%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
@@ -13,134 +13,182 @@
    width: 100%;
 }
 .six-logos1{
-    background-color: aqua;
-    height: 100px;
     -webkit-animation: 10s ease 0s normal forwards infinite fadein1;
     animation: 10s ease 0s normal forwards infinite fadein1;
   
 } 
 @keyframes fadein1{
     0% { opacity:0; }
-    20% { opacity:0; }
-    50% { opacity:1; }
+    15% { opacity:0; }
+    30% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 
 @-webkit-keyframes fadein1{
     0% { opacity:0; }
-    20% { opacity:0; }
-    50% { opacity:1; }
+    15% { opacity:0; }
+    30% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 .six-logos2{
-    background-color: aqua;
-    height: 100px;
     -webkit-animation: 10s ease 0s normal forwards infinite fadein2;
     animation: 10s ease 0s normal forwards infinite fadein2;
   
 } 
 @keyframes fadein2{
     0% { opacity:0; }
-    30% { opacity:0; }
-    60% { opacity:1; }
+    23% { opacity:0; }
+    38% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 
 @-webkit-keyframes fadein2{
     0% { opacity:0; }
-    30% { opacity:0; }
-    60% { opacity:1; }
+    23% { opacity:0; }
+    38% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 .six-logos3{
-    background-color: aqua;
-    height: 100px;
     -webkit-animation: 10s ease 0s normal forwards infinite fadein3;
     animation: 10s ease 0s normal forwards infinite fadein3;
   
 } 
 @keyframes fadein3{
     0% { opacity:0; }
-    40% { opacity:0; }
-    70% { opacity:1; }
+    31% { opacity:0; }
+    46% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 
 @-webkit-keyframes fadein3{
     0% { opacity:0; }
-    40% { opacity:0; }
-    70% { opacity:1; }
+    31% { opacity:0; }
+    46% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 .six-logos4{
-    background-color: aqua;
-    height: 100px;
     -webkit-animation: 10s ease 0s normal forwards infinite fadein4;
     animation: 10s ease 0s normal forwards infinite fadein4;
   
 } 
 @keyframes fadein4{
     0% { opacity:0; }
-    50% { opacity:0; }
-    75% { opacity:1; }
+    38% { opacity:0; }
+    53% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 
 @-webkit-keyframes fadein4{
     0% { opacity:0; }
-    50% { opacity:0; }
-    75% { opacity:1; }
+    38% { opacity:0; }
+    53% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 .six-logos5{
-    background-color: aqua;
-    height: 100px;
     -webkit-animation: 10s ease 0s normal forwards infinite fadein5;
     animation: 10s ease 0s normal forwards infinite fadein5;
   
 } 
 @keyframes fadein5{
     0% { opacity:0; }
-    57% { opacity:0; }
-    80% { opacity:1; }
+    45% { opacity:0; }
+    60% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 
 @-webkit-keyframes fadein5{
     0% { opacity:0; }
-    57% { opacity:0; }
-    80% { opacity:1; }
+    45% { opacity:0; }
+    60% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 .six-logos6{
-    background-color: aqua;
-    height: 100px;
     -webkit-animation: 10s ease 0s normal forwards infinite fadein6;
     animation: 10s ease 0s normal forwards infinite fadein6;
   
 } 
 @keyframes fadein6{
     0% { opacity:0; }
-    65% { opacity:0; }
-    90% { opacity:1; }
+    52% { opacity:0; }
+    67% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
 
 @-webkit-keyframes fadein6{
     0% { opacity:0; }
-    65% { opacity:0; }
-    90% { opacity:1; }
+    52% { opacity:0; }
+    67% { opacity:1; }
+    95% { opacity:1; }
+    100% { opacity:0; }
+}
+.six-logos7{
+    -webkit-animation: 10s ease 0s normal forwards infinite fadein7;
+    animation: 10s ease 0s normal forwards infinite fadein7;
+  
+} 
+@keyframes fadein7{
+    0% { opacity:0; }
+    59% { opacity:0; }
+    74% { opacity:1; }
+    95% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes fadein7{
+    0% { opacity:0; }
+    59% { opacity:0; }
+    74% { opacity:1; }
+    95% { opacity:1; }
+    100% { opacity:0; }
+}
+.six-logos8{
+    -webkit-animation: 10s ease 0s normal forwards infinite fadein8;
+    animation: 10s ease 0s normal forwards infinite fadein8;
+  
+} 
+@keyframes fadein8{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    81% { opacity:1; }
+    95% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes fadein8{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    81% { opacity:1; }
+    95% { opacity:1; }
+    100% { opacity:0; }
+}
+.six-logos9{
+    -webkit-animation: 10s ease 0s normal forwards infinite fadein9;
+    animation: 10s ease 0s normal forwards infinite fadein9;
+  
+} 
+@keyframes fadein9{
+    0% { opacity:0; }
+    73% { opacity:0; }
+    88% { opacity:1; }
+    95% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes fadein9{
+    0% { opacity:0; }
+    73% { opacity:0; }
+    88% { opacity:1; }
     95% { opacity:1; }
     100% { opacity:0; }
 }
