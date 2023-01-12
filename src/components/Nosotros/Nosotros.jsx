@@ -16,7 +16,10 @@ const us=
 {title: "LA EMPRESA",
 text:'Somos una compañía especialista en Seguros de Caución que reúne experiencia e innovación. Brindamos las mejores herramientas para satisfacer la demanda de Productores, Tomadores y Asegurados en un mercado dinámico y competitivo.'
 }
-
+const com=
+{title: "NUESTRO COMPROMISO",
+text:'Creemos en la Responsabilidad Social, tanto en las prácticas diarias que equilibran y mejoran la relación entre el trabajo y la vida personal, como en la extensión de esas prácticas a la construcción de una sociedad inclusiva que promueva el bienestar de todos. Por eso, además de traducir esta convicción en un apoyo permanente a nuestros colaboradores, somos parte de diferentes iniciativas que llevan adelante organizaciones del tercer sector.'
+}
 
 const Nosotros = () => {
   const reinsurersRef= useRef(null)
@@ -39,9 +42,14 @@ const Nosotros = () => {
           </div>
           <SixLogos />
         </div>
-
       </section>
-     
+      <section className='com-backgound'id='section4'>
+      <div className='re-grid'>
+      <div className="us-block">
+          <HorizontalSubMenu title={com.title} text={com.text} />
+          </div>
+          </div>
+      </section>
     </div>
   )
 }

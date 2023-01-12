@@ -77,23 +77,11 @@
     padding: 20px 40px 0 40px;
 
 }
-.six-logos-start{
-    grid-row: 2;
-    grid-column: 4/7;
-    margin-top: 30%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-    
-}
-
-.six-logos img{
-   width: 100%;
-}
-.six-logos{
-    background-color: aqua;
-    height: 100px;
-  
+.com-backgound{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url(../../../public/img/Patio.jpg);
+    background-size: cover ;
+    height: 97vh;
+    width: 100vw;
 }
 
 
