@@ -1,8 +1,7 @@
 import React from 'react'
 import './sixlogos.css'
 
-const SixLogos = () => {
-  return (
+const SixLogos = () => (
     <div className='six-logos-start'> 
           
     <div className='six-logos1'>
@@ -35,6 +34,5 @@ const SixLogos = () => {
    
   </div>
   )
-}
 
 export default SixLogos

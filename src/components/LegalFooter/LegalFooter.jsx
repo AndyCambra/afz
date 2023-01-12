@@ -4,7 +4,7 @@ import './legalFooter.css'
 const LegalFooter = () => {
   return (
     <div className='legalFooterBox'>
-        <div class="wrapper">
+        <div className="wrapper">
           <div  className='dataFiscalLogo'>
           <img src="img/datafiscal.png" alt="Logo Data Fiscal"className='fiscalLogo'/>
           </div>

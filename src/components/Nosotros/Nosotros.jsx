@@ -1,7 +1,7 @@
 import React from 'react'
 import HorizontalSubMenu from '../utils/HorizontalSubmenu/HorizontalSubMenu'
 import Staff from './Staff'
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import { handleButtonClicked } from 'react'
 import './nosotros.css'
 import SixLogos from '../utils/SixLogos/SixLogos'
@@ -19,19 +19,15 @@ text:'Somos una compañía especialista en Seguros de Caución que reúne experi
 
 
 const Nosotros = () => {
-  const inRef= React.createRef()
-  handleButtonClicked = () => {
-    inRef.current.empresa();
-  }
- console.log(inRef)
-  
- 
+  const reinsurersRef= useRef(null)
+  const usRef= useRef(null)
+
   return (
     <div>
       <section title="us-backgound" id="section1" className='us-backgound' >
         <div className='grid'>
           <div className="us-block">
-          <HorizontalSubMenu title={us.title} text={us.text} ref={inRef} onClick={handleButtonClicked} />
+          <HorizontalSubMenu title={us.title} text={us.text} ref={usRef} reinsurersRef={reinsurersRef} onClick={handleButtonClicked} />
           </div>
         </div>
       </section>
@@ -39,11 +35,9 @@ const Nosotros = () => {
       <section className='re-backgound' >
       <div className='re-grid'>
           <div className="us-block">
-          <HorizontalSubMenu title={re.title} text={re.text} />
+          <HorizontalSubMenu ref={reinsurersRef} usRef={usRef} title={re.title} text={re.text} />
           </div>
           <SixLogos />
-         
-        
         </div>
 
       </section>
