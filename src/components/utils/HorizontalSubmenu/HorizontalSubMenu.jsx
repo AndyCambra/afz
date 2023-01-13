@@ -18,19 +18,19 @@ const HorizontalSubMenu = forwardRef(({title, text, reinsurersRef, usRef, comRef
             <Link>
              <h5 className={isActive?'menu-item-selected':"menu-item"} onClick={() => handleClick(usRef)}>EMPRESA</h5>
             </Link>
-            <h5 className='menu-item'>|</h5>
+            
             <Link>
               <h5 className='menu-item' onClick={() => handleClick(teamRef)}>EQUIPO</h5>
             </Link>
-            <h5 className='menu-item'>|</h5>
+            
             <Link>
               <h5 className={isActive?'menu-item-selected':"menu-item"} onClick={() => handleClick(reinsurersRef)}>REASEGURADORES</h5>
             </Link>
-            <h5 className='menu-item'>|</h5>
+           
             <Link>
               <h5 className='menu-item' onClick={() => handleClick(comRef)}>COMPROMISO</h5>
             </Link>
-            <h5 className='menu-item'>|</h5>
+           
             <Link to="/">
               <h5 className='menu-item-home'>HOME</h5>
             </Link>
