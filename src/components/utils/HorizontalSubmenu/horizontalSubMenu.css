@@ -7,12 +7,6 @@
 
 }
 
-.subMenuBox h5:nth-child(7){
-    flex-grow: 2;  
-}
-.subMenuBox h5:last-child{
-    font-weight: 600;
-}
 .horizontalTitle{
     font-family: 'Sora', sans-serif;
     font-weight: 600;
@@ -24,11 +18,25 @@
     margin: 10px 0;  
 }
 .menu-item{
-    padding-right: 7px;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    color: #fff;
     font-weight: 300;
 }
-.menu-item-selected p{
+.menu-item-home{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    color: #fff;  
+    font-weight: 700;
+}
+.menu-item-selected{
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    color: #fff;
     font-weight: 800;
-    padding-right: 7px;
     
 }

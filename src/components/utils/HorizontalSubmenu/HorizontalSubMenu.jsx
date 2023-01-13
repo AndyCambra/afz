@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './horizontalSubMenu.css'
 import { useState } from 'react'
 
-const HorizontalSubMenu = forwardRef(({title, text, reinsurersRef, usRef}, ref) => {
+const HorizontalSubMenu = forwardRef(({title, text, reinsurersRef, usRef, comRef, teamRef}, ref) => {
   const [isActive, setIsActive]=useState(false)
 
  const handleClick = nextRef => {
@@ -15,19 +15,24 @@ const HorizontalSubMenu = forwardRef(({title, text, reinsurersRef, usRef}, ref) 
   return (
     <>
         <div className='subMenuBox' ref={ref}>
-            <Link onClick={() => handleClick(usRef)} className={isActive?'menu-item':"menu-item-selected"}>
-              <p>EMPRESA</p>
+            <Link>
+             <h5 className={isActive?'menu-item-selected':"menu-item"} onClick={() => handleClick(usRef)}>EMPRESA</h5>
             </Link>
             <h5 className='menu-item'>|</h5>
-            <h5 className='menu-item'>EQUIPO</h5>
-            <h5 className='menu-item'>|</h5>
-            <Link onClick={() => handleClick(reinsurersRef)} className={isActive?'menu-item':"menu-item-selected"}>
-              <p>REASEGURADORES</p>
+            <Link>
+              <h5 className='menu-item' onClick={() => handleClick(teamRef)}>EQUIPO</h5>
             </Link>
             <h5 className='menu-item'>|</h5>
-            <h5 className='menu-item'>COMPROMISO</h5>
+            <Link>
+              <h5 className={isActive?'menu-item-selected':"menu-item"} onClick={() => handleClick(reinsurersRef)}>REASEGURADORES</h5>
+            </Link>
+            <h5 className='menu-item'>|</h5>
+            <Link>
+              <h5 className='menu-item' onClick={() => handleClick(comRef)}>COMPROMISO</h5>
+            </Link>
+            <h5 className='menu-item'>|</h5>
             <Link to="/">
-            <h5>HOME</h5>
+              <h5 className='menu-item-home'>HOME</h5>
             </Link>
         </div>
         <h5 className='horizontalTitle'>{title}</h5>
