@@ -50,6 +50,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 25px;
+    width: 100%;
 
 }
 .group-photo{
@@ -69,6 +70,14 @@
     width: 100vw;
 
 }
+.re-block{
+    grid-column: 2/5;
+
+}
+.team-block{
+    grid-column: 2/5;
+
+}
 .re-grid{
     position: absolute;
     margin-top: 2%;
@@ -84,7 +93,39 @@
     height: 97vh;
     width: 100vw;
 }
+@media (max-width: 1064px) {
+    .us-block{ 
+        grid-column: 2/6;
+        
+    }
+    .staffBlock{ 
+        grid-column: 2/6;
+        
+    }
+    .re-block{
+        grid-column: 2/6;
+        }
 
+}
+@media (max-width: 1000px) {
+    .us-block{ 
+        grid-column: 1/6;
+        padding-top: 22%;
+        
+    }
+    .staffBlock{
+        grid-column: 1/6;
 
-
+    }
+    .card-box{ 
+        grid-column: 1/8;  
+    }
+   .re-block{
+    grid-column: 1/6;
+    }
+    .team-block{
+        grid-column: 1/6;
+    
+    }
+}
 

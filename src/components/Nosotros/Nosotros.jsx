@@ -64,7 +64,7 @@ const Nosotros = () => {
       
       <section className='re-backgound'ref={reinsurersRef}>
       <div className='re-grid'>
-          <div className="us-block">
+          <div className="re-block">
           <HorizontalSubMenu  usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={re.title} text={re.text} />
           </div>
           <SixLogos />
@@ -73,7 +73,7 @@ const Nosotros = () => {
       </section>
       <section className='com-backgound'id='section4'ref={comRef}>
       <div className='re-grid'>
-      <div className="us-block">
+      <div className="team-block">
           <HorizontalSubMenu usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={com.title} text={com.text} />
           </div>
           </div>

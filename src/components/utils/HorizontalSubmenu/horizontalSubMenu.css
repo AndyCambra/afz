@@ -2,7 +2,6 @@
 .subMenuBox{
     display: flex;
     border-bottom: 1px solid #D8CECE;
-    justify-content: space-between;
     padding-bottom: 5px;
 
 }
@@ -54,3 +53,28 @@
 .subMenuBox :nth-child(4) .menu-item{
     border-right: none;
 }
+@media (max-width: 1300px) {
+    .menu-item{
+        font-size: .8em;
+    }
+    .menu-item-home{
+        font-size: .8em;
+    }
+}     
+
+@media (max-width: 1064px) {
+    .menu-item{
+        font-size: .6em;
+    }
+        
+    }
+@media (max-width: 1000px) {
+    .menu-item{
+        font-size: .7em;
+    }
+    .menu-item-home{
+        font-size: .7em;
+    }
+        
+    }
+  
