@@ -39,6 +39,10 @@
     margin-bottom: 5px;
     margin-top: 18px;
 }
+.footerCategory:hover{
+    font-weight: 700;
+    color: #fff;
+}
 .contactBox{
     font-family: 'Sora', sans-serif;
     color: #fff;
