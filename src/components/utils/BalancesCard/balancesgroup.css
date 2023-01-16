@@ -1,0 +1,9 @@
+.card-group-container{
+    display: flex;
+  
+ }
+ .fixed-number{
+     position: absolute;
+     flex-direction: column;
+ 
+ }
