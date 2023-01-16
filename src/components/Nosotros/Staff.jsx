@@ -1,13 +1,9 @@
 import React from 'react'
-import Button from '../utils/BigButton/Button'
-import HorizontalSubMenu from '../utils/HorizontalSubmenu/HorizontalSubMenu'
 import VideoCard from '../utils/VideoCards/VideoCard'
 import "./nosotros.css"
 
-const staff=
- {title: "EL EQUIPO",
-    text: "Contamos con un grupo directivo conformado por reconocidos referentes del mercado internacional. Nuestro equipo está integrado por profesionales de diferentes disciplinas, cada uno con la más alta capacitación en su especialidad. "
-  }
+
+
 const videos=[
 {
     id: 10,
@@ -94,12 +90,10 @@ const videos2=[
  
     ]
 const Staff = () => {
+    
+
   return (
-    <div className='staffBackgound'>
-        <div className='staffHero'>
-        <div className="staffBlock">
-       <HorizontalSubMenu title={staff.title} text={staff.text} />
-        </div>
+    <> 
           <div className="card-box">
           {videos.map((item)=>{
             return(
@@ -113,19 +107,8 @@ const Staff = () => {
                 <VideoCard companyPlace={item.companyPace} peopleName={item.peopleName} peoplePosition={item.peoplePosition} videoStaff={item.videoStaff} />
             )
           })}
-           </div>     
-        </div>
-        <img src="img/GrupoAfz.jpg" alt="Foto grupal" className='group-photo'/>
-        <div className="work-button">
-        <Button name={"TRABAJÁ CON NOSOTROS"} />
-        </div>
-      
-        
-        
-    
-        
-
-      </div>
+           </div>    
+      </>
   )
 }
 

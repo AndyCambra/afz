@@ -16,7 +16,6 @@
     width: 10vw;
     padding: 0 40px 0 0;
     margin: 0;
-
 }
 .headerMenu{
     background-color: #9B2743;
@@ -84,13 +83,31 @@
     border-bottom: 3px solid #fff;
     margin-bottom: 3px;
     margin-top: 3px;
-    padding-bottom: 2px;
-   
- 
-   
-
-  
-    
-  
-    
+    padding-bottom: 2px;  
 }
+@media (max-width: 1064px) {
+   h4{
+       font-size: 14px;
+    }
+    .headerMenu{
+        column-gap: 2em;
+    }
+    .logoAfz{
+        width: 14vw;
+    }
+   
+  }
+@media (max-width: 1000px) {
+    h4{
+        font-size: 12px;
+     }
+     .headerIn{
+       flex-direction: column;
+       align-items:flex-start;
+    
+     }
+     .logoAfz{
+         width: 15vw;
+     }
+    
+   }

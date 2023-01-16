@@ -19,14 +19,26 @@
 }
 .card-position{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
    
 }
 .staffPositions{
     font-weight: 600;
     height: 30px;
+    color:#fff;
 }
 .staffPositions h5{
     font-weight: 600;
    
+}
+@media (max-width: 1024px) {
+    .card-container img{
+        width: 100%;
+    }
+    .card-position{
+        font-size: 10px
+    }
+    .card-name{
+        font-size: 12px;
+    }
 }

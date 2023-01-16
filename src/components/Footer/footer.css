@@ -39,6 +39,10 @@
     margin-bottom: 5px;
     margin-top: 18px;
 }
+.footerCategory:hover{
+    font-weight: 700;
+    color: #fff;
+}
 .contactBox{
     font-family: 'Sora', sans-serif;
     color: #fff;
@@ -77,5 +81,11 @@
     margin: 20px 0 30px 0;
     display: flex;
     column-gap: 30px;
+
+}
+@media (max-width: 1024px){
+    .contactBox{
+        padding: 0 0 0 20%;
+    }
 
 }

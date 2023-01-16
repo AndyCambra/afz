@@ -12,7 +12,7 @@ const Footer = () => {
         <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />
         <div className='footerMenu'>
             <div className='footerItem'>
-                <NavLink to="">
+                <NavLink to="/balances">
                 <h4 className='footerCategory'>BALANCES</h4>
                 </NavLink>
             </div>
@@ -28,12 +28,12 @@ const Footer = () => {
             </div>
             <div className='footerItem'>
                 <NavLink to="">
-                <h4 className='footerCategory'>AGENCIAS</h4>
+                <h4 className='footerCategory'>PREVENCIÓN DEL FRAUDE</h4>
                 </NavLink>
             </div>
             <div className='footerItem'>
-                <NavLink to="">
-                <h4 className='footerCategory'>PREVENCIÓN DEL FRAUDE</h4>
+                <NavLink to="/">
+                <h4 className='footerCategory'>HOME</h4>
                 </NavLink>
             </div>
         </div>

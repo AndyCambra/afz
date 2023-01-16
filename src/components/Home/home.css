@@ -18,3 +18,24 @@
 .homeTitle{
     grid-column: 2/7;
 }
+@media (max-width: 1024px) {
+    .homeTitle{
+        padding-left: 5%;
+    }
+    h1{
+       font-size: 4em; 
+    }
+    .hero{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .homeTitle{
+        padding-left: 0;
+        margin-top: 10%;
+    }
+    h1{
+        font-size: 3.5em; 
+     }
+  
+}
