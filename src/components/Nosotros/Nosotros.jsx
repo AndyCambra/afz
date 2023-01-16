@@ -9,7 +9,7 @@ import Button from '../utils/BigButton/Button'
 
 
 
-const re=
+const reisurance=
 {title: "REASEGURADORES",
 text:'Nuestro cuadro de reaseguro garantiza eficacia y dinamismo en la capacidad de operación, cualquiera sea la magnitud de los proyectos.'
 }
@@ -21,7 +21,7 @@ const us=
 {title: "LA EMPRESA",
 text:'Somos una compañía especialista en Seguros de Caución que reúne experiencia e innovación. Brindamos las mejores herramientas para satisfacer la demanda de Productores, Tomadores y Asegurados en un mercado dinámico y competitivo.'
 }
-const com=
+const compromise=
 {title: "NUESTRO COMPROMISO",
 text:'Creemos en la Responsabilidad Social, tanto en las prácticas diarias que equilibran y mejoran la relación entre el trabajo y la vida personal, como en la extensión de esas prácticas a la construcción de una sociedad inclusiva que promueva el bienestar de todos. Por eso, además de traducir esta convicción en un apoyo permanente a nuestros colaboradores, somos parte de diferentes iniciativas que llevan adelante organizaciones del tercer sector.'
 }
@@ -65,7 +65,7 @@ const Nosotros = () => {
       <section className='re-backgound'ref={reinsurersRef}>
       <div className='re-grid'>
           <div className="re-block">
-          <HorizontalSubMenu  usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={re.title} text={re.text} />
+          <HorizontalSubMenu  usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={reisurance.title} text={reisurance.text} />
           </div>
           <SixLogos />
         </div>
@@ -74,7 +74,7 @@ const Nosotros = () => {
       <section className='com-backgound'id='section4'ref={comRef}>
       <div className='re-grid'>
       <div className="team-block">
-          <HorizontalSubMenu usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={com.title} text={com.text} />
+          <HorizontalSubMenu usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={compromise.title} text={compromise.text} />
           </div>
           </div>
       </section>
