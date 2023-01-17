@@ -13,7 +13,7 @@ const BalancesGroup = ({number, cardTopImg, cardTopAlt}) => {
     <div onMouseEnter={()=> setIsShown(true)} onMouseLeave={()=>setIsShown(false)}  >
   <BalanceNumbers number={number} /> 
 {isShown &&(
-        <BalancesCardTop cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number} className='show-img'/>
+        <BalancesCardTop cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number}/>
   )}
    </div>
 </> 
