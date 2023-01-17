@@ -2,20 +2,20 @@ import React from 'react'
 import {useState} from 'react'
 import BalancesCardTop from './BalancesCardTop'
 import BalanceNumbers from './BalanceNumbers'
-import './balancesgroup.css'
 
-const BalancesGroup = ({cardTopImg, cardTopAlt, number}) => {
+
+const BalancesGroup = ({number, cardTopImg, cardTopAlt}) => {
     const [isShown, setIsShown] = useState(false);
+
 
   return (
     <>
-    <div onMouseEnter={()=> setIsShown(true)} onMouseLeave={()=>setIsShown(false)}  className='fixed-number'>
-  <BalanceNumbers />
-    </div>
+    <div onMouseEnter={()=> setIsShown(true)} onMouseLeave={()=>setIsShown(false)}  >
+  <BalanceNumbers number={number} /> 
 {isShown &&(
-  <div>
-        <BalancesCardTop />
-  </div>)}
+        <BalancesCardTop cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number} className='show-img'/>
+  )}
+   </div>
 </> 
   )
 }
