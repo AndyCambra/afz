@@ -1,5 +1,5 @@
 .balance-backgound{
-    background: linear-gradient(105.33deg, rgba(0, 0, 0, 0.65) 10.83%, rgba(0, 0, 0, 0) 81.77%), url(../../../public/img/Balances.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url(../../../public/img/Balances.jpg);
     background-size: cover ;
     height: 130vh;
     width: 100vw;

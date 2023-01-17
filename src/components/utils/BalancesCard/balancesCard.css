@@ -37,7 +37,7 @@
     display: flex;
     justify-content: left;
     padding: 0 .3em;
-    margin-bottom: -.3em;
+    
 }
 .number-alone-container{
     width: 100%;
@@ -49,7 +49,7 @@
 .number-block-bottom{
     display: flex;
     padding: 0 .3em;
-    margin-bottom: -.3em;
+    margin-bottom: -.6em;
     justify-content: space-between;
 }
 .number-alone-container-bottom{
