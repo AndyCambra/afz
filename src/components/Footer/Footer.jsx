@@ -17,7 +17,7 @@ const Footer = () => {
                 </NavLink>
             </div>
             <div className='footerItem'>
-                <NavLink to="">
+                <NavLink to="/certificaciones">
                 <h4 className='footerCategory'>CERFITICACIONES</h4>
                 </NavLink>
             </div>

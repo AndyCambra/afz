@@ -34,12 +34,12 @@ const Balances = (props) => {
             <div className='sub-menu-balance'>
                 <div className='items'>
                     <h5 className="item-balance">BALANCES</h5>
-                    <Link to="">
+                    <Link to="/certificaciones">
                       <h5 className='item'>CERTIFICACIONES</h5>
                     </Link>
                 </div>
                 <div>
-                  <Link to="/">
+                  <Link to="/" className='home-link'>
                     <h5 className='item-home'>HOME</h5>
                   </Link>
                 </div> 

@@ -1,0 +1,51 @@
+.certifications-backgound{
+    background: url(../../../public/img/Certificaciones.jpg);
+    background-size: cover ;
+    height: 97vh;
+    width: 100vw;
+  
+}
+.item-desable{
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    border-right: 1.5px solid #D8CECE;
+    padding-right: 8px;
+    margin-right: 8px;
+
+}
+.item-certifications{
+    display: flex;
+    justify-content: left;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+@media (max-width: 1300px) {
+    .item-certifications{
+        font-size: .8em;
+    }
+    .item-desable{
+        font-size: .8em;
+    } 
+    .item-home{
+        font-size: .8em;
+    }
+}     
+
+@media (max-width: 1000px) {
+    .item-certifications{
+        font-size: .7em;
+    }
+    .item-desable{
+        font-size: .7em;
+    }
+    .item-home{
+        font-size: .7em;
+    }     
+    }
