@@ -29,8 +29,11 @@
 .items{
     display: flex;
     justify-content: left;
+    font-family: 'Sora', sans-serif;
 }
-
+.items a{
+    text-decoration: none;
+}
 .item-balance{
     margin: 0;
     font-family: 'Sora', sans-serif;
@@ -40,22 +43,22 @@
     border-right: 1.5px solid #D8CECE;
     padding-right: 8px;
     margin-right: 8px;
+    
 }
 .item{
     font-family: 'Sora', sans-serif;
     font-size: 15px;
     color: #fff;
-    font-weight: 400;
-    
-   
+    font-weight: 400; 
 }
+
 .item-home{
     font-family: 'Sora', sans-serif;
     font-size: 15px;
     color: #fff;
     font-weight: 700;
     align-items: flex-end;
-
+    text-decoration: none;
 }
 .card-balance-box{
     grid-row: 2;
@@ -65,4 +68,17 @@
     column-gap: 30px;
     row-gap: 30px;
   
+}
+@media (max-width: 1064px) {
+    .balance-block{ 
+        grid-column: 1/5;
+        
+    }
+}
+@media (max-width: 1000px) {
+    .balance-block{ 
+        grid-column: 1/6;
+        padding-top: 12%;
+        
+    }
 }
