@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Balances from './components/Balances/Balances';
 import Cerfitificaciones from './components/Certificaciones/Cerfitificaciones';
+import Productos from './components/Productos/Productos';
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route path="/productos" element={<Productos />} />
         <Route path="/certificaciones" element={<Cerfitificaciones />} />
         <Route path="/balances" element={<Balances />} />
         <Route path="/nosotros" element={<Nosotros />} />

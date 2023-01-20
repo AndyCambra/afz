@@ -24,12 +24,14 @@ const [isActive, setIsActive] = useState(false)
             </NavLink>
             <div className='headerMenu'>
             <div className='headerItem'>
-                <NavLink to="/Nosotros">
+                <NavLink to="/nosotros">
                 <h4 className={isActive ? "headerCategorySelected" : "headerCategory"} onClick={changeClass}>NOSOTROS</h4>
                 </NavLink>
                 </div>
             <div className='headerItem'>
+                <NavLink to='/productos'>
                 <h4 className='headerCategory'>PRODUCTOS</h4>
+                </NavLink>
                 </div>
             <div className='headerItem'>
             <h4 className='headerCategory'>ESCUELA DE CAUCIÓN</h4>
