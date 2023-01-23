@@ -1,0 +1,27 @@
+.hexa-video{
+    object-fit: cover;
+    height: 97vh;
+    width: 100vw;
+  
+}
+.school-hero{
+    position: absolute;
+    margin: -37% 40px 0 0px ;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+}
+.school-title{
+    grid-column: 2/7;
+    display: flex;
+    align-items: center;
+}
+.school-title img{
+    width: 30%;
+}
+.school-title h1{
+    color: #1e0606;
+    float: right;
+    margin-top: 10%;   
+}

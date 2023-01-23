@@ -32,7 +32,9 @@ const [isActive, setIsActive] = useState(false)
                 <h4 className='headerCategory'>PRODUCTOS</h4>
                 </div>
             <div className='headerItem'>
+                <NavLink to="/escuela">
             <h4 className='headerCategory'>ESCUELA DE CAUCIÓN</h4>
+                </NavLink>
             </div>
             <div className='headerItem'>
                 <h4 className='headerCategory'>CONTACTO</h4></div>
