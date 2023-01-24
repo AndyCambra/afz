@@ -25,3 +25,58 @@
     float: right;
     margin-top: 10%;   
 }
+.info-background{
+        height: 97vh;
+        width: 100vw;
+}
+.info-img{
+    height: 97vh;
+}
+.info-hero{
+    position: absolute;
+    margin: -45% 40px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+}
+.info-text{
+    grid-column: 4/6;
+    color: #1e0606;
+    width: 100%;  
+}
+.info-text-second{
+    grid-column: 6/8;
+    color: #1e0606;
+    width: 100%;  
+}
+.info-hero img{
+    width: 80%;
+    margin-top: -23%;
+}
+.items{
+    grid-column: 2/5;
+}
+.items h5{
+    color: #1e0606;
+}
+.info-block{
+    grid-column: 2/5;
+}
+.home-link h5{
+    color: #1e0606;
+
+}
+.info-title{
+    color: #9b2743;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+.courses-block{
+    grid-column: 2/6;
+    margin-top: -5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+
+}

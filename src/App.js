@@ -8,6 +8,8 @@ import Header from './components/Header/Header';
 import Balances from './components/Balances/Balances';
 import Cerfitificaciones from './components/Certificaciones/Cerfitificaciones';
 import Escuela from './components/Escuela/Escuela';
+import EscuelaInfo from './components/Escuela/EscuelaInfo';
+import EscuelaInscripcion from './components/Escuela/EscuelaInscripcion';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route path="/escuelainscripcion" element={<EscuelaInscripcion />} />
+        <Route path="/escuelainfo" element={<EscuelaInfo />} />
         <Route path="/escuela" element={<Escuela />} />
         <Route path="/certificaciones" element={<Cerfitificaciones />} />
         <Route path="/balances" element={<Balances />} />

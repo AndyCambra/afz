@@ -15,8 +15,12 @@ const Escuela = () => {
         <div>
         <h1>Una capacitación <br></br>imprescindible.</h1>
         <div className='school-buttons'>
+        <a href='./escuelainfo'>  
         <Button name={'VER MÁS'} />
+        </a> 
+        <a href='./escuelainscripcion'>  
         <Button name={'INSCRIBITE'} />
+        </a>
         </div>
         </div>
         </div>
