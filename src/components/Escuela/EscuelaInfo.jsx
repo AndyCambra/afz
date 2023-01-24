@@ -55,14 +55,7 @@ const EscuelaInfo = () => {
                 <Button name={'INSCRIBITE'} />
                 </a>
                 </div>
-            </div>
-       
-            
-                
-           
-           
-   
-     
+            </div> 
       </div>
       </section>
   )
