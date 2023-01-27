@@ -1,0 +1,19 @@
+[
+    { "id":1,
+      "title": "OBRAS | SUMINISTROS | SERVICIOS",
+      "text": "Un seguro de caución puede respaldar proyectos como obras públicas a nivel local, provincial y nacional; obras privadas de índole industrial o proyectos de inversión; suministro de productos o prestación de servicios a entidades públicas y privadas. El costo resulta significativamente menor, permite no inmovilizar activos financieros ni ocupar líneas de crédito bancario y abarca una variedad de productos que permite abastecer diferentes necesidades:",
+      "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
+      "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+      "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+     " img": ""
+     },
+     { "id":2,
+       "title": "ADUANERA",
+       "text": "Dadas ciertas condiciones, algunas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. Estas excepciones se otorgan a condición de que el importador/exportador cumpla determinados requisitos y ofrezca una garantía para el caso de no cumplimiento. El seguro de caución es la opción más ágil y económica para obligaciones como:",
+        "requisitesText1": "De acuerdo al tipo de operación se requerirá información sobre el origen de las mercaderías, destino, plazos o cualquier otro detalle que colabore con la comprensión del negocio que se solicita cubrir.",
+        "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+        "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+        "img": "./img/Aduaneras.jpg"
+       }
+       
+  ]
