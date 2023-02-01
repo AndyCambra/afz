@@ -16,19 +16,19 @@ const HorizontalSubMenu = forwardRef(({title, text, reinsurersRef, usRef, comRef
     <>
         <div className='subMenuBox' ref={ref}>
             <Link>
-             <h5 className={`${title==="LA EMPRESA" ? 'menu-item-selected': 'menu-item'}`} onClick={() => handleClick(usRef)}>EMPRESA</h5>
+             <h5 className={title==="LA EMPRESA" ? 'menu-item-selected': 'menu-item'} onClick={() => handleClick(usRef)}>EMPRESA</h5>
             </Link>
             
             <Link>
-              <h5 className={`${title==="EL EQUIPO" ? 'menu-item-selected': 'menu-item'}`} onClick={() => handleClick(teamRef)}>EQUIPO</h5>
+              <h5 className={title==="EL EQUIPO" ? 'menu-item-selected': 'menu-item'} onClick={() => handleClick(teamRef)}>EQUIPO</h5>
             </Link>
             
             <Link>
-              <h5 className={`${title==="REASEGURADORES" ? 'menu-item-selected': 'menu-item'}`} onClick={() => handleClick(reinsurersRef)}>REASEGURADORES</h5>
+              <h5 className={title==="REASEGURADORES" ? 'menu-item-selected': 'menu-item'} onClick={() => handleClick(reinsurersRef)}>REASEGURADORES</h5>
             </Link>
            
             <Link>
-              <h5 className={`${title==="NUESTRO COMPROMISO" ? 'menu-item-selected': 'menu-item'}`} onClick={() => handleClick(comRef)}>COMPROMISO</h5>
+              <h5 className={title==="NUESTRO COMPROMISO" ? 'menu-item-selected': 'menu-item'} onClick={() => handleClick(comRef)}>COMPROMISO</h5>
             </Link>
            
             <Link to="/">
