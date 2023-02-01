@@ -9,20 +9,13 @@ import { useLocation } from 'react-router-dom'
 const Header = () => {
 /* const [isActive, setIsActive] = useState(false) */
 const location= useLocation()
-console.log(location)
-/*     const changeClass = () => {
-    setIsActive(!isActive)
-    }  */
-/*     
-    const handleChange = () => {
-        setIsActive(false)
-        } */
+
 
   return (
     <div className='headerBox'>
         <div className='headerIn'>
             <NavLink to="/"> 
-            {location.pathname ==='/productos' ? (
+            {location.pathname ==='/productos' && "./escuela" ?(
                 <img src="img/LogoAFZwbg.jpg" alt="Logo Afz" className='logoAfz' />
             ):(             
             <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />)}

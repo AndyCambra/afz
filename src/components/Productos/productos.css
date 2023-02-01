@@ -36,6 +36,17 @@
     font-weight: 400;
     cursor: pointer;
 }
+.menu-link-selected{
+    display:block;
+    text-decoration: none;
+    color: #9b2743;
+    border-bottom: 1px solid #9b2743;
+    font-size: 12px;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
 .home-menu-link{
     display:block;
     text-decoration: none;
@@ -94,7 +105,7 @@
 .product-text{
     grid-column: 2/5;
     grid-row: 2;
-    margin-top: 8px;
+    margin: 8px 0;
  
 }
 .product-text p{
@@ -123,4 +134,12 @@
 }
 .product-photo{
     margin-top: 40px;
+}
+.display-none{
+    display: none;
+}
+.list p{
+    font-weight: 600;
+    font-size: 13px;
+    color: #1e0606;
 }
