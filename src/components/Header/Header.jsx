@@ -7,21 +7,21 @@ import { useLocation } from 'react-router-dom'
 
 
 const Header = () => {
-const [isActive, setIsActive] = useState(false)
+/* const [isActive, setIsActive] = useState(false) */
 const location= useLocation()
-console.log(location.pathname)
-    const changeClass = () => {
+console.log(location)
+/*     const changeClass = () => {
     setIsActive(!isActive)
-    } 
-    
+    }  */
+/*     
     const handleChange = () => {
         setIsActive(false)
-        }
+        } */
 
   return (
     <div className='headerBox'>
         <div className='headerIn'>
-            <NavLink to="/" onClick={handleChange}> 
+            <NavLink to="/"> 
             {location.pathname ==='/productos' ? (
                 <img src="img/LogoAFZwbg.jpg" alt="Logo Afz" className='logoAfz' />
             ):(             
@@ -29,20 +29,25 @@ console.log(location.pathname)
             </NavLink>
             <div className='headerMenu'>
             <div className='headerItem'>
-                <NavLink to="/nosotros">
-                <h4 className={isActive ? "headerCategorySelected" : "headerCategory"} onClick={changeClass}>NOSOTROS</h4>
+                <NavLink to="/nosotros" className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+               NOSOTROS
                 </NavLink>
                 </div>
             <div className='headerItem'>
-                <NavLink to='/productos'>
-                <h4 className='headerCategory'>PRODUCTOS</h4>
+                <NavLink to='/productos' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+                PRODUCTOS
                 </NavLink>
                 </div>
             <div className='headerItem'>
-            <h4 className='headerCategory'>ESCUELA DE CAUCIÓN</h4>
+                <NavLink to='' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+                ESCUELA DE CAUCIÓN 
+                </NavLink>
             </div>
             <div className='headerItem'>
-                <h4 className='headerCategory'>CONTACTO</h4></div>
+                <NavLink to='' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+                CONTACTO
+                </NavLink>
+            </div>
             <div className='headerItem'>AFZ.ONLINE</div>
             </div>
             
