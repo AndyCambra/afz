@@ -8,6 +8,7 @@ import HorizontalPhoto from '../utils/HorizontalPhoto/HorizontalPhoto'
 import ListComponent from '../utils/TextComponent.jsx/ListComponent'
 import SubTextComponent from '../utils/TextComponent.jsx/SubTextComponent'
 import LightButton from '../utils/BigButton/LightButton'
+import { Link } from 'react-router-dom'
 
 
 const Productos = () => {
@@ -36,7 +37,8 @@ const Productos = () => {
                 <h6 className={product.id === 5 ? "menu-link-selected" :'menu-link'} onClick={() => handleClick(5)}>ALQUILER</h6>
                 <h6 className={product.id === 6 ? "menu-link-selected" :'menu-link'} onClick={() => handleClick(6)}>DIRECTORES | ACTIVIDADES | PROFESIONES</h6>
                 <h6 className='menu-link'>DESCARGAR FORMULARIOS</h6>
-                <h6 className='home-menu-link'>HOME</h6>
+                <Link to="/">
+                <h6 className='home-menu-link'>HOME</h6></Link>
                 <div>
                 <h6 className='last-menu-link'>PÓLIZA DIGITAL</h6>
                 </div>
