@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import { handleButtonClicked } from 'react'
 import './nosotros.css'
 import SixLogos from '../utils/SixLogos/SixLogos'
-import Button from '../utils/BigButton/Button'
+import DarkButton from '../utils/BigButton/DarkButton'
 
 
 
@@ -57,7 +57,7 @@ const Nosotros = () => {
             <img src="img/GrupoAfz.jpg" alt="Foto grupal" className='group-photo'/>
             </div>
             <div className="work-button">
-        <Button name={"TRABAJÁ CON NOSOTROS"} />
+        <DarkButton name={"TRABAJÁ CON NOSOTROS"} />
         </div>
         
       </section>

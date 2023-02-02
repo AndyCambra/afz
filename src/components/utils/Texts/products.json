@@ -5,7 +5,7 @@
       "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
       "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
       "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.", 
-      "img": ""
+      "img": "./img/Productos/obras.jpg"
      },
      { "id":2,
        "title": "ADUANERA",
@@ -13,7 +13,7 @@
         "requisitesText1": "De acuerdo al tipo de operación se requerirá información sobre el origen de las mercaderías, destino, plazos o cualquier otro detalle que colabore con la comprensión del negocio que se solicita cubrir.",
         "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
         "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
-        "img": "./img/Aduaneras.jpg"
+        "img": "./img/Productos/Aduaneras.jpg"
        },
       { "id":3,
       "title": "JUDICIALES",
@@ -21,7 +21,7 @@
       "requisitesText1": "Breve resumen de la situación judicial de la obligación a garantizar, por parte del letrado interviniente. Y, en el caso de que ya exista, copia de la medida que traba el embargo.",
       "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
       "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
-      "img": ""
+      "img": "./img/Productos/judiciales.jpg"
       },
       { "id":4,
       "title": "EXTERIOR",
@@ -29,7 +29,7 @@
       "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
       "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
       "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
-      "img": ""
+      "img": "./img/Productos/exterior.jpg"
       },
       { "id":5,
       "title": "ALQUILER",
@@ -37,7 +37,7 @@
       "requisitesText1": "Copia del contrato de locación donde se observe la información fundamental sobre el inmueble, los sujetos intervinientes, plazos, canon locativo y condiciones.",
       "requisitesText2": "Copia del último balance. Solamente si es la primera vez que opera con nosotros.",
       "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
-      "img": ""
+      "img": "./img/Productos/Alquiler.jpg"
       },
       { "id":6,
       "title": "DIRECTORES | ACTIVIDADES | PROFESIONES",
@@ -45,7 +45,7 @@
       "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
       "requisitesText2": "",
       "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
-      "img": ""
+      "img": "./img/Productos/directores.jpg"
       }
 
        
