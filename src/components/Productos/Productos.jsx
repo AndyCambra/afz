@@ -6,6 +6,7 @@ import TextComponent from '../utils/TextComponent.jsx/TextComponent'
 import Requisites from '../utils/Requisites/Requisites'
 import HorizontalPhoto from '../utils/HorizontalPhoto/HorizontalPhoto'
 import ListComponent from '../utils/TextComponent.jsx/ListComponent'
+import SubTextComponent from '../utils/TextComponent.jsx/SubTextComponent'
 
 
 const Productos = () => {
@@ -19,12 +20,11 @@ const Productos = () => {
  let pro= products.find(oneProduct=> oneProduct.id === i)
     setProduct(pro)
  } 
- const itemList= product.list
- console.log(itemList)
+
 
   return (
     <>
-    <div className='product-background'>
+    <div className={product.id === 1 ? "product-background-extra":'product-background'}>
       <div className='product-content'>
         <div className='product-box'>    
             <div className='menu-box'>
@@ -45,6 +45,7 @@ const Productos = () => {
             <div className='product-text'>
             <TextComponent text={product.text}/>
             <div className={product.id===2? "list":"display-none"}><ListComponent /></div>
+            <div className={product.id===1? "extra-text":"display-none"}><SubTextComponent /></div>
             </div>
             <Requisites requisitesText1={product.requisitesText1} 
                         requisitesText2={product.requisitesText2} 

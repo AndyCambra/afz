@@ -2,6 +2,10 @@
     position: relative;
     min-height: 97vh; 
 }
+.product-background-extra{
+    position: relative;
+    min-height: 130vh; 
+}
 .product-content{
     position: absolute;
     margin-top: 140px;
@@ -141,5 +145,18 @@
 .list p{
     font-weight: 600;
     font-size: 13px;
+    color: #1e0606;
+}
+.extra-subtitle{
+    text-transform: uppercase;
+    font-weight: 600; 
+    padding-top: 5px;
+}
+.extra-text{
+    margin-bottom: 10px;
+}
+.extra-text p{
+    font-size: 13px;
+    font-weight: 300;
     color: #1e0606;
 }
