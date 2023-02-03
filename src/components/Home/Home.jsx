@@ -1,7 +1,7 @@
 
 import React from 'react'
 import "./home.css"
-import Button from '../utils/BigButton/Button'
+import DarkButton from '../utils/BigButton/DarkButton'
 
 const Home = () => {
   return (
@@ -10,8 +10,8 @@ const Home = () => {
       <div  className='hero'>
         <div className='homeTitle'>
         <h1>Somos líderes <br></br>en seguros de caución.</h1>
-        <Button name={'CONOCÉ'} />
-        <Button name={'COTIZÁ'} />
+        <DarkButton name={'CONOCENOS'} />
+        <DarkButton name={'CONTACTANOS'} />
         </div>
       </div>
     </div>
