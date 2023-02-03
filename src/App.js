@@ -10,6 +10,8 @@ import Cerfitificaciones from './components/Certificaciones/Cerfitificaciones';
 import Escuela from './components/Escuela/Escuela';
 import EscuelaInfo from './components/Escuela/EscuelaInfo';
 import EscuelaInscripcion from './components/Escuela/EscuelaInscripcion';
+import Productos from './components/Productos/Productos';
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <Route path="/escuelainscripcion" element={<EscuelaInscripcion />} />
         <Route path="/escuelainfo" element={<EscuelaInfo />} />
         <Route path="/escuela" element={<Escuela />} />
+        <Route path="/productos" element={<Productos />} />
         <Route path="/certificaciones" element={<Cerfitificaciones />} />
         <Route path="/balances" element={<Balances />} />
         <Route path="/nosotros" element={<Nosotros />} />

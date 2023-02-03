@@ -2,7 +2,7 @@ import React from 'react'
 import './escuela.css'
 import { Link } from 'react-router-dom'
 import CourseTitle from '../utils/CourseTitle/CourseTitle'
-import Button from '../utils/BigButton/Button'
+import LightButton from '../utils/BigButton/LightButton'
 
 const courses=[
     {id: 11,
@@ -52,7 +52,7 @@ const EscuelaInfo = () => {
             })} 
             <div className='school-buttons'>
                 <a href='./escuelainscripcion'>  
-                <Button name={'INSCRIBITE'} />
+                <LightButton name={'INSCRIBITE'} />
                 </a>
                 </div>
             </div> 
