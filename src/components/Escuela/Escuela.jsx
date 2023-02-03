@@ -1,6 +1,6 @@
 import React from 'react'
 import "./escuela.css"
-import LightButton from '../utils/BigButton/LightButton'
+import BigButton from '../utils/BigButton/BigButton'
 
 const Escuela = () => {
   return (
@@ -14,11 +14,11 @@ const Escuela = () => {
         <div>
         <h1>Una capacitación <br></br>imprescindible.</h1>
         <div className='school-buttons'>
-        <a href='./escuelainfo'>  
-        <LightButton name={'VER MÁS'} />
+        <a href='/escuela-info'>  
+        <BigButton className="school-button" name={'VER MÁS'} />
         </a> 
-        <a href='./escuelainscripcion'>  
-        <LightButton name={'INSCRIBITE'} />
+        <a href='/escuela-inscripcion'>  
+        <BigButton className="school-button" name={'INSCRIBITE'} />
         </a>
         </div>
         </div>

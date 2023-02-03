@@ -141,7 +141,8 @@
     font-weight: 500;   
 }
 .product-photo{
-    margin-top: 40px;
+    margin-top: 20px;
+    width: 100vw;
 }
 .display-none{
     display: none;

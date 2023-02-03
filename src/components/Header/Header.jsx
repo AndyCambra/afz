@@ -7,13 +7,13 @@ import { useLocation } from 'react-router-dom'
 
 const Header = () => {
 const location= useLocation()
-
+console.log(11,location)
 
   return (
     <div className='headerBox'>
         <div className='headerIn'>
             <NavLink to="/"> 
-            {location.pathname ==='/productos' || "./escuela" ?(
+            {location.pathname ===('/productos' || '/escuela') ?(
                 <img src="img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
             ):(             
             <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />)}

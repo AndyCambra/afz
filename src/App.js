@@ -20,8 +20,8 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route path="/escuelainscripcion" element={<EscuelaInscripcion />} />
-        <Route path="/escuelainfo" element={<EscuelaInfo />} />
+        <Route path="/escuela-inscripcion" element={<EscuelaInscripcion />} />
+        <Route path="/escuela-info" element={<EscuelaInfo />} />
         <Route path="/escuela" element={<Escuela />} />
         <Route path="/productos" element={<Productos />} />
         <Route path="/certificaciones" element={<Cerfitificaciones />} />

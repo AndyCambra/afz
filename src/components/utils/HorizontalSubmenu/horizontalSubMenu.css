@@ -46,9 +46,7 @@
     font-weight: 800;
     border-right: 1.5px solid #D8CECE;
     padding-right: 8px;
-    margin-right: 8px;
-   
-    
+    margin-right: 8px; 
 }
 .subMenuBox :nth-child(4) .menu-item{
     border-right: none;

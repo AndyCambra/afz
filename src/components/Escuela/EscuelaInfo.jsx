@@ -2,7 +2,7 @@ import React from 'react'
 import './escuela.css'
 import { Link } from 'react-router-dom'
 import CourseTitle from '../utils/CourseTitle/CourseTitle'
-import LightButton from '../utils/BigButton/LightButton'
+import BigButton from '../utils/BigButton/BigButton'
 
 const courses=[
     {id: 11,
@@ -31,9 +31,9 @@ const EscuelaInfo = () => {
             <div className="info-block">
             <div className='sub-menu-balance'>
                 <div className='items'>
-                    <h5 className="item-balance">LA ESCUELA</h5>
-                    <Link to="/certificaciones">
-                      <h5 className='item'>EL PROGRAMA</h5>
+                    <h5 className="item-school-selected">LA ESCUELA</h5>
+                    <Link to="">
+                      <h5 className='item-school'>EL PROGRAMA</h5>
                     </Link>
                 </div>
                 <div>
@@ -51,9 +51,9 @@ const EscuelaInfo = () => {
             )
             })} 
             <div className='school-buttons'>
-                <a href='./escuelainscripcion'>  
-                <LightButton name={'INSCRIBITE'} />
-                </a>
+                <Link to='/escuela-inscripcion'>  
+                <BigButton className="school-button" name={'INSCRIBITE'} />
+                </Link>
                 </div>
             </div> 
       </div>

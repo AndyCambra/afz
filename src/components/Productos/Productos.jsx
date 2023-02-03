@@ -7,7 +7,7 @@ import Requisites from '../utils/Requisites/Requisites'
 import HorizontalPhoto from '../utils/HorizontalPhoto/HorizontalPhoto'
 import ListComponent from '../utils/TextComponent.jsx/ListComponent'
 import SubTextComponent from '../utils/TextComponent.jsx/SubTextComponent'
-import LightButton from '../utils/BigButton/LightButton'
+import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
 
 
@@ -49,8 +49,8 @@ const Productos = () => {
             <TextComponent text={product.text}/>
             <div className={product.id===2? "list":"display-none"}><ListComponent /></div>
             <div className={product.id===1? "extra-text":"display-none"}><SubTextComponent /></div>
-            <div className={product.id===5? "product-button":"display-none"}><LightButton name={'COTIZÁ'} /></div>
-            <div className={product.id===6? "product-button":"display-none"}><LightButton name={'COTIZÁ'} /></div>
+            <div className={product.id===5? "product-button":"display-none"}><BigButton className="light-button" name={'COTIZÁ'} /></div>
+            <div className={product.id===6? "product-button":"display-none"}><BigButton className="light-button" name={'COTIZÁ'} /></div>
             </div>
             <Requisites requisitesText1={product.requisitesText1} 
                         requisitesText2={product.requisitesText2} 
