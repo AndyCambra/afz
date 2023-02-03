@@ -59,8 +59,9 @@
 .info-block{
     grid-column: 2/5;
 }
-.home-link h5{
-    color: #1e0606;
+.school-home-link h5{
+    color: #949292;
+    font-size: 14px;
 
 }
 .info-title{

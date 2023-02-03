@@ -37,8 +37,8 @@ const EscuelaInfo = () => {
                     </Link>
                 </div>
                 <div>
-                  <Link to="/" className='home-link'>
-                    <h5 className='item-home'>HOME</h5>
+                  <Link to="/" className='school-home-link'>
+                    <h5>HOME</h5>
                   </Link>
                 </div> 
               </div>
