@@ -125,6 +125,12 @@
     0%{translate:275%}
     100%{translate: 500%;}
 }
+.requisites-again{
+    position: absolute;
+    margin-top: 50px; 
+    width: 26%;   
+    margin-left: 73%;
+}
 .requisites-box{
     background-color: #B7B6B6;
     padding: 10px;
