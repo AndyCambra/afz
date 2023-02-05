@@ -23,11 +23,11 @@ const courses=[
 const EscuelaInfo = () => {
   return (
     <section className='info-backgound' >
-        <img src="./img/HexaBlur.png" alt="Fondo escuela" className='info-img'></img>
+        <img src="/img/HexaBlur.png" alt="Fondo escuela" className='info-img'></img>
         <div  className='info-hero'>
             <p className='info-text'>Somos especialistas y líderes en seguros de caución. Por eso, tenemos la única escuela de caución del mercado que te ofrece capacitación para ampliar exponencialmente las oportunidades con tus clientes, no solo en Seguros de Caución sino en todos los otros riesgos. Técnicas de comercialización (cómo vender), características de los principales productos; cómo asesorar a tus clientes de manera asertiva y cómo ser efectivo en la cobranza son solo algunas de las temáticas que encontrarás en la escuela. Un programa único que abarca todo lo que necesitás para profesionalizarte,</p>
             <p className='info-text-second'>desarrollar habilidades específicas y adquirir confianza. Dictado por un equipo multidisciplinario de nivel gerencial y altamente capacitado, que hará de esta experiencia una simulación del negocio en tiempo real. Contenidos que van desde el conocimiento básico, como la introducción al mundo del seguro de caución, hasta las cuestiones más particulares de productos específicos como pueden ser las Garantías Judiciales. Transformate vos también en un especialista. Inscribite y accedé a una capacitación única en el mercado del seguro: Escuela de Caución.</p> 
-            <img src="./img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
+            <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
             <div className="info-block">
             <div className='sub-menu-balance'>
                 <div className='items'>
@@ -47,11 +47,11 @@ const EscuelaInfo = () => {
           <div className='courses-block'>
             {courses.map((course,id)=>{
                 return(
-            <CourseTitle date={course.date} title={course.title}/>
+            <CourseTitle key={id} date={course.date} title={course.title}/>
             )
             })} 
             <div className='school-buttons'>
-                <Link to='/escuela-inscripcion'>  
+                <Link to='/escuela/inscripcion'>  
                 <BigButton className="school-button" name={'INSCRIBITE'} />
                 </Link>
                 </div>

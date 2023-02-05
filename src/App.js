@@ -11,6 +11,7 @@ import Escuela from './components/Escuela/Escuela';
 import EscuelaInfo from './components/Escuela/EscuelaInfo';
 import EscuelaInscripcion from './components/Escuela/EscuelaInscripcion';
 import Productos from './components/Productos/Productos';
+import Landing from './components/Landing/Landing';
 
 
 
@@ -20,14 +21,15 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route path="/escuela-inscripcion" element={<EscuelaInscripcion />} />
-        <Route path="/escuela-info" element={<EscuelaInfo />} />
-        <Route path="/escuela" element={<Escuela />} />
-        <Route path="/productos" element={<Productos />} />
-        <Route path="/certificaciones" element={<Cerfitificaciones />} />
-        <Route path="/balances" element={<Balances />} />
-        <Route path="/nosotros" element={<Nosotros />} />
-        <Route path="/" element={<Home />} />
+        <Route exact path="/landing" element={<Landing />} />
+        <Route exact path="/escuela/inscripcion" element={<EscuelaInscripcion />} />
+        <Route exact path="/escuela/info" element={<EscuelaInfo />} />
+        <Route exact path="/escuela" element={<Escuela />} />
+        <Route exact path="/productos" element={<Productos />} />
+        <Route exact path="/certificaciones" element={<Cerfitificaciones />} />
+        <Route exact path="/balances" element={<Balances />} />
+        <Route exact path="/nosotros" element={<Nosotros />} />
+        <Route exact path="/" element={<Home />} />
       </Routes> 
     <Footer />
     </BrowserRouter>

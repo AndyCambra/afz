@@ -12,7 +12,7 @@ const ProductMenu = ({handleClick, id}) =>
     <Link className={id === 5 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(5)}>ALQUILER</Link>
     <Link className={id === 6 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(6)}>DIRECTORES | ACTIVIDADES | PROFESIONES</Link>
     <Link className='menu-link'>DESCARGAR FORMULARIOS</Link>
-    <Link className='home-menu-link'>HOME</Link>
+    <Link to='/' className='home-menu-link'>HOME</Link>
     <div>
     <Link className='last-menu-link'>PÓLIZA DIGITAL</Link>
     </div>

@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <>
     <div className='footerBox'>
-        <div className='footerIn'>
-        <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />
+        <div className='footer-in'>
+        <img src="/img/logoAfz.png" alt="Logo Afz" />
         <div className='footerMenu'>
             <div className='footerItem'>
                 <NavLink to="/balances">
