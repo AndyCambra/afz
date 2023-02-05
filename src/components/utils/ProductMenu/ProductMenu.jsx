@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './productmenu.css'
+import '../../Productos/productos.css'
 
-const ProductMenu = () => {
-  return (
+
+const ProductMenu = ({handleClick, id}) => 
     <div className='menu-box'>
-    <Link className='menu-link'>OBRAS | SUMINISTROS | SERVICIOS</Link>
-    <Link className='menu-link'>ADUANERAS</Link>
-    <Link className='menu-link'>JUDICIALES</Link>
-    <Link className='menu-link'>EXTERIOR</Link>
-    <Link className='menu-link'>ALQUILER</Link>
-    <Link className='menu-link'>DIRECTORES | ACTIVIDADES | PROFESIONES</Link>
+    <Link className={id === 1 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(1)} >OBRAS | SUMINISTROS | SERVICIOS</Link>
+    <Link className={id === 2 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(2)}>ADUANERAS</Link>
+    <Link className={id === 3 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(3)}>JUDICIALES</Link>
+    <Link className={id === 4 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(4)}>EXTERIOR</Link>
+    <Link className={id === 5 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(5)}>ALQUILER</Link>
+    <Link className={id === 6 ? "menu-link-selected" :'menu-link'} onClick={()=>handleClick(6)}>DIRECTORES | ACTIVIDADES | PROFESIONES</Link>
     <Link className='menu-link'>DESCARGAR FORMULARIOS</Link>
     <Link className='home-menu-link'>HOME</Link>
     <div>
@@ -18,7 +18,5 @@ const ProductMenu = () => {
     </div>
     
     </div>
-  )
-}
 
 export default ProductMenu

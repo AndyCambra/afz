@@ -1,22 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./header.css"
-import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 
 
 const Header = () => {
-/* const [isActive, setIsActive] = useState(false) */
 const location= useLocation()
-
+console.log(11,location)
 
   return (
     <div className='headerBox'>
         <div className='headerIn'>
             <NavLink to="/"> 
-            {location.pathname ==='/productos' && "./escuela" ?(
-                <img src="img/LogoAFZwbg.jpg" alt="Logo Afz" className='logoAfz' />
+            {location.pathname ===('/productos' || '/escuela') ?(
+                <img src="img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
             ):(             
             <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />)}
             </NavLink>
@@ -32,7 +30,7 @@ const location= useLocation()
                 </NavLink>
                 </div>
             <div className='headerItem'>
-                <NavLink to='' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+                <NavLink to='/escuela' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
                 ESCUELA DE CAUCIÓN 
                 </NavLink>
             </div>
