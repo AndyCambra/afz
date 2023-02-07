@@ -1,11 +1,10 @@
 import React from 'react'
 import '../../Productos/productos.css'
 
-const Requisites = ({requisitesText1, requisitesText2, requisitesText3, isLastUpdated }) => {
 
-
+const Requisites = ({requisitesText1, requisitesText2, requisitesText3}) => {
   return (
-    <div className={isLastUpdated ? "requisites-again":"requisites" }>
+    <div key={requisitesText1} className="requisites">
     <div className='requisites-box'>
     <h6 className='requisites-subtitle'>Información sobre la obligación a garantizar</h6>
       <p className='requisites-text'>{requisitesText1}</p>

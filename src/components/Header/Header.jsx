@@ -7,16 +7,16 @@ import { useLocation } from 'react-router-dom'
 
 const Header = () => {
 const location= useLocation()
-console.log(11,location)
-
+console.log(location.pathname)
+/* if (pathname.startsWith('/users/')) */
   return (
     <div className='headerBox'>
         <div className='headerIn'>
             <NavLink to="/"> 
-            {location.pathname ===('/productos' || '/escuela') ?(
-                <img src="img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
+            {location.pathname.startsWith('/productos/') || location.pathname==='/escuela' || location.pathname === '/escuela/info' || location.pathname === '/landing' ? (
+                <img src="/img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
             ):(             
-            <img src="img/logoAfz.png" alt="Logo Afz" className='logoAfz' />)}
+            <img src="/img/logoAfz.png" alt="Logo Afz" className='logoAfz' />)}
             </NavLink>
             <div className='headerMenu'>
             <div className='headerItem'>
@@ -25,7 +25,7 @@ console.log(11,location)
                 </NavLink>
                 </div>
             <div className='headerItem'>
-                <NavLink to='/productos' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+                <NavLink to='/productos/1' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
                 PRODUCTOS
                 </NavLink>
                 </div>

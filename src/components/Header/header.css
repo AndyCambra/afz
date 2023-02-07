@@ -1,37 +1,37 @@
 .headerBox{
-    width: 100vw;
     z-index: 100;
     position: absolute;
+    width: 100vw;
   
 }
 .headerIn{
-    padding-top: 10px;
-    margin: 0 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    padding: 10px 40px 0 40px;
     align-items: center;
     justify-content: left;
    
 }
 .logoAfz{
-    width: 10vw;
-    padding: 0 40px 0 0;
+    width: 100%;
     margin: 0;
+    grid-column: 1;
 }
 .headerMenu{
     background-color: #9B2743;
     border-radius: 16px;
     width: 100%;
     margin-top: 15px;
+    grid-column: 2/8;
     display: flex;
-    column-gap: 3em;
     justify-content: space-between;
-    padding-right: 10px;
-    padding-left: 10px;
     height: 30px;
+    column-gap: 3em;
 }
 .headerItem{
     margin: 4px;
-    padding-left: 5px;
+    padding: 1px 10px 0;
 }
 .headerItem:nth-child(4){
     flex-grow: 2;
@@ -41,7 +41,7 @@
     font-family: 'Sora', sans-serif;
     color: #fff;
     font-weight: 700;
-    padding-top: 1px;
+  
 }
 .headerCategory{
     font-family: 'Sora', sans-serif;
@@ -110,10 +110,6 @@
      .headerIn{
        flex-direction: column;
        align-items:flex-start;
-    
-     }
-     .logoAfz{
-         width: 15vw;
      }
     
    }

@@ -6,7 +6,7 @@ const LegalFooter = () => {
     <div className='legalFooterBox'>
         <div className="wrapper">
           <div  className='dataFiscalLogo'>
-          <img src="img/datafiscal.png" alt="Logo Data Fiscal"className='fiscalLogo'/>
+          <img src="/img/datafiscal.png" alt="Logo Data Fiscal"className='fiscalLogo'/>
           </div>
           <div className='legalText'>
               <p >AFIANZADORA LATINOAMERICANA COMPAÑÍA DE SEGUROS S.A. 
@@ -16,14 +16,14 @@ const LegalFooter = () => {
               Ver Disp. 10/08 | Servicio de Atención al Asegurado. Formulario Nº 960/NM</p>
         </div>
         <div className='ssnLogoBox'>
-          <img src="img/ssn.png" alt="Logo Superintendencia de Seguros de la Nación"className='ssnLogo'/>
+          <img src="/img/ssn.png" alt="Logo Superintendencia de Seguros de la Nación"className='ssnLogo'/>
           </div>
           <div className='ssnText'>
               <p >Superintendencia de Seguros de la Nación Órgano de Control de la Actividad Aseguradora y Reaseguradora
               0800-666-8400.   www.ssn.gob.ar  N° de inscripción: 0755</p>
           </div>
         <div className='registroLogoBox'>
-          <img src="img/Registro_de_Bases.jpeg" alt="Logo Registro de Bases de Datos"className='registroLogo'/>
+          <img src="/img/Registro_de_Bases.jpeg" alt="Logo Registro de Bases de Datos"className='registroLogo'/>
           </div>
         </div>
         

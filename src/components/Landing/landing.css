@@ -1,0 +1,43 @@
+.landing-backgound{
+    background: url(../../../public/img/Transport.jpg);
+    background-size: cover;
+    height: 97vh;
+    width: 100vw;
+    
+}
+.landing-hero{
+    position: absolute;
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    padding: 0 40px;
+}
+.landing-title{
+    grid-column: 2/7;
+    margin-top: 20%;
+}
+.landing-title h1{
+    color: #1e0606;
+}
+/* @media (max-width: 1024px) {
+    .homeTitle{
+        padding-left: 5%;
+    }
+    h1{
+       font-size: 4em; 
+    }
+    .hero{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .homeTitle{
+        padding-left: 0;
+        margin-top: 10%;
+    }
+    h1{
+        font-size: 3.5em; 
+     }
+  
+} */

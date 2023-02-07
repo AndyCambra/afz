@@ -13,7 +13,7 @@
 
 }
 .product-box{
-    margin-right: 40px;
+    margin: 0 40px ;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 50px auto;
@@ -25,7 +25,6 @@
     width: 180px;
     display: flex;
     flex-direction: column;
-    margin-left: 25px;
     grid-column: 1;
     grid-row: 1 / 3;
 }
@@ -117,19 +116,19 @@
 .requisites{
     position: absolute;
     margin-top: 50px; 
-    width: 26%;   
+    width: 25.1%;   
     -webkit-animation: 1s ease-in 1s 1 reverse both running slidein;
     animation: 1s ease-in 1s 1 reverse both running slidein;
 }
 @keyframes slidein{
-    0%{translate:275%}
+    0%{translate:276%}
     100%{translate: 500%;}
 }
 .requisites-again{
     position: absolute;
     margin-top: 50px; 
     width: 26%;   
-    margin-left: 73%;
+    margin-left: 71%;
 }
 .requisites-box{
     background-color: #B7B6B6;
