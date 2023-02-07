@@ -36,8 +36,7 @@ const DescargarFormularios = () => {
             </div>
              
           </div>
-                
-        <HorizontalPhoto />
+        <HorizontalPhoto img="/img/DescargarForm.jpg" alt="Descargar Formularios"/>
       </div>
     </div>
   )
