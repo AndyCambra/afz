@@ -15,7 +15,7 @@ return(
     <Link className={parseInt(id) === 4 ? "menu-link-selected" :'menu-link'} to='/productos/4'>EXTERIOR</Link>
     <Link className={parseInt(id) === 5 ? "menu-link-selected" :'menu-link'} to='/productos/5'>ALQUILER</Link>
     <Link className={parseInt(id) === 6 ? "menu-link-selected" :'menu-link'} to='/productos/6'>DIRECTORES | ACTIVIDADES | PROFESIONES</Link>
-    <Link to='/descargar-formularios' className='menu-link'>DESCARGAR FORMULARIOS</Link>
+    <Link to='/productos/descargar-formularios' className='menu-link'>DESCARGAR FORMULARIOS</Link>
     <Link to='/' className='home-menu-link'>HOME</Link>
     <div>
     <Link to='/poliza-digital' className='last-menu-link'>PÓLIZA DIGITAL</Link>
