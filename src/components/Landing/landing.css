@@ -7,18 +7,20 @@
 }
 .landing-hero{
     position: absolute;
-    margin-top: 10%;
+    margin-top: 140px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 30px;
-    padding: 20px 40px 0 40px;
-
+    padding: 0 40px;
 }
 .landing-title{
     grid-column: 2/7;
     margin-top: 20%;
 }
-@media (max-width: 1024px) {
+.landing-title h1{
+    color: #1e0606;
+}
+/* @media (max-width: 1024px) {
     .homeTitle{
         padding-left: 5%;
     }
@@ -38,4 +40,4 @@
         font-size: 3.5em; 
      }
   
-}
+} */

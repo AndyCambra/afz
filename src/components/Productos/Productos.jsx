@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './productos.css'
 import products from'../utils/Texts/products.json'
 import Title from '../utils/Title/Title'
@@ -9,38 +9,18 @@ import ListComponent from '../utils/TextComponent.jsx/ListComponent'
 import SubTextComponent from '../utils/TextComponent.jsx/SubTextComponent'
 import BigButton from '../utils/BigButton/BigButton'
 import ProductMenu from '../utils/ProductMenu/ProductMenu'
+import { useParams } from 'react-router-dom'
 
 
 const Productos = () => {
-  const [product, setProduct]=useState({})
-  const [lastUpdatedId, setLastUpdatedId] = React.useState(undefined);
-  
- 
-  useEffect(() => {
-    setProduct(products[0]);   
-  }, []);
- 
-  useEffect(() => {
-    setLastUpdatedId();
-  }, [lastUpdatedId]);
+  const {id} = useParams()
+  const product = products.find(p=> p.id=== parseInt(id))
 
-  const handleClick= id =>{
-    let pro= products.find(oneProduct=> oneProduct.id === id)
-    setProduct(pro)
-
-    if (lastUpdatedId !== id) {
-      // If it's different: just set it and we are done.
-      setLastUpdatedId(id);
-    } 
-    }
-
-  
   return (
-    <>
-    <div className={product.id === 1 ? "product-background-extra":'product-background'}>
+      <div className={parseInt(id) === 1 ? "product-background-extra":'product-background'}>
       <div className='product-content'>
         <div className='product-box'>   
-          <ProductMenu  handleClick={handleClick} id={product?.id} /> 
+            <ProductMenu /> 
             <Title title={product.title}/>
             <div className='product-text'>
             <TextComponent text={product.text}/>
@@ -52,14 +32,11 @@ const Productos = () => {
             <Requisites requisitesText1={product.requisitesText1} 
                         requisitesText2={product.requisitesText2} 
                         requisitesText3={product.requisitesText3} 
-                        isLastUpdated={lastUpdatedId === product.id}/>
-                 
+                        />                
           </div>
         <HorizontalPhoto img={product.img} alt={product.title} />
         </div>
     </div>
-        
-    </>
   )
 }
 

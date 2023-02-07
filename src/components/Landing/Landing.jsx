@@ -2,7 +2,7 @@ import React from 'react'
 import ProductMenu from '../utils/ProductMenu/ProductMenu'
 import './landing.css'
 import products from'../utils/Texts/products.json'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const Landing = () => {
     const [product, setProduct]=useState({})
