@@ -1,0 +1,101 @@
+.forms-background{
+    position: relative;
+    min-height: 97vh; 
+}
+.forms-content{
+    position: absolute;
+    margin-top: 140px;
+    width: 100vw;
+}
+.form-box{
+    margin: 0 40px ;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 50px auto;
+    column-gap: 30px;
+    align-items: flex-start;
+}
+.form-title{
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #1e0606;
+    grid-column: 2/7;
+}
+.first-col{
+    grid-row: 2;
+    grid-column: 2/4;
+}
+.first-col p{
+    font-size: .8em;
+    color: #1e0606;
+    margin-top: 5px;
+}
+.grey-item{
+    background-color: #B7B6B6;
+    margin-top: 3px;
+}
+.grey-item p{
+    color: #fff;
+    padding: 7px;
+    font-weight: 600;
+    margin: 0;
+}
+.grey-box{
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+    justify-content: center;
+}
+.grey-item-icon{
+    background-color: #B7B6B6;
+    height: 30px;
+    flex-grow: 2;
+}
+.grey-item-icon h6{
+    color: #fff;
+    padding: 7px;
+    font-weight: 600;
+    margin: 0;
+    font-size: 13px;
+}
+.icons{
+    background-color: #B7B6B6;
+    height: 30px;
+    width: 30px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.icons-download{
+    background-color: #9b2743;
+    height: 30px;
+    width: 30px;
+    margin-left: 3px;
+}
+.icon-on-grey{
+    width: 15px;
+    color: #fff;
+    width: 2em;
+    height:2em;
+    padding-right: 2px;
+    box-sizing: border-box;
+}
+.second-col{
+    grid-row: 2;
+    grid-column: 4/6;
+}
+.second-col p{
+    font-size: .8em;
+    color: #1e0606;
+}
+.tirth-col{
+    grid-row: 2;
+    grid-column: 6/8;
+}
+.tirth-col p{
+    font-size: .8em;
+    color: #1e0606;
+}
+.show-text{
+    font-size: .95em;
+}
