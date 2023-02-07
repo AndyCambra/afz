@@ -7,8 +7,7 @@ import { useLocation } from 'react-router-dom'
 
 const Header = () => {
 const location= useLocation()
-console.log(location.pathname)
-/* if (pathname.startsWith('/users/')) */
+
   return (
     <div className='headerBox'>
         <div className='headerIn'>
@@ -25,7 +24,7 @@ console.log(location.pathname)
                 </NavLink>
                 </div>
             <div className='headerItem'>
-                <NavLink to='/productos/1' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+                <NavLink to='/productos/1' className={location.pathname.startsWith('/productos/')  ? "headerCategorySelected" : "headerCategory"}>
                 PRODUCTOS
                 </NavLink>
                 </div>

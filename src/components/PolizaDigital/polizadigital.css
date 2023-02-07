@@ -1,0 +1,96 @@
+.digital-background{
+    position: relative;
+    height: 350vh;
+}
+.digital-content{
+    position: absolute;
+    margin-top: 140px;
+    width: 100vw;
+}
+.digital-box{
+    margin: 0 40px ;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 30px;
+    align-items: flex-start;
+}
+.digital-title{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 16px
+}
+.digital-column{
+    grid-column: 2/6;
+}
+.digital-subtitle{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.digital-text{
+    color: #1e0606;
+    margin-bottom: 16px;
+}
+.digital-video{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 16px;
+}
+.vimeo-box{
+    margin-top: 16px;
+}
+.two-column{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    align-items: flex-start;
+}
+
+.caracter{
+    width: 30px;
+    height: 30px;
+    background-color: #9b2743;
+    color:#fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 3px 0 0;
+
+}
+.digital-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.digital-grey{
+    background-color: #B7B6B6;
+    margin-top: 16px;
+    color: #fff;
+    padding: 7px;
+    font-weight: 600;
+    width: 100%;
+}
+.digital-grey p{
+    font-weight: 600;
+}
+.digital-links{
+    margin-left:33px;
+}
+.digital-links a{
+    color: #9b2743;
+}
+.second{
+    padding-top: 13px;
+    grid-column: 2;
+}
+.digital-foot{
+    margin-top: 16px;
+    color: #1e0606;
+}
+.digital-block{
+    margin-top: 16px;
+}
+.final-list{
+    font-size: .8em;
+}

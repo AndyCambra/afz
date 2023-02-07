@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route exact path="/poliza-digital" element={<PolizaDigital />}></Route>
+        <Route exact path="/productos/poliza-digital" element={<PolizaDigital />}></Route>
         <Route exact path="/productos/descargar-formularios" element={<DescargarFormularios />}></Route>
         <Route exact path="/landing" element={<Landing />} />
         <Route exact path="/escuela/inscripcion" element={<EscuelaInscripcion />} />
