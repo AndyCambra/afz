@@ -2,8 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import FourLogos from '../utils/FourLogos/FourLogos'
 import './certificaciones.css'
+import { useEffect } from 'react'
 
 const Cerfitificaciones = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+
   return (
     <section className='certifications-backgound' >
     <div className='balance-grid'>
