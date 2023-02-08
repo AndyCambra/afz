@@ -32,7 +32,7 @@ const EscuelaInfo = () => {
             <div className='sub-menu-balance'>
                 <div className='items'>
                     <h5 className="item-school-selected">LA ESCUELA</h5>
-                    <Link to="">
+                    <Link to="/escuela/programa">
                       <h5 className='item-school'>EL PROGRAMA</h5>
                     </Link>
                 </div>

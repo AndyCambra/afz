@@ -14,6 +14,7 @@ import Productos from './components/Productos/Productos';
 import Landing from './components/Landing/Landing';
 import DescargarFormularios from './components/DescargarFormularios/DescargarFormularios';
 import PolizaDigital from './components/PolizaDigital/PolizaDigital';
+import EscuelaPrograma from './components/Escuela/EscuelaPrograma';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/productos/poliza-digital" element={<PolizaDigital />}></Route>
         <Route exact path="/productos/descargar-formularios" element={<DescargarFormularios />}></Route>
         <Route exact path="/landing" element={<Landing />} />
+        <Route exact path="/escuela/programa" element={<EscuelaPrograma />} />
         <Route exact path="/escuela/inscripcion" element={<EscuelaInscripcion />} />
         <Route exact path="/escuela/info" element={<EscuelaInfo />} />
         <Route exact path="/escuela" element={<Escuela />} />

@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 import LegalFooter from '../LegalFooter/LegalFooter';
 
 const Footer = () => {
+    
   return (
     <>
     <div className='footerBox'>
