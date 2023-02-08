@@ -69,13 +69,10 @@ const PolizaDigital = () => {
           <h6 className='final-list'>Acta de Recepción Provisoria</h6>
           <h6 className='final-list'>Acta de Recepción Definitiva</h6>
           <h6 className='final-list'>Certificados de Avance</h6>
-          <h6 className='final-list'>Remitos de entrega recibidos en forma fehaciente por el Asegurado.</h6>
+          <h6 className='final-list' >Remitos de entrega recibidos en forma fehaciente por el Asegurado.</h6>
           </div>
         </div>  
-          
-        
-
-</div>
+      </div>
     </div>
     </div>
   )

@@ -34,7 +34,7 @@
 }
 .info-hero{
     position: absolute;
-    margin: -45% 40px 0 40px;
+    margin: -47% 40px 0 40px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 30px;
@@ -43,11 +43,13 @@
     grid-column: 4/6;
     color: #1e0606;
     width: 100%;  
+    font-size: .8em;
 }
 .info-text-second{
     grid-column: 6/8;
     color: #1e0606;
     width: 100%;  
+    font-size: .8em;
 }
 .info-hero img{
     width: 80%;
@@ -96,6 +98,56 @@
     color: #1e0606;
     font-weight: 800;
     border-right: 1.5px solid #D8CECE;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+.video-youtube{
+    grid-column: 6/8;
+    margin-bottom: 11%;
+}
+.program-block{
+    grid-column: 2/4;
+    margin-top: -15%;
+}
+.program-block h4{
+    color: #9b2743;
+}
+.program-list{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: .8em;
+}
+.program-subtitle{
+    margin-top: 10px;
+}
+.program-block2{
+    grid-column: 4/6;
+    margin-top: -15%;
+}
+.program-block2 h4{
+    color: #9b2743;
+}
+.program-buttons{
+    margin-top: 26px;
+    
+}
+.item-program{
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    color: #1e0606;
+    font-weight: 300;
+    padding-right: 8px;
+    margin-right: 8px;
+    justify-content: center;
+    border-right: 1.5px solid #D8CECE;
+}
+.item-program-selected{
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    color: #1e0606;
+    font-weight: 800;
     padding-right: 8px;
     margin-right: 8px;
 

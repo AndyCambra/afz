@@ -3,7 +3,7 @@ import './balances.css'
 import { Link } from 'react-router-dom'
 import BalancesGroup from '../utils/BalancesCard/BalancesGroup'
 import BalancesGroupBottom from '../utils/BalancesCard/BalancesGroupBottom'
-
+import { useEffect } from 'react'
 
 const topCardInfo=[
   {id: 10, year:2021,cardTopImg: "img/BalancesTapas/Tapas2021.jpg", cardTopAlt: "Tapa Balance 2021"},
@@ -26,7 +26,11 @@ const topCardInfo=[
 
 
 const Balances = (props) => {
-  console.log(props)
+  
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+
   return (
     <section className='balance-backgound' >
         <div className='balance-grid'>
