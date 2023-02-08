@@ -18,7 +18,7 @@ return(
     <Link to='/productos/descargar-formularios' className='menu-link'>DESCARGAR FORMULARIOS</Link>
     <Link to='/' className='home-menu-link'>HOME</Link>
     <div>
-    <Link to='/poliza-digital' className='last-menu-link'>PÓLIZA DIGITAL</Link>
+    <Link to='/productos/poliza-digital' className='last-menu-link'>PÓLIZA DIGITAL</Link>
     </div>
     
     </div>

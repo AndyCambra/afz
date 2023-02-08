@@ -2,7 +2,6 @@ import React from 'react'
 import HorizontalPhoto from '../utils/HorizontalPhoto/HorizontalPhoto'
 import ProductMenu from '../utils/ProductMenu/ProductMenu'
 import './descargarform.css'
-import { useState } from 'react'
 import DescargarItem from '../utils/DescargarItem/DescargarItem'
 import DescargarItemComplex from '../utils/DescargarItem/DescargarItemComplex'
 

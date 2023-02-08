@@ -2,12 +2,14 @@ import React from 'react'
 import "./escuela.css"
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
+import HexaBlancos from './videos/HexaBlancos.mp4'
+
 
 const Escuela = () => {
   return (
     <section className='school-backgound' >
-     <video playsinline autoplay muted loop poster className='hexa-video'>
-        <source src="img/videos/HexaBlancos.mp4"></source>
+     <video  autoPlay loop playsInLine className='hexa-video'>
+      <source src={HexaBlancos} type='video/mp4'/>
      </video>
         <div  className='school-hero'>
         <div className='school-title'>
