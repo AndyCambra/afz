@@ -2,12 +2,15 @@ import React from 'react'
 import "./escuela.css"
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
+import HexaBlancos from './videos/HexaBlancos.mp4'
+
 
 const Escuela = () => {
   return (
     <section className='school-backgound' >
-    <video poster="../imagenes/video_instructivo_polizas.jpg" title="¿Como visualizar las pólizas con Legalización y Certificación?" preload="auto" autoplay loop src="/img/videos/HexaBlancos.mp4" type="video/mp4" className='hexa-video'></video>
-     {/* <video  playsinline preload="auto" autoplay  muted type="video/mp4" loop poster src="/img/videos/HexaBlancos.mp4" className='hexa-video'></video> */}
+     <video  autoPlay loop playsInLine className='hexa-video'>
+      <source src={HexaBlancos} type='video/mp4'/>
+     </video>
         <div  className='school-hero'>
         <div className='school-title'>
         <img src="img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
