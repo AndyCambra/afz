@@ -12,7 +12,7 @@ const location= useLocation()
     <div className='headerBox'>
         <div className='headerIn'>
             <NavLink to="/"> 
-            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela/') || location.pathname === '/landing' ? (
+            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' ? (
                 <img src="/img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
             ):(             
             <img src="/img/logoAfz.png" alt="Logo Afz" className='logoAfz' />)}

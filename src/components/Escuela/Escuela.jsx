@@ -16,7 +16,7 @@ const Escuela = () => {
         <img src="img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
         <div>
         <h1>Una capacitación <br></br>imprescindible.</h1>
-        <div className='school-buttons'>
+        <div>
         <Link to='/escuela/info'>  
         <BigButton className="school-button" name={'VER MÁS'} />
         </Link> 

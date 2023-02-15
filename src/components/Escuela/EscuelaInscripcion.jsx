@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../utils/Imput/input.css'
 import { useState } from 'react'
+import BigButton from '../utils/BigButton/BigButton'
 
 const EscuelaInscripcion = () => {
   let [infoinput, setInfoInput]=useState({
@@ -13,6 +14,8 @@ const EscuelaInscripcion = () => {
     dni:"",
     course:""
   })
+  const [sent, setSent]= useState(false)
+
   
   const handleChange=(e)=>{
     const value= e.target.value
@@ -20,6 +23,7 @@ const EscuelaInscripcion = () => {
   } 
   const handleSubmit=(e)=>{
     e.preventDefault();
+    setSent(true)
 
   }
 console.log(1, infoinput)
@@ -46,8 +50,10 @@ console.log(1, infoinput)
               </Link>
             </div> 
           </div>
-            <h2>COMPLETÁ EL FORMULARIO</h2>
-            <form className='inscription-form' onSubmit={handleSubmit}>
+          <div className='inscription-title'>
+            {sent===true ? <div><h2>Gracias {infoinput.userName} por inscribirte!</h2><p>Te llegará en breve un mail de confirmación.</p></div>:<h2>COMPLETÁ EL FORMULARIO</h2>}
+          </div>  
+            <form className= {sent===true ? 'display-none':'inscription-form'} onSubmit={handleSubmit}>
             <input name="userName" className="light-input" value={infoinput.userName} type="text" onChange={handleChange} placeholder="Nombre" required={true}/>
             <input name="userLastName" value={infoinput.userLastName} className='light-input' type="text" onChange={handleChange} placeholder='Apellido' required={true}/> 
             <input name="company" className="light-input" value={infoinput.company} type="text" onChange={handleChange} placeholder="Organización a la que pertenece" required={true}/>
@@ -60,6 +66,9 @@ console.log(1, infoinput)
               <option value="Suscripción de Riesgos">Suscripción de Riesgos</option>
               <option value="Garantías Judiciales y Siniestros">Garantías Judiciales y Siniestros</option>
             </select>
+            <div className='inscription-send'>
+            <BigButton type="submit" name= "ENVIAR" className="inscription-button"/>
+            </div>
             </form>
           </div>
         </div>
