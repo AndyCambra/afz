@@ -15,7 +15,9 @@ const EscuelaPrograma = () => {
         width='100%'
         height='133%' /> 
         </div>
-        <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
+        <div className='place-logo-info'>
+            <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
+        </div>
         <div className="info-block">
         <div className='sub-menu-balance'>
             <div className='items'>
