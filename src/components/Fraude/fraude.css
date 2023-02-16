@@ -1,0 +1,72 @@
+.fraud-background{
+    position: relative;
+    height: 97vh;
+}
+.fraud-title{
+    grid-column: 2/8;
+    border-bottom: 1px solid #b7b6b6;
+    height: 40px;
+}
+.fraud-menu{
+    grid-row: 2;
+    margin-top: 10px;
+}
+.fraud-box{
+    grid-column: 2/8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.fraud-column-1{
+    color: #1e0606;
+    font-size: .8em;
+    margin-top: 10px;
+}
+.fraud-caracter{
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #9b2743;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 1px;
+    margin: 10px 7px 0 0;
+}
+.fraud-column-2{
+    display: flex;
+    justify-content: left;
+}
+.fraud-text p{
+   color: #1e0606;
+   font-size: .8em;
+   margin-top: 10px;
+   flex-shrink: 2;
+}
+.fraud-subtitle{
+    font-size: .9em;
+    padding: 16px 0 10px 0;
+    color: #9b2743;
+}
+.second-box{
+    grid-column: 2/4;
+    margin-top: 16px;
+}
+.second-text{
+    color: #1e0606;
+}
+.second-name{
+    color: #1e0606;
+    font-weight: 600;
+    padding-top: 5px;
+}
+.second-phone{
+    color: #1e0606;
+    padding-top: 3px;
+}
+.second-mail{
+    color: #9b2743;
+}
+.second-boxes{
+    grid-column: 2/4;
+}
