@@ -28,7 +28,7 @@ const Footer = () => {
                 </NavLink>
             </div>
             <div className='footerItem'>
-                <NavLink to="">
+                <NavLink to="/prevencion-fraude">
                 <h4 className='footerCategory'>PREVENCIÓN DEL FRAUDE</h4>
                 </NavLink>
             </div>

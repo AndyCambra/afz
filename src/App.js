@@ -15,6 +15,7 @@ import Landing from './components/Landing/Landing';
 import DescargarFormularios from './components/DescargarFormularios/DescargarFormularios';
 import PolizaDigital from './components/PolizaDigital/PolizaDigital';
 import EscuelaPrograma from './components/Escuela/EscuelaPrograma';
+import Fraude from './components/Fraude/Fraude';
 
 
 
@@ -24,6 +25,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route exact path="/prevencion-fraude" element={<Fraude />}></Route>
         <Route exact path="/productos/poliza-digital" element={<PolizaDigital />}></Route>
         <Route exact path="/productos/descargar-formularios" element={<DescargarFormularios />}></Route>
         <Route exact path="/landing" element={<Landing />} />
