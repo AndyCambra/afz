@@ -9,7 +9,7 @@
     margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 200px auto;
+    grid-template-rows: 200px 200px;
     grid-gap: 30px;
     padding: 20px 40px 0 40px;
     width: 94vw;
