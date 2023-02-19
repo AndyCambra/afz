@@ -34,7 +34,7 @@ const location= useLocation()
                 </NavLink>
             </div>
             <div className='headerItem'>
-                <NavLink to='' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
+                <NavLink to='/contacto' className={({isActive})=>isActive ? "headerCategorySelected" : "headerCategory"}>
                 CONTACTO
                 </NavLink>
             </div>

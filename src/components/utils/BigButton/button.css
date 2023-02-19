@@ -79,3 +79,30 @@
     color: #9B2743;
     border: 1.5px solid #9B2743;
 }
+.contact-dark-button{
+    
+    background: rgba(0, 0, 0, 0.3);
+    border: 1.5px solid #fff;
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 24px;
+    width: 186px;
+    height: 44px;
+    font-family: 'Sora', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+   
+
+}
+.contact-dark-button:hover{
+    background: rgba(255, 255, 255, 0.4);
+    font-weight: 800;
+    color: #9B2743;
+    border: 1.5px solid #9B2743; 
+}
+.contact-dark-button:disabled{
+    background: rgba(255, 255, 255, 0.4);
+    font-weight: 800;
+    color: #d8cece;
+    border: 1.5px solid #d8cece; 
+}

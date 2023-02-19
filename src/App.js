@@ -16,6 +16,7 @@ import DescargarFormularios from './components/DescargarFormularios/DescargarFor
 import PolizaDigital from './components/PolizaDigital/PolizaDigital';
 import EscuelaPrograma from './components/Escuela/EscuelaPrograma';
 import Fraude from './components/Fraude/Fraude';
+import Contacto from './components/Contacto/Contacto';
 
 
 
@@ -25,6 +26,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route exact path="/contacto" element={<Contacto />}></Route>
         <Route exact path="/prevencion-fraude" element={<Fraude />}></Route>
         <Route exact path="/productos/poliza-digital" element={<PolizaDigital />}></Route>
         <Route exact path="/productos/descargar-formularios" element={<DescargarFormularios />}></Route>
