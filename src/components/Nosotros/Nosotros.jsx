@@ -57,7 +57,7 @@ const Nosotros = () => {
             <img src="img/GrupoAfz.jpg" alt="Foto grupal" className='group-photo'/>
             </div>
             <div className="work-button">
-        <BigButton className="dark-button" name={"TRABAJÁ CON NOSOTROS"} />
+        <BigButton className="small-button" name={"TRABAJÁ CON NOSOTROS"} />
         </div>
         
       </section>
