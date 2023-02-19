@@ -106,3 +106,16 @@
     color: #d8cece;
     border: 1.5px solid #d8cece; 
 }
+.small-button{
+    background: rgba(0, 0, 0, 0.3);
+    border: 1.5px solid #fff;
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 16px;
+    width: 186px;
+    height: 32px;
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+
+}

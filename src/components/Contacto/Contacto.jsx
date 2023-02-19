@@ -47,6 +47,9 @@ const Contacto = () => {
             <p className='highlight-top'>(0341) 527-1315</p>
             <p className='highlight'>rosario@afianzadora.com.ar</p>
         </div> 
+        <div className='work-button'>
+        <BigButton name="TRABAJÁ CON NOSOTROS" className="small-button" />
+        </div>
         <div className='contact-form'>
         {sent===true ? 
             <div>

@@ -55,3 +55,6 @@
     margin-bottom: 16px;
     font-weight: 500;
 }
+.work-button{
+    grid-column: 1;
+}
