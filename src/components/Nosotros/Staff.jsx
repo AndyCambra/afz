@@ -95,16 +95,16 @@ const Staff = () => {
   return (
     <> 
           <div className="card-box">
-          {videos.map((item)=>{
+          {videos.map((item, key)=>{
             return(
-                <VideoCard companyPlace={item.companyPace} peopleName={item.peopleName} peoplePosition={item.peoplePosition} videoStaff={item.videoStaff} className='card' />
+                <VideoCard key={item.id} companyPlace={item.companyPace} peopleName={item.peopleName} peoplePosition={item.peoplePosition} videoStaff={item.videoStaff} className='card' />
             )
           })}
            </div>
            <div className="card-box">
-          {videos2.map((item)=>{
+          {videos2.map((item, key)=>{
             return(
-                <VideoCard companyPlace={item.companyPace} peopleName={item.peopleName} peoplePosition={item.peoplePosition} videoStaff={item.videoStaff} />
+                <VideoCard key={item.id} companyPlace={item.companyPace} peopleName={item.peopleName} peoplePosition={item.peoplePosition} videoStaff={item.videoStaff} />
             )
           })}
            </div>    
