@@ -48,7 +48,9 @@ const Contacto = () => {
             <p className='highlight'>rosario@afianzadora.com.ar</p>
         </div> 
         <div className='work-button'>
+            <Link to="/trabaja-con-nosotros">
         <BigButton name="TRABAJÁ CON NOSOTROS" className="small-button" />
+        </Link>
         </div>
         <div className='contact-form'>
         {sent===true ? 

@@ -17,6 +17,7 @@ import PolizaDigital from './components/PolizaDigital/PolizaDigital';
 import EscuelaPrograma from './components/Escuela/EscuelaPrograma';
 import Fraude from './components/Fraude/Fraude';
 import Contacto from './components/Contacto/Contacto';
+import TrabajaConNosotros from './components/TrabajaConNosotros/TrabajaConNosotros';
 
 
 
@@ -26,6 +27,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route exact path="/trabaja-con-nosotros" element={<TrabajaConNosotros />}></Route>
         <Route exact path="/contacto" element={<Contacto />}></Route>
         <Route exact path="/prevencion-fraude" element={<Fraude />}></Route>
         <Route exact path="/productos/poliza-digital" element={<PolizaDigital />}></Route>
