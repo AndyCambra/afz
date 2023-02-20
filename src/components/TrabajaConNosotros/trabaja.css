@@ -1,0 +1,45 @@
+.work-backgound{
+    background: url(../../../public/img/CV.jpg);
+    background-size: cover ;
+    height: 97vh;
+    width: 100vw;
+
+}
+.work-hero{
+    width: 100vw;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    padding: 20px 40px 0 40px; 
+}
+.work-block{
+    grid-column: 2/5;
+}
+.sub-menu-work{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}
+.item-work-selected{
+    color: #fff;
+}
+.work-title{
+    color: #fff;
+    grid-column: 2/5;
+    margin-top: -20px;
+}
+.cv-form{
+    grid-column: 2/4;
+    margin-top: -20px;
+}
+.cv-attach{
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-size: .8em;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
