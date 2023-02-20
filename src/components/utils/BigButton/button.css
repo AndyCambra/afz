@@ -95,7 +95,7 @@
 
 }
 .contact-dark-button:hover{
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.6);
     font-weight: 800;
     color: #9B2743;
     border: 1.5px solid #9B2743; 
