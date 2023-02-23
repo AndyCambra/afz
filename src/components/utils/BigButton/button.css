@@ -4,8 +4,8 @@
     border: 1.5px solid #fff;
     box-shadow: 3px 3px 4px 3px #00000026;
     border-radius: 24px;
-    width: 186px;
-    height: 44px;
+    width: 170px;
+    height: 40px;
     font-family: 'Sora', sans-serif;
     font-size: 17px;
     font-weight: 700;
@@ -27,8 +27,8 @@
     border: 1.5px solid #9B2743;
     box-shadow: 3px 3px 4px 3px #00000026;
     border-radius: 24px;
-    width: 186px;
-    height: 44px;
+    width: 170px;
+    height: 40px;
     font-family: 'Sora', sans-serif;
     font-size: 17px;
     font-weight: 700;
@@ -47,8 +47,8 @@
     border: 1.5px solid #1E0606;
     box-shadow: 3px 3px 4px 3px #00000026;
     border-radius: 24px;
-    width: 186px;
-    height: 44px;
+    width: 170px;
+    height: 40px;
     font-family: 'Sora', sans-serif;
     font-size: 17px;
     font-weight: 700;
@@ -66,8 +66,8 @@
     border: 1.5px solid #1E0606;
     box-shadow: 3px 3px 4px 3px #00000026;
     border-radius: 24px;
-    width: 186px;
-    height: 44px;
+    width: 170px;
+    height: 40px;
     font-family: 'Sora', sans-serif;
     font-size: 17px;
     font-weight: 700;
@@ -85,8 +85,8 @@
     border: 1.5px solid #fff;
     box-shadow: 3px 3px 4px 3px #00000026;
     border-radius: 24px;
-    width: 186px;
-    height: 44px;
+    width: 170px;
+    height: 40px;
     font-family: 'Sora', sans-serif;
     font-size: 17px;
     font-weight: 700;
@@ -111,11 +111,48 @@
     border: 1.5px solid #fff;
     box-shadow: 3px 3px 4px 3px #00000026;
     border-radius: 16px;
-    width: 186px;
-    height: 32px;
+    width: 170px;
+    height: 30px;
     font-family: 'Sora', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     color: #fff;
 
+}
+.rent-button{
+    background: rgba(217, 217, 217, 0.3);
+    border: 1.5px solid #9B2743;
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 24px;
+    width: 170px;
+    height: 40px;
+    font-family: 'Sora', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #9B2743;
+}
+.rent-button:hover{
+    background: #9B2743;
+    font-weight: 800;
+    color: #fff;
+    border: 1.5px solid #D8CECE;
+}
+
+.rent-button-secondary{
+    background: rgba(217, 217, 217, 0.3);
+    border: 1.5px solid  rgba(255, 255, 255, 0.7);
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 24px;
+    width: 170px;
+    height: 40px;
+    font-family: 'Sora', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+}
+.rent-button-secondary:hover{
+    background:  rgba(217, 217, 217, 0.3);
+    font-weight: 800;
+    color: #fff;
+    border: 1.5px solid #fff;
 }

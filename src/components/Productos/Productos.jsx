@@ -10,6 +10,7 @@ import SubTextComponent from '../utils/TextComponent.jsx/SubTextComponent'
 import BigButton from '../utils/BigButton/BigButton'
 import ProductMenu from '../utils/ProductMenu/ProductMenu'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Productos = () => {
@@ -26,7 +27,7 @@ const Productos = () => {
             <TextComponent text={product.text}/>
             <div className={product.id===2? "list":"display-none"}><ListComponent /></div>
             <div className={product.id===1? "extra-text":"display-none"}><SubTextComponent /></div>
-            <div className={product.id===5? "product-button":"display-none"}><BigButton className="light-button" name={'COTIZÁ'} /></div>
+            <div className={product.id===5? "product-button":"display-none"}><Link to='/cotizador-alquiler'><BigButton className="light-button" name={'COTIZÁ'} /></Link></div>
             <div className={product.id===6? "product-button":"display-none"}><BigButton className="light-button" name={'COTIZÁ'} /></div>
             </div>
             <Requisites requisitesText1={product.requisitesText1} 
