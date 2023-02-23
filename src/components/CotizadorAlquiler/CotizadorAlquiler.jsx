@@ -7,10 +7,12 @@ import CotizadorResponse from './CotizadorResponse'
 import BigButton from '../utils/BigButton/BigButton'
 import CotizadorAlquilerCliente from './CotizadorAlquilerCliente'
 
+
 const CotizadorAlquiler = () => {
     const [sent, setSent]= useState(false)
     const [sentThanks, setSentThanks]= useState(false)
     const [showForm, setShowForm]= useState(false)
+
     let [rentData, setRentData]=useState({
         rent: "",
         expenses: '',
@@ -50,7 +52,7 @@ const CotizadorAlquiler = () => {
     e.preventDefault();
     setShowForm(true)
    }
-   console.log(sentThanks, sent)
+
  
   return (
     <section className='rent-backgound' >
@@ -64,8 +66,8 @@ const CotizadorAlquiler = () => {
               </Link> 
             </div>
             <div>
-              <Link to="/" className='rent-home-link'>
-                <h5>HOME</h5>
+              <Link to="/productos/5" className='rent-home-link'>
+                <h5>VOLVER</h5>
               </Link>
             </div> 
           </div>
@@ -81,7 +83,7 @@ const CotizadorAlquiler = () => {
                 <BigButton className='school-button' name="HOME" /></Link>
         </div>: 
         showForm === true? <div className='rent-form'>
-            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser}/>
+            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} />
             </div>:
         <div className='rent-form'>
         {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} />:

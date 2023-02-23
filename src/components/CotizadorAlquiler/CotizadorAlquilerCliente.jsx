@@ -1,6 +1,7 @@
 import React from 'react'
 import BigButton from '../utils/BigButton/BigButton'
 
+
 const CotizadorAlquilerCliente = ({handleChange, handleSubmitThanks, rentUser}) => {
   return (
     <form className="inscripcion" onSubmit={handleSubmitThanks}>
@@ -14,8 +15,9 @@ const CotizadorAlquilerCliente = ({handleChange, handleSubmitThanks, rentUser}) 
     <p className='rent-label'>Últimos tres recibos de sueldo o certificación de ingresos firmada por escribano</p>
     <input name="paycheck" className="light-input-file" value={rentUser.paycheck} type="file" onChange={handleChange} accept="pdf"  required={true}/>
     
-    <div className='inscription-send'>
-    <BigButton type="submit" name= "ENVIAR" className="inscription-button"/>
+    <div className='rent-result-box'>
+    <button type="button" className="rent-button-secondary" onClick={() => window.location.reload(false)}>CANCELAR</button>
+    <BigButton type="submit" name= "ENVIAR" className="rent-button"/>
     </div>
     </form>
     )
