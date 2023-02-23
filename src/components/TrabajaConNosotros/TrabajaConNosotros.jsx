@@ -55,7 +55,7 @@ const TrabajaConNosotros = () => {
                 <input name="phone" className="dark-input" value={candidateInfo.phone} type="text" onChange={handleChange} placeholder="Teléfono" required={true}/>
                 <input name="dni" className="dark-input" value={candidateInfo.dni} type="text" onChange={handleChange} placeholder="DNI" required={true}/>
                 <p className="cv-attach">ADJUNTÁ TU CV</p>
-                <input name="cv"className="dark-input" value={candidateInfo.cv} type="file" onChange={handleChange} placeholder="DNI"  accept="pdf" required={true}/>
+                <input name="cv"className="dark-input" value={candidateInfo.cv} type="file" onChange={handleChange} placeholder="DNI" accept="pdf" required={true}/>
                 <textarea name="content" className="dark-area" value={candidateInfo.content} type="text" onChange={handleChange} placeholder="Mensaje" required={true}/>
                 <div className='inscription-send'>
                 <BigButton type="submit" name= "ENVIAR" className="contact-dark-button"/>

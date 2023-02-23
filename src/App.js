@@ -18,6 +18,7 @@ import EscuelaPrograma from './components/Escuela/EscuelaPrograma';
 import Fraude from './components/Fraude/Fraude';
 import Contacto from './components/Contacto/Contacto';
 import TrabajaConNosotros from './components/TrabajaConNosotros/TrabajaConNosotros';
+import CotizadorAlquiler from './components/CotizadorAlquiler/CotizadorAlquiler';
 
 
 
@@ -27,6 +28,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route exact path="/cotizador-alquiler" element={<CotizadorAlquiler />}></Route>
         <Route exact path="/trabaja-con-nosotros" element={<TrabajaConNosotros />}></Route>
         <Route exact path="/contacto" element={<Contacto />}></Route>
         <Route exact path="/prevencion-fraude" element={<Fraude />}></Route>
