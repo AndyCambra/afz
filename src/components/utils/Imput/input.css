@@ -20,6 +20,7 @@
 .error{
     color: #9b2743;
     font-size: 10px;
+    line-height: 15px;
 }
 .error-white{
     color: #fff;
@@ -81,7 +82,6 @@ textarea{
     background-color: rgba(30, 6, 6, .6);
     font-family: 'Sora', sans-serif;
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #fff;
 }
@@ -92,7 +92,6 @@ textarea{
     border-bottom: solid 2px #B7b6b6;
     background-color: rgba(30, 6, 6, .6);
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #fff;
 }
