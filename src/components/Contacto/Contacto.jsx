@@ -5,24 +5,62 @@ import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
 
 const Contacto = () => {
-    let [contactInfo, setContactInfo]=useState({
+  let [contactInfo, setContactInfo]=useState({
         userName: "",
         userLastName: "",
         email: "",
         content:"",
-      })
-      const [sent, setSent]= useState(false)
+  })
+  const [sent, setSent]= useState(false)
+  const [errors, setErrors]= useState({})
     
       
-      const handleChange=(e)=>{
+  const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const value= e.target.value
-      setContactInfo({...contactInfo, [e.target.name]:value});
+        const changedinfoInput = { ...contactInfo, [e.target.name]:value };
+    const err = { ...errors }
+    const filterMail = /.*@[a-z0-9.-]*/i;
+    switch (type) {
+      case 'text':
+        changedinfoInput[name] = e.target.value;
+          if(required) {
+            err[name] = e.target.value ? false : 'El campo es requerido';
+          }
+          if(maxLength && !err[name]) {
+            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
+          }
+          if(minLength && !err[name]) {
+            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+          }
+          break;
+      case 'email':
+        changedinfoInput[name] = e.target.value;
+          if(required) {
+            err[name] = e.target.value ? false : 'El campo es requerido';
+          }
+          if(maxLength && !err[name]) {
+            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
+          }
+          if(minLength && !err[name]) {
+            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+          }
+          if(filterMail.test(value) === false){
+            err[name] = 'Ingrese un mail válido'
+          }
+          break;
+        
+          default:
+          break;
+    }
+      setContactInfo({...changedinfoInput, [e.target.name]:value});
+      setErrors(err);
       } 
-      const handleSubmit=(e)=>{
-        e.preventDefault();
-        setSent(true)
-      }
-      console.log(contactInfo)
+const handleSubmit=(e)=>{
+  e.preventDefault();
+  setSent(true)
+}
+console.log(contactInfo)
+
   return (
     <section className='contact-backgound' >
     <div className='contact-grid'>
@@ -62,11 +100,22 @@ const Contacto = () => {
             </div> : <h6 className='contact-subtitle'>DEJANOS UN MENSAJE</h6>}
         
             <form className= {sent===true ? 'display-none':'inscription-form'} onSubmit={handleSubmit}>
-                <input name="userName" className="white-input" value={contactInfo.userName} type="text" onChange={handleChange} placeholder="Nombre" required={true}/>
-                <input name="userLastName" value={contactInfo.userLastName} className='white-input' type="text" onChange={handleChange} placeholder='Apellido' required={true}/> 
-                <input name="email" className="white-input" value={contactInfo.email} type="email" onChange={handleChange} placeholder="Email" required={true}/>
-                <textarea name="content" className="white-area" value={contactInfo.content} type="text" onChange={handleChange} placeholder="Mensaje" required={true}/>
-           
+            <div className='input-box'>  
+                <input name="userName" className="white-input" value={contactInfo.userName} type="text" onChange={e => handleChange(e, 'userName', 'text', true, 75, 3)} placeholder="Nombre" required={true}/>
+                {errors['userName'] && <p className='error-white'>{errors['userName']}</p>}
+            </div> 
+            <div className='input-box'>   
+                <input name="userLastName" value={contactInfo.userLastName} className='white-input' type="text" onChange={e => handleChange(e, 'userLastName', 'text', true, 75, 3)} placeholder='Apellido' required={true}/> 
+                {errors['userLastName'] && <p className='error-white'>{errors['userLastName']}</p>}
+            </div>
+            <div className='input-box'>   
+                <input name="email" className="white-input" value={contactInfo.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder="Email" required={true}/>
+                {errors['email'] && <p className='error-white'>{errors['email']}</p>}
+            </div>   
+            <div className='input-box-content'>  
+                <textarea name="content" className="white-area" value={contactInfo.content} type="text" onChange={e => handleChange(e, 'content', 'text', true, 250, 3)} placeholder="Mensaje" required={true}/>
+                {errors['content'] && <p className='error-white'>{errors['content']}</p>}
+            </div>               
                 <div className='inscription-send'>
                 <BigButton type="submit" name= "ENVIAR" className="contact-dark-button"/>
                 </div>

@@ -12,11 +12,19 @@
     color: #1e0606;
 }
 .input-box{
-    height: 3em;
+    height: 3.1em;
+}
+.input-box-content{
+    height: 7.5em;
 }
 .error{
     color: #9b2743;
     font-size: 10px;
+}
+.error-white{
+    color: #fff;
+    font-size: 10px;
+    line-height: 15px;
 }
 .light-input:valid{
     box-sizing: border-box;
@@ -32,6 +40,7 @@
     color: #1e0606;
 }
 .white-input{
+    box-sizing: border-box;
     border: 0;
     border-bottom: solid 2px #fff;
     width: 100%;
@@ -40,18 +49,17 @@
     background-color: rgba(255, 255, 355, .6);
     font-family: 'Sora', sans-serif;
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #1e0606;
 }
 .white-area{
+    box-sizing: border-box;
     height: 100px;
     width: 100%;
     font-family: 'Sora', sans-serif;
     border-bottom: solid 2px #fff;
     background-color: rgba(255, 255, 355, .6);
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #1e0606;
 }

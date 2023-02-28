@@ -69,19 +69,12 @@ const EscuelaInscripcion = () => {
         setinfoInput({...changedinfoInput, [e.target.name]:value});
         setErrors(err);
       }
-  //console.log(errors, infoInput)
 
-  /* const handleChange=(e)=>{
-    const value= e.target.value
-  setinfoInput({...infoInput, [e.target.name]:value});
-  }  */
   const handleSubmit=(e)=>{
     e.preventDefault();
     setSent(true)
 
   }
-
-
 
   return (
     <section className='info-backgound' >
