@@ -14,8 +14,8 @@ const CotizadorAlquiler = () => {
     const [showForm, setShowForm]= useState(false)
 
     let [rentData, setRentData]=useState({
-        rent: "",
-        expenses: '',
+        rent: null,
+        expenses: null,
         years:"",
       })
       let [rentUser, setRentUser]=useState({
@@ -33,15 +33,15 @@ const CotizadorAlquiler = () => {
         setRentData({...rentData, [e.target.name]:value});
         setRentUser({...rentUser, [e.target.name]:value})
     } 
-    console.log(rentData)
+ 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        setSent(!sent)
+        setSent(true)
       }
       console.log(rentData)
       const handleSubmitThanks=(e)=>{
           e.preventDefault();
-          setSent(!sent)
+          setSent(true)
           setSentThanks(true)
         }
     const result = ((parseInt(rentData.rent) + parseInt(rentData.expenses))*.1)*parseInt(rentData.years)
@@ -51,6 +51,13 @@ const CotizadorAlquiler = () => {
    const handleClick=(e)=>{
     e.preventDefault();
     setShowForm(true)
+   }
+   const handleCancel = ()=>{
+    setSent(false)
+    rentData.rent=null
+    rentData.expenses=null
+    rentData.years=""
+    setShowForm(false)
    }
 
  
@@ -83,10 +90,10 @@ const CotizadorAlquiler = () => {
                 <BigButton className='school-button' name="HOME" /></Link>
         </div>: 
         showForm === true? <div className='rent-form'>
-            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} />
+            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel}/>
             </div>:
         <div className='rent-form'>
-        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} />:
+        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel}/>:
           <CotizadorForm handleChange={handleChange} handleSubmit={handleSubmit} rentData={rentData} sent={sent} handleClick={handleClick} />}
         </div>  }
         </div>

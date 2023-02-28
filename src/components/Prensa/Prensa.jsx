@@ -44,7 +44,7 @@ const lastNote=prensaData[prensaData.length - 1]
             </div>
             <div className='second-grid'>
             {prensaData.map((item, key)=>
-            <PressCard prensaData={item} />)}
+            <PressCard key={item.id} prensaData={item} />)}
             </div>
             </div>
             
