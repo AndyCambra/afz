@@ -12,11 +12,23 @@
     color: #1e0606;
 }
 .input-box{
-    height: 3em;
+    height: 3.1em;
+}
+.input-box-content{
+    height: 7.5em;
 }
 .error{
     color: #9b2743;
     font-size: 10px;
+    line-height: 15px;
+}
+.error-white{
+    color: #FFF;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    background-color: #9B2743;
+    padding-left: 3px;
 }
 .light-input:valid{
     box-sizing: border-box;
@@ -32,6 +44,7 @@
     color: #1e0606;
 }
 .white-input{
+    box-sizing: border-box;
     border: 0;
     border-bottom: solid 2px #fff;
     width: 100%;
@@ -40,20 +53,20 @@
     background-color: rgba(255, 255, 355, .6);
     font-family: 'Sora', sans-serif;
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #1e0606;
 }
 .white-area{
+    box-sizing: border-box;
     height: 100px;
     width: 100%;
     font-family: 'Sora', sans-serif;
     border-bottom: solid 2px #fff;
     background-color: rgba(255, 255, 355, .6);
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #1e0606;
+    margin-bottom: -2px;
 }
 input:focus{
     outline: none;
@@ -73,7 +86,6 @@ textarea{
     background-color: rgba(30, 6, 6, .6);
     font-family: 'Sora', sans-serif;
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #fff;
 }
@@ -84,7 +96,6 @@ textarea{
     border-bottom: solid 2px #B7b6b6;
     background-color: rgba(30, 6, 6, .6);
     font-weight: 600;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #fff;
 }
@@ -106,7 +117,6 @@ textarea{
     background-color: rgba(255, 255, 255, .4);
     font-family: 'Sora', sans-serif;
     font-weight: 700;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #fff;
 }
@@ -120,7 +130,6 @@ textarea{
     background-color: rgba(255, 255, 255, .4);
     font-family: 'Sora', sans-serif;
     font-weight: 700;
-    margin-bottom: 15px;
     font-size: 1.7em;
     color: #fff;
 }
@@ -134,7 +143,6 @@ textarea{
     background-color: rgba(255, 255, 255, .3);
     font-family: 'Sora', sans-serif;
     font-weight: 400;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #FFF;
 }
@@ -148,7 +156,6 @@ textarea{
     background-color: rgba(255, 255, 255, .3);
     font-family: 'Sora', sans-serif;
     font-weight: 400;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #fff;
 }
@@ -174,7 +181,6 @@ input[type=file]::file-selector-button {
     background-color: rgba(255, 255, 255, .3);
     font-family: 'Sora', sans-serif;
     font-weight: 700;
-    margin-bottom: 15px;
     font-size: .8em;
     color: #fff;
 
