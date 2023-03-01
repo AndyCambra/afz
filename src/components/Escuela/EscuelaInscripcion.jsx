@@ -22,6 +22,7 @@ const EscuelaInscripcion = () => {
     const changedinfoInput = { ...infoInput, [e.target.name]:value };
     const err = { ...errors }
     const filterMail = /.*@[a-z0-9.-]*/i;
+    const noNumbers = /^[a-zA-Z][a-zA-Z ]*$/;
     switch (type) {
       case 'text':
         changedinfoInput[name] = e.target.value;
@@ -33,6 +34,9 @@ const EscuelaInscripcion = () => {
           }
           if(minLength && !err[name]) {
             err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+          }
+          if(noNumbers.test(value) === false){
+            err[name] = 'Ingresar solo letras'
           }
           break;
       case 'number':
@@ -72,6 +76,11 @@ const EscuelaInscripcion = () => {
 
   const handleSubmit=(e)=>{
     e.preventDefault();
+    for (const error in errors) {
+      if (errors[error]) {
+        return;
+      }
+    }
     setSent(true)
 
   }

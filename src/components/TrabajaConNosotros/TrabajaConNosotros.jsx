@@ -23,6 +23,7 @@ const TrabajaConNosotros = () => {
         const changedinfoInput = { ...candidateInfo, [e.target.name]:value };
         const err = { ...errors }
         const filterMail = /.*@[a-z0-9.-]*/i;
+        const noNumbers = /^[a-zA-Z][a-zA-Z ]*$/;
         switch (type) {
           case 'text':
             changedinfoInput[name] = e.target.value;
@@ -34,6 +35,9 @@ const TrabajaConNosotros = () => {
               }
               if(minLength && !err[name]) {
                 err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+              }
+              if(noNumbers.test(value) === false){
+                err[name] = 'Ingresar solo letras'
               }
               break;
           case 'number':
@@ -71,15 +75,6 @@ const TrabajaConNosotros = () => {
                 if(value.includes('.pdf') === false){
                   err[name] = 'Seleccione un archivo válido'
                 }
-               /*  if(maxLength && !err[name]) {
-                  err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-                }
-                if(minLength && !err[name]) {
-                  err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false; */
-               /*  }
-                if(filterMail.test(value) === false){
-                  err[name] = 'Ingrese un mail válido'
-                } */
                 break;
               default:
               break;
@@ -87,12 +82,17 @@ const TrabajaConNosotros = () => {
             setCandidateInfo({...changedinfoInput, [e.target.name]:value});
             setErrors(err);
       } 
-      const handleSubmit=(e)=>{
+      const handleSubmit=(e)=>{ 
         e.preventDefault();
+        for (const error in errors) {
+          if (errors[error]) {
+            return;
+          }
+        }
         setSent(true)
     
       }
-    console.log(1, candidateInfo)
+    console.log(1, candidateInfo, sent)
     
     return (
         <section className='work-backgound' >

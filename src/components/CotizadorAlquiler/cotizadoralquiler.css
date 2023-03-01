@@ -66,14 +66,12 @@
 .rent-label{
     color: #fff;
     font-weight: 700;
-    margin-bottom: 3px;
-    margin-right: 10px;
+    margin: 5px 10px 3px 0
 }
 .radio-box{
     display: flex;
     justify-content: left ;
-    align-items: center;
-    
+    align-items: center; 
 }
 .rent-radio-title{
     margin-right: 30px;
