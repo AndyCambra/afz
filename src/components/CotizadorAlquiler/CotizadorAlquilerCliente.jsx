@@ -25,7 +25,7 @@ const CotizadorAlquilerCliente = ({handleChange, handleSubmitThanks, rentUser, h
       <input name="cuit" className="rent-user-input" value={rentUser.cuit} type="number" onChange={e => handleChange(e, 'cuit', 'number', true, 15, 7)} placeholder="CUIT" required={true}/>
       {errors['cuit'] && <p className='error'>{errors['cuit']}</p>}
     </div>
-    <p className='rent-label'>Copia del contrato a firmars</p>
+    <p className='rent-label'>Copia del contrato a firmar</p>
     <div className='input-box'>
       <input name="contract" className="light-input-file" value={rentUser.contract} type="file" onChange={e => handleChange(e, 'contract', 'file', true, false, 3)} accept="pdf"  required={true}/>
       {errors['contract'] && <p className='error'>{errors['contract']}</p>}

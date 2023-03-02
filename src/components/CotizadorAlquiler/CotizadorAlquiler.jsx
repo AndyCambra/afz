@@ -28,6 +28,7 @@ const CotizadorAlquiler = () => {
         contract:"",
         paycheck:"",
       })
+    const [allRentData, setAllRentData]= useState([])
 
       const handleChangeRentData=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const value= e.target.value
@@ -118,10 +119,9 @@ const CotizadorAlquiler = () => {
             }
 
         setErrors(err);
-        
         setRentUser({...changedInfoInputUser, [e.target.name]:value})
     } 
- console.log(rentData, errors)
+ console.log(allRentData)
 
       const handleSubmitRentData=(e)=>{
         e.preventDefault();
@@ -143,6 +143,7 @@ const CotizadorAlquiler = () => {
           }
           setSent(true)
           setSentThanks(true)
+          setAllRentData({...rentData, ...rentUser})
         }
     const result = ((parseInt(rentData.rent) + parseInt(rentData.expenses))*.1)*parseInt(rentData.years)
     const finalResult = parseInt(result)
@@ -168,7 +169,7 @@ const CotizadorAlquiler = () => {
         <div className='rent-sub-menu'>
             <div className='items'>
                 <h5 className="item-rent-selected">ALQUILER</h5>   
-              <Link to="" >
+              <Link to="/cotizador-directores" >
                 <h5 className="item-rent">DIRECTORES</h5>   
               </Link> 
             </div>
@@ -178,7 +179,8 @@ const CotizadorAlquiler = () => {
               </Link>
             </div> 
           </div>
-          {sentThanks === true? <div className='rent-title'><h2>GRACIAS {rentUser.userName} POR CONTACTARNOS!</h2><p>Vas a recibir un mail de confirmación a la brevedad</p> </div>: 
+          {sentThanks === true? 
+          <div className='rent-title'><h2>GRACIAS {rentUser.userName} POR CONTACTARNOS!</h2><p>Vas a recibir un mail de confirmación a la brevedad</p> </div>: 
           showForm === true? 
           <div className='rent-title'><h2>COMPLETÁ EL FORMULARIO</h2></div>:
           <div className='rent-title'>

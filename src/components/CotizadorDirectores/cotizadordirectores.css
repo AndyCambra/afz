@@ -1,0 +1,38 @@
+.directors-backgound{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 80.4%),  url(../../../public/img/CotizadorDirectores.jpg);
+    background-size: cover ;
+    height: 97vh;
+    width: 100vw;
+}
+.item-directors-selected{
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 800;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+.item-directors{
+    border-right: 1.5px solid #D8CECE;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    color: #FFF;
+    padding-right: 8px;
+    margin-right: 8px;
+    font-weight: 400;
+}
+.question-label{
+    display: block;
+    color: #FFF;
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+    width: 100%;
+}
+.bill-form{
+    grid-column: 5/7;
+    grid-row: 2;
+}

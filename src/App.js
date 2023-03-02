@@ -20,6 +20,7 @@ import Contacto from './components/Contacto/Contacto';
 import TrabajaConNosotros from './components/TrabajaConNosotros/TrabajaConNosotros';
 import CotizadorAlquiler from './components/CotizadorAlquiler/CotizadorAlquiler';
 import Prensa from './components/Prensa/Prensa';
+import CotizadorDirectores from './components/CotizadorDirectores/CotizadorDirectores';
 
 
 
@@ -29,6 +30,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route exact path="/cotizador-directores" element={<CotizadorDirectores />}></Route>
         <Route exact path="/cotizador-alquiler" element={<CotizadorAlquiler />}></Route>
         <Route exact path="/trabaja-con-nosotros" element={<TrabajaConNosotros />}></Route>
         <Route exact path="/prensa" element={<Prensa />}></Route>
