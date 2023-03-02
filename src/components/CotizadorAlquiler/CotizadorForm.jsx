@@ -2,6 +2,7 @@ import React from 'react'
 import BigButton from '../utils/BigButton/BigButton'
 
 const CotizadorForm = ({handleChangeRentData, handleSubmitRentData, rentData, errors}) => {
+  
   return (
     <div><form className='rent-form' onSubmit={handleSubmitRentData}>
     <p className='input-explain'>Ingresá el monto sin puntos ni comas.</p>

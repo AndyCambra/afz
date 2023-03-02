@@ -28,7 +28,7 @@ const Productos = () => {
             <div className={product.id===2? "list":"display-none"}><ListComponent /></div>
             <div className={product.id===1? "extra-text":"display-none"}><SubTextComponent /></div>
             <div className={product.id===5? "product-button":"display-none"}><Link to='/cotizador-alquiler'><BigButton className="light-button" name={'COTIZÁ'} /></Link></div>
-            <div className={product.id===6? "product-button":"display-none"}><BigButton className="light-button" name={'COTIZÁ'} /></div>
+            <div className={product.id===6? "product-button":"display-none"}><Link to='/cotizador-directores'><BigButton className="light-button" name={'COTIZÁ'} /></Link></div>
             </div>
             <Requisites requisitesText1={product.requisitesText1} 
                         requisitesText2={product.requisitesText2} 
