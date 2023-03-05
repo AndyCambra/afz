@@ -156,3 +156,15 @@
     color: #fff;
     border: 1.5px solid #fff;
 }
+.small-button-call{
+    background-color: #9B2743;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    height: 24px;
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    margin: 2px 0 2px 5px;
+    letter-spacing: .5px ;
+}

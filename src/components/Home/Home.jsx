@@ -18,9 +18,11 @@ const Home = () => {
         <div className='homeTitle'>
         <h1>Somos líderes <br></br>en seguros de caución.</h1>
         <Link to="/landing">
-        <BigButton className="dark-button" name={'CONOCENOS'} />
+        <BigButton className="dark-button" name={'PRODUCTOS'} />
         </Link>
-        <BigButton className="dark-button" name={'CONTACTANOS'} />
+        <Link to="/contacto">
+        <BigButton className="dark-button" name={'CONTACTO'} />
+        </Link>
         </div>
       </div>
     </div>
