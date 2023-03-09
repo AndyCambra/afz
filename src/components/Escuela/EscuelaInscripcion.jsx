@@ -4,6 +4,7 @@ import '../utils/Imput/input.css'
 import { useState } from 'react'
 import BigButton from '../utils/BigButton/BigButton'
 
+
 const EscuelaInscripcion = () => {
   let [infoInput, setinfoInput]=useState({
     userName: "",
@@ -84,7 +85,7 @@ const EscuelaInscripcion = () => {
     setSent(true)
 
   }
-
+console.log(infoInput)
   return (
     <section className='info-backgound' >
     <img src="/img/HexaBlur.png" alt="Fondo escuela" className='info-img'></img>
@@ -93,7 +94,7 @@ const EscuelaInscripcion = () => {
         <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
         </div>
         <div className="inscription-block">
-        <div className='sub-menu-balance'>
+        <div className='sub-school-menu'>
             <div className='items'>
                 <h5 className="item-school-selected">INSCRIPCIÓN</h5>   
               <Link to="/escuela/info" >
@@ -109,7 +110,7 @@ const EscuelaInscripcion = () => {
           <div className='inscription-title'>
             {sent===true ? <div><h2>Gracias {infoInput.userName} por inscribirte!</h2><p>Te llegará en breve un mail de confirmación.</p></div>:<h2>COMPLETÁ EL FORMULARIO</h2>}
           </div>  
-            <form className= {sent===true ? 'display-none':'inscription-form'} onSubmit={handleSubmit}>
+            <form className= {sent===true ? 'display-none':'inscription-form'}  onSubmit={handleSubmit}>
             <div className='input-box'>
               <input name="userName" className="light-input" value={infoInput.userName} type="text" onChange={ e => handleChange(e, 'userName', 'text', true, 75, 3)} placeholder="Nombre" required={true}/>
               {errors['userName'] && <p className='error'>{errors['userName']}</p>}
@@ -134,18 +135,32 @@ const EscuelaInscripcion = () => {
               <input name="dni" className="light-input" value={infoInput.dni} type="number" onChange={e => handleChange(e, 'dni', 'number', true, 15, 7)} placeholder="DNI" required={true}/>
               {errors['dni'] && <p className='error'>{errors['dni']}</p>}
             </div>
-            <select name="course" className="light-input" value={infoInput.course} type="list" onChange={handleChange} placeholder="Curso" required={true}>
-              <option value="Introducción al Seguro de Caución">Introducción al Seguro de Caución</option>
-              <option value="Cobranza y Refacturación">Cobranza y Refacturación</option>
-              <option value="Suscripción de Riesgos">Suscripción de Riesgos</option>
-              <option value="Garantías Judiciales y Siniestros">Garantías Judiciales y Siniestros</option>
-            </select>
+            </form>
+            <form className= {sent===true ? 'display-none':'selection-box'} onSubmit={handleSubmit}>
+            
+            <div className='input-checkbox'>
+            <input name="Introducción al Seguro de Caución" value="Introducción al Seguro de Caución" className='check' type="checkbox" onChange={handleChange} /> 
+            <p className='school-label'>Introducción al Seguro de Caución</p> 
+            </div>
+            <div className='input-checkbox'>
+            <input name="Cobranza y Refacturación" value="Cobranza y Refacturación" className='check' type="checkbox" onChange={handleChange}/> 
+            <p className='school-label'>Cobranza y Refacturación</p> 
+            </div>
+            <div className='input-checkbox'>
+            <input name="Suscripción de Riesgos" value="Suscripción de Riesgos" className='check' type="checkbox" onChange={handleChange} /> 
+            <p className='school-label'>Suscripción de Riesgos</p> 
+            </div>
+            <div className='input-checkbox'>
+            <input name="Garantías Judiciales y Siniestros" value="Garantías Judiciales y Siniestros" className='check' type="checkbox" onChange={handleChange}/> 
+            <p className='school-label'>Garantías Judiciales y Siniestros</p> 
+            </div>
             <div className='inscription-send'>
             <BigButton type="submit" name= "ENVIAR" className="inscription-button"/>
             </div>
             </form>
+            </div>
           </div>
-        </div>s
+       
       </section>
   )
 }

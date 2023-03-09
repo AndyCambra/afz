@@ -214,3 +214,11 @@ input[type=file]::file-selector-button {
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
+.check{
+    height: 2.3em;
+    width: 2.3em;
+    accent-color:#9B2743;
+    /* border-color: #9B2743; */
+    margin-right: 20px;
+    
+  }
