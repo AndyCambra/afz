@@ -6,6 +6,7 @@ import CotizadorForm from './CotizadorForm'
 import CotizadorResponse from './CotizadorResponse'
 import BigButton from '../utils/BigButton/BigButton'
 import CotizadorAlquilerCliente from './CotizadorAlquilerCliente'
+import { validation } from '../utils/validation'
 
 
 const CotizadorAlquiler = () => {
@@ -31,97 +32,19 @@ const CotizadorAlquiler = () => {
     const [allRentData, setAllRentData]= useState([])
 
       const handleChangeRentData=(e, name, type, required = false, maxLength = false, minLength = false)=>{
-        const value= e.target.value
-        const changedinfoInput = { ...rentData, [e.target.name]:value };
-        const err = { ...errors }
-        switch (type) {
-          case 'number':
-            changedinfoInput[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              break;
-              default:
-                break;
-              }
+        const infoInput=rentData
+        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
               setErrors(err);
-              setRentData({...changedinfoInput, [e.target.name]:value});
+              setRentData({...changedInfoInput, [e.target.name]:value});
             }
 
     const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
-        const value= e.target.value
-        
-        const changedInfoInputUser = { ...rentUser, [e.target.name]:value };
-        const err = { ...errors }
-        const noNumbers = /^[a-zA-Z][a-zA-Z ]*$/;
-        const filterMail = /.*@[a-z0-9.-]*/i;
-        switch (type) {
-          case 'text':
-            changedInfoInputUser[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              if(noNumbers.test(value) === false){
-                err[name] = 'Ingresar solo letras'
-              }
-              break;
-          case 'number':
-          
-            changedInfoInputUser[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              break;
-              case 'email':
-            changedInfoInputUser[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              if(filterMail.test(value) === false){
-                err[name] = 'Ingrese un mail válido'
-              }
-              break;
-              case 'file':
-              changedInfoInputUser[name] = e.target.value;
-              if(required) {
-              err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(value.includes('.pdf') === false){
-              err[name] = 'Seleccione un archivo válido'
-              }
-              break;
-              default:
-              break;
-            }
-
+      const infoInput=rentUser
+      const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
         setErrors(err);
-        setRentUser({...changedInfoInputUser, [e.target.name]:value})
+        setRentUser({...changedInfoInput, [e.target.name]:value})
     } 
- console.log(allRentData)
+ console.log(111, allRentData)
 
       const handleSubmitRentData=(e)=>{
         e.preventDefault();

@@ -1,7 +1,7 @@
 import React from 'react'
-import { FraudItem } from '../FraudItem/FraudItem'
+import { FraudItem } from './FraudItem'
 import { Link } from 'react-router-dom'
-import items from '../Texts/secondFraudText'
+import items from '../utils/Texts/secondFraudText'
 
 
 const SecondFraudBox = () => {

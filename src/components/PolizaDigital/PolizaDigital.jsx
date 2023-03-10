@@ -3,7 +3,7 @@ import ProductMenu from '../utils/ProductMenu/ProductMenu'
 import './polizadigital.css'
 import DescargarItemComplex from '../utils/DescargarItem/DescargarItemComplex'
 import ReactPlayer from 'react-player'
-import PolizaDigitalLinks from '../utils/PolizaDigitalLinks/PolizaDigitalLinks'
+import PolizaDigitalLinks from './PolizaDigitalLinks'
 
 const PolizaDigital = () => {
   return (

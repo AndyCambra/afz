@@ -1,5 +1,5 @@
 import React from 'react'
-import VideoCard from '../utils/VideoCards/VideoCard'
+import VideoCard from './VideoCard'
 import "./nosotros.css"
 
 

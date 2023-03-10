@@ -4,14 +4,14 @@ import Staff from './Staff'
 import { useRef } from 'react'
 import { handleButtonClicked } from 'react'
 import './nosotros.css'
-import SixLogos from '../utils/SixLogos/SixLogos'
+import SixLogos from './SixLogos'
 import BigButton from '../utils/BigButton/BigButton'
 
 
 
 const reisurance=
 {title: "REASEGURADORES",
-text:'Nuestro cuadro de reaseguro garantiza eficacia y dinamismo en la capacidad de operación, cualquiera sea la magnitud de los proyectos.'
+text:'Nuestro cuadro de reaseguro garantiza solvencia y dinamismo en la capacidad de operación, cualquiera sea la magnitud de los proyectos.'
 }
 const staff=
  {title: "EL EQUIPO",

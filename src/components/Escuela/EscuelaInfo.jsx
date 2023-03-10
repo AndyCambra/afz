@@ -1,7 +1,7 @@
 import React from 'react'
 import './escuela.css'
 import { Link } from 'react-router-dom'
-import CourseTitle from '../utils/CourseTitle/CourseTitle'
+import CourseTitle from './CourseTitle'
 import BigButton from '../utils/BigButton/BigButton'
 
 const courses=[

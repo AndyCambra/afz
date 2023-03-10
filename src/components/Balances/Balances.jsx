@@ -1,8 +1,8 @@
 import React from 'react'
 import './balances.css'
 import { Link } from 'react-router-dom'
-import BalancesGroup from '../utils/BalancesCard/BalancesGroup'
-import BalancesGroupBottom from '../utils/BalancesCard/BalancesGroupBottom'
+import BalancesGroup from './BalancesGroup'
+import BalancesGroupBottom from './BalancesGroupBottom'
 import { useEffect } from 'react'
 
 const topCardInfo=[

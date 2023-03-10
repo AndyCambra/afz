@@ -4,7 +4,7 @@ import prensaData from '../utils/Texts/prensaData';
 import './prensa.css'
 import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom';
-import PressCard from '../utils/PressCard/PressCard';
+import PressCard from './PressCard';
 
 
 const Prensa = () => {

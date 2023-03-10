@@ -1,6 +1,6 @@
 import React from 'react'
-import { FraudItem } from '../FraudItem/FraudItem'
-import items from '../Texts/firstFraudText'
+import { FraudItem } from './FraudItem'
+import items from '../utils/Texts/firstFraudText'
 
 const FirstFraudBox = () => {
   return (

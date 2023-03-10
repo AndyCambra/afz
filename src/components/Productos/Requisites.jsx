@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Productos/productos.css'
+import './productos.css'
 
 
 const Requisites = ({requisitesText1, requisitesText2, requisitesText3}) => {
