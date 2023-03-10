@@ -1,5 +1,5 @@
 import React from 'react'
-import productsExtras from "./../Texts/productsExtras.json"
+import productsExtras from "../utils/Texts/productsExtras.json"
 
 const SubTextComponent = () => {
   return (

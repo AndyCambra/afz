@@ -8,11 +8,11 @@ const CotizadorDirectoresClientForm = ({handleChange, clientData, errors, handle
         <form className="inscripcion" onSubmit={handleSubmitThanks}>
         <p className='rent-label'>Datos del Director</p>
         <div className='input-box'>
-          <input name="name" className="light-input-client" value={clientData.name} type="text" onChange={e => handleChange(e, 'name', 'text', true, 75, 3)} placeholder="Nombre" required={true}/>
+          <input name="name" className="light-input-client" value={clientData.name} type="onlyletters" onChange={e => handleChange(e, 'name', 'onlyletters', true, 75, 3)} placeholder="Nombre" required={true}/>
           {errors['name'] && <p className='error-white'>{errors['name']}</p>}
         </div>
         <div className='input-box'>
-          <input name="lastName" value={clientData.lastName} className='light-input-client' type="text" onChange={e => handleChange(e, 'lastName', 'text', true, 75, 3)} placeholder='Apellido' required={true}/> 
+          <input name="lastName" value={clientData.lastName} className='light-input-client' type="onlyletters" onChange={e => handleChange(e, 'lastName', 'onlyletters', true, 75, 3)} placeholder='Apellido' required={true}/> 
           {errors['lastName'] && <p className='error-white'>{errors['lastName']}</p>}
         </div>
         <div className='input-box'>

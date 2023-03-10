@@ -8,6 +8,7 @@ import CotizadorDirectiresResponse from './CotizadorDirectiresResponse'
 import CotizadorDirectoresClientForm from './CotizadorDirectoresClientForm'
 import DatosDeFacturacion from './DatosDeFacturacion'
 import BigButton from '../utils/BigButton/BigButton'
+import { validation } from '../utils/validation'
 
 const CotizadorDirectores = () => {
     const [sent, setSent]= useState(false)
@@ -27,98 +28,30 @@ const CotizadorDirectores = () => {
         cuit: null,
         adress:"",
         companyName:"",
-        companyAdress:""
-      })
-    let [billTo, setBillTo]=useState({
+        companyAdress:"",
         billName: "",
         billEmail: "",
         billCuit: null,
         billPhone: null,
-        billAdress:"",
+        billAdress:""
       })
+   
     const [allDirectorData, setAllDirectorData]= useState([])
     const result = 10000
 
 
       const handleChangeDirectorData=(e, name, type, required = false, maxLength = false, minLength = false)=>{
-        const value= e.target.value
-        const changedinfoInput = { ...amount, [e.target.name]:value};
-        const err = { ...errors }
-        switch (type) {
-          case 'number':
-            changedinfoInput[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              break;
-              default:
-                break;
-              }
+        const infoInput=amount
+        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
               setErrors(err);
-              setAmount({...changedinfoInput, [e.target.name]:value});
+              setAmount({...changedInfoInput, [e.target.name]:value});
             }
 
-const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
-        const value= e.target.value
-        const changedInfoInputUser = { ...clientData, [e.target.name]:value };
-        const changedInfoBillData = { ...billTo, [e.target.name]:value }
-        const err = { ...errors }
-       /*  const noNumbers = /^[a-zA-Z][a-zA-Z ]*$/; */
-        const filterMail = /.*@[a-z0-9.-]*/i;
-        switch (type) {
-          case 'text':
-            changedInfoBillData[name] = e.target.value;
-            changedInfoInputUser[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              break;
-             case 'number':
-            changedInfoInputUser[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              break;
-              case 'email':
-            changedInfoInputUser[name] = e.target.value;
-              if(required) {
-                err[name] = e.target.value ? false : 'El campo es requerido';
-              }
-              if(maxLength && !err[name]) {
-                err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-              }
-              if(minLength && !err[name]) {
-                err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-              }
-              if(filterMail.test(value) === false){
-                err[name] = 'Ingrese un mail válido'
-              }
-              break;
-              default:
-              break;
-            }
-
+      const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{ 
+        const infoInput= clientData
+        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
         setErrors(err);
-        setClientData({...changedInfoInputUser, [e.target.name]:value})
-        setBillTo( {...changedInfoBillData, [e.target.name]:value})
+        setClientData({...changedInfoInput, [e.target.name]:value})
     } 
 
             const handleSubmitData=(e)=>{
@@ -160,10 +93,9 @@ const handleChange=(e, name, type, required = false, maxLength = false, minLengt
         }
         setSent(true)
         setSentThanks(true)
-        setAllDirectorData({...amount, ...clientData, ...billTo})
+        setAllDirectorData({...amount, ...clientData})
       }
-   
-       console.log(22, allDirectorData)
+      console.log(allDirectorData)
   return (
     <section className='directors-backgound' >
     <div  className='rent-hero'>
@@ -194,11 +126,11 @@ const handleChange=(e, name, type, required = false, maxLength = false, minLengt
                 <BigButton className='school-button' name="HOME" /></Link>
         </div>: 
           goToBill=== true && <div className='bill-form'>
-           <DatosDeFacturacion handleSubmitThanks={handleSubmitThanks} billTo={billTo} errors={errors} handleChange={handleChange} handleCancel={handleCancel}/>
+           <DatosDeFacturacion handleSubmitThanks={handleSubmitThanks} clientData={clientData} errors={errors} handleChange={handleChange} handleCancel={handleCancel}/>
             </div>}
           {
             showForm === true && sentThanks===false ? 
-                    <CotizadorDirectoresClientForm handleSubmitThanks={handleSubmitThanks} handleChange={handleChange} clientData={clientData} handleCancel={handleCancel} errors={errors} goToBillData={goToBillData} goToBill={goToBill} billTo={billTo}/> :
+                    <CotizadorDirectoresClientForm handleSubmitThanks={handleSubmitThanks} handleChange={handleChange} clientData={clientData} handleCancel={handleCancel} errors={errors} goToBillData={goToBillData} goToBill={goToBill} /> :
             sent === true && sentThanks===false? <div className='rent-form' >
                 <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick}/></div>:
             <div className='rent-form' >

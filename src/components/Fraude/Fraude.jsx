@@ -1,9 +1,9 @@
 import React from 'react'
-import FraudMenu from '../utils/FraudMenu/FraudMenu'
+import FraudMenu from './FraudMenu'
 import './fraude.css'
-import FirstFraudBox from '../utils/FraudBoxes/FirstFraudBox'
+import FirstFraudBox from './FirstFraudBox'
 import { useState, useEffect } from 'react'
-import SecondFraudBox from '../utils/FraudBoxes/SecondFraudBox'
+import SecondFraudBox from './SecondFraudBox'
 
 
 const Fraude = () => {

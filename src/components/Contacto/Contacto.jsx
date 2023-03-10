@@ -3,6 +3,7 @@ import { useState } from 'react'
 import'./contacto.css'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
+import { validation } from '../utils/validation'
 
 const Contacto = () => {
   let [contactInfo, setContactInfo]=useState({
@@ -16,47 +17,9 @@ const Contacto = () => {
     
       
   const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
-        const value= e.target.value
-        const changedinfoInput = { ...contactInfo, [e.target.name]:value };
-    const err = { ...errors }
-    const filterMail = /.*@[a-z0-9.-]*/i;
-    const noNumbers = /^[a-zA-Z][a-zA-Z ]*$/;
-    switch (type) {
-      case 'text':
-        changedinfoInput[name] = e.target.value;
-          if(required) {
-            err[name] = e.target.value ? false : 'El campo es requerido';
-          }
-          if(maxLength && !err[name]) {
-            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-          }
-          if(minLength && !err[name]) {
-            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-          }
-          if(noNumbers.test(value) === false){
-            err[name] = 'Ingresar solo letras'
-          }
-          break;
-      case 'email':
-        changedinfoInput[name] = e.target.value;
-          if(required) {
-            err[name] = e.target.value ? false : 'El campo es requerido';
-          }
-          if(maxLength && !err[name]) {
-            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
-          }
-          if(minLength && !err[name]) {
-            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
-          }
-          if(filterMail.test(value) === false){
-            err[name] = 'Ingrese un mail válido'
-          }
-          break;
-        
-          default:
-          break;
-    }
-      setContactInfo({...changedinfoInput, [e.target.name]:value});
+    const infoInput=contactInfo
+    const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)     
+      setContactInfo({...changedInfoInput, [e.target.name]:value});
       setErrors(err);
       } 
 const handleSubmit=(e)=>{
@@ -110,11 +73,11 @@ console.log(contactInfo)
         
             <form className= {sent===true ? 'display-none':'inscription-form'} onSubmit={handleSubmit}>
             <div className='input-box'>  
-                <input name="userName" className="white-input" value={contactInfo.userName} type="text" onChange={e => handleChange(e, 'userName', 'text', true, 75, 3)} placeholder="Nombre" required={true}/>
+                <input name="userName" className="white-input" value={contactInfo.userName} type="onlyletters" onChange={e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Nombre" required={true}/>
                 {errors['userName'] && <p className='error-white'>{errors['userName']}</p>}
             </div> 
             <div className='input-box'>   
-                <input name="userLastName" value={contactInfo.userLastName} className='white-input' type="text" onChange={e => handleChange(e, 'userLastName', 'text', true, 75, 3)} placeholder='Apellido' required={true}/> 
+                <input name="userLastName" value={contactInfo.userLastName} className='white-input' type="onlyletters" onChange={e => handleChange(e, 'userLastName', 'onlyletters', true, 75, 3)} placeholder='Apellido' required={true}/> 
                 {errors['userLastName'] && <p className='error-white'>{errors['userLastName']}</p>}
             </div>
             <div className='input-box'>   

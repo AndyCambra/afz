@@ -4,7 +4,7 @@ import Staff from './Staff'
 import { useRef } from 'react'
 import { handleButtonClicked } from 'react'
 import './nosotros.css'
-import SixLogos from '../utils/SixLogos/SixLogos'
+import SixLogos from './SixLogos'
 import BigButton from '../utils/BigButton/BigButton'
 
 

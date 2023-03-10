@@ -222,3 +222,7 @@
 .selection-box{
     grid-column: 3/5;
 }
+.course-title-block p{
+    color:#1e0606;
+
+}

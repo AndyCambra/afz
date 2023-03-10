@@ -1,7 +1,6 @@
 import {useState} from 'react'
 import BalanceNumbersBottom from './BalanceNumberBottom';
-import BalancesCardBottom from './BalancesCardBottom';
-
+import BalancesCardBottom from './BalancesCardBottom'
 
 
 const BalancesGroupBottom = ({number, cardTopImg, cardTopAlt}) => {

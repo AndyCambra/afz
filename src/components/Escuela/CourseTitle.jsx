@@ -1,5 +1,4 @@
 import React from 'react'
-import './coursetitle.css'
 
 const CourseTitle = ({date, title}) => {
   return (

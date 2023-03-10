@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import FourLogos from '../utils/FourLogos/FourLogos'
+import FourLogos from './FourLogos'
 import './certificaciones.css'
 import { useEffect } from 'react'
 
