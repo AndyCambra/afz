@@ -4,10 +4,10 @@
     width: 100vw;
   
 }
-.headerIn{
+.header-in{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 30px;
+    column-gap: 30px;
     padding: 10px 40px 0 40px;
     align-items: center;
     justify-content: left;
@@ -18,7 +18,7 @@
     margin: 0;
     grid-column: 1;
 }
-.headerMenu{
+.header-menu{
     background-color: #9B2743;
     border-radius: 16px;
     width: 100%;
@@ -27,23 +27,23 @@
     display: flex;
     justify-content: space-between;
     height: 30px;
-    column-gap: 3em;
+    column-gap: 2em;
 }
-.headerItem{
+.header-item{
     margin: 4px;
     padding: 1px 10px 0;
 }
-.headerItem:nth-child(4){
+.header-item:nth-child(4){
     flex-grow: 2;
     
 }
-.headerItem:last-child{
+.headeritem:last-child{
     font-family: 'Sora', sans-serif;
     color: #fff;
     font-weight: 700;
   
 }
-.headerCategory{
+.header-category{
     font-family: 'Sora', sans-serif;
     font-weight: 500;
     font-size: 14.5px;
@@ -53,10 +53,10 @@
     margin-top: 3px;
    
 }
-.headerCategory:visited{
+.header-category:visited{
     color: #B7B6B6;
 }
-.headerCategory::after{
+.header-category::after{
     font-family: 'Sora', sans-serif;
     font-weight: 600;
     color: #B7B6B6;
@@ -71,16 +71,16 @@
     transform-origin: right;
     transition: transform 0.25s ease-out;
 }
-.headerCategory:hover::after{
+.header-category:hover::after{
     transform: scaleX(1);
     transform-origin: left;
 }
-.headerCategory:hover{
+.header-category:hover{
     font-family: 'Sora', sans-serif;
     font-weight: 700;
     color: #fff;
 }
-.headerCategorySelected{
+.header-category-selected{
     display: inline-block;
     font-family: 'Sora', sans-serif;
     font-weight: 600;
@@ -91,25 +91,43 @@
     margin-top: 3px;
     padding-bottom: 2px;  
 }
-@media (max-width: 1064px) {
-   h4{
-       font-size: 14px;
+.header-category-special{
+    font-weight: 800;
+    font-size: 14.5px;
+    color: #fff;
+    
+}
+@media only screen and (min-width: 1440px){
+    .hero{
+        width: 100vw;
     }
-    .headerMenu{
-        column-gap: 2em;
+    .header-category {
+        font-size: 15px;
     }
     .logoAfz{
-        width: 14vw;
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .header-category{
+        font-size: 12px;
+       }
+    .header-category-selected{
+        font-size: 12px;
+    }
+    .header-menu{
+        column-gap: 1em;
+        grid-column: 1/8;
+        margin-top: 5px;
+        height: 28px;
+        }
+        .header-in{
+            column-gap: 15px;
+        }
+        .logoAfz{
+            width: 120%;
+        }
     }
    
-  }
-@media (max-width: 1000px) {
-    h4{
-        font-size: 12px;
-     }
-     .headerIn{
-       flex-direction: column;
-       align-items:flex-start;
-     }
-    
-   }
+   
+  

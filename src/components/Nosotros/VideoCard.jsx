@@ -7,7 +7,7 @@ const VideoCard = ({companyPlace,videoStaff,peopleName,peoplePosition}) => {
         <div className='staffPositions'>
         <h5 >{companyPlace}</h5>
         </div>
-    <div >
+    <div className='video-container'>
     <img src={videoStaff} alt={peopleName}/>
     <div className='card-title'>
             <p className='card-name'>{peopleName}</p>

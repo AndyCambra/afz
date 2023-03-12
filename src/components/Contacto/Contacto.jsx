@@ -37,8 +37,8 @@ console.log(contactInfo)
     <section className='contact-backgound' >
     <div className='contact-grid'>
       <div className="contact-block">
-        <h5 className='horizontalTitle'>COBERTURA SIN FRONTERAS</h5>
-        <p className='horizontalText'>Estés donde estés, te ofrecemos asesoramiento integral y nuestra póliza digital que te brinda una amplia cobertura a nivel del país y de la región.</p>
+        <h5 className='horizontal-title'>COBERTURA SIN FRONTERAS</h5>
+        <p className='horizontal-text'>Estés donde estés, te ofrecemos asesoramiento integral y nuestra póliza digital que te brinda una amplia cobertura a nivel del país y de la región.</p>
         </div>
        
         <div className='first-column'>
@@ -57,7 +57,7 @@ console.log(contactInfo)
             <p className='highlight-top'>(0341) 527-1315</p>
             <p className='highlight'>rosario@afianzadora.com.ar</p>
         </div> 
-        <div className='work-button'>
+        <div className='work-button-in-contact'>
             <Link to="/trabaja-con-nosotros">
         <BigButton name="TRABAJÁ CON NOSOTROS" className="small-button" />
         </Link>

@@ -25,32 +25,27 @@
     float: right;
     margin-top: 10%;   
 }
-.info-background{
+.info-backgound{
+    background: linear-gradient(270deg, #FFFFFF 4.75%, rgba(255, 255, 255, 0) 95.88%), url(../../../public/img/hegagonoscompleto.jpg);
+    background-size: cover ;
     height: 97vh;
     width: 100vw;
 }
-.info-img{
-    height: 97vh;
-}
 .info-hero{
-    position: absolute;
-    margin: -650px 40px 0 40px;
+    position:absolute;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     column-gap: 30px;
     row-gap: 16px;
+    margin: 90px 40px 0 40px;
 }
 .info-text{
-    grid-column: 4/6;
+    grid-column: 4/8;
     color: #1e0606;
     width: 100%;  
     font-size: .8em;
-}
-.info-text-second{
-    grid-column: 6/8;
-    color: #1e0606;
-    width: 100%;  
-    font-size: .8em;
+    columns: 2;
+    margin-bottom: 30px;
 }
 .items{
     grid-column: 2/5;
@@ -226,3 +221,88 @@
     color:#1e0606;
 
 }
+@media only screen and (min-width: 1440px){
+    .info-hero{
+        margin: 120px 40px 0 40px;
+    }
+    .info-text{
+        margin-bottom: 25px;
+    }
+
+}
+@media only screen and (min-width: 1023px) and (max-width: 1261px){
+    .school-hero{
+        margin: -44% 40px 0 0px ;
+    }
+    .school-title h1{
+        font-size: 3.8em;
+    }
+    .info-text{
+       font-size: 11px;
+    }
+    .info-title{
+        font-size: 24px;
+    }
+    .course-title-block p{
+        font-size: 12px;
+    }
+    .course-title-block h2{
+        font-size: 1em;
+    }
+  
+  
+
+ 
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .school-hero{
+        margin: -44% 40px 0 0px ;
+    }
+    .school-title h1{
+        font-size: 3em;
+    }
+    .info-hero{
+        margin: 120px 40px 0 40px;
+    }
+    .info-text{
+        grid-column: 3/8;
+       font-size: 10px;
+    }
+    .info-title{
+        font-size: 18px;
+    }
+    .course-title-block p{
+        font-size: 11px;
+    }
+    .course-title-block h2{
+        font-size: .8em;
+    }
+    .program-block{
+        grid-column: 2/6;
+    }
+    .program-block2{
+        grid-column: 2/6;
+        
+    }
+    .info-background-long{
+        background: linear-gradient(270deg, #FFFFFF 4.75%, rgba(255, 255, 255, 0) 95.88%), url(../../../public/img/hegagonoscompleto.jpg);
+        background-size: cover ;
+        height: 150vh;
+        width: 100vw;
+    }
+    .inscription-title{
+        grid-column: 1/5;
+        font-size: 1em;    
+     }
+     .selection-box{
+        grid-column: 1/5;
+    }
+    .inscription-form{
+        grid-column: 1/4;
+    }
+    .sub-school-menu{
+        grid-column: 1/5;
+
+    }
+   
+    }

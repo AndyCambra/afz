@@ -22,11 +22,13 @@ const courses=[
 
 const EscuelaInfo = () => {
   return (
-    <section className='info-backgound' >
-        <img src="/img/HexaBlur.png" alt="Fondo escuela" className='info-img'></img>
+    <section className='info-backgound' > 
         <div  className='info-hero'>
-            <p className='info-text'>Somos especialistas y líderes en seguros de caución. Por eso, tenemos la única escuela de caución del mercado que te ofrece capacitación para ampliar exponencialmente las oportunidades con tus clientes, no solo en Seguros de Caución sino en todos los otros riesgos. Técnicas de comercialización (cómo vender), características de los principales productos; cómo asesorar a tus clientes de manera asertiva y cómo ser efectivo en la cobranza son solo algunas de las temáticas que encontrarás en la escuela. Un programa único que abarca todo lo que necesitás para profesionalizarte,</p>
-            <p className='info-text-second'>desarrollar habilidades específicas y adquirir confianza. Dictado por un equipo multidisciplinario de nivel gerencial y altamente capacitado, que hará de esta experiencia una simulación del negocio en tiempo real. Contenidos que van desde el conocimiento básico, como la introducción al mundo del seguro de caución, hasta las cuestiones más particulares de productos específicos como pueden ser las Garantías Judiciales. Transformate vos también en un especialista. Inscribite y accedé a una capacitación única en el mercado del seguro: Escuela de Caución.</p> 
+            <p className='info-text'>Somos especialistas y líderes en seguros de caución. Por eso, tenemos la única escuela de caución del mercado y te ofrecemos una capacitación imprescindible para ampliar tus oportunidades de negocio. Para dominar los diferentes tipos de riesgo y las mejores técnicas de comercialización. Para asesorar mejor a tus clientes. Para gestionar con efectividad las cobranzas. Un programa único que abarca todo lo que necesitás para profesionalizarte, desarrollar habilidades específicas y adquirir confianza. Dictado por un equipo multidisciplinario y altamente capacitado.
+Transformate vos también en un especialista.
+Inscribite y accedé a una capacitación única en el mercado del seguro de caución.
+
+</p> 
             <div className='place-logo-info'>
               <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
             </div>
