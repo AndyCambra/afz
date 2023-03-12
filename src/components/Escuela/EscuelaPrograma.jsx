@@ -5,8 +5,8 @@ import BigButton from '../utils/BigButton/BigButton'
 
 const EscuelaPrograma = () => {
   return (
-    <section className='info-backgound' >
-    <img src="/img/HexaBlur.png" alt="Fondo escuela" className='info-img'></img>
+    <>
+    <section className='info-backgound info-background-long' >
     <div  className='info-hero'>
         <div  className="video-youtube" >
         <ReactPlayer
@@ -62,9 +62,12 @@ const EscuelaPrograma = () => {
                 </Link>
                 </div>
             </div>
+            
       </div>
-  
+
       </section>
+      <section></section>
+      </>
   )
 }
 export default EscuelaPrograma

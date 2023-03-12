@@ -26,7 +26,7 @@ import CotizadorDirectores from './components/CotizadorDirectores/CotizadorDirec
 
 function App() {
   return (
-   
+ 
     <BrowserRouter>
     <Header />
       <Routes>
@@ -49,8 +49,9 @@ function App() {
         <Route exact path="/nosotros" element={<Nosotros />} />
         <Route exact path="/" element={<Home />} />
       </Routes> 
-    <Footer />
+     <Footer />
     </BrowserRouter>
+ 
 
   );
 }

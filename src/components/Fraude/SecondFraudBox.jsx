@@ -8,7 +8,7 @@ const SecondFraudBox = () => {
 
   return (
     <div className='fraud-box'>  
-        <div>
+        <div className='fraud-in-box'>
             <h5 className='fraud-subtitle'>RECOMENDACIONES</h5>
             {items.map((item, key)=>
             <FraudItem key={item.id} number={item.number} text={item.text}/>

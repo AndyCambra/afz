@@ -36,8 +36,7 @@ const EscuelaInscripcion = () => {
   }
 console.log(infoInput)
   return (
-    <section className='info-backgound' >
-    <img src="/img/HexaBlur.png" alt="Fondo escuela" className='info-img'></img>
+    <section className='info-backgound info-background-long' >
     <div  className='info-hero'>
         <div className='place-logo'>
         <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
