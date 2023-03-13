@@ -28,7 +28,8 @@ const lastNote=prensaData[prensaData.length - 1]
                 </div>
                 <div className='main-note-content'>
                     <h2>{lastNote.title}</h2>
-                    <div className='box'>{lastNote.text.substring(0, 740)} ...
+                    <div className='box'>
+                        <div className='box-text'>{lastNote.text.substring(0, 740)} ...</div>
                         <div className="more">
                             <div className='see'>Ver mas</div><Icon icon="ic:baseline-plus" className='icon-on-grey' />  
                         </div>
@@ -49,6 +50,7 @@ const lastNote=prensaData[prensaData.length - 1]
             </div>
             
         </div>
+        <div class="push"></div>
         </div>
         
   )

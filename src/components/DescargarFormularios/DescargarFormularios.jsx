@@ -42,7 +42,7 @@ const DescargarFormularios = () => {
             </div>
              
           </div>
-        <HorizontalPhoto img="/img/DescargarForm.jpg" alt="Descargar Formularios"/>
+   <img src="/img/DescargarForm.jpg" alt="Descargar Formularios" className='forms-photo'/>
       </div>
     </div>
   )

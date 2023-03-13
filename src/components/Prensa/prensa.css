@@ -1,9 +1,9 @@
 .press-background{
-    position: relative;
-    min-height: 160vh; 
+    margin-bottom: -370px;
+    min-height: 97%;
 }
 .press-box{
-    position: absolute;
+    padding-bottom: 48px;
     margin: 0 40px ;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -12,6 +12,10 @@
     row-gap: 16px;
     align-items: flex-start;
 }
+
+.push {
+    height: 366px;
+  }
 .main-note-img{
     grid-column: 1/4;
 
@@ -41,7 +45,10 @@
     text-transform: uppercase;  
 }
 .box{
-    column-count: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box-text{
     max-height: 180px;
     margin-top: 10px; 
     overflow: hidden;
@@ -51,17 +58,19 @@
     font-family: 'Sora', sans-serif;
     font-size: 14px;
     line-height: 20px;
+   
 }
+
 .more{
     box-sizing: border-box;
-    float: right;
     display: flex;
-    margin: 2.25em 0 0 1em;
+    margin-top: -10px;
     background-color: #B7B6B6;
     width: 130px;
     height: 30px;
     text-align: center;
     color: #fff;
+    align-self: flex-end;
 
 }
 .see{
@@ -125,4 +134,43 @@
     column-gap: 30px;
     row-gap: 16px;
     
+}
+
+@media only screen and (min-width: 1440px){
+    
+
+}
+@media only screen and (min-width: 1023px) and (max-width: 1261px){
+    .second-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box{
+        column-count: 1;
+       
+    }
+    .box-text{
+        max-height: 120px;
+    
+    }
+    .more{
+        margin-top: 20px;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .second-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box{
+        column-count: 1;
+       
+    }
+    .box-text{
+        max-height: 80px;
+    
+    }
+    .more{
+        margin-top: 20px;
+    }
+   
 }

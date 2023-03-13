@@ -36,7 +36,7 @@ const EscuelaInscripcion = () => {
   }
 console.log(infoInput)
   return (
-    <section className='info-backgound info-background-long' >
+    <section className='info-backgound' >
     <div  className='info-hero'>
         <div className='place-logo'>
         <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
@@ -55,7 +55,7 @@ console.log(infoInput)
               </Link>
             </div> 
           </div>
-          <div className='inscription-title'>
+          <div className={sent===true ? "thanks-message" :'inscription-title'}>
             {sent===true ? <div><h2>Gracias {infoInput.userName} por inscribirte!</h2><p>Te llegará en breve un mail de confirmación.</p></div>:<h2>COMPLETÁ EL FORMULARIO</h2>}
           </div>  
             <form className= {sent===true ? 'display-none':'inscription-form'}  onSubmit={handleSubmit}>
@@ -108,7 +108,7 @@ console.log(infoInput)
             </form>
             </div>
           </div>
-       
+          <div class="push"></div>
       </section>
   )
 }

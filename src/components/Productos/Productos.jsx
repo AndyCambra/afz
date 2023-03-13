@@ -18,7 +18,8 @@ const Productos = () => {
   const product = products.find(p=> p.id=== parseInt(id))
 
   return (
-      <div className={parseInt(id) === 1 ? "product-background-extra":'product-background'}>
+   
+      <div className='product-background'>
       <div className='product-content'>
         <div className='product-box'>   
             <ProductMenu /> 
@@ -37,6 +38,7 @@ const Productos = () => {
           </div>
         <HorizontalPhoto img={product.img} alt={product.title} />
         </div>
+        <div class="push"></div>
     </div>
   )
 }

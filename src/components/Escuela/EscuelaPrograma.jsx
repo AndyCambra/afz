@@ -6,7 +6,7 @@ import BigButton from '../utils/BigButton/BigButton'
 const EscuelaPrograma = () => {
   return (
     <>
-    <section className='info-backgound info-background-long' >
+    <section className='info-backgound'>
     <div  className='info-hero'>
         <div  className="video-youtube" >
         <ReactPlayer
@@ -64,9 +64,9 @@ const EscuelaPrograma = () => {
             </div>
             
       </div>
-
+      <div class="push"></div>
       </section>
-      <section></section>
+     
       </>
   )
 }

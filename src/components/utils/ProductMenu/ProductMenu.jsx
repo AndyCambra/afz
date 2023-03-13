@@ -1,7 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import '../../Productos/productos.css'
+import './productmenu.css'
 
 
 const ProductMenu = () => {
@@ -18,7 +19,7 @@ return(
     <Link to='/productos/descargar-formularios' className='menu-link'>DESCARGAR FORMULARIOS</Link>
     <Link to='/' className='home-menu-link'>HOME</Link>
     <div>
-    <Link to='/productos/poliza-digital' className='last-menu-link'>PÓLIZA DIGITAL</Link>
+    <NavLink to='/productos/poliza-digital' className={({isActive})=>isActive ? 'last-menu-link-selected' :'last-menu-link'}>PÓLIZA DIGITAL</NavLink>
     </div>
     
     </div>
