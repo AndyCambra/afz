@@ -25,7 +25,7 @@ const DatosDeFacturacion = ({handleSubmitThanks, clientData, errors, handleChang
       <input name="billAdress" value={clientData.billAdress} className='light-input-client' type="text" onChange={e => handleChange(e, 'billAdress', 'text', true, 100, 10)} placeholder='Domicilio legal' required={true}/> 
       {errors['billAdress'] && <p className='error-white'>{errors['billAdress']}</p>}
     </div>
-    <div className='rent-result-box'>
+    <div className='director-result-box'>
     <button type="button" className="rent-button-secondary" onClick={handleCancel}>CANCELAR</button>
     <BigButton type="submit" name= "ENVIAR" className="rent-button"/>
     </div>

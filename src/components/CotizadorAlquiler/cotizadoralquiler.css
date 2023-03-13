@@ -110,3 +110,31 @@
 .input-explain{
     margin-bottom: 10px;
 }
+
+
+@media only screen and (min-width: 1023px) and (max-width: 1261px){
+   .rent-form{
+    grid-column: 2/5;
+   }
+   .rent-title h2{
+    font-size: 20px;
+   }
+   .rent-block{
+    grid-column: 2/6;
+   }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    
+    .rent-form{
+        grid-column: 2/6;
+       }
+    .rent-block{
+        grid-column: 2/6;
+        padding-top: 100px;
+           
+       }
+       .rent-title h2{
+        font-size: 18px;
+       }
+} 

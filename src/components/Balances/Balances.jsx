@@ -48,9 +48,10 @@ const Balances = (props) => {
                   </Link>
                 </div> 
               </div>
-                <h5 className='horizontalTitle'>MEMORIA Y BALANCES</h5>
+                <h5 className='horizontal-title-b'>MEMORIA Y BALANCES</h5>
           </div>
-          <div className='card-balance-box'>
+          </div> 
+        {  <div className='card-balance-box'>
             {topCardInfo.map((itemBalance)=>{
               return(
               <BalancesGroup number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg}/>
@@ -62,9 +63,9 @@ const Balances = (props) => {
               )
             })}
 
-          </div>
+          </div>}
           
-        </div> 
+      
           
       </section>
   )

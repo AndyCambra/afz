@@ -4,6 +4,20 @@
     height: 97vh;
     width: 100vw;
 }
+.dark-block{
+    background-color: #1e0606;
+    height: 0px;
+}
+.director-hero{
+    width: 100vw;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    padding: 20px 40px 24px 40px; 
+}
 .item-directors-selected{
     margin: 0;
     font-family: 'Sora', sans-serif;
@@ -36,3 +50,30 @@
     grid-column: 5/7;
     grid-row: 2;
 }
+.director-result-box{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.display-none{
+    display: none;
+}
+
+
+@media only screen and (min-width: 1023px) and (max-width: 1261px){
+    .bill-form{
+        grid-column: 5/8;
+    }
+ 
+ }
+ @media only screen and (min-width: 768px) and (max-width: 1023px){
+     
+     .bill-form{
+         grid-column: 2/6;
+         grid-row: 3;
+         padding-top: 20%;
+        }
+   .dark-block{
+    height: 400px;
+   }
+ } 

@@ -97,8 +97,9 @@ const CotizadorDirectores = () => {
       }
       console.log(allDirectorData)
   return (
+    <>
     <section className='directors-backgound' >
-    <div  className='rent-hero'>
+    <div  className='director-hero'>
         <div className="rent-block">
         <div className='rent-sub-menu'>
             <div className='items'>
@@ -141,6 +142,8 @@ const CotizadorDirectores = () => {
             </div>}
     </div>
     </section>
+    <section className={sentThanks === true ? 'display-none':'dark-block'}></section>
+    </>
   )
 }
 export default CotizadorDirectores
