@@ -61,6 +61,7 @@ Inscribite y accedé a una capacitación única en el mercado del seguro de cauc
                 </div>
             </div> 
       </div>
+      <div class="push"></div>
       </section>
   )
 }

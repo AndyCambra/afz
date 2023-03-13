@@ -4,7 +4,7 @@ import BigButton from '../BigButton/BigButton'
 
 const HorizontalPhoto = ({img, title}) => {
   return (
-    <div>
+    <>
       <div className='call-to-action'>
         <div className='call-grid'>
           <div className='call-link'>
@@ -16,7 +16,7 @@ const HorizontalPhoto = ({img, title}) => {
         </div> 
       </div>
       <img className='product-photo' src={img} alt={title} />
-    </div>
+    </>
   )
 }
 
