@@ -28,6 +28,8 @@ const PolizaDigital = () => {
           <ReactPlayer
           url="https://player.vimeo.com/video/405943096?byline=0&amp;controls=false&amp;portrait=0&amp;title=0"
           controls
+          width="100%"
+          className='video-size'
           />
           </div>
           <div className='two-column'>
@@ -48,6 +50,8 @@ const PolizaDigital = () => {
           <ReactPlayer
           url="https://player.vimeo.com/video/405943096?byline=0&amp;controls=false&amp;portrait=0&amp;title=0"
           controls
+          width="100%"
+          className='video-size'
           />
           </div>
           <div className='digital-block'>
@@ -58,6 +62,8 @@ const PolizaDigital = () => {
           <ReactPlayer
           url="https://player.vimeo.com/video/405943096?byline=0&amp;controls=false&amp;portrait=0&amp;title=0"
           controls
+          width="100%"
+          className='video-size'
           />
           </div>
           <div className='digital-block'>
@@ -74,6 +80,7 @@ const PolizaDigital = () => {
         </div>  
       </div>
     </div>
+    <div class="push"></div>
     </div>
   )
 }

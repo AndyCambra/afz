@@ -72,7 +72,8 @@
 }
 @media only screen and (min-width: 1023px) and (max-width: 1261px){
     .fraud-items{
-        grid-column: 2/4;
+        grid-column: 1/3;
+        padding-top: 24px;
     }
     .fraud-in-box{
         grid-column: 1/3;
@@ -81,7 +82,7 @@
         grid-column: 1/3;
     }
     .fraud-background{
-        height: 120vh;
+        height: 140vh;
     }
     .second-text{
         font-size: .8em;

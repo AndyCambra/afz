@@ -11,14 +11,14 @@
    
 }
 .form-box{
-    margin: 0 40px 80px 40px ;
+    margin: 0 40px 120px 40px ;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 50px auto;
     column-gap: 30px;
     row-gap: 8px;
     align-items: flex-start;
-    padding-top: 140px;
+    
 }
 .form-title{
     font-family: 'Sora', sans-serif;
@@ -159,6 +159,7 @@
     }
     .form-box{
         grid-template-rows: 30px auto;
+        margin-top: 150px;
     }
     .first-col{
         grid-row: 2;
