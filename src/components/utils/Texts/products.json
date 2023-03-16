@@ -40,12 +40,20 @@
       "img": "/img/Productos/Alquiler.jpg"
       },
       { "id":6,
-      "title": "DIRECTORES | ACTIVIDADES | PROFESIONES",
-      "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.). Es ideal para directores y socios gerentes de sociedades anónimas o de responsabilidad limitada, para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros.",
+      "title": "DIRECTORES",
+      "text": "Este seguro de caución es ideal para cubrir la actividad de directores y socios gerentes de sociedades anónimas o de responsabilidad limitada; para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros.",
       "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
       "requisitesText2": "",
       "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
       "img": "/img/Productos/directores.jpg"
+      },
+      { "id":7,
+      "title": "ACTIVIDADES | PROFESIONES",
+      "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.).",
+      "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+      "requisitesText2": "",
+      "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+      "img": "/img/Productos/actividades.jpg"
       }
 
        

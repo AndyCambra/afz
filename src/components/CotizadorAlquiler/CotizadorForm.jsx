@@ -15,7 +15,7 @@ const CotizadorForm = ({handleChangeRentData, handleSubmitRentData, rentData, er
     <p className='rent-label'>Expensas</p>
     <div className='input-box'>
     <i className='i'>$</i>
-        <input name="expenses" value={rentData.expenses} /* id="prueba" */ className='light-input-rent' type="number" onChange={e => handleChangeRentData(e, 'expenses', 'number', true, 15, 5)} required={true}  /> 
+        <input name="expenses" value={rentData.expenses} className='light-input-rent' type="number" onChange={e => handleChangeRentData(e, 'expenses', 'number', true, 15, 5)} required={true}  /> 
         {errors['expenses'] && <p className='error-white'>{errors['expenses']}</p>}
     </div>
     <div className='radio-box'>

@@ -1,8 +1,9 @@
 import React from 'react'
 import "./footer.css"
 import { NavLink } from 'react-router-dom'
-import { Icon } from '@iconify/react';
+import SocialIcons from './SocialIcons';
 import LegalFooter from '../LegalFooter/LegalFooter';
+import Mailto from '../utils/Mailto';
 
 const Footer = () => {
     
@@ -40,24 +41,10 @@ const Footer = () => {
         </div>
         <div className='contactBox'>
         <p>(+5411) 3986 2800</p>
-        <p className='footerEmail'>info@afianzadora.com.ar</p>
-        <div className='socialBox'>
-            <div className='iconCircle'>
-            <Icon icon="grommet-icons:instagram" className='socialIcon' />
-            </div>
-            <div className='iconCircle'>
-            <Icon icon="eva:facebook-outline" className='socialIcon' />
-            </div>
-            <div className='iconCircle'>
-            <Icon icon="eva:linkedin-outline" className='socialIconBig' />
-            </div>
-            <div className='iconCircle'>
-            <Icon icon="ps:youtube" className='socialIconBig' />
-            </div>
+        <Mailto email="andycambra.com.ar" subject='Hello and welcome' body="Hello World">
+        <p className='footerEmail'>info@afianzadora.com.ar</p></Mailto>
+        <SocialIcons className="social-box" classCircle="icon-circle" classIcon="social-icon" classIconBig="social-icon-big"/>
         </div>
-        
-        </div>
-        
         </div>    
         <LegalFooter />
 

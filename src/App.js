@@ -21,7 +21,7 @@ import TrabajaConNosotros from './components/TrabajaConNosotros/TrabajaConNosotr
 import CotizadorAlquiler from './components/CotizadorAlquiler/CotizadorAlquiler';
 import Prensa from './components/Prensa/Prensa';
 import CotizadorDirectores from './components/CotizadorDirectores/CotizadorDirectores';
-
+import { Icon } from '@iconify/react';
 
 
 function App() {
@@ -50,6 +50,9 @@ function App() {
         <Route exact path="/" element={<Home />} />
       </Routes> 
      <Footer />
+      <a href="https://wa.me/5491136671594?text=Hola" className="floating" target="_blank" rel="noreferrer">
+      <Icon icon="logos:whatsapp-icon" className='icon' />
+      </a>
     </BrowserRouter>
  
 

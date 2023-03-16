@@ -53,39 +53,34 @@
 .footerEmail{
     font-weight: 800;
 }
-.iconCircle{
+.icon-circle{
     background-color: #fff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     color: #9B2743;
-    padding: auto;
+    display: flex;
     
 }
-.socialIcon{
+.social-icon{
     width: 28px;
     height: 28px;
     padding: 6px 0 0 6px;
    
 }
-.socialIconBig{
+.social-icon-big{
     width: 30px;
     height: 30px;
     padding: 5px 0 0 5px;
    
 }
-.socialBox{
+.social-box{
     margin: 20px 0 30px 0;
     display: flex;
     column-gap: 30px;
 
 }
-/* @media (max-width: 1024px){
-    .contactBox{
-        padding: 0 0 0 20%;
-    }
 
-} */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     .contactBox{
         padding: 0 0 0 20%;
@@ -94,6 +89,22 @@
         width: 18%;
         margin-top: 12px;
         padding: 0 20px 0 0;
+    }
+    .social-icon{
+        width: 24px;
+        height: 24px;
+        padding: 6px 0 0 6px;
+       
+    }
+    .social-icon-big{
+        width: 24px;
+        height: 24px;
+        padding: 5px 0 0 5px;
+       
+    }
+    .icon-circle{
+        width: 36px;
+        height: 36px;
     }
 
 }

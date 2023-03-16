@@ -142,7 +142,7 @@ const CotizadorDirectores = () => {
             </div>}
     </div>
     </section>
-    <section className={sentThanks === true ? 'display-none':'dark-block'}></section>
+   {/*  <section className={sentThanks === true ? 'display-none':'dark-block'}></section> */}
     </>
   )
 }

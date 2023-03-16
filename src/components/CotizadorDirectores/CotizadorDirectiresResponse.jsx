@@ -6,7 +6,7 @@ const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick
     <div>
       <form className="rent-form">
         <p className="rent-label">Cotización</p>
-        <div className="rent-result">
+        <div className="amount-result">
           $ {result}
         </div>
         <p>

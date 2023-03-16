@@ -1,9 +1,11 @@
 import React from 'react'
-import HorizontalPhoto from '../utils/HorizontalPhoto/HorizontalPhoto'
 import ProductMenu from '../utils/ProductMenu/ProductMenu'
 import './descargarform.css'
 import DescargarItem from '../utils/DescargarItem/DescargarItem'
 import DescargarItemComplex from '../utils/DescargarItem/DescargarItemComplex'
+import { formTexts } from '../utils/Texts/downloadForms'
+import '../utils/ProductMenu/productmenu.css'
+
 
 const DescargarFormularios = () => {
  
@@ -14,9 +16,9 @@ const DescargarFormularios = () => {
         <div>
             <ProductMenu /> 
             </div>  
-            <h5 className='form-title'>APERTURAS DE CARPETAS Y FORMULARIOS</h5>
+            <h5 className='form-title'>{formTexts.title}</h5>
             <div className='first-col'>
-              <p>Para poder operar con nuestros clientes, necesitamos conocerlos para evaluar su capacidad de cumplir. Por ello es que debemos solicitar el armado de una carpeta con documentación, tratando de simplificar y facilitar al máximo este proceso, solicitando:</p>
+              <p>{formTexts.firstText}</p>
               </div>
               <div className='first-col-second-part'>
                <DescargarItem title="Último balance" />
@@ -25,7 +27,7 @@ const DescargarFormularios = () => {
                 </div>
             
             <div className='second-col'>
-                  <p>En algunos casos, según sea la forma jurídica de la persona que contrata el seguro, o por necesidad del riesgo a cubrir, podrá solicitarse también:</p>
+                  <p>{formTexts.secondText}</p>
                   </div>
                   <div className='second-col-second-part'>
                   <DescargarItemComplex title="Formulario de Solicitud Convenio" text="Este formulario es utilizado en conjunto con el “Aval” y se utiliza para describir los bienes patrimonio del avalista. Deberá ser firmado por el avalista, y con certificación de Contador Público acerca de la veracidad de los valores expresados en el formulario."/>
@@ -33,7 +35,7 @@ const DescargarFormularios = () => {
                   <DescargarItemComplex title= "Detalle de Deudas" text="Nos brinda información acerca de los pasivos de la empresa, en cuanto a montos, plazos y características. Deberá ser firmado por el titular de la empresa con certificación de Contador Público" /> 
             </div>
             <div className='tirth-col'>
-              <p>A su vez, el Estado a través de la U.I.F. requiere a quien opere con nosotros, según sea su forma legal y la magnitud de los riesgos contratados, la cumplimentación de la siguiente documentación según Resolución 202/2015</p>
+              <p>{formTexts.finalText}</p>
             </div>
             <div className='tirth-col-second-part'> 
               <DescargarItemComplex title="Personas Físicas" />

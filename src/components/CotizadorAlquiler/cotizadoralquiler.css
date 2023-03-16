@@ -12,7 +12,8 @@
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 30px;
+   column-gap: 30px;
+   row-gap: 16px;
     padding: 20px 40px 0 40px; 
 }
 .rent-block{
@@ -65,8 +66,9 @@
 }
 .rent-label{
     color: #fff;
-    font-weight: 700;
-    margin: 5px 10px 3px 0
+    font-weight: 600;
+    margin: 5px 10px 3px 0;
+    font-size: .7em;
 }
 .radio-box{
     display: flex;
@@ -93,7 +95,7 @@
     color: #fff;
 }
 .rent-result-box{
-    margin-top: 16px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 
@@ -122,6 +124,9 @@
    .rent-block{
     grid-column: 2/6;
    }
+   .rent-backgound{
+    height: 110vh;
+   }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -136,5 +141,8 @@
        }
        .rent-title h2{
         font-size: 18px;
+       }
+       .rent-backgound{
+        height: 130vh;
        }
 } 
