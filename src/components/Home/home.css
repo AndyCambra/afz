@@ -3,16 +3,18 @@
     background: linear-gradient(105.33deg, rgba(0, 0, 0, 0.65) 10.83%, rgba(0, 0, 0, 0) 81.77%), url(../../../public/img/FachadaAfz.jpeg);
     background-size: cover;
     height: 97vh;
-    width: 100vw;
+    width: 100;
     
 }
 .hero{
+    box-sizing: border-box;
     position: absolute;
     margin-top: 18%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 30px;
     padding: 20px 40px 0 40px;
+    width: 100vw;
 
 }
 .homeTitle{

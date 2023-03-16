@@ -66,3 +66,21 @@ label{
     font-size: .7em;
     font-weight: 600;
 }
+.floating {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 40px;
+   /*  background-color: #25d366; */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+ /*    box-shadow: 2px 2px 3px #999; */
+    z-index: 100;
+   }
+
+   .icon {
+    margin-top: 16px;
+   }
