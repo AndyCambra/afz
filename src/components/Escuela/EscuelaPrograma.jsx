@@ -2,6 +2,9 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import { Link } from 'react-router-dom'
 import BigButton from '../utils/BigButton/BigButton'
+import { firstColumn, secondColumn } from '../utils/Texts/schoolProgramText'
+
+
 
 const EscuelaPrograma = () => {
   return (
@@ -36,26 +39,25 @@ const EscuelaPrograma = () => {
         </div>
             
             <div className='program-block'>
-            <h4>Introducción al Seguro de Caución y Comercialización</h4>
-            <h6 className='program-list' >El ABC del seguro de caución, empezando desde cero.</h6>
-            <h6 className='program-list'>Toda la información necesaria para detectar alternativas de negocio.</h6>
-            <h6 className='program-list'>Estrategias para la venta.</h6>
-            <h6 className='program-list'>Técnicas de cross selling para, a partir del seguro de caución, incrementar la cartera de Patrimoniales, ART y otros intereses asegurables.</h6>
-            <h4 className='program-subtitle'>Suscripción de Riesgos y Análisis de Tomadores</h4>
-            <h6 className='program-list'>Parámetros de calificación.</h6>
-            <h6 className='program-list'>Cómo presentar los negocios de manera exitosa.</h6>
-            <h6 className='program-list'>Cuestiones estratégicas a tener en cuenta al presentar un negocio.</h6>
+              {firstColumn.map((item, key)=>{
+                return(
+                  <>
+                <h4 className='program-subtitle'>{item.title}</h4>
+                <h6 className='program-list'>{item.topic}</h6>
+                </>
+                )
+              })}
             </div>
             <div className='program-block2'>
-            <h4>Garantías Judiciales y Siniestros</h4>
-            <h6 className='program-list' >Herramientas para detección de garantías judiciales.</h6>
-            <h6 className='program-list'>Comó asesorar al cliente.</h6>
-            <h6 className='program-list'>Mecanismos de ejecución de garantías de caución.</h6>
-            <h6 className='program-list'>El siniestro como parte del negocio.</h6>
-            <h4 className='program-subtitle'>Cobranza y Refacturación</h4>
-            <h6 className='program-list'>Cómo gestionar las cobranzas de manera profesional..</h6>
-            <h6 className='program-list'>Cómo administrar refacturaciones.</h6>
-            <h6 className='program-list'>La tecnología como aliada para la solución del “talón de Aquiles” del negocio.</h6>
+            {secondColumn.map((item, key)=>{
+                return(
+                  <>
+                <h4 className='program-subtitle'>{item.title}</h4>
+                <h6 className='program-list'>{item.topic}</h6>
+                </>
+                )
+              })}
+           
             <div className='program-buttons'>
                 <Link to='/escuela/inscripcion'>  
                 <BigButton className="school-button" name={'INSCRIBITE'} />

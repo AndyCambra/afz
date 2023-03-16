@@ -1,7 +1,7 @@
 .contact-backgound{
     background: url(../../../public/img/Contacto.jpg);
     background-size: cover ;
-    height: 97vh;
+    min-height: 97vh;
     width: 100vw;
 }
 .contact-grid{
@@ -66,8 +66,16 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .contact-backgound{
+        height: 130vh;
+    }
+    .contact-grid{
+       row-gap: 15px;
+    }
+    
     .contact-block{
-        grid-column: 1/3;
+        grid-column: 1/4;
+        
    }
    .contact-block h5{
         font-size: 16px; 
@@ -88,13 +96,13 @@
         font-size: .8em;
     }
     .second-column{
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 3;
         margin-top: 0;
     }
     .contact-form{
         grid-row: 1/3;
-        grid-column: 3/7;
+        grid-column: 4/7;
     }
     .contact-grid{
         grid-template-rows: 100px 100px;

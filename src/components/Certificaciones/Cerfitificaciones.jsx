@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import FourLogos from './FourLogos'
 import './certificaciones.css'
 import { useEffect } from 'react'
+import { certificationsTexts } from '../utils/Texts/certificationsTexts'
+
+const certificationsTitle= {
+  title: " MEMBRESÍAS Y CERTIFICACIONES",
+}
 
 const Cerfitificaciones = () => {
 
@@ -27,11 +32,12 @@ const Cerfitificaciones = () => {
               </Link>
             </div> 
           </div>
-            <h5 className='horizontalTitle'> MEMBRESÍAS Y CERTIFICACIONES</h5>
-            <p className='horizontalText'>Miembro de la Asociación Panamericana de Fianzas <br></br>
-                Miembro de la International Credit Insurance & Surety Association (ICISA) <br></br>
-                Certificación ISO 9001 en todos los sectores<br></br>
-                Calificación A+ de Evaluadora Latinoamericana</p>
+            <h5 className='horizontalTitle'>{certificationsTitle.title}</h5>
+            {certificationsTexts.map((item, key)=>{
+              return(
+              <p className='horizontalText'>{item.text}</p>
+            )})}
+            
       </div>
       <FourLogos />
       </div>

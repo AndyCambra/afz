@@ -60,32 +60,38 @@ console.log(infoInput)
           </div>  
             <form className= {sent===true ? 'display-none':'inscription-form'}  onSubmit={handleSubmit}>
             <div className='input-box'>
-              <input name="userName" className="light-input" value={infoInput.userName} type="onlyletters" onChange={ e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Nombre" required={true}/>
+            <label className='label-black'>Nombre</label>
+              <input name="userName" className="light-input" value={infoInput.userName} type="onlyletters" onChange={ e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Ingresá tu nombre" required={true}/>
               {errors['userName'] && <p className='error'>{errors['userName']}</p>}
             </div>
             <div className='input-box'>
-              <input name="userLastName" value={infoInput.userLastName} className='light-input' type="onlyletters" onChange={e => handleChange(e, 'userLastName', 'onlyletters', true, 75, 3)} placeholder='Apellido' required={true}/> 
+            <label className='label-black'>Apellido</label>
+              <input name="userLastName" value={infoInput.userLastName} className='light-input' type="onlyletters" onChange={e => handleChange(e, 'userLastName', 'onlyletters', true, 75, 3)} placeholder='Ingresá tu apellido' required={true}/> 
               {errors['userLastName'] && <p className='error'>{errors['userLastName']}</p>}
             </div>
             <div className='input-box'>
+            <label className='label-black'>Organización</label>
               <input name="company" className="light-input" value={infoInput.company} type="text" onChange={e => handleChange(e, 'company', 'text', true, 75, 2)} placeholder="Organización a la que pertenece" required={true}/>
               {errors['company'] && <p className='error'>{errors['company']}</p>}
             </div>
             <div className='input-box'>
-              <input name="email" className="light-input" value={infoInput.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder="Email" required={true}/>
+            <label className='label-black'>Email</label>
+              <input name="email" className="light-input" value={infoInput.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder="Ingresá tu mail" required={true}/>
               {errors['email'] && <p className='error'>{errors['email']}</p>}
             </div>
             <div className='input-box'>
-              <input name="phone" className="light-input" value={infoInput.phone} type="number" onChange={e => handleChange(e, 'phone', 'number', true, 15, 7)} placeholder="Teléfono" required={true}/>
+            <label className='label-black'>Teléfono</label>
+              <input name="phone" className="light-input" value={infoInput.phone} type="number" onChange={e => handleChange(e, 'phone', 'number', true, 15, 7)} placeholder="Ingresá tu número con código de área" required={true}/>
               {errors['phone'] && <p className='error'>{errors['phone']}</p>}
             </div>
             <div className='input-box'>
-              <input name="dni" className="light-input" value={infoInput.dni} type="number" onChange={e => handleChange(e, 'dni', 'number', true, 15, 7)} placeholder="DNI" required={true}/>
+            <label className='label-black'>DNI</label>
+              <input name="dni" className="light-input" value={infoInput.dni} type="number" onChange={e => handleChange(e, 'dni', 'number', true, 15, 7)} placeholder="Ingresá tu número sin puntos" required={true}/>
               {errors['dni'] && <p className='error'>{errors['dni']}</p>}
             </div>
             </form>
             <form className= {sent===true ? 'display-none':'selection-box'} onSubmit={handleSubmit}>
-            
+            <label className='label-black'>Elegí los cursos a los que querés asistir</label>
             <div className='input-checkbox'>
             <input name="Introducción al Seguro de Caución" value="Introducción al Seguro de Caución" className='check' type="checkbox" onChange={handleChange} /> 
             <p className='school-label'>Introducción al Seguro de Caución</p> 

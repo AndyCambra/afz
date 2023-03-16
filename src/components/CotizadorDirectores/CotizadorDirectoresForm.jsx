@@ -10,10 +10,10 @@ const CotizadorDirectoresForm = ({handleSubmitData, amount, handleChangeDirector
                 <p className='rent-label'>Monto a asegurar</p>
                 <div className='input-box'>
                     <i className='i'>$</i>
-                    <input name="clientAmount" className="light-input-rent" value={amount.clientAmount} type="number" onChange={e => handleChangeDirectorData(e, 'clientAmount', 'number', true, 15, 5)} required={true} />
+                    <input name="clientAmount" className="light-input-director" value={amount.clientAmount} type="number" onChange={e => handleChangeDirectorData(e, 'clientAmount', 'number', true, 15, 5)} required={true} />
                      {errors['clientAmount'] && <p className='error-white'>{errors['clientAmount']}</p>}
+                     <Link className='question-label'onClick={handleClickToQuestion}>¿Cómo se define el monto?</Link>
                 </div>
-                <Link className='question-label'onClick={handleClickToQuestion}>¿Cómo se define el monto?</Link>
                 <div className='inscription-send'>
                 <BigButton type="submit" name= "COTIZAR" className="rent-button"/>
                 </div>

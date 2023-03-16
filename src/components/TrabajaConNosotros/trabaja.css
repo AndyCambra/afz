@@ -43,3 +43,33 @@
     font-weight: 800;
     margin: 5px 0;
 }
+
+@media only screen and (min-width: 1440px){
+    
+
+}
+@media only screen and (min-width: 1023px) and (max-width: 1261px){
+    .work-block{
+        grid-column: 2/6;
+    }
+    .cv-form{
+        grid-column: 2/5;
+    }
+   
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .work-backgound{
+        height: 105vh;
+    }
+    .work-hero{
+        margin-top: 15%;
+    }
+    .work-block{
+        grid-column: 2/6;
+    }
+    .cv-form{
+        grid-column: 2/6;
+    }
+   
+} 

@@ -59,3 +59,10 @@ div{
 a{
     text-decoration: none;
 }
+label{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora';
+    font-size: .7em;
+    font-weight: 600;
+}

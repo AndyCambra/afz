@@ -72,20 +72,24 @@ console.log(contactInfo)
             </div> : <h6 className='contact-subtitle'>DEJANOS UN MENSAJE</h6>}
         
             <form className= {sent===true ? 'display-none':'inscription-form'} onSubmit={handleSubmit}>
-            <div className='input-box'>  
-                <input name="userName" className="white-input" value={contactInfo.userName} type="onlyletters" onChange={e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Nombre" required={true}/>
+            <div className='input-box'>
+              <label className='label-white'>Nombre</label>  
+                <input name="userName" className="white-input" value={contactInfo.userName} type="onlyletters" onChange={e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Ingresá tu nombre" required={true}/>
                 {errors['userName'] && <p className='error-white'>{errors['userName']}</p>}
             </div> 
-            <div className='input-box'>   
-                <input name="userLastName" value={contactInfo.userLastName} className='white-input' type="onlyletters" onChange={e => handleChange(e, 'userLastName', 'onlyletters', true, 75, 3)} placeholder='Apellido' required={true}/> 
+            <div className='input-box'>
+            <label className='label-white'>Apellido</label>  
+                <input name="userLastName" value={contactInfo.userLastName} className='white-input' type="onlyletters" onChange={e => handleChange(e, 'userLastName', 'onlyletters', true, 75, 3)} placeholder='Ingresá tu apellido' required={true}/> 
                 {errors['userLastName'] && <p className='error-white'>{errors['userLastName']}</p>}
             </div>
-            <div className='input-box'>   
-                <input name="email" className="white-input" value={contactInfo.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder="Email" required={true}/>
+            <div className='input-box'> 
+            <label className='label-white'>Email</label>  
+                <input name="email" className="white-input" value={contactInfo.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder="Ingresá tu mail" required={true}/>
                 {errors['email'] && <p className='error-white'>{errors['email']}</p>}
             </div>   
-            <div className='input-box-content'>  
-                <textarea name="content" className="white-area" value={contactInfo.content} type="text" onChange={e => handleChange(e, 'content', 'text', true, 250, 3)} placeholder="Mensaje" required={true}/>
+            <div className='input-box-content'> 
+            <label className='label-white'>Mensaje</label>
+                <textarea name="content" className="white-area" value={contactInfo.content} type="text" onChange={e => handleChange(e, 'content', 'text', true, 250, 3)} placeholder="Dejanos un mensaje" required={true}/>
                 {errors['content'] && <p className='error-white'>{errors['content']}</p>}
             </div>               
                 <div className='inscription-send'>
