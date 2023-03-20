@@ -137,6 +137,15 @@
     flex-direction: column;
     box-sizing: border-box;
 }
+.hidden{
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 .logoAfz-mobile{
     width: 35%;
     margin-left: 10px;

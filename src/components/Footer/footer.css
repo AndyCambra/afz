@@ -114,3 +114,24 @@
 
     }
 }
+
+.logo-box-mobile{
+    width: 100vw;
+    margin: auto;
+    background-color: #9B2743;
+    text-align: center;
+    box-sizing: border-box;
+}
+.logo-box-mobile img{
+    width: 50%;
+   margin: 70px auto;
+}
+.social-box-mobile{
+    box-sizing: border-box;
+    align-items: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+
+}

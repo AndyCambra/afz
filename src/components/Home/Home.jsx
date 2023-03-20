@@ -17,12 +17,14 @@ const Home = () => {
       <div  className='hero'>
         <div className='homeTitle'>
         <h1>Somos líderes <br></br>en seguros de caución.</h1>
+        <div className='mobile-button-box'>
         <Link to="/landing">
         <BigButton className="dark-button" name={'PRODUCTOS'} />
         </Link>
         <Link to="/contacto">
         <BigButton className="dark-button" name={'CONTACTO'} />
         </Link>
+        </div>
         </div>
       </div>
     </div>

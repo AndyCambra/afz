@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const MobileMenu = ({open, location, handleClick}) => {
   return (
-    <div className='headerMobileBox'>  
+    <div className={open===true ?'headerMobileBox' :'hidden'}>  
     <NavLink to="/"> 
             {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/prevencion-fraude' || location.pathname === '/prensa' ? (
                 <img src="/img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
