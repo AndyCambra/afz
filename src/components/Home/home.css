@@ -38,3 +38,15 @@
      }
   
 }
+@media only screen and (min-width: 340px) and (max-width: 768px){
+  
+        .homeTitle{
+            grid-column: 1/8;
+            padding-left: 0;
+            margin-top: 10%;
+        }
+        h1{
+            font-size: 3.3em; 
+         }
+
+}
