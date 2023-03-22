@@ -30,8 +30,8 @@
     .hero{
         width: 100%;
     }
-}
-@media (max-width: 768px) {
+} */
+/* @media (max-width: 768px) {
     .homeTitle{
         padding-left: 0;
         margin-top: 10%;
@@ -41,3 +41,102 @@
      }
   
 } */
+.landing-backgound-mobile{
+    background: url(../../../public/img/MobileImages/TransportMobile.jpg);
+    background-size: cover;
+    height: 120vh;
+    width: 100vw;
+    
+}
+.landing-title-mobile{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 390px;
+   
+}
+.landing-title-mobile h1{
+    color: #1e0606;
+    font-size: 3.5em;
+}
+.down-arrow{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    color: #fff;
+}
+.icon-section{
+    width: 100%;
+    text-align: center;
+}
+.title-box-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.down-arrow-black{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    color: #1e0606;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+  
+
+}
+.product-titles-mobile{
+   box-sizing: border-box;
+    padding: 20px;
+    width: 80%;
+   
+
+}
+.product-title-mobile{
+    font-size: 24px;
+}
+.product-mobile-text{
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 5px 20px 20px;
+}
+.product-mobile-text p{
+    color: #1e0606;
+   font-size: 17px;
+}
+.claim-text{
+    color: #1e0606;
+    font-weight: 700;
+    font-size: 16px;
+}
+.call-mobile{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px 80px;
+}
+.call-mobile p{
+    color: #9b2743;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.button-section{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.rotate {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    color: #1e0606;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}

@@ -1,13 +1,21 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 
 const HamButton = ({ open, handleClick }) => {
+    const location= useLocation()
   return !open ? (
     <div onClick={handleClick}>
-      <svg viewBox="0 0 100 80" width="30" height="30" fill="#fff">
+        {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela')  || location.pathname === '/prevencion-fraude' || location.pathname === '/nosotros' ? (
+      <svg viewBox="0 0 100 80" width="30" height="30" fill="#1e0606">
         <rect width="90" height="10" />
         <rect y="30" width="90" height="10" />
         <rect y="60" width="90" height="10" />
-      </svg>
+      </svg>):(
+        <svg viewBox="0 0 100 80" width="30" height="30" fill="#fff">
+        <rect width="90" height="10" />
+        <rect y="30" width="90" height="10" />
+        <rect y="60" width="90" height="10" />
+      </svg>)}
     </div>
   ) : (
     <div onClick={handleClick}>

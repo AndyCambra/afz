@@ -6,22 +6,22 @@ const MobileMenu = ({open, location, handleClick}) => {
   return (
     <div className={open===true ?'headerMobileBox' :'hidden'}>  
     <NavLink to="/"> 
-            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/prevencion-fraude' || location.pathname === '/prensa' ? (
-                <img src="/img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
+            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/prevencion-fraude' || location.pathname === '/nosotros' ? (
+                <img src="/img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz-mobile' />
             ):(             
             <img src="/img/logoAfz.png" alt="Logo Afz" className='logoAfz-mobile' />)}
             </NavLink>  
           <div className= {open===true ? "navbar-open" : "out"}>
-                <NavLink to="/nosotros" className='mobile-item'>
+                <NavLink to="/nosotros" className='mobile-item' onClick={handleClick}>
                NOSOTROS
                 </NavLink>
-                <NavLink to="/" className='mobile-item'>
+                <NavLink to="/landing" className='mobile-item' onClick={handleClick}>
                 PRODUCTOS
                 </NavLink>
-                <NavLink to="/" className='mobile-item'>
+                <NavLink to="/" className='mobile-item' onClick={handleClick}>
                 ESCUELA DE CAUCIÓN
                 </NavLink>
-                <NavLink to="/" className='mobile-item'>
+                <NavLink to="/" className='mobile-item' onClick={handleClick}>
                CONTACTO
                 </NavLink>    
           </div>

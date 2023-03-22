@@ -1,12 +1,8 @@
 import React from 'react'
-import { useEffect } from 'react'
+
 
 const Title = ({title}) => {
    
-
-    useEffect(()=>{
-     
-    },[])
   return (
     <div className='title-box'>
     <div className='product-titles'>

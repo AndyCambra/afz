@@ -168,3 +168,15 @@
     margin: 2px 0 2px 5px;
     letter-spacing: .5px ;
 }
+.small-button-call-mobile{
+    background-color: #fff;
+    border: 2px solid #9B2743;
+    border-radius: 16px;
+    height: 24px;
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #9B2743;
+    margin: 2px 0 2px 5px;
+    letter-spacing: .5px ;
+}

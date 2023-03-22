@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./header.css"
 import { useLocation } from 'react-router-dom'
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { useState } from "react"
 import MobileMenu from './MobileMenu'
 

@@ -127,5 +127,28 @@
     }
 }
 
-
-   
+.top-section{
+    height: 290px;
+}
+.image-us-mobile{
+    width: 100%;
+    
+}
+.text-box-mobile{
+    padding: 20px;
+    background-color: #1E0606;
+    color: #fff;
+    margin-top: -5px;
+}
+.subtitle-us-mobile{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.text-us-mobile{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.center-button{
+    text-align: center;
+    margin: 10px 0;
+}
