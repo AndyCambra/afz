@@ -5,7 +5,8 @@ import ProductTitleMobile from './ProductTitleMobile'
 import { Link } from 'react-router-dom'
 import BigButton from '../utils/BigButton/BigButton'
 
-const LandingAndProductsMobile = () => {
+
+const LandingAndProductsMobile = ({handleClick}) => {
 
   return (
     <>
@@ -31,6 +32,14 @@ const LandingAndProductsMobile = () => {
           </Link></p>
           <p>CON NOSOTROS O A TRAVÉS DE TU PRODUCTOR<br></br> ASESOR DE SEGUROS</p>
           </div>
+         {/*  <div className='product-titles-mobile'>
+            <Link to="/landing">
+             <h5 className='menu-item-mobile'>VOLVER</h5>
+            </Link>
+            <Link to="/">
+             <h5 className='item-home-mobile'>HOME</h5>
+            </Link>
+          </div> */}
 </>
   )
 }

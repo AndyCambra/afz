@@ -22,6 +22,7 @@ import CotizadorAlquiler from './components/CotizadorAlquiler/CotizadorAlquiler'
 import Prensa from './components/Prensa/Prensa';
 import CotizadorDirectores from './components/CotizadorDirectores/CotizadorDirectores';
 import { Icon } from '@iconify/react';
+import ScrollToTop from './components/utils/ScrollToTop';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
       <a href="https://wa.me/5491136671594?text=Hola" className="floating" target="_blank" rel="noreferrer">
       <Icon icon="logos:whatsapp-icon" className='icon' />
       </a>
+      <ScrollToTop />
     </BrowserRouter>
  
 
