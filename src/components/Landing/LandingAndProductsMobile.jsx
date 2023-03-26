@@ -31,15 +31,7 @@ const LandingAndProductsMobile = ({handleClick}) => {
           <BigButton name='CONTACTATE' className="small-button-call-mobile"/>
           </Link></p>
           <p>CON NOSOTROS O A TRAVÉS DE TU PRODUCTOR<br></br> ASESOR DE SEGUROS</p>
-          </div>
-         {/*  <div className='product-titles-mobile'>
-            <Link to="/landing">
-             <h5 className='menu-item-mobile'>VOLVER</h5>
-            </Link>
-            <Link to="/">
-             <h5 className='item-home-mobile'>HOME</h5>
-            </Link>
-          </div> */}
+          </div> 
 </>
   )
 }

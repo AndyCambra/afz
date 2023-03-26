@@ -202,8 +202,10 @@
      grid-column: 1/3;
 }
 .inscription-send{
+    display: flex;
     margin-top: 16px;
     text-align: right;
+    gap: 10px;
 }
 .inscription-title{
    grid-column: 1/3;
@@ -229,6 +231,11 @@
 .school-label{
     color: #1e0606;
     font-weight: 500;
+}
+.subtitle-school-form{
+    font-size: .9em;
+    margin: 8px 0 16px 4px;
+    color: #1e0606;
 }
 .input-checkbox{
     display: flex;
@@ -373,4 +380,114 @@
         width: 36px;
         height: 36px;
     }
+    }
+    @media only screen and (min-width: 330px) and (max-width: 768px){
+    .hexa-video-mobile{
+        object-fit: cover;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .school-mobile-logo-box{
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 10px;
+        margin-top: -490px;
+        text-align: right;
+    }
+    .school-mobile-logo-box img{
+        width: 40%;
+    }
+    .school-mobile-title{
+        margin-top: -50px;
+        color: #1e0606;
+        font-size: 3em;
+        z-index: 20;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .school-button-box{
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        gap: 10px
+
+        
+    }
+    .info-school-mobile-box{
+        padding: 290px 20px 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+      
+    
+    }
+    .info-school-mobile-box img{
+       width: 30%;
+    }
+    .info-school-mobile-text{
+        padding: 20px 20px 40px 20px;
+
+    }
+    .info-school-mobile-text p{
+        color: #1e0606;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .bordeax-background{
+        background-color: #9b2743;
+        padding: 20px 20px 40px 20px;
+    }
+    .bordeax-background h5{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding-bottom: 24px;
+    }
+    .course-mobile p{
+        color: #fff;
+    }
+    .course-mobile h2{
+        color: #fff;
+        padding-bottom: 24px;
+    }
+    .inscription-school-mobile-box{
+        padding: 290px 20px 0 20px;
+
+    }
+    .inscription-school-mobile-box img{
+        width: 30%;
+    }
+    .logo-school-box-mobile{
+        width: 100%;
+        text-align: right;
+        margin-bottom: -50px;
+    }
+   
+        .inscription-title{
+            font-size: .7em;
+            margin-bottom: 5px;
+        }
+        .subtitle-school-form{
+            margin-top: 36px;
+        }
+        .inscription-send{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .thanks-message{
+            width: 77%;
+        }
+        .final-buttons-box{
+            display: flex;
+            justify-content: left;
+            padding-top: 35%;
+            gap: 10px
+        }
+     
     }

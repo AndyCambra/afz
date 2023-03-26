@@ -4,6 +4,12 @@ import'./contacto.css'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
 import { validation } from '../utils/validation'
+import ContactForm from './ContactForm'
+import { BrowserView, MobileView } from 'react-device-detect'
+import SubmenuContactoMobile from './SubmenuContactoMobile'
+import ContactoTitleAndText from './ContactoTitleAndText'
+import ContactoAdress from './ContactoAdress'
+import { CvForm } from '../TrabajaConNosotros/CvForm'
 
 const Contacto = () => {
   let [contactInfo, setContactInfo]=useState({
@@ -12,8 +18,18 @@ const Contacto = () => {
         email: "",
         content:"",
   })
+  let [candidateInfo, setCandidateInfo]=useState({
+    userName: "",
+    userLastName: "",
+    email: "",
+    phone:"",
+    dni:"",
+    content:"",
+    cv:""
+  })
   const [sent, setSent]= useState(false)
   const [errors, setErrors]= useState({})
+  const [change, setChange]= useState(false)
     
       
   const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
@@ -21,6 +37,14 @@ const Contacto = () => {
     const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)     
       setContactInfo({...changedInfoInput, [e.target.name]:value});
       setErrors(err);
+      } 
+
+  const handleCandidate=(e, name, type, required = false, maxLength = false, minLength = false)=>{
+        const infoInput=candidateInfo
+        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        
+            setCandidateInfo({...changedInfoInput, [e.target.name]:value});
+            setErrors(err);
       } 
 const handleSubmit=(e)=>{
   e.preventDefault();
@@ -30,77 +54,59 @@ const handleSubmit=(e)=>{
     }
   }
   setSent(true)
+  
+}
+const handleClick=(e)=>{
+  e.preventDefault();
+  setChange(!change)
 }
 console.log(contactInfo)
 
   return (
+    <>
+    <BrowserView>
     <section className='contact-backgound' >
     <div className='contact-grid'>
-      <div className="contact-block">
-        <h5 className='horizontal-title'>COBERTURA SIN FRONTERAS</h5>
-        <p className='horizontal-text'>Estés donde estés, te ofrecemos asesoramiento integral y nuestra póliza digital que te brinda una amplia cobertura a nivel del país y de la región.</p>
-        </div>
-       
-        <div className='first-column'>
-            <h6 className='contact-subtitle'>BUENOS AIRES</h6>
-            <p>Tucumán 117 Piso 3</p>
-            <p>(C1049AAC) Ciudad de Buenos Aires</p>
-            <p>Argentina</p>
-            <p className='highlight-top'>(+5411) 3986 2800</p>
-            <p className='highlight'>info@afianzadora.com.ar</p>
-        </div>  
-        <div className='second-column'>
-            <h6 className='contact-subtitle'>ROSARIO</h6>
-            <p>Entre Ríos 655 Piso 3, Of. B</p>
-            <p>(2000) Rosario</p>
-            <p>Santa Fe, Argentina</p>
-            <p className='highlight-top'>(0341) 527-1315</p>
-            <p className='highlight'>rosario@afianzadora.com.ar</p>
-        </div> 
+     <ContactoTitleAndText />
+      <ContactoAdress />
         <div className='work-button-in-contact'>
             <Link to="/trabaja-con-nosotros">
         <BigButton name="TRABAJÁ CON NOSOTROS" className="small-button" />
         </Link>
         </div>
-        <div className='contact-form'>
-        {sent===true ? 
-            <div>
-                <h2 className='contact-thanks'>Muchas gracias {contactInfo.userName} por tu consulta!</h2>
-                <p className='contact-thanks-text'>Te llegará en breve un mail de confirmación.</p>
-                <div className='inscription-send'>
-                <Link to="/"><BigButton name= "HOME" className="contact-dark-button"/></Link></div>
-            </div> : <h6 className='contact-subtitle'>DEJANOS UN MENSAJE</h6>}
-        
-            <form className= {sent===true ? 'display-none':'inscription-form'} onSubmit={handleSubmit}>
-            <div className='input-box'>
-              <label className='label-white'>Nombre</label>  
-                <input name="userName" className="white-input" value={contactInfo.userName} type="onlyletters" onChange={e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Ingresá tu nombre" required={true}/>
-                {errors['userName'] && <p className='error-white'>{errors['userName']}</p>}
-            </div> 
-            <div className='input-box'>
-            <label className='label-white'>Apellido</label>  
-                <input name="userLastName" value={contactInfo.userLastName} className='white-input' type="onlyletters" onChange={e => handleChange(e, 'userLastName', 'onlyletters', true, 75, 3)} placeholder='Ingresá tu apellido' required={true}/> 
-                {errors['userLastName'] && <p className='error-white'>{errors['userLastName']}</p>}
-            </div>
-            <div className='input-box'> 
-            <label className='label-white'>Email</label>  
-                <input name="email" className="white-input" value={contactInfo.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder="Ingresá tu mail" required={true}/>
-                {errors['email'] && <p className='error-white'>{errors['email']}</p>}
-            </div>   
-            <div className='input-box-content'> 
-            <label className='label-white'>Mensaje</label>
-                <textarea name="content" className="white-area" value={contactInfo.content} type="text" onChange={e => handleChange(e, 'content', 'text', true, 250, 3)} placeholder="Dejanos un mensaje" required={true}/>
-                {errors['content'] && <p className='error-white'>{errors['content']}</p>}
-            </div>               
-                <div className='inscription-send'>
-                <BigButton type="submit" name= "ENVIAR" className="contact-dark-button"/>
-                </div>
-            </form>
+        <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}/>
+      </div>
+    </section>
+    </BrowserView>
+    <MobileView>
+      <div className='first-box-mobile'>
+        <SubmenuContactoMobile handleClick={handleClick} change={change}/>
+        <div className='img-box'>
+        <img src="/img/Contacto.jpg" alt="" />
         </div>
-    
-    </div>
-    
-      </section>
+      </div>
+      <div className='bordeax-background'>
+        {change === false ? (
+          <>
+          <ContactoTitleAndText />
+          <ContactoAdress />
+          <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}/>
+          </>) 
+          :( 
+          <>
+          {sent===true ? <div>
+                <h2 className='contact-thanks'>Muchas gracias {candidateInfo.userName} por contactarnos!</h2>
+                <p className='contact-thanks-text'>Te llegará en breve un mail de confirmación.</p>
+                <div><Link to="/"><BigButton name= "HOME" className="contact-dark-button"/></Link></div></div>
+                :<h2 className='contact-subtitle'>CONTANOS SOBRE VOS</h2>}
+          <CvForm sent={sent} handleSubmit={handleSubmit} handleChange={handleCandidate} errors={errors} candidateInfo={candidateInfo} classDark={'white-area'} className={'white-input'}/>
+          </>
+          )
+        }
+        </div>
+
+    </MobileView>
+    </>
   )
 }
 

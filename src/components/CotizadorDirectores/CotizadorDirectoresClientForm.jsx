@@ -24,7 +24,7 @@ const CotizadorDirectoresClientForm = ({handleChange, clientData, errors, handle
         </div>
         <div className='input-box'>
         <label className='label-white'>CUIT/CUIL</label>
-          <input name="cuit" className="light-input-client" value={clientData.cuit} type="number" onChange={e => handleChange(e, 'cuit', 'number', true, 15, 7)} placeholder="'Ingresá tu número sin guiones'" required={true}/>
+          <input name="cuit" className="light-input-client" value={clientData.cuit} type="number" onChange={e => handleChange(e, 'cuit', 'number', true, 15, 7)} placeholder='Ingresá tu número sin guiones' required={true}/>
           {errors['cuit'] && <p className='error-white'>{errors['cuit']}</p>}
         </div>
         <div className='input-box'>

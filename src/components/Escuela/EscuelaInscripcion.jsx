@@ -4,6 +4,8 @@ import '../utils/Imput/input.css'
 import { useState } from 'react'
 import BigButton from '../utils/BigButton/BigButton'
 import { validation } from '../utils/validation'
+import { BrowserView, MobileView } from 'react-device-detect';
+import EscuelaForm from './EscuelaForm'
 
 
 const EscuelaInscripcion = () => {
@@ -32,10 +34,13 @@ const EscuelaInscripcion = () => {
       }
     }
     setSent(true)
+    window.scrollTo(0,0);
 
   }
 console.log(infoInput)
   return (
+    <>
+    <BrowserView>
     <section className='info-backgound' >
     <div  className='info-hero'>
         <div className='place-logo'>
@@ -55,67 +60,22 @@ console.log(infoInput)
               </Link>
             </div> 
           </div>
-          <div className={sent===true ? "thanks-message" :'inscription-title'}>
-            {sent===true ? <div><h2>Gracias {infoInput.userName} por inscribirte!</h2><p>Te llegará en breve un mail de confirmación.</p></div>:<h2>COMPLETÁ EL FORMULARIO</h2>}
-          </div>  
-            <form className= {sent===true ? 'display-none':'inscription-form'}  onSubmit={handleSubmit}>
-            <div className='input-box'>
-            <label className='label-black'>Nombre</label>
-              <input name="userName" className="light-input" value={infoInput.userName} type="onlyletters" onChange={ e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Ingresá tu nombre" required={true}/>
-              {errors['userName'] && <p className='error'>{errors['userName']}</p>}
-            </div>
-            <div className='input-box'>
-            <label className='label-black'>Apellido</label>
-              <input name="userLastName" value={infoInput.userLastName} className='light-input' type="onlyletters" onChange={e => handleChange(e, 'userLastName', 'onlyletters', true, 75, 3)} placeholder='Ingresá tu apellido' required={true}/> 
-              {errors['userLastName'] && <p className='error'>{errors['userLastName']}</p>}
-            </div>
-            <div className='input-box'>
-            <label className='label-black'>Organización</label>
-              <input name="company" className="light-input" value={infoInput.company} type="text" onChange={e => handleChange(e, 'company', 'text', true, 75, 2)} placeholder="Organización a la que pertenece" required={true}/>
-              {errors['company'] && <p className='error'>{errors['company']}</p>}
-            </div>
-            <div className='input-box'>
-            <label className='label-black'>Email</label>
-              <input name="email" className="light-input" value={infoInput.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder="Ingresá tu mail" required={true}/>
-              {errors['email'] && <p className='error'>{errors['email']}</p>}
-            </div>
-            <div className='input-box'>
-            <label className='label-black'>Teléfono</label>
-              <input name="phone" className="light-input" value={infoInput.phone} type="number" onChange={e => handleChange(e, 'phone', 'number', true, 15, 7)} placeholder="Ingresá tu número con código de área" required={true}/>
-              {errors['phone'] && <p className='error'>{errors['phone']}</p>}
-            </div>
-            <div className='input-box'>
-            <label className='label-black'>DNI</label>
-              <input name="dni" className="light-input" value={infoInput.dni} type="number" onChange={e => handleChange(e, 'dni', 'number', true, 15, 7)} placeholder="Ingresá tu número sin puntos" required={true}/>
-              {errors['dni'] && <p className='error'>{errors['dni']}</p>}
-            </div>
-            </form>
-            <form className= {sent===true ? 'display-none':'selection-box'} onSubmit={handleSubmit}>
-            <label className='label-black'>Elegí los cursos a los que querés asistir</label>
-            <div className='input-checkbox'>
-            <input name="Introducción al Seguro de Caución" value="Introducción al Seguro de Caución" className='check' type="checkbox" onChange={handleChange} /> 
-            <p className='school-label'>Introducción al Seguro de Caución</p> 
-            </div>
-            <div className='input-checkbox'>
-            <input name="Cobranza y Refacturación" value="Cobranza y Refacturación" className='check' type="checkbox" onChange={handleChange}/> 
-            <p className='school-label'>Cobranza y Refacturación</p> 
-            </div>
-            <div className='input-checkbox'>
-            <input name="Suscripción de Riesgos" value="Suscripción de Riesgos" className='check' type="checkbox" onChange={handleChange} /> 
-            <p className='school-label'>Suscripción de Riesgos</p> 
-            </div>
-            <div className='input-checkbox'>
-            <input name="Garantías Judiciales y Siniestros" value="true" className='check' type="checkbox" onChange={handleChange}/> 
-            <p className='school-label'>Garantías Judiciales y Siniestros</p> 
-            </div>
-            <div className='inscription-send'>
-            <BigButton type="submit" name= "ENVIAR" className="inscription-button"/>
-            </div>
-            </form>
-            </div>
+          <EscuelaForm errors={errors} infoInput={infoInput} sent={sent} handleSubmit={handleSubmit} handleChange={handleChange} />         
+           </div>
           </div>
           <div class="push"></div>
       </section>
+      </BrowserView>
+      <MobileView>
+      <section className='info-backgound' > 
+        <div className='inscription-school-mobile-box'>
+          <div className='logo-school-box-mobile'><img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img></div>
+          <EscuelaForm errors={errors} infoInput={infoInput} sent={sent} handleSubmit={handleSubmit} handleChange={handleChange} />  
+          </div>
+          <div class="push"></div>
+         </section>
+      </MobileView>
+      </>
   )
 }
 

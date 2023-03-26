@@ -11,7 +11,7 @@ import BigButton from '../utils/BigButton/BigButton'
 import ProductMenu from '../utils/ProductMenu/ProductMenu'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView} from 'react-device-detect';
 
 
 const Productos = () => {

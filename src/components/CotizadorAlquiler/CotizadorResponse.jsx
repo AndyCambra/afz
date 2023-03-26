@@ -1,5 +1,6 @@
 import React from "react";
 import BigButton from "../utils/BigButton/BigButton";
+import { isMobile } from "react-device-detect";
 
 const CotizadorResponse = ({ result, rentData, handleCancel, handleClick }) => {
   return (
@@ -21,7 +22,7 @@ const CotizadorResponse = ({ result, rentData, handleCancel, handleClick }) => {
             className="rent-button-secondary"
             onClick={handleCancel}
           />
-          <button type="button" onClick={handleClick} className="rent-button">
+          <button type="button" onClick={handleClick} className={ isMobile ? "contact-dark-button": "rent-button"}>
             CONTRATÁ
           </button>
         </div>

@@ -56,13 +56,17 @@ const location= useLocation()
     </BrowserView>
     <MobileView>
     <div className='footerBox'>
+       
         <div className='logo-box-mobile'> <img src="/img/logoAfz.png" alt="Logo Afz" />
         </div>
         <SocialIcons className="social-box-mobile" classCircle="icon-circle" classIcon="social-icon" classIconBig="social-icon-big"/>
+        <NavLink to="/">
+        <h5 className={location.pathname === "/" ? "display-none" : 'home-mobile-footer'}>HOME</h5>
+       </NavLink>
         </div>
         {location.pathname === '/'?
-        <LegalFooter />: null }
-
+        <LegalFooter />
+        : null}
     </MobileView>
     </>
   )

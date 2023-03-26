@@ -9,6 +9,8 @@ import CotizadorDirectoresClientForm from './CotizadorDirectoresClientForm'
 import DatosDeFacturacion from './DatosDeFacturacion'
 import BigButton from '../utils/BigButton/BigButton'
 import { validation } from '../utils/validation'
+import { BrowserView, MobileView } from 'react-device-detect'
+import SubmenuCotizadores from '../CotizadorAlquiler/SubmenuCotizadores'
 
 const CotizadorDirectores = () => {
     const [sent, setSent]= useState(false)
@@ -98,6 +100,7 @@ const CotizadorDirectores = () => {
       console.log(allDirectorData)
   return (
     <>
+    <BrowserView>
     <section className='directors-backgound' >
     <div  className='director-hero'>
         <div className="rent-block">
@@ -142,7 +145,18 @@ const CotizadorDirectores = () => {
             </div>}
     </div>
     </section>
-   {/*  <section className={sentThanks === true ? 'display-none':'dark-block'}></section> */}
+    </BrowserView>
+    <MobileView>
+    <div className='first-box-mobile'>
+        <SubmenuCotizadores/>
+        <div className='img-box'>
+        <img src="/img/CotizadorDirectores.jpg" alt="" />
+        </div>
+      </div>
+      <div className='bordeax-background'>
+        </div>
+
+    </MobileView>
     </>
   )
 }

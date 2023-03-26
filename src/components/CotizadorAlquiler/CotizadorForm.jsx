@@ -1,10 +1,12 @@
 import React from 'react'
 import BigButton from '../utils/BigButton/BigButton'
+import { isMobile } from 'react-device-detect'
 
 const CotizadorForm = ({handleChangeRentData, handleSubmitRentData, rentData, errors}) => {
   
   return (
-    <div><form className='rent-form' onSubmit={handleSubmitRentData}>
+    <div>
+    <form className='rent-form' onSubmit={handleSubmitRentData}>
     <p className='input-explain'>Ingresá el monto sin puntos ni comas.</p>
     <p className='rent-label'>Alquiler mensual</p>
     <div className='input-box'>
@@ -25,8 +27,8 @@ const CotizadorForm = ({handleChangeRentData, handleSubmitRentData, rentData, er
         <p className='rent-label'>3 años</p>
             <input name="years" value={"3"} className='radio' type="radio" onChange={handleChangeRentData} required={true}/> 
     </div>
-    <div className='inscription-send'>
-        <BigButton type="submit" name= "COTIZAR" className="rent-button"/>
+    <div className='rent-send'>
+        <BigButton type="submit" name= "COTIZAR" className={isMobile ? "contact-dark-button":"rent-button"}/>
         </div>
   </form>
    </div>

@@ -135,3 +135,13 @@
     column-gap: 35px;
 
 }
+.home-mobile-footer{
+    margin: 50px auto;
+    color: #b7b6b6;
+    text-align: center;
+    border:1px solid #b7b6b6;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 2px 16px;
+    
+}
