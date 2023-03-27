@@ -1,11 +1,13 @@
 import React from 'react'
 import './legalFooter.css'
 
+
 const LegalFooter = () => {
   return (
+
     <div className='legalFooterBox'>
         <div className="wrapper">
-          <div  className='dataFiscalLogo'>
+          <div className='dataFiscalLogo'>
           <img src="/img/datafiscal.png" alt="Logo Data Fiscal"className='fiscalLogo'/>
           </div>
           <div className='legalText'>
@@ -26,12 +28,8 @@ const LegalFooter = () => {
           <img src="/img/Registro_de_Bases.jpeg" alt="Logo Registro de Bases de Datos"className='registroLogo'/>
           </div>
         </div>
-        
-
-
-        
-    
     </div>
+ 
   )
 }
 

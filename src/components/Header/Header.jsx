@@ -2,13 +2,21 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./header.css"
 import { useLocation } from 'react-router-dom'
-
+import { BrowserView, MobileView } from 'react-device-detect';
+import { useState } from "react"
+import MobileMenu from './MobileMenu'
 
 
 const Header = () => {
 const location= useLocation()
-
+const [open, setOpen] = useState(false);
+const handleClick = () => {
+    setOpen(!open);
+  };
+console.log(open)
   return (
+    <div>
+        <BrowserView>
     <div className='headerBox'>
         <div className='header-in'>
             <NavLink to="/"> 
@@ -43,12 +51,16 @@ const location= useLocation()
             AFZ.ONLINE
             </NavLink></div>
             </div>
-            
-
-        </div>
-        
+        </div>      
     </div>
+    </BrowserView>
+    <MobileView>
+        <MobileMenu open={open} location={location} handleClick={handleClick} />
+    </MobileView>
+    </div>
+
   )
 }
 
 export default Header
+

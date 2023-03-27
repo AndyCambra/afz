@@ -1,10 +1,11 @@
 import React from 'react'
 import BigButton from "../utils/BigButton/BigButton";
+import { isMobile } from 'react-device-detect';
 
 const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick }) => {
   return (
-    <div>
-      <form className="rent-form">
+    
+      <form className={isMobile? "bill-first-form":"rent-form"}>
         <p className="rent-label">Cotización</p>
         <div className="amount-result">
           $ {result}
@@ -21,12 +22,12 @@ const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick
             className="rent-button-secondary"
             onClick={handleCancel}
           />
-          <button type="button" onClick={handleClick} className="rent-button">
+          <button type="button" onClick={handleClick} className={ isMobile? "contact-dark-button" :"rent-button"}>
             CONTRATÁ
           </button>
         </div>
       </form>
-    </div>
+    
   );
 }
 

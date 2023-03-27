@@ -80,6 +80,10 @@
     font-weight: 700;
     margin-bottom: 3px;
 }
+.rent-send{
+    text-align: right;
+    margin-top: 30px;
+}
 .rent-result{
     box-sizing: border-box;
     border: 0;
@@ -146,3 +150,18 @@
         height: 130vh;
        }
 } 
+@media only screen and (min-width: 330px) and (max-width: 768px){
+    .rent-label{
+        font-size: .9em;
+    }
+    .rent-radio-title{
+        font-size: .9em;
+        margin-bottom: 0;
+    }
+    .rent-result-box{
+        margin-top: 46px;
+    }
+    .rent-send{
+        text-align: center;
+    }
+}

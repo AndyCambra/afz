@@ -80,7 +80,6 @@
     border: 1.5px solid #9B2743;
 }
 .contact-dark-button{
-    
     background: rgba(0, 0, 0, 0.3);
     border: 1.5px solid #fff;
     box-shadow: 3px 3px 4px 3px #00000026;
@@ -167,4 +166,52 @@
     color: #fff;
     margin: 2px 0 2px 5px;
     letter-spacing: .5px ;
+}
+.small-button-call-mobile{
+    background-color: #fff;
+    border: 2px solid #9B2743;
+    border-radius: 16px;
+    height: 24px;
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #9B2743;
+    margin: 2px 0 2px 5px;
+    letter-spacing: .5px ;
+}
+.inscription-cancel-button{
+    background: rgba(255, 255, 255, 0.3);
+    border: 1.5px solid #b7b7b7;
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 24px;
+    width: 160px;
+    height: 38px;
+    font-family: 'Sora', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #b7b6b6;
+
+}
+.inscription-cancel-button:hover{
+    border: 1.5px solid #1E0606;
+    color: #1E0606;
+}
+
+@media only screen and (min-width: 330px) and (max-width: 768px){
+    .contact-dark-button{
+        background-color: transparent;
+    }
+    .small-bordeaux{
+        background: #9B2743;
+    border: 1.5px solid #fff;
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 16px;
+    width: 160px;
+    height: 30px;
+    font-family: 'Sora', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 12px;
+    }
 }

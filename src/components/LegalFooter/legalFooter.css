@@ -84,3 +84,25 @@
     }
     
 }
+@media only screen and (min-width: 340px) and (max-width: 768px){
+    .legalText{
+        grid-column: 2/15;
+    }
+    .wrapper{
+     
+       grid-gap: 5px;
+       padding: 20px;
+
+    }
+    .dataFiscalLogo{
+        margin-right: 5px;
+    }
+    .ssnLogo{
+        margin-right: 5px;
+
+    }
+    .registroLogoBox{
+        grid-column: 1/12;
+        margin-top: 5px;
+    }
+}

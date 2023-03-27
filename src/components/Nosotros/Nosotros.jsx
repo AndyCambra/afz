@@ -6,7 +6,8 @@ import { handleButtonClicked } from 'react'
 import './nosotros.css'
 import SixLogos from './SixLogos'
 import BigButton from '../utils/BigButton/BigButton'
-
+import { BrowserView, MobileView } from 'react-device-detect';
+import NosotrosMobile from './NosotrosMobile'
 
 
 const reisurance=
@@ -36,6 +37,7 @@ const Nosotros = () => {
  
   return (
     <div>
+      <BrowserView>
       <section title="us-backgound" id="section1" className='us-backgound'  ref={usRef} >
         <div className='grid'>
           <div className="us-block">
@@ -58,10 +60,8 @@ const Nosotros = () => {
             </div>
             <div className="work-button">
         <BigButton className="small-button" name={"TRABAJÁ CON NOSOTROS"} />
-        </div>
-        
-      </section>
-      
+        </div> 
+      </section> 
       <section className='re-backgound'ref={reinsurersRef}>
       <div className='re-grid'>
           <div className="re-block">
@@ -78,9 +78,10 @@ const Nosotros = () => {
           </div>
           </div>
       </section>
-
-      
-     
+      </BrowserView>
+      <MobileView>
+        <NosotrosMobile us={us} usRef={usRef} teamRef={teamRef} comRef={comRef} reinsurersRef={reinsurersRef} handleButtonClicked={handleButtonClicked} staff={staff} reisurance={reisurance} compromise={compromise}/>
+      </MobileView>
     </div>
   )
 }

@@ -154,7 +154,7 @@ textarea{
     background-color: rgba(255, 255, 255, .4);
     font-family: 'Sora', sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #fff;
 }
 .light-input-director{
@@ -234,7 +234,7 @@ input[type=number]::-webkit-inner-spin-button {
     
   }
   .label-white{
-    color: #b3b2b2;
+    color: #fff;
    
   }
   .label-black{
@@ -246,3 +246,77 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: .8em;
     
   }
+  .label-white::placeholder{
+    color: #fff;
+   
+  }
+  .rent-user-input::placeholder{
+    color: #FFF;
+  }
+
+  @media only screen and (min-width: 330px) and (max-width: 768px){
+    .label-black{
+        font-size: .8em;
+        
+    }
+    .light-input{
+        font-size: .8em;
+
+    }
+    .label-white{
+        font-size: .8em;
+        color: #FFF;
+    }
+    .white-input{
+        background-color: rgba(255, 255, 355, .4);
+        color: #FFF;
+    }
+    .white-area{
+        background-color: rgba(255, 255, 355, .4);
+        color: #FFF;
+    }
+    .light-input::placeholder {
+        font-size: 1em;
+        color: #575353;
+        
+      }
+      .white-area::placeholder{
+        color: #e6dddd;
+        font-size: 1.2em;
+      }
+      .white-input::placeholder{
+        color: #e6dddd;
+        font-size: 1.2em;
+
+      }
+      .radio{
+        height: 2.5em;
+        width: 2.5em;
+        accent-color:#d27c90;
+        /* border-color: #9B2743; */
+        margin-right: 30px;
+    }
+    .light-input-rent{
+        font-size: 1.7em;
+       
+    }
+    .label-white{
+        font-size: .9em;
+    }
+    .rent-user-input{
+        font-size: .8em;
+    }
+    .rent-user-input::placeholder{
+        color: #e6dddd;
+        font-size: 1.2em;
+
+    }
+    .light-input-file{
+        padding: 6px 0 0 0;
+    }
+    .light-input-client::placeholder{
+        color: #e6dddd;
+        font-size: 1.2em;
+
+    }
+}

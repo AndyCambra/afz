@@ -11,6 +11,7 @@ import BigButton from '../utils/BigButton/BigButton'
 import ProductMenu from '../utils/ProductMenu/ProductMenu'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { BrowserView} from 'react-device-detect';
 
 
 const Productos = () => {
@@ -18,7 +19,8 @@ const Productos = () => {
   const product = products.find(p=> p.id=== parseInt(id))
 
   return (
-   
+   <>
+   <BrowserView>
       <div className='product-background'>
       <div className='product-content'>
         <div className='product-box'>   
@@ -40,6 +42,9 @@ const Productos = () => {
         </div>
         <div class="push"></div>
     </div>
+    </BrowserView>
+   
+    </>
   )
 }
 

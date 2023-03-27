@@ -38,3 +38,27 @@
      }
   
 }
+@media only screen and (min-width: 340px) and (max-width: 768px){
+  
+        .homeTitle{
+            grid-column: 1/8;
+            padding-left: 0;
+            margin-top: 0px;
+        }
+        h1{
+            font-size: 3.8em; 
+         }
+         .hero{
+            margin-top: 270px;
+         }
+         .mobile-button-box{
+            grid-column: 2/7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 10px
+
+         }
+
+}

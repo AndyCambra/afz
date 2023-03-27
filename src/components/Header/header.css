@@ -129,5 +129,68 @@
         }
     }
    
-   
-  
+.headerMobileBox{
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.hidden{
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.logoAfz-mobile{
+    width: 35%;
+    margin-left: 10px;
+}
+
+.navbar-open{
+    box-sizing: border-box;
+    background-color: #1e0606;
+    position: absolute;
+    width: 35%;
+    left: 65vw;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 10px 40px 0;
+    align-items:flex-end;
+    transition: left 0.3s linear;
+    height: 290px;
+}
+.out{
+    box-sizing: border-box;
+    background-color: #1e0606;
+    position: absolute;
+    width: 35%;
+    left: 100vw;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 10px 40px 0;
+    align-items:flex-end;
+    transition: left 0.3s linear;
+    height: 290px;
+}
+.ham-button{
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: 88%;
+
+}
+
+.mobile-item{
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
+    text-align: right;
+    padding: 12px;
+    color: #fff;
+    font-size: .9em;
+}
