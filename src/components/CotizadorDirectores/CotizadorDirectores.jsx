@@ -153,8 +153,34 @@ const CotizadorDirectores = () => {
         <img src="/img/CotizadorDirectores.jpg" alt="" />
         </div>
       </div>
-      <div className='bordeax-background'>
-        </div>
+      <div className='bordeax-background-director'>
+      {sentThanks === true? 
+            <div className='rent-title'><h2>GRACIAS {clientData.name} POR CONTACTARNOS!</h2><p>Vas a recibir un mail de confirmación a la brevedad</p> </div>: 
+         
+            showForm === true ?  <div> <h2 className='director-subtitle'>COMPLETÁ EL FORMULARIO</h2></div> :
+            <div className='rent-title'>
+            <div><h2 className='director-subtitle'>INGRESÁ LOS DATOS Y COTIZÁ DE FORMA INSTANTÁNEA</h2></div>
+            </div>}
+        
+          {sentThanks === true? <div></div>: 
+       
+          goToBill=== true && <div className='bill-form'>
+           <DatosDeFacturacion handleSubmitThanks={handleSubmitThanks} clientData={clientData} errors={errors} handleChange={handleChange} handleCancel={handleCancel}/>
+            </div>}
+          {
+            showForm === true && sentThanks===false ? 
+                   <div> <CotizadorDirectoresClientForm handleSubmitThanks={handleSubmitThanks} handleChange={handleChange} clientData={clientData} handleCancel={handleCancel} errors={errors} goToBillData={goToBillData} goToBill={goToBill} /> </div>:
+            sent === true && sentThanks===false? <div className='bill-first-form' >
+                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick}/></div>:
+            <div className='bill-first-form' >
+                {goToQuestion === true && <CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} /> }
+            <div>
+            {goToQuestion === false && sentThanks===false &&<CotizadorDirectoresForm handleSubmitData={handleSubmitData} amount={amount} handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} handleClickToQuestion={handleClickToQuestion}/>}
+            </div>
+            </div>}
+            </div>
+
+        
 
     </MobileView>
     </>

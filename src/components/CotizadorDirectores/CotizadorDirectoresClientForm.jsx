@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { isMobile } from 'react-device-detect'
 
 const CotizadorDirectoresClientForm = ({handleChange, clientData, errors, handleSubmitThanks, goToBillData, goToBill, billTo}) => {
     return (
@@ -40,11 +40,11 @@ const CotizadorDirectoresClientForm = ({handleChange, clientData, errors, handle
         </div>
         <div className='input-box'>
         <label className='label-white'>Dirección</label>
-          <input name="companyAdress" value={clientData.companyAdress} className='light-input-client' type="text" onChange={e => handleChange(e, 'companyAdress', 'text', true, 75, 3)} placeholder='Ingresá tu apellido' required={true}/> 
+          <input name="companyAdress" value={clientData.companyAdress} className='light-input-client' type="text" onChange={e => handleChange(e, 'companyAdress', 'text', true, 75, 3)} placeholder='Ingresá la dirección' required={true}/> 
           {errors['companyAdress'] && <p className='error-white'>{errors['companyAdress']}</p>}
         </div>
         <div className='inscription-send'>
-        <button name="DATOS DE FACTURACIÓN" type="button" className={goToBill=== false?"small-button":"display-none"} onClick={goToBillData}>DATOS DE FACTURACIÓN</button>
+        <button name="DATOS DE FACTURACIÓN" type="button" className={goToBill=== false? (isMobile ? "small-bordeaux" : "small-button"):"display-none"} onClick={goToBillData}>DATOS DE FACTURACIÓN</button>
         </div>
         </form>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import BigButton from '../utils/BigButton/BigButton'
+import { isMobile } from 'react-device-detect'
 
 const CotizadorDirectoresQuestion = ({handleSubmitData, amount, handleChangeDirectorData, errors }) => {
   return (
@@ -17,7 +18,7 @@ const CotizadorDirectoresQuestion = ({handleSubmitData, amount, handleChangeDire
          {errors['quantity'] && <p className='error-white'>{errors['quantity']}</p>}
     </div>
     <div className='inscription-send'>
-    <BigButton type="submit" name= "COTIZAR" className="rent-button"/>
+    <BigButton type="submit" name= "COTIZAR" className={ isMobile? "contact-dark-button" :"rent-button"}/>
     </div>
 </form>
   )

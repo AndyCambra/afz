@@ -100,3 +100,41 @@
         height: 160vh;
     }
  } 
+ @media only screen and (min-width: 330px) and (max-width: 768px){
+    .bill-first-form{
+        background-color:#9b2743;
+        box-sizing: border-box;
+        padding-top: 12px;
+      
+    }
+    .question-label{
+        margin-bottom: 16px;
+    }
+    .button-box{
+        margin-top: 30px;
+        text-align: center;
+
+    }
+    .director-subtitle{
+        font-size: 1em;
+        font-weight: 600;
+        color: #FFF;
+        margin-bottom: 12px
+    }
+    .director-subtitle-form
+    .second-director-subtitle-form{
+        font-size: 1.1em;
+    }
+    .bill-form{
+      grid-row: 3;
+      grid-column: 1;
+    }
+    
+    .bordeax-background-director{
+        background-color: #9b2743;
+        padding: 30px 20px 20px 20px;
+        display:grid;
+        grid-template-columns:repeat(1, 1fr)
+        
+    }
+ }

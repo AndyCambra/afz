@@ -201,4 +201,17 @@
     .contact-dark-button{
         background-color: transparent;
     }
+    .small-bordeaux{
+        background: #9B2743;
+    border: 1.5px solid #fff;
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 16px;
+    width: 160px;
+    height: 30px;
+    font-family: 'Sora', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 12px;
+    }
 }

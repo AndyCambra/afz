@@ -313,8 +313,10 @@ input[type=number]::-webkit-inner-spin-button {
     }
     .light-input-file{
         padding: 6px 0 0 0;
-       
-
+    }
+    .light-input-client::placeholder{
+        color: #e6dddd;
+        font-size: 1.2em;
 
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import BigButton from '../utils/BigButton/BigButton'
+import { isMobile } from 'react-device-detect'
 
 const DatosDeFacturacion = ({handleSubmitThanks, clientData, errors, handleChange, handleCancel}) => {
   return (
@@ -32,7 +33,7 @@ const DatosDeFacturacion = ({handleSubmitThanks, clientData, errors, handleChang
     </div>
     <div className='director-result-box'>
     <button type="button" className="rent-button-secondary" onClick={handleCancel}>CANCELAR</button>
-    <BigButton type="submit" name= "ENVIAR" className="rent-button"/>
+    <BigButton type="submit" name= "ENVIAR"  className={isMobile ? "contact-dark-button":"rent-button"}/>
     </div>
     </form>
   )
