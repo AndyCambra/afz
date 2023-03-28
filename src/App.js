@@ -23,6 +23,7 @@ import Prensa from './components/Prensa/Prensa';
 import CotizadorDirectores from './components/CotizadorDirectores/CotizadorDirectores';
 import { Icon } from '@iconify/react';
 import ScrollToTop from './components/utils/ScrollToTop';
+import Carrousel from './components/Nosotros/Carrousel';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
+        <Route exact path="/carrousel" element={<Carrousel />}></Route>
         <Route exact path="/cotizador-directores" element={<CotizadorDirectores />}></Route>
         <Route exact path="/cotizador-alquiler" element={<CotizadorAlquiler />}></Route>
         <Route exact path="/trabaja-con-nosotros" element={<TrabajaConNosotros />}></Route>

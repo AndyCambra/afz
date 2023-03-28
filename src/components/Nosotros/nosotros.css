@@ -152,3 +152,18 @@
     text-align: center;
     margin: 10px 0;
 }
+.carrousel-box{
+    width: 100vw;
+    height: 80vh;
+    padding-top: 70px;
+    object-fit: cover;
+}
+.swiper{
+    height: 100%;
+    width: 100%;
+}
+.video-size{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

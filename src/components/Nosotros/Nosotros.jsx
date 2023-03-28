@@ -9,7 +9,6 @@ import BigButton from '../utils/BigButton/BigButton'
 import { BrowserView, MobileView } from 'react-device-detect';
 import NosotrosMobile from './NosotrosMobile'
 
-
 const reisurance=
 {title: "REASEGURADORES",
 text:'Nuestro cuadro de reaseguro garantiza solvencia y dinamismo en la capacidad de operación, cualquiera sea la magnitud de los proyectos.'
@@ -78,11 +77,15 @@ const Nosotros = () => {
           </div>
           </div>
       </section>
+      <a href='/carrousel'>
+          <BigButton name="CONOCENOS" className={'dark-button'} />
+          </a>
       </BrowserView>
       <MobileView>
         <NosotrosMobile us={us} usRef={usRef} teamRef={teamRef} comRef={comRef} reinsurersRef={reinsurersRef} handleButtonClicked={handleButtonClicked} staff={staff} reisurance={reisurance} compromise={compromise}/>
       </MobileView>
     </div>
+    
   )
 }
 

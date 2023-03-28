@@ -2,6 +2,7 @@ import React from 'react'
 import MobileSubMenu from './MobileSubMenu'
 import SixLogos from './SixLogos'
 import BigButton from '../utils/BigButton/BigButton'
+import { Link } from 'react-router-dom'
 
 const NosotrosMobile = ({us, usRef, teamRef, comRef, reinsurersRef, handleButtonClicked, staff, reisurance, compromise}) => {
   return (
@@ -21,7 +22,9 @@ const NosotrosMobile = ({us, usRef, teamRef, comRef, reinsurersRef, handleButton
           <h5 className='subtitle-us-mobile'>{staff.title}</h5>
           <p className='text-us-mobile'>{staff.text}</p>
           <div className='center-button'>
+            <Link to='/carrousel'>
           <BigButton name="CONOCENOS" className={'dark-button'} />
+          </Link>
           </div>
         </div>
         </div>

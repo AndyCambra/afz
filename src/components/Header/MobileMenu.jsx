@@ -6,7 +6,7 @@ const MobileMenu = ({open, location, handleClick}) => {
   return (
     <div className={open===true ?'headerMobileBox' :'hidden'}>  
     <NavLink to="/"> 
-            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/contacto' || location.pathname === '/nosotros' || location.pathname === '/cotizador-alquiler' || location.pathname === '/cotizador-directores' ? (
+            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/contacto' || location.pathname === '/nosotros' || location.pathname === '/cotizador-alquiler' || location.pathname === '/cotizador-directores' || location.pathname === '/carrousel' ? (
                 <img src="/img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz-mobile' />
             ):(             
             <img src="/img/logoAfz.png" alt="Logo Afz" className='logoAfz-mobile' />)}
