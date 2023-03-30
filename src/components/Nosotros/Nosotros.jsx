@@ -8,23 +8,8 @@ import SixLogos from './SixLogos'
 import BigButton from '../utils/BigButton/BigButton'
 import { BrowserView, MobileView } from 'react-device-detect';
 import NosotrosMobile from './NosotrosMobile'
+import { nosotrosTexts } from '../utils/Texts/nosotrosTexts'
 
-const reisurance=
-{title: "REASEGURADORES",
-text:'Nuestro cuadro de reaseguro garantiza solvencia y dinamismo en la capacidad de operación, cualquiera sea la magnitud de los proyectos.'
-}
-const staff=
- {title: "EL EQUIPO",
-    text: "Contamos con un grupo directivo conformado por reconocidos referentes del mercado internacional. Nuestro equipo está integrado por profesionales de diferentes disciplinas, cada uno con la más alta capacitación en su especialidad. "
-  }
-const us=
-{title: "LA EMPRESA",
-text:'Somos una compañía especialista en Seguros de Caución que reúne experiencia e innovación. Brindamos las mejores herramientas para satisfacer la demanda de Productores, Tomadores y Asegurados en un mercado dinámico y competitivo.'
-}
-const compromise=
-{title: "NUESTRO COMPROMISO",
-text:'Creemos en la Responsabilidad Social, tanto en las prácticas diarias que equilibran y mejoran la relación entre el trabajo y la vida personal, como en la extensión de esas prácticas a la construcción de una sociedad inclusiva que promueva el bienestar de todos. Por eso, además de traducir esta convicción en un apoyo permanente a nuestros colaboradores, somos parte de diferentes iniciativas que llevan adelante organizaciones del tercer sector.'
-}
 
 
 const Nosotros = () => {
@@ -40,7 +25,7 @@ const Nosotros = () => {
       <section title="us-backgound" id="section1" className='us-backgound'  ref={usRef} >
         <div className='grid'>
           <div className="us-block">
-          <HorizontalSubMenu title={us.title} text={us.text} usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef}  onClick={handleButtonClicked} />
+          <HorizontalSubMenu title={nosotrosTexts.us.title} text={nosotrosTexts.us.text} usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef}  onClick={handleButtonClicked} />
           </div>
         </div>
       </section>
@@ -48,7 +33,7 @@ const Nosotros = () => {
       <section className='staffBackgound' ref={teamRef}>
         <div className='staffHero'>
         <div className="staffBlock">
-       <HorizontalSubMenu title={staff.title} text={staff.text} usRef={usRef} reinsurersRef={reinsurersRef} teamRef={teamRef} comRef={comRef} onClick={handleButtonClicked}  />
+       <HorizontalSubMenu title={nosotrosTexts.staff.title} text={nosotrosTexts.staff.text} usRef={usRef} reinsurersRef={reinsurersRef} teamRef={teamRef} comRef={comRef} onClick={handleButtonClicked}  />
         </div>
         </div>
         <div className='video-grid'>
@@ -58,13 +43,13 @@ const Nosotros = () => {
             <img src="img/GrupoAfz.jpg" alt="Foto grupal" className='group-photo'/>
             </div>
             <div className="work-button">
-        <BigButton className="small-button" name={"TRABAJÁ CON NOSOTROS"} />
+        <BigButton className="small-button" name={nosotrosTexts.button.name} />
         </div> 
       </section> 
       <section className='re-backgound'ref={reinsurersRef}>
       <div className='re-grid'>
           <div className="re-block">
-          <HorizontalSubMenu  usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={reisurance.title} text={reisurance.text} />
+          <HorizontalSubMenu  usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={nosotrosTexts.reisurance.title} text={nosotrosTexts.reisurance.text} />
           </div>
           <SixLogos />
         </div>
@@ -73,23 +58,23 @@ const Nosotros = () => {
       <section className='com-backgound'id='section4'ref={comRef}>
       <div className='re-grid'>
       <div className="team-block">
-          <HorizontalSubMenu usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={compromise.title} text={compromise.text} />
+          <HorizontalSubMenu usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={nosotrosTexts.compromise.title} text={nosotrosTexts.compromise.text} />
           </div>
           </div>
       </section>
           <div className='fundations-box'>
-          <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt="Logo Asdra" /></a> 
-          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt="Logo Fundación Espacios Verdes" /></a> 
-          <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt="Logo Fundación Haciendo Camino" /></a>
-          <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt="Logo Fundación Banco de Alimentos" /></a>
-          <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt="Logo Fundación Cuerpo y Alma" /></a>
+          <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt={nosotrosTexts.alts.logo1} /></a> 
+          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt={nosotrosTexts.alts.logo2}/></a> 
+          <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt={nosotrosTexts.alts.logo3} /></a>
+          <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt={nosotrosTexts.alts.logo4} /></a>
+          <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt={nosotrosTexts.alts.logo5} /></a>
           </div>
       {/* <a href='/carrousel'>
           <BigButton name="CONOCENOS" className={'dark-button'} />
           </a> */}
       </BrowserView>
       <MobileView>
-        <NosotrosMobile us={us} usRef={usRef} teamRef={teamRef} comRef={comRef} reinsurersRef={reinsurersRef} handleButtonClicked={handleButtonClicked} staff={staff} reisurance={reisurance} compromise={compromise}/>
+        <NosotrosMobile us={nosotrosTexts.us} usRef={usRef} teamRef={teamRef} comRef={comRef} reinsurersRef={reinsurersRef} handleButtonClicked={handleButtonClicked} staff={nosotrosTexts.staff} reisurance={nosotrosTexts.reisurance} compromise={nosotrosTexts.compromise}/>
       </MobileView>
     </div>
     

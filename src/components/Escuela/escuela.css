@@ -489,5 +489,12 @@
             padding-top: 35%;
             gap: 10px
         }
+        .info-backgound{
+            background: url(../../../public/img/MobileImages/HexafotoMobile.jpg);
+            background-size: cover ;
+            min-height: 97vh;
+            width: 100vw;
+            margin-bottom: -370px;
+        }
      
     }

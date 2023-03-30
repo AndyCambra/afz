@@ -3,6 +3,7 @@ import MobileSubMenu from './MobileSubMenu'
 import SixLogos from './SixLogos'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
+import { nosotrosTexts } from '../utils/Texts/nosotrosTexts'
 
 const NosotrosMobile = ({us, usRef, teamRef, comRef, reinsurersRef, handleButtonClicked, staff, reisurance, compromise}) => {
   return (
@@ -23,7 +24,7 @@ const NosotrosMobile = ({us, usRef, teamRef, comRef, reinsurersRef, handleButton
           <p className='text-us-mobile'>{staff.text}</p>
           <div className='center-button'>
             <Link to='/carrousel'>
-          <BigButton name="CONOCENOS" className={'dark-button'} />
+          <BigButton name={nosotrosTexts.buttonMobile.name} className={'dark-button'} />
           </Link>
           </div>
         </div>
@@ -44,14 +45,14 @@ const NosotrosMobile = ({us, usRef, teamRef, comRef, reinsurersRef, handleButton
         </div>
         </div>
         <div className='fundations-box'>
-        <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt="Logo Asdra" className='fundations' /></a> 
-          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt="Logo Fundación Espacios Verdes" className='fundations-bigger' /></a> 
-          <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt="Logo Fundación Haciendo Camino" className='fundations' /></a>
+        <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt={nosotrosTexts.alts.logo1} className='fundations' /></a> 
+          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt={nosotrosTexts.alts.logo2} className='fundations-bigger' /></a> 
+          <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt={nosotrosTexts.alts.logo3} className='fundations' /></a>
          
             </div>
             <div className='fundations-box'>
-            <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt="Logo Fundación Banco de Alimentos" className='fundations' /></a>
-          <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt="Logo Fundación Cuerpo y Alma" className='fundations' /></a>
+            <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt={nosotrosTexts.alts.logo4} className='fundations' /></a>
+          <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt={nosotrosTexts.alts.logo5} className='fundations' /></a>
           </div>
     </div>
   )
