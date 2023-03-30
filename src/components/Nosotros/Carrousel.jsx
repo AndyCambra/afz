@@ -23,7 +23,7 @@ const Carrousel = () => {
         <>
          
         <div className='carrousel-box'>
-        <SliderBar id={videosMobile.id}/>
+        <SliderBar />
       <Swiper
        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
@@ -41,8 +41,13 @@ const Carrousel = () => {
              autoPlay
              muted={false}
             className="video-size">
-            <source src={item.video} type={item.type} id={item.id} alt={item.alt} />
+            <source src={item.videoStaff} type={item.type} id={item.id} alt={item.alt} />
             </video>
+            <div className='card-title'>
+            <p className='card-name'>{item.peopleName}</p>
+            <p className='card-position'>{item.peoplePosition}</p>
+
+        </div>
             </SwiperSlide>
         )}
       </Swiper>
@@ -53,5 +58,5 @@ const Carrousel = () => {
  
 export default Carrousel
 
-
+//<VideoCard key={item.id} companyPlace={item.companyPace} peopleName={item.peopleName} peoplePosition={item.peoplePosition} videoStaff={item.videoStaff} className='card' />
 

@@ -77,9 +77,16 @@ const Nosotros = () => {
           </div>
           </div>
       </section>
-      <a href='/carrousel'>
+          <div className='fundations-box'>
+          <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt="Logo Asdra" /></a> 
+          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt="Logo Fundación Espacios Verdes" /></a> 
+          <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt="Logo Fundación Haciendo Camino" /></a>
+          <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt="Logo Fundación Banco de Alimentos" /></a>
+          <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt="Logo Fundación Cuerpo y Alma" /></a>
+          </div>
+      {/* <a href='/carrousel'>
           <BigButton name="CONOCENOS" className={'dark-button'} />
-          </a>
+          </a> */}
       </BrowserView>
       <MobileView>
         <NosotrosMobile us={us} usRef={usRef} teamRef={teamRef} comRef={comRef} reinsurersRef={reinsurersRef} handleButtonClicked={handleButtonClicked} staff={staff} reisurance={reisurance} compromise={compromise}/>

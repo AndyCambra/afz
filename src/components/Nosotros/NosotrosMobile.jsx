@@ -43,6 +43,16 @@ const NosotrosMobile = ({us, usRef, teamRef, comRef, reinsurersRef, handleButton
           <p className='text-us-mobile'>{compromise.text}</p>
         </div>
         </div>
+        <div className='fundations-box'>
+        <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt="Logo Asdra" className='fundations' /></a> 
+          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt="Logo Fundación Espacios Verdes" className='fundations-bigger' /></a> 
+          <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt="Logo Fundación Haciendo Camino" className='fundations' /></a>
+         
+            </div>
+            <div className='fundations-box'>
+            <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt="Logo Fundación Banco de Alimentos" className='fundations' /></a>
+          <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt="Logo Fundación Cuerpo y Alma" className='fundations' /></a>
+          </div>
     </div>
   )
 }
