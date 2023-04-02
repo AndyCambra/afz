@@ -69,7 +69,7 @@ const Nosotros = () => {
           <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt={nosotrosTexts.alts.logo4} /></a>
           <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt={nosotrosTexts.alts.logo5} /></a>
           </div>
-      {/* <a href='/carrousel'>
+{/*       <a href='/carrousel'>
           <BigButton name="CONOCENOS" className={'dark-button'} />
           </a> */}
       </BrowserView>

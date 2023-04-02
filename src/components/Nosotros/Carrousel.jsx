@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import SliderBar from './SliderBar';
 import videosMobile from '../utils/Texts/videosMobile';
 
@@ -13,7 +13,15 @@ import videosMobile from '../utils/Texts/videosMobile';
 
 
 const Carrousel = () => {
-  
+const [slideBarData, setSlideBarData] = useState({
+  slideCount: 0,
+  activeSlide: 0
+})
+
+  const slideBarManager=(swiper)=>{
+    console.log(11)
+    setSlideBarData({slideCount:swiper.slides.length, activeSlide: swiper.activeIndex})
+  }
 
     useEffect(()=>{
         window.scrollTo(0,0);
@@ -23,19 +31,22 @@ const Carrousel = () => {
         <>
          
         <div className='carrousel-box'>
-        <SliderBar />
+        <SliderBar slideBarData={slideBarData} />
       <Swiper
        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={(swiper) => slideBarManager(swiper)}
+        onSwiper={swiper => slideBarManager(swiper)}
         centeredSlides={true}
+      
+    
     
       >
-     {videosMobile.map((item,key)=>
+     {videosMobile.map((item)=>
         <SwiperSlide> 
+        {/*   key={item.id} */}
             <video 
              controls
              autoPlay
@@ -46,8 +57,8 @@ const Carrousel = () => {
             <div className='card-title'>
             <p className='card-name'>{item.peopleName}</p>
             <p className='card-position'>{item.peoplePosition}</p>
+            </div>
 
-        </div>
             </SwiperSlide>
         )}
       </Swiper>

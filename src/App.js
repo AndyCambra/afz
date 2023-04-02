@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Home from './components/Home/Home';
@@ -24,11 +24,13 @@ import CotizadorDirectores from './components/CotizadorDirectores/CotizadorDirec
 import { Icon } from '@iconify/react';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Carrousel from './components/Nosotros/Carrousel';
-
+import { LangProvider } from './Context/LangContext';
 
 function App() {
+
+
   return (
- 
+    <LangProvider>
     <BrowserRouter>
     <Header />
       <Routes>
@@ -58,7 +60,7 @@ function App() {
       </a>
       <ScrollToTop />
     </BrowserRouter>
- 
+    </LangProvider>
 
   );
 }

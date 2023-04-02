@@ -13,7 +13,7 @@ const Escuela = () => {
     <>
     <BrowserView>
     <section className='school-backgound' >
-     <video  autoPlay loop playsInLine className='hexa-video'>
+     <video  autoPlay loop playsInline className='hexa-video'>
       <source src={HexaBlancos} type='video/mp4'/>
      </video>
         <div  className='school-hero'>
@@ -32,7 +32,7 @@ const Escuela = () => {
           </div>
           </div>
           <p className='social-text'>Seguinos para conocer todas las convocatorias y los nuevos cursos.</p>
-          <SocialIcons className="social-school-box" classCircle="icon-circle-bordeaux" classIcon="social-icon" classIconBig="social-icon-big"/>
+          <SocialIcons className="social-school-box" classCircle="icon-circle-bordeaux" classIcon="social-school-icon" classIconBig="social-school-icon-big"/>
         </div>  
       </section>
       </BrowserView>

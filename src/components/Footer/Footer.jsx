@@ -3,7 +3,6 @@ import "./footer.css"
 import { NavLink } from 'react-router-dom'
 import SocialIcons from './SocialIcons';
 import LegalFooter from '../LegalFooter/LegalFooter';
-import Mailto from '../utils/Mailto';
 import { BrowserView, MobileView } from 'react-device-detect';
 import { useLocation } from 'react-router-dom'
 import { companyData } from '../utils/Texts/companyData';
@@ -41,8 +40,8 @@ const location= useLocation()
         </div>
         <div className='contactBox'>
         <p>{companyData.buenosAires.phone}</p>
-        <Mailto email="andycambra.com.ar" subject='Hello and welcome' body="Hello World">
-        <p className='footerEmail'>{companyData.buenosAires.mail}</p></Mailto>
+      
+        <p className='footerEmail'>{companyData.buenosAires.mail}</p>
         <SocialIcons className="social-box" classCircle="icon-circle" classIcon="social-icon" classIconBig="social-icon-big"/>
         </div>
         </div>    
