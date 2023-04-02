@@ -1,0 +1,20 @@
+.slider-bar{
+    width: 100vw;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap:3px;
+
+}
+.slider-mark{
+    background-color: #b7b6b6;
+    height: 12px;
+    width: 10%;
+
+}
+.mark{
+    background-color:#9b2743;
+    height: 12px;
+    width: 10%;
+
+}

@@ -82,7 +82,7 @@ console.log(contactInfo)
       <div className='first-box-mobile'>
         <SubmenuContactoMobile handleClick={handleClick} change={change}/>
         <div className='img-box'>
-        <img src="/img/Contacto.jpg" alt="" />
+        <img src="/img/MobileImages/ContactoMobile.jpg" alt="" />
         </div>
       </div>
       <div className='bordeax-background'>
