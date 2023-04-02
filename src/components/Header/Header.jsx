@@ -3,31 +3,28 @@ import { NavLink } from 'react-router-dom'
 import "./header.css"
 import { useLocation } from 'react-router-dom'
 import { BrowserView, MobileView } from 'react-device-detect';
-import { useState, useContext} from "react"
+import { useState} from "react"
 import MobileMenu from './MobileMenu'
 import { Icon } from '@iconify/react';
-import { LangContext } from '../../Context/LangContext';
-
+import { useLangContext } from '../../Context/LangContext';
 
 const Header = () => {
 const location= useLocation()
 const [open, setOpen] = useState(false);
-const {handleLanguage, en}=useContext(LangContext)
+const {handleLanguage, selectedLanguage} = useLangContext()
 
 const handleClick = () => {
     setOpen(!open);
   };
  
-
-console.log(en)
   return (
     <div>
         <BrowserView>
     <div className='headerBox'>
         <div className='flag-box'>
-            { en=== true? 
-            <Icon icon="flag:es-4x3" onClick={e=>handleLanguage(en)} /> :
-            <Icon icon="flag:gb-4x3" onClick={e=>handleLanguage(en)} />
+            { selectedLanguage=== 'EN'? 
+            <Icon icon="flag:es-4x3" onClick={e=>handleLanguage('ES')} /> :
+            <Icon icon="flag:gb-4x3" onClick={e=>handleLanguage('EN')} />
             }
         </div>
         <div className='header-in'>
@@ -75,4 +72,3 @@ console.log(en)
 }
 
 export default Header
-
