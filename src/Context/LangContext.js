@@ -1,28 +1,21 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, {createContext} from 'react'
+import { useContext, useState } from 'react'
 
-export const LangContext = React.createContext()
+export const LangContext = createContext({})
 
-export const LangProvider = ({ children }) => {
-const [selectedLanguage, setSelectedLanguage]=useState({})
-const [en, setEn] = useState(false);
+export const Provider = props => {
+const [selectedLanguage, setSelectedLanguage]=useState('EN')
 
+   const handleLanguage= (lang) =>{
+     setSelectedLanguage(lang)
+   }
 
-useEffect(()=>{
-   localStorage.setItem("selectedLang", (en===true? "en":"es"))
-    setSelectedLanguage(localStorage.getItem("selectedLang"))
-      }
-  ,[en])
+  return (<LangContext.Provider value={{
+    selectedLanguage: selectedLanguage,
+    handleLanguage: handleLanguage
+  }}>
+    {props.children}
+  </LangContext.Provider>
+)}
 
-  
-  const handleLanguage=()=>{
-    setEn(!en)
-    }
-  console.log(1, selectedLanguage)
-return(
-    <LangContext.Provider
-    value={{selectedLanguage, handleLanguage, en}}>
-        {children}
-    </LangContext.Provider>
-)
-}
+export const useLangContext = () => useContext(LangContext)
