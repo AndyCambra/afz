@@ -120,6 +120,13 @@
 }
 .show-text{
     font-size: .95em;
+   
+}
+.show-text p{
+    color: #1e0606;
+    font-size: .85em;
+    padding: 5px 2px;
+
 }
 .forms-photo{
    

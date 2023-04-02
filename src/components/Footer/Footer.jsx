@@ -3,13 +3,20 @@ import "./footer.css"
 import { NavLink } from 'react-router-dom'
 import SocialIcons from './SocialIcons';
 import LegalFooter from '../LegalFooter/LegalFooter';
-import Mailto from '../utils/Mailto';
 import { BrowserView, MobileView } from 'react-device-detect';
 import { useLocation } from 'react-router-dom'
+import { companyData } from '../utils/Texts/companyData';
+
 
 
 const Footer = () => {
 const location= useLocation()
+ const categoriesFooter=[
+   {id:1, name: "BALANCES"}, 
+   {id:2, name: "CERTIFICACIONES"},
+   {id:3, name: "PRENSA"},
+   {id:4, name:  "PREVENCIÓN DEL FRAUDE"}
+]
     
   return (
     <>
@@ -18,26 +25,13 @@ const location= useLocation()
         <div className='footer-in'>
         <img src="/img/logoAfz.png" alt="Logo Afz" />
         <div className='footerMenu'>
+            {categoriesFooter.map((item,key)=>
             <div className='footerItem'>
                 <NavLink to="/balances">
-                <h4 className='footerCategory'>BALANCES</h4>
+                <h4 className='footerCategory'>{item.name}</h4>
                 </NavLink>
             </div>
-            <div className='footerItem'>
-                <NavLink to="/certificaciones">
-                <h4 className='footerCategory'>CERFITICACIONES</h4>
-                </NavLink>
-            </div>
-            <div className='footerItem'>
-                <NavLink to="/prensa">
-                <h4 className='footerCategory'>PRENSA</h4>
-                </NavLink>
-            </div>
-            <div className='footerItem'>
-                <NavLink to="/prevencion-fraude">
-                <h4 className='footerCategory'>PREVENCIÓN DEL FRAUDE</h4>
-                </NavLink>
-            </div>
+            )}
             <div className='footerItem'>
                 <NavLink to="/">
                 <h4 className='footerCategory'>HOME</h4>
@@ -45,9 +39,9 @@ const location= useLocation()
             </div>
         </div>
         <div className='contactBox'>
-        <p>(+5411) 3986 2800</p>
-        <Mailto email="andycambra.com.ar" subject='Hello and welcome' body="Hello World">
-        <p className='footerEmail'>info@afianzadora.com.ar</p></Mailto>
+        <p>{companyData.buenosAires.phone}</p>
+      
+        <p className='footerEmail'>{companyData.buenosAires.mail}</p>
         <SocialIcons className="social-box" classCircle="icon-circle" classIcon="social-icon" classIconBig="social-icon-big"/>
         </div>
         </div>    

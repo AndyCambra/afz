@@ -91,6 +91,13 @@
     height: 97vh;
     width: 100vw;
 }
+.fundations-box{
+    padding: 24px 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (max-width: 1064px) {
     .us-block{ 
         grid-column: 2/6;
@@ -125,8 +132,12 @@
         grid-column: 1/6;
     
     }
-}
+    .fundations-box{
+        padding: 16px 10%;
 
+    }
+}
+@media only screen and (min-width: 340px) and (max-width: 768px){
 .top-section{
     height: 290px;
 }
@@ -151,4 +162,31 @@
 .center-button{
     text-align: center;
     margin: 10px 0;
+}
+.carrousel-box{
+    width: 100vw;
+    height: 80vh;
+    padding-top: 70px;
+    object-fit: cover;
+}
+.swiper{
+    height: 100%;
+    width: 100%;
+}
+.video-size{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.fundations{
+    width: 80%;
+}
+.fundations-bigger{
+    padding-right: 20px;
+}
+.fundations-box{
+    justify-content: center;
+    padding: 16px 20px;
+}
+
 }

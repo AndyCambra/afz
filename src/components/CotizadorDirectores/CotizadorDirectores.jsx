@@ -150,7 +150,7 @@ const CotizadorDirectores = () => {
     <div className='first-box-mobile'>
         <SubmenuCotizadores/>
         <div className='img-box'>
-        <img src="/img/CotizadorDirectores.jpg" alt="" />
+        <img src="/img/MobileImages/DirectoresMobile.jpg" alt="" />
         </div>
       </div>
       <div className='bordeax-background-director'>

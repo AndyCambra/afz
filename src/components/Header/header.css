@@ -97,6 +97,13 @@
     color: #fff;
     
 }
+.flag-box{
+    padding: 5px 5px 3px 5px;
+    background-color: #1e0606;
+    position: absolute;
+    margin-left: 90%;
+    box-sizing: border-box;
+}
 @media only screen and (min-width: 1440px){
     .hero{
         width: 100vw;
