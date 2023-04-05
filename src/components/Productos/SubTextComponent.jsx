@@ -1,7 +1,7 @@
 import React from 'react'
-import productsExtras from "../utils/Texts/productsExtras.json"
 
-const SubTextComponent = () => {
+
+const SubTextComponent = ({productsExtras}) => {
   return (
     <div>
         {productsExtras.map((item, id)=>{

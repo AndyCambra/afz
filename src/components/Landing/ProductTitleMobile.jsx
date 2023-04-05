@@ -5,7 +5,7 @@ import './landing.css'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
 
-const ProductTitleMobile = ({title, text, id}) => {
+const ProductTitleMobile = ({title, text, id, subtitle, name}) => {
         const [isActive, setActive] = useState("false");
     
     const handleToggle = () => {
@@ -16,7 +16,7 @@ const ProductTitleMobile = ({title, text, id}) => {
     <>
     <div className='title-box-mobile'>
             <div className='product-titles-mobile'>
-                <p className='product-subtitle'>GARANTÍA</p>
+                <p className='product-subtitle'>{subtitle}</p>
                 <h5 className='product-title-mobile'>{title}</h5>
             </div>
           
@@ -25,8 +25,8 @@ const ProductTitleMobile = ({title, text, id}) => {
             </div>
              <div className={isActive ? "display-none" : 'product-mobile-text'}>
             <p>{text}</p>
-            <div className={id===5? "button-section":"display-none"}><Link to='/cotizador-alquiler'><BigButton className="light-button" name={'COTIZÁ'} /></Link></div>
-            <div className={id===6? "button-section":"display-none"} ><Link to='/cotizador-directores'><BigButton className="light-button" name={'COTIZÁ'} /></Link></div>
+            <div className={id===5? "button-section":"display-none"}><Link to='/cotizador-alquiler'><BigButton className="light-button" name={name} /></Link></div>
+            <div className={id===6? "button-section":"display-none"} ><Link to='/cotizador-directores'><BigButton className="light-button" name={name} /></Link></div>
             </div>
             </>
   )

@@ -1,7 +1,9 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
+import { Icon } from '@iconify/react';
 
-const HamButton = ({ open, handleClick }) => {
+const HamButton = ({ open, handleClick, handleLanguage, selectedLanguage}) => {
+
     const location= useLocation()
   return !open ? (
     <div onClick={handleClick}>
@@ -18,7 +20,13 @@ const HamButton = ({ open, handleClick }) => {
       </svg>)}
     </div>
   ) : (
-    <div onClick={handleClick}>
+    <div className='x-container' onClick={handleClick}>
+      <div className='flag-box-mobile'>
+        { selectedLanguage=== 'EN'? 
+        <Icon icon="flag:es-4x3" onClick={e=>handleLanguage('ES')} /> :
+        <Icon icon="flag:gb-4x3" onClick={e=>handleLanguage('EN')} />
+        }
+    </div>
       <svg
      
         width="30"

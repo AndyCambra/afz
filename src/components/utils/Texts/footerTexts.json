@@ -1,0 +1,15 @@
+{ "EN":[
+
+    {"id":1, "name": "STATEMENTS"}, 
+    {"id":2, "name": "CERTIFICATIONS"},
+    {"id":3, "name": "PRESS"},
+    {"id":4, "name":  "FRAUD PREVENTION"}
+],
+"ES":[
+
+    {"id":1, "name": "BALANCES"}, 
+    {"id":2, "name": "CERTIFICACIONES"},
+    {"id":3, "name": "PRENSA"},
+    {"id":4, "name":  "PREVENCIÓN DEL FRAUDE"}
+]
+}

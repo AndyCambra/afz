@@ -15,13 +15,13 @@ const text = homeTexts[selectedLanguage];
     <div className='homeBackgound'>
       <div className='hero'>
         <div className='homeTitle'>
-        <h1>{text.title1}<br></br>en seguros de caución.</h1>
+        <h1>{text.title1}<br></br>{text.title2}</h1>
         <div className='mobile-button-box'>
         <Link to="/landing">
-        <BigButton className="dark-button" name={'PRODUCTOS'} />
+        <BigButton className="dark-button" name={text.productButton} />
         </Link>
         <Link to="/contacto">
-        <BigButton className="dark-button" name={'CONTACTO'} />
+        <BigButton className="dark-button" name={text.contactButton} />
         </Link>
         </div>
         </div>

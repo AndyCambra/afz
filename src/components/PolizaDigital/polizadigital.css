@@ -5,6 +5,7 @@
 .digital-content{
     padding-top: 140px; 
     width: 100vw;
+    min-height: 50vh;
 }
 .push {
     height: 366px;
@@ -15,7 +16,7 @@
     grid-template-columns: repeat(7, 1fr);
     column-gap: 30px;
     align-items: flex-start;
-    height: fit-content;
+    
 }
 .digital-title{
     font-weight: 700;
