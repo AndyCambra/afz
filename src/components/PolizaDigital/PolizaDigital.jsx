@@ -89,7 +89,7 @@ console.log(selectedLanguage)
         </div>  
       </div>
     </div>
-    <img src="/img/digital.jpg" alt="Descargar Formularios" className={selectedLanguage === "ES"? 'display-none':'forms-photo'} />
+    <img src="/img/digital1.jpg" alt="Descargar Formularios" className={selectedLanguage === "ES"? 'display-none':'forms-photo'} />
     <div class="push"></div>
     </div>
   )

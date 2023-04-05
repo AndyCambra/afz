@@ -36,14 +36,14 @@
     height: 366px;
   }
 .info-hero{
-    min-height: 97%;
+    min-height: 85vh;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     column-gap: 30px;
     row-gap: 16px;
     margin: 0px 40px 0 40px;
     padding-top: 100px;
-    
+    grid-template-rows: auto;
 
 }
 .info-text{
@@ -330,6 +330,9 @@
     .school-hero{
         margin: -44% 40px 0 0px ;
     }
+    .place-logo-info{
+        padding-top: 120px;
+    }
     .school-title h1{
         font-size: 3em;
     }
@@ -340,15 +343,25 @@
     .info-text{
         grid-column: 3/8;
        font-size: 10px;
+       margin-bottom: -80px;
+    }
+    .info-block{
+        grid-column: 2/7;
+        margin-top: -12%;
     }
     .info-title{
         font-size: 18px;
     }
+    .courses-block{
+        grid-column: 2/7;
+        margin-top: -30%;
+        row-gap: 10px;
+    }
     .course-title-block p{
-        font-size: 11px;
+        font-size: 12px;
     }
     .course-title-block h2{
-        font-size: .8em;
+        font-size: .9em;
     }
     .program-block{
         grid-column: 2/6;
@@ -506,6 +519,14 @@
             min-height: 97vh;
             width: 100vw;
             margin-bottom: -370px;
+        }
+        .en-mobile-title{
+            margin-top: -50px;
+            color: #1e0606;
+            font-size: 2.9em;
+            z-index: 20;
+            text-align: left;
+            padding-left: 20px;
         }
      
     }

@@ -1,0 +1,62 @@
+{
+    "EN": {
+        "title1": "An essential",
+        "title2": "training",
+        "titleMobile1": "An",
+        "titleMobile2": "essential training",
+        "moreButton": "SEE MORE",
+        "incriptionButton": "INSCRIBITE",
+        "socialText": "Seguinos para conocer todas las convocatorias y los nuevos cursos.",
+        "schoolInfo": {
+            "menuSchool": "THE SCHOOL",
+            "menuProgram": "THE PROGRAM",
+            "text": "Somos especialistas y líderes en seguros de caución. Por eso, tenemos la única escuela de caución del mercado y te ofrecemos una capacitación imprescindible para ampliar tus oportunidades de negocio. Para dominar los diferentes tipos de riesgo y las mejores técnicas de comercialización. Para asesorar mejor a tus clientes. Para gestionar con efectividad las cobranzas. Un programa único que abarca todo lo que necesitás para profesionalizarte, desarrollar habilidades específicas y adquirir confianza. Dictado por un equipo multidisciplinario y altamente capacitado. Transformate vos también en un especialista. Inscribite y accedé a una capacitación única en el mercado del seguro de caución.",
+            "infoTitle": "NEXT ACTIVITIES"
+        },
+        "courses":[
+            {"id": 11,
+             "date": "Miércoles 19 de octubre",
+             "title": "Introduction of Surety Bond Insurance and Commercialization" },
+             {"id": 12,
+            "date": "Miércoles 26 de octubre",
+             "title": "Cobranza y Refacturación" },
+             {"id": 13,
+             "date": "Miércoles 02 de noviembre",
+             "title": "Suscripción de Riesgos y Análisis de Tomadores" },
+             {"id": 14,
+              "date": "Miércoles 09 de noviembre",
+             "title": "Garantías Judiciales y Siniestros"}
+        
+        ]
+    },
+    "ES": {
+        "title1": "Una capacitación",
+        "title2": "imprescindible",
+        "titleMobile": "Una capacitación imprescindible",
+        "moreButton": "VER MÁS",
+        "incriptionButton": "INSCRIBITE",
+        "socialText": "Seguinos para conocer todas las convocatorias y los nuevos cursos.",
+        "schoolInfo": {
+            "menuSchool": "LA ESCUELA",
+            "menuProgram": "EL PROGRAMA",
+            "text": "Somos especialistas y líderes en seguros de caución. Por eso, tenemos la única escuela de caución del mercado y te ofrecemos una capacitación imprescindible para ampliar tus oportunidades de negocio. Para dominar los diferentes tipos de riesgo y las mejores técnicas de comercialización. Para asesorar mejor a tus clientes. Para gestionar con efectividad las cobranzas. Un programa único que abarca todo lo que necesitás para profesionalizarte, desarrollar habilidades específicas y adquirir confianza. Dictado por un equipo multidisciplinario y altamente capacitado. Transformate vos también en un especialista. Inscribite y accedé a una capacitación única en el mercado del seguro de caución.",
+            "infoTitle": "PRÓXIMAS ACTIVIDADES"
+        },
+        "courses":[
+            {"id": 11,
+             "date": "Miércoles 19 de octubre",
+             "title": "Introducción al Seguro de Caución y Comercialización" },
+             {"id": 12,
+            "date": "Miércoles 26 de octubre",
+             "title": "Cobranza y Refacturación" },
+             {"id": 13,
+             "date": "Miércoles 02 de noviembre",
+             "title": "Suscripción de Riesgos y Análisis de Tomadores" },
+             {"id": 14,
+              "date": "Miércoles 09 de noviembre",
+             "title": "Garantías Judiciales y Siniestros"}
+        
+        ]
+    }
+}
+
