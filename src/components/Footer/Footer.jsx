@@ -24,7 +24,7 @@ const text = footerTexts[selectedLanguage];
         <div className='footerMenu'>
             {text.map((item,key)=>
             <div className='footerItem'>
-                <NavLink to="/balances">
+                <NavLink to={item.link}>
                 <h4 className='footerCategory'>{item.name}</h4>
                 </NavLink>
             </div>

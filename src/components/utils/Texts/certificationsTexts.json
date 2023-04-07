@@ -1,0 +1,24 @@
+{
+    "EN":{
+        "certificationsTexts" :[
+    {"id":1, "text": "Member of the de la Asociación Panamericana de Fianzas"},
+    {"id":2, "text": "Member of the International Credit Insurance & Surety Association (ICISA)"}, 
+    {"id":3, "text": "Certificación ISO 9001 en todos los sectores"}, 
+    {"id":4, "text": "Calificación A+ de Evaluadora Latinoamericana"}
+],
+"title": "MEMBERSHIPS & CERTIFICATIONS",
+"balanceMenu":"STATEMENTS",
+"certificationMenu":"CERTIFICATIONS"
+    },
+    "ES":{
+        "certificationsTexts" :[
+    {"id":1, "text": "Miembro de la Asociación Panamericana de Fianzas"},
+    {"id":2, "text": "Miembro de la International Credit Insurance & Surety Association (ICISA)"}, 
+    {"id":3, "text": "Certificación ISO 9001 en todos los sectores"}, 
+    {"id":4, "text": "Calificación A+ de Evaluadora Latinoamericana"}
+],
+"title": "MEMBRESÍAS Y CERTIFICACIONES",
+"balanceMenu":"BALANCES",
+"certificationMenu":"CERTIFICACIONES"
+    }
+}

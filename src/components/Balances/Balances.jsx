@@ -5,9 +5,13 @@ import BalancesGroup from './BalancesGroup'
 import BalancesGroupBottom from './BalancesGroupBottom'
 import { useEffect } from 'react'
 import { topCardInfo, bottomCardInfo } from '../utils/Texts/cardInfo'
+import  balancesTexts  from '../utils/Texts/balancesTexts.json'
+import { useLangContext } from '../../Context/LangContext'
 
 
 const Balances = (props) => {
+  const {selectedLanguage} = useLangContext()
+  const text = balancesTexts[selectedLanguage];
   
   useEffect(()=>{
     window.scrollTo(0,0);
@@ -19,9 +23,9 @@ const Balances = (props) => {
           <div className="balance-block">
             <div className='sub-menu-balance'>
                 <div className='items'>
-                    <h5 className="item-balance">BALANCES</h5>
+                    <h5 className="item-balance">{text.balanceMenu}</h5>
                     <Link to="/certificaciones">
-                      <h5 className='item'>CERTIFICACIONES</h5>
+                      <h5 className='item'>{text.certificationMenu}</h5>
                     </Link>
                 </div>
                 <div>
@@ -30,7 +34,7 @@ const Balances = (props) => {
                   </Link>
                 </div> 
               </div>
-                <h5 className='horizontal-title-b'>MEMORIA Y BALANCES</h5>
+                <h5 className={selectedLanguage === "EN" ? "horizontal-title-en":'horizontal-title-b'}>{text.title}</h5>
           </div>
           </div> 
         {  <div className='card-balance-box'>

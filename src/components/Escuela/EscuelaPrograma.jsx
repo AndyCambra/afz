@@ -2,16 +2,20 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import { Link } from 'react-router-dom'
 import BigButton from '../utils/BigButton/BigButton'
-import { firstColumn, secondColumn } from '../utils/Texts/schoolProgramText'
+import schoolText from '../utils/Texts/schoolText.json'
+import { useLangContext } from '../../Context/LangContext'
 
 
 
 const EscuelaPrograma = () => {
+  const {selectedLanguage} = useLangContext()
+  const text = schoolText[selectedLanguage];
+
   return (
     <>
     <section className='info-backgound'>
     <div  className='info-hero'>
-        <div  className="video-youtube" >
+        <div  className={selectedLanguage === "EN"? "display-none" : "video-youtube"}>
         <ReactPlayer
         url="https://www.youtube.com/embed/pUVgzwUjVbc?rel=0&amp;autoplay=1"
         controls
@@ -25,9 +29,9 @@ const EscuelaPrograma = () => {
         <div className='sub-menu-balance'>
             <div className='items'>
             <Link to="/escuela/info">
-                <h5 className='item-program'>LA ESCUELA</h5>
+                <h5 className='item-program'>{text.schoolInfo.menuSchool}</h5>
             </Link>
-                  <h5 className="item-program-selected">EL PROGRAMA</h5>    
+                  <h5 className="item-program-selected">{text.schoolInfo.menuProgram}</h5>    
             </div>
             <div>
               <Link to="/" className='school-home-link'>
@@ -35,11 +39,11 @@ const EscuelaPrograma = () => {
               </Link>
             </div> 
           </div>
-          <h5 className='info-title'>CONTENIDOS</h5>
+          <h5 className='info-title'>{text.programTitle}</h5>
         </div>
             
             <div className='program-block'>
-              {firstColumn.map((item, key)=>{
+              {text.firstColumn.map((item, key)=>{
                 return(
                   <>
                 <h4 className='program-subtitle'>{item.title}</h4>
@@ -49,7 +53,7 @@ const EscuelaPrograma = () => {
               })}
             </div>
             <div className='program-block2'>
-            {secondColumn.map((item, key)=>{
+            {text.secondColumn.map((item, key)=>{
                 return(
                   <>
                 <h4 className='program-subtitle'>{item.title}</h4>
@@ -58,9 +62,9 @@ const EscuelaPrograma = () => {
                 )
               })}
            
-            <div className='program-buttons'>
+            <div className={selectedLanguage === "EN" ? "display-none" : 'program-buttons'}>
                 <Link to='/escuela/inscripcion'>  
-                <BigButton className="school-button" name={'INSCRIBITE'} />
+                <BigButton className="school-button" name={text.incriptionButton} />
                 </Link>
                 </div>
             </div>

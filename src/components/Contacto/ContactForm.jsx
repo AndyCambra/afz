@@ -2,21 +2,21 @@ import React from 'react'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
 
-const ContactForm = ({sent, contactInfo, handleSubmit, errors, handleChange}) => {
+const ContactForm = ({sent, contactInfo, handleSubmit, errors, handleChange, thanks1, thanks2, confirmation, formTitle}) => {
   return (
     <div className='contact-form'>
     {sent===true ? 
         <div>
-            <h2 className='contact-thanks'>Muchas gracias {contactInfo.userName} por tu consulta!</h2>
-            <p className='contact-thanks-text'>Te llegará en breve un mail de confirmación.</p>
+            <h2 className='contact-thanks'>{thanks1} {contactInfo.userName} {thanks2}</h2>
+            <p className='contact-thanks-text'>{confirmation}</p>
             <div className='inscription-send'>
             <Link to="/"><BigButton name= "HOME" className="contact-dark-button"/></Link></div>
-        </div> : <h6 className='contact-subtitle'>DEJANOS UN MENSAJE</h6>}
+        </div> : <h6 className='contact-subtitle'>{formTitle}</h6>}
     
         <form className= {sent===true ? 'display-none':'inscription-form'} onSubmit={handleSubmit}>
         <div className='input-box'>
           <label className='label-white'>Nombre</label>  
-            <input name="userName" className="white-input" value={contactInfo.userName} type="onlyletters" onChange={e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Ingresá tu nombre" required={true}/>
+            <input name="userName" className="white-input" value={contactInfo.userName} type="onlyletters" onChange={e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder='Ingresá tu nombre' required={true}/>
             {errors['userName'] && <p className='error-white'>{errors['userName']}</p>}
         </div> 
         <div className='input-box'>

@@ -7,15 +7,13 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import schoolText from '../utils/Texts/schoolText.json'
 import { useLangContext } from '../../Context/LangContext'
 
-const textSchool={
-  text:"Somos especialistas y líderes en seguros de caución. Por eso, tenemos la única escuela de caución del mercado y te ofrecemos una capacitación imprescindible para ampliar tus oportunidades de negocio. Para dominar los diferentes tipos de riesgo y las mejores técnicas de comercialización. Para asesorar mejor a tus clientes. Para gestionar con efectividad las cobranzas. Un programa único que abarca todo lo que necesitás para profesionalizarte, desarrollar habilidades específicas y adquirir confianza. Dictado por un equipo multidisciplinario y altamente capacitado. Transformate vos también en un especialista. Inscribite y accedé a una capacitación única en el mercado del seguro de caución."
-}
+
 
 
 const EscuelaInfo = () => {
   const {selectedLanguage} = useLangContext()
   const text = schoolText[selectedLanguage];
-  console.log(text)
+
 
   return (
     <>
@@ -67,7 +65,7 @@ const EscuelaInfo = () => {
             <img src="/img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
         </div>
         <div className='info-school-mobile-text'>
-        <p>{textSchool.text}</p> 
+        <p>{text.schoolInfo.text}</p> 
         </div>
         <div class="push"></div>
           </section>

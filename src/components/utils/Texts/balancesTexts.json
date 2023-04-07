@@ -1,0 +1,14 @@
+{
+    "EN":{
+        "title":"ANNUAL REPORT & FIANCIAL STATEMENTS",
+        "balanceMenu":"STATEMENTS",
+        "certificationMenu":"CERTIFICATIONS"
+        
+    },
+    "ES":{
+        "title":"MEMORIA Y BALANCES",
+        "balanceMenu":"BALANCES",
+        "certificationMenu":"CERTIFICACIONES"
+        
+    }
+}

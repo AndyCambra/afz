@@ -1,19 +1,18 @@
 import React from 'react'
 import { FraudItem } from './FraudItem'
-import items from '../utils/Texts/firstFraudText'
 
-const FirstFraudBox = () => {
+const FirstFraudBox = ({text, subtitle,item1,item2,item3,firstFraudContent}) => {
   return (
     <div className='fraud-box'>
       <div className='fraud-in-box'>
-      <p className='fraud-column-1'>Las aseguradoras no escapan a la necesidad de cualquier empresa de ser rentables y eficientes, por lo que no pueden soportar pérdidas sin tomar medidas correctivas que terminan incidiendo en el costo del servicio que brindan. Por eso, una gestión proactiva y eficaz de la política de prevención de fraudes se convierte en una poderosa herramienta para mejorar la competitividad, además de un acto de responsabilidad que beneficia a todas las partes. El compromiso y la acción de productores, asesores, brokers o agentes institorios ayuda a todos los participantes del mercado. </p>
-      <h6 className='fraud-subtitle'>ACCIONES IMPORTANTES PARA DESCUBRIR FRAUDES:</h6>
-      <h6 className='final-list'>Cruce de datos</h6>
-      <h6 className='final-list'>Colaboración entre aseguradoras</h6>
-      <h6 className='final-list'>Redes sociales</h6>
+      <p className='fraud-column-1'>{text}</p>
+      <h6 className='fraud-subtitle'>{subtitle}</h6>
+      <h6 className='final-list'>{item1}</h6>
+      <h6 className='final-list'>{item2}</h6>
+      <h6 className='final-list'>{item3}</h6>
       </div>
     <div className='fraud-items'>
-    {items.map((item, key)=>
+    {firstFraudContent.map((item, key)=>
     <FraudItem key={item.number} number={item.number} text={item.text}/>
     )}
     </div>

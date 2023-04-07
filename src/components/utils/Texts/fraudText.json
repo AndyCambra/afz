@@ -1,0 +1,192 @@
+{
+    "EN":{
+        "title":"FRAUD PREVENTION",
+        "fraudMenu1": "LA POLÍTICA ANTIFRAUDE Y SU INFLUENCIA EN LA COMPETITIVIDAD",
+        "fraudMenu2":"CLAVES PARA EVITAR EL FRAUDE",
+        "firstFraudBox":{
+            "text":"Las aseguradoras no escapan a la necesidad de cualquier empresa de ser rentables y eficientes, por lo que no pueden soportar pérdidas sin tomar medidas correctivas que terminan incidiendo en el costo del servicio que brindan. Por eso, una gestión proactiva y eficaz de la política de prevención de fraudes se convierte en una poderosa herramienta para mejorar la competitividad, además de un acto de responsabilidad que beneficia a todas las partes. El compromiso y la acción de productores, asesores, brokers o agentes institorios ayuda a todos los participantes del mercado.",
+            "subtitle":"ACCIONES IMPORTANTES PARA DESCUBRIR FRAUDES:",
+            "item1":"Cruce de datos",
+            "item2":"Colaboración entre aseguradoras",
+            "item3":"Redes sociales"
+        },
+        "firstFraudContent":[
+            {
+            "number": 1,
+            "text":"El fraude es un delito y, como tal, las personas que lo cometen deben ser penadas."
+            },
+            {
+            "number": 2,
+            "text":"El fraude ocurre cuando se engaña a la compañía –y/o al productor asesor– de seguros para cobrar dinero u obtener alguna ventaja a la que no tiene derecho. Esto incide en el costo de las primas y causa daños a toda la comunidad. "
+            },
+            {
+            "number": 3,
+            "text":"Algunas de las formas más comunes de fraude son: la variación, simulación o tergiversación de circunstancias personales, temporales, objetivas, de causalidad o de lugar o la  provocación deliberada o la simulación total o parcial de un siniestro. "
+            },
+            {
+            "number": 4,
+            "text":"El fraude es un acontecimiento tan común que termina siendo admitido como natural, desconociendo su gravedad.   "
+             },
+            {
+            "number": 5,
+            "text":"Las declaraciones falsas o toda reticencia de circunstancias conocidas por el asegurado que de ser tomadas en cuenta hubiesen impedido el contrato o modificado sus condiciones, aun las hechas de buena fe, hacen nulo el contrato. Esto resulta de mayor gravedad cuando se trata de actitudes dolosas o de mala fe. "
+            },
+            {
+            "number": 6,
+            "text":"Siempre existe el riesgo de ser involucrados en una maniobra de fraude. "
+            }
+        ],
+        "secondFraudBox":{
+            "subtitle1": "RECOMENDACIONES",
+            "subtitle2": "PARA TENER EN CUENTA",
+            "text1": "Sus coberturas pueden tener limitaciones en orden a ítems, riesgos o conceptos no cubiertos.",
+            "link": "Ver el listado de coberturas",
+            "text2":"Para consultar acerca de oferta de coberturas de costo por debajo de la media del mercado por parte de comercializadores no autorizados, dirigirse a la Superintendencia de Seguros de la Nación.",
+            "text3":"Si bien está permitido asegurar el mismo interés y el mismo riesgo con más de un asegurador, esto debe ser notificado a todas las entidades. No es lícito que la indemnización supere el monto del daño sufrido, como tampoco lo es perseguir el cobro respecto de un siniestro que ya fue reparado por alguna otra aseguradora.",
+            "text4":"Contamos con un departamento especializado en análisis y prevención del fraude.",
+            "text5":"Ante cualquier duda o consulta, comuníquese con:"            
+        },
+        "secondFraudContent":[
+            {
+            "id": 1,
+            "number": "!",
+            "text":"Nunca firmar en blanco formularios de reclamos o denuncias de siniestros."
+            },
+            {
+            "id": 2,
+            "number": "!",
+            "text":"No aceptar dinero o suscribir documentos o acordar apoderamientos sin comprender por completo sus alcances y efectos."
+            },
+            { 
+            "id": 3,
+            "number": "!",
+            "text":"No reconocer hechos que no han sucedido ni aceptar asistencia letrada proporcionada por desconocidos.  "
+            },
+            {
+            "id": 4,
+            "number": "!",
+            "text":"No modificar el estado de los objetos dañados por un siniestro, no exagerar fraudulentamente los daños, no emplear pruebas falsas ni proporcionar información falsa."
+            },
+            {
+            "id": 5,
+            "number": "!",
+            "text": "Nunca avenirse a cooperar en la realización de una maniobra de fraude. "  
+            },
+            {
+            "id": 6,
+            "number": "!",
+            "text":"Nunca facilitar a terceros sin justificación los datos ni el acceso a las pólizas. "
+            },
+            {
+            "id": 7,
+            "number": "!",
+            "text":"No permitir que se sustituyan o simulen las reales circunstancias personales, temporales, objetivas o causales, relativas al acaecimiento de un siniestro. "
+            },
+            {
+                "id": 8,
+                "number": "!",
+                "text":"Siempre consultar con su aseguradora ante cualquier duda o eventualidad, y comunicar las novedades que surjan."
+            },
+            {
+                "id": 9,
+                "number": "!",
+                "text":"El pago del seguro debe ser realizado exclusivamente por los canales indicados por la aseguradora o el productor asesor de seguros. "
+            }
+        ]
+    },
+    "ES":{
+        "title":"PREVENCIÓN DEL FRAUDE",
+        "fraudMenu1": "LA POLÍTICA ANTIFRAUDE Y SU INFLUENCIA EN LA COMPETITIVIDAD",
+        "fraudMenu2":"CLAVES PARA EVITAR EL FRAUDE",
+        "firstFraudBox":{
+            "text":"Las aseguradoras no escapan a la necesidad de cualquier empresa de ser rentables y eficientes, por lo que no pueden soportar pérdidas sin tomar medidas correctivas que terminan incidiendo en el costo del servicio que brindan. Por eso, una gestión proactiva y eficaz de la política de prevención de fraudes se convierte en una poderosa herramienta para mejorar la competitividad, además de un acto de responsabilidad que beneficia a todas las partes. El compromiso y la acción de productores, asesores, brokers o agentes institorios ayuda a todos los participantes del mercado.",
+            "subtitle":"ACCIONES IMPORTANTES PARA DESCUBRIR FRAUDES:",
+            "item1":"Cruce de datos",
+            "item2":"Colaboración entre aseguradoras",
+            "item3":"Redes sociales"
+        },
+        "firstFraudContent":[
+            {
+            "number": 1,
+            "text":"El fraude es un delito y, como tal, las personas que lo cometen deben ser penadas."
+            },
+            {
+            "number": 2,
+            "text":"El fraude ocurre cuando se engaña a la compañía –y/o al productor asesor– de seguros para cobrar dinero u obtener alguna ventaja a la que no tiene derecho. Esto incide en el costo de las primas y causa daños a toda la comunidad. "
+            },
+            {
+            "number": 3,
+            "text":"Algunas de las formas más comunes de fraude son: la variación, simulación o tergiversación de circunstancias personales, temporales, objetivas, de causalidad o de lugar o la  provocación deliberada o la simulación total o parcial de un siniestro. "
+            },
+            {
+            "number": 4,
+            "text":"El fraude es un acontecimiento tan común que termina siendo admitido como natural, desconociendo su gravedad.   "
+             },
+            {
+            "number": 5,
+            "text":"Las declaraciones falsas o toda reticencia de circunstancias conocidas por el asegurado que de ser tomadas en cuenta hubiesen impedido el contrato o modificado sus condiciones, aun las hechas de buena fe, hacen nulo el contrato. Esto resulta de mayor gravedad cuando se trata de actitudes dolosas o de mala fe. "
+            },
+            {
+            "number": 6,
+            "text":"Siempre existe el riesgo de ser involucrados en una maniobra de fraude. "
+            }
+        ],
+        "secondFraudBox":{
+            "subtitle1": "RECOMENDACIONES",
+            "subtitle2": "PARA TENER EN CUENTA",
+            "text1": "Sus coberturas pueden tener limitaciones en orden a ítems, riesgos o conceptos no cubiertos.",
+            "link": "Ver el listado de coberturas",
+            "text2":"Para consultar acerca de oferta de coberturas de costo por debajo de la media del mercado por parte de comercializadores no autorizados, dirigirse a la Superintendencia de Seguros de la Nación.",
+            "text3":"Si bien está permitido asegurar el mismo interés y el mismo riesgo con más de un asegurador, esto debe ser notificado a todas las entidades. No es lícito que la indemnización supere el monto del daño sufrido, como tampoco lo es perseguir el cobro respecto de un siniestro que ya fue reparado por alguna otra aseguradora.",
+            "text4":"Contamos con un departamento especializado en análisis y prevención del fraude.",
+            "text5":"Ante cualquier duda o consulta, comuníquese con:"            
+        },
+        "secondFraudContent":[
+            {
+            "id": 1,
+            "number": "!",
+            "text":"Nunca firmar en blanco formularios de reclamos o denuncias de siniestros."
+            },
+            {
+            "id": 2,
+            "number": "!",
+            "text":"No aceptar dinero o suscribir documentos o acordar apoderamientos sin comprender por completo sus alcances y efectos."
+            },
+            { 
+            "id": 3,
+            "number": "!",
+            "text":"No reconocer hechos que no han sucedido ni aceptar asistencia letrada proporcionada por desconocidos.  "
+            },
+            {
+            "id": 4,
+            "number": "!",
+            "text":"No modificar el estado de los objetos dañados por un siniestro, no exagerar fraudulentamente los daños, no emplear pruebas falsas ni proporcionar información falsa."
+            },
+            {
+            "id": 5,
+            "number": "!",
+            "text": "Nunca avenirse a cooperar en la realización de una maniobra de fraude. "  
+            },
+            {
+            "id": 6,
+            "number": "!",
+            "text":"Nunca facilitar a terceros sin justificación los datos ni el acceso a las pólizas. "
+            },
+            {
+            "id": 7,
+            "number": "!",
+            "text":"No permitir que se sustituyan o simulen las reales circunstancias personales, temporales, objetivas o causales, relativas al acaecimiento de un siniestro. "
+            },
+            {
+                "id": 8,
+                "number": "!",
+                "text":"Siempre consultar con su aseguradora ante cualquier duda o eventualidad, y comunicar las novedades que surjan."
+            },
+            {
+                "id": 9,
+                "number": "!",
+                "text":"El pago del seguro debe ser realizado exclusivamente por los canales indicados por la aseguradora o el productor asesor de seguros. "
+            }
+        ]
+    }
+}

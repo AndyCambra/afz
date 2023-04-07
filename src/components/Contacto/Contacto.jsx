@@ -10,8 +10,13 @@ import SubmenuContactoMobile from './SubmenuContactoMobile'
 import ContactoTitleAndText from './ContactoTitleAndText'
 import ContactoAdress from './ContactoAdress'
 import { CvForm } from '../TrabajaConNosotros/CvForm'
+import contactTexts from '../utils/Texts/contactTexts.json'
+import { useLangContext } from '../../Context/LangContext'
 
 const Contacto = () => {
+  const {selectedLanguage} = useLangContext()
+  const text = contactTexts[selectedLanguage];
+
   let [contactInfo, setContactInfo]=useState({
         userName: "",
         userLastName: "",
@@ -67,14 +72,15 @@ console.log(contactInfo)
     <BrowserView>
     <section className='contact-backgound' >
     <div className='contact-grid'>
-     <ContactoTitleAndText />
+     <ContactoTitleAndText title={text.title} text={text.text}/>
       <ContactoAdress />
         <div className='work-button-in-contact'>
             <Link to="/trabaja-con-nosotros">
-        <BigButton name="TRABAJÁ CON NOSOTROS" className="small-button" />
+        <BigButton name={text.workButton} className="small-button" />
         </Link>
         </div>
-        <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}/>
+        <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}
+        thanks1={text.thanks1} thanks2={text.thanks2} confirmation={text.confirmation} formTitle={text.formTitle} />
       </div>
     </section>
     </BrowserView>
@@ -88,17 +94,18 @@ console.log(contactInfo)
       <div className='bordeax-background'>
         {change === false ? (
           <>
-          <ContactoTitleAndText />
+          <ContactoTitleAndText title={text.title} text={text.text}/>
           <ContactoAdress />
-          <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}/>
+          <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}
+          formName={text.formName} namePlaceholder={text.namePlaceholder} sendButton={text.sendButton} />
           </>) 
           :( 
           <>
           {sent===true ? <div>
-                <h2 className='contact-thanks'>Muchas gracias {candidateInfo.userName} por contactarnos!</h2>
-                <p className='contact-thanks-text'>Te llegará en breve un mail de confirmación.</p>
+                <h2 className='contact-thanks'>{text.thanks1} {candidateInfo.userName} {text.thanks2} </h2>
+                <p className='contact-thanks-text'>{text.confirmation}</p>
                 <div><Link to="/"><BigButton name= "HOME" className="contact-dark-button"/></Link></div></div>
-                :<h2 className='contact-subtitle'>CONTANOS SOBRE VOS</h2>}
+                :<h2 className='contact-subtitle'>{text.cvTitle}</h2>}
           <CvForm sent={sent} handleSubmit={handleSubmit} handleChange={handleCandidate} errors={errors} candidateInfo={candidateInfo} classDark={'white-area'} className={'white-input'}/>
           </>
           )
