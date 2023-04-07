@@ -4,24 +4,32 @@ import './polizadigital.css'
 import DescargarItemComplex from '../utils/DescargarItem/DescargarItemComplex'
 import ReactPlayer from 'react-player'
 import PolizaDigitalLinks from './PolizaDigitalLinks'
+import { useLangContext } from '../../Context/LangContext';
+import productTexts from '../utils/Texts/productText.json'
+import digitalSurety from '.././utils/Texts/digitalSurety.json'
 
 const PolizaDigital = () => {
+  const {selectedLanguage} = useLangContext()
+  const text = productTexts[selectedLanguage];
+  const digitalText = digitalSurety[selectedLanguage];
+console.log(selectedLanguage)
   return (
     <div className='digital-background'>
     <div className='digital-content'>
     <div className='digital-box'>   
-        <ProductMenu /> 
+    <ProductMenu category1={text.productMenu.category1} category2={text.productMenu.category2} category3={text.productMenu.category3} category4={text.productMenu.category4} 
+            category5={text.productMenu.category5} category6={text.productMenu.category6} category7={text.productMenu.category7} category8={text.productMenu.category8} category9={text.productMenu.category9}/>
         <div className='digital-column'>
-          <h5 className='digital-title'>PÓLIZA DE CAUCIÓN DIGITAL</h5>
-          <h6 className='digital-subtitle'>¿Qué es una Póliza de Caución con Firma Digital?</h6>
-          <p className='digital-text'>Se trata de una póliza guardada en formato PDF a la que se le agrega un certificado de firma digital. Este certificado hace imposible que alteres el contenido del PDF y acredita la identidad de la compañia de seguros conforme con lo establecido en el Código Civil y en la Ley de Firma Digital.
-                A esto Afianzadora le agrega su propia seguridad, insertando un código QR y un link a nuestro sitio web para que puedas corroborar que los datos de la póliza que recibas coincidan y descargarte una copia de la misma si lo necesitás.
-                Así de fácil. Recibís tu PDF firmado digitalmente y se lo hacés llegar al Asegurado.</p>
-          <h6 className='digital-subtitle'>¿Cómo visualizar las pólizas con Legalización y Certificación?</h6>
-          <p className='digital-text'>A continuación, un breve instructivo en el cual mostramos 4 simples pasos para acceder a nuestras pólizas Legalizadas o Certificadas.</p>
+          <h5 className='digital-title'>{digitalText.title}</h5>
+          <h6 className={selectedLanguage === "EN" ? 'display-none':'digital-subtitle'}>¿Qué es una Póliza de Caución con Firma Digital?</h6>
+          <p className='digital-text'>{digitalText.firstText}</p>
+          <h6 className={selectedLanguage === "EN" ? 'display-none':'digital-subtitle'}>¿Cómo visualizar las pólizas con Legalización y Certificación?</h6>
+          <p className={selectedLanguage === "EN" ? 'display-none':'digital-text'}>A continuación, un breve instructivo en el cual mostramos 4 simples pasos para acceder a nuestras pólizas Legalizadas o Certificadas.</p>
           
-          <video poster="../imagenes/video_instructivo_polizas.jpg" title="¿Como visualizar las pólizas con Legalización y Certificación?" preload="auto" controls="controls" src="/img/PolizaDigitalTutoriales/tutorial_Afianzadora.mp4" type="video/mp4" className='digital-video'></video>
-          <h6 className='digital-subtitle'>¿Cómo verificar la validez de una firma digital?</h6>
+          <video poster="../imagenes/video_instructivo_polizas.jpg" title="¿Como visualizar las pólizas con Legalización y Certificación?" preload="auto" controls="controls" src="/img/PolizaDigitalTutoriales/tutorial_Afianzadora.mp4" type="video/mp4" className={selectedLanguage === "EN" ? 'display-none':'digital-video'}></video>
+          <h6 className={selectedLanguage === "EN" ? 'display-none':'digital-subtitle'}>¿Cómo verificar la validez de una firma digital?</h6>
+          
+          <div className={selectedLanguage ==="EN" && "display-none"}>
           <h6>POR ÚNICA VEZ</h6>
           <DescargarItemComplex title="Descargar e Instalar el Adobe Acrobat Reader DC" />
           <div className='vimeo-box'>
@@ -77,9 +85,11 @@ const PolizaDigital = () => {
           <h6 className='final-list'>Certificados de Avance</h6>
           <h6 className='final-list' >Remitos de entrega recibidos en forma fehaciente por el Asegurado.</h6>
           </div>
+          </div>
         </div>  
       </div>
     </div>
+    <img src="/img/digital1.jpg" alt="Descargar Formularios" className={selectedLanguage === "ES"? 'display-none':'forms-photo'} />
     <div class="push"></div>
     </div>
   )

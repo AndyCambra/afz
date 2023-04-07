@@ -135,7 +135,7 @@
             width: 120%;
         }
     }
-   
+    @media only screen and (min-width: 330px) and (max-width: 768px){
 .headerMobileBox{
     z-index: 100;
     position: absolute;
@@ -201,3 +201,15 @@
     color: #fff;
     font-size: .9em;
 }
+.flag-box-mobile{
+  margin-right: 10px;
+  
+}
+.x-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: -30px;
+
+}
+    }

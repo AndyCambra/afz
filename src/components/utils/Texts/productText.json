@@ -1,0 +1,339 @@
+{
+    "EN": {
+        "products": [
+            {
+                "id": 1,
+                "title": "CONSTRUCTION | SUPPLY | SERVICE",
+                "text": "Un seguro de caución puede respaldar proyectos como obras públicas a nivel local, provincial y nacional; obras privadas de índole industrial o proyectos de inversión; suministro de productos o prestación de servicios a entidades públicas y privadas. El costo resulta significativamente menor, permite no inmovilizar activos financieros ni ocupar líneas de crédito bancario y abarca una variedad de productos que permite abastecer diferentes necesidades:",
+                "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/obras.jpg"
+            },
+            {
+                "id": 2,
+                "title": "ADUANERA",
+                "text": "Dadas ciertas condiciones, algunas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. Estas excepciones se otorgan a condición de que el importador/exportador cumpla determinados requisitos y ofrezca una garantía para el caso de no cumplimiento. El seguro de caución es la opción más ágil y económica para obligaciones como:",
+                "requisitesText1": "De acuerdo al tipo de operación se requerirá información sobre el origen de las mercaderías, destino, plazos o cualquier otro detalle que colabore con la comprensión del negocio que se solicita cubrir.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/Aduaneras.jpg"
+            },
+            {
+                "id": 3,
+                "title": "JUDICIALES",
+                "text": "El seguro de caución es un instrumento ágil, idóneo y económicamente accesible que se encuentra a disposición de los litigantes (actor/demandado) para garantizar las obligaciones procesales judiciales cuando el código respectivo así lo exija o el juzgado interviniente la acepte. Se aplican cuando el juez o autoridad interviniente ordena una medida cautelar (demandado) o en el caso en que se haya dispuesto la constitución de la contracautela (actor). Asimismo, la aceptación de este producto ha provocado que se amplíe su uso a otras situaciones procesales vinculadas a la AFIP, y otras cuestiones.",
+                "requisitesText1": "Breve resumen de la situación judicial de la obligación a garantizar, por parte del letrado interviniente. Y, en el caso de que ya exista, copia de la medida que traba el embargo.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/judiciales.jpg"
+            },
+            {
+                "id": 4,
+                "title": "EXTERIOR",
+                "text": "Cuando empresas argentinas realizan proyectos fuera del país, con frecuencia requieren garantías en aquellos países en los que se encuentran trabajando. Para resolver esta situación, el mercado de seguros de caución ofrece la figura de “fronting”, por medio de la cual les ofrecemos a nuestros clientes el respaldo en el exterior por medio de una compañía colega que extiende las garantías requeridas.",
+                "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/exterior.jpg"
+            },
+            {
+                "id": 5,
+                "title": "ALQUILER",
+                "text": "Un producto que se popularizó en los últimos años para garantizar el pago de cánones locativos, expensas, ocupación indebida, impuestos, y la sustitución del fondo de garantía, entre otras. Permiten una gran celeridad en la gestión de reclamos e indemnizaciones por incumplimiento, lo que las transforma en una herramienta valiosa para todas las partes del contrato.",
+                "requisitesText1": "Copia del contrato de locación donde se observe la información fundamental sobre el inmueble, los sujetos intervinientes, plazos, canon locativo y condiciones.",
+                "requisitesText2": "Copia del último balance. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/Alquiler.jpg"
+            },
+            {
+                "id": 6,
+                "title": "DIRECTORES",
+                "text": "Este seguro de caución es ideal para cubrir la actividad de directores y socios gerentes de sociedades anónimas o de responsabilidad limitada; para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros.",
+                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+                "requisitesText2": "",
+                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/directores.jpg"
+            },
+            {
+                "id": 7,
+                "title": "ACTIVIDADES | PROFESIONES",
+                "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.).",
+                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+                "requisitesText2": "",
+                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/actividades.jpg"
+            }
+        ],
+        "productsExtras": [
+            {
+                "id": 1,
+                "subtitle": "Garantía de oferta",
+                "text": "Cubre la obligación de mantener la oferta presentada y de firmar el contrato en caso de resultar adjudicado, presentando la garantía de ejecución de contrato."
+            },
+            {
+                "id": 2,
+                "subtitle": "Garantía de cumplimiento de contrato",
+                "text": "Cubre el cumplimiento de las obligaciones consignadas en el contrato en tiempo y forma."
+            },
+            {
+                "id": 3,
+                "subtitle": "Garantía de anticipo financiero",
+                "text": "Cubre la correcta aplicación de los importes recibidos, en los trabajos efectivamente contratados, liberándose conforme al efectivo avance del contrato."
+            },
+            {
+                "id": 4,
+                "subtitle": "Garantía de anticipo por acopio",
+                "text": "Cubre el buen uso de los importes recibidos en concepto de anticipo y con destino al acopio de materiales, liberándose con el efectivo acopio documentado en obra."
+            },
+            {
+                "id": 5,
+                "subtitle": "Garantía de tenencia",
+                "text": "Cubre el reintegro de los bienes al asegurado, que se consignen en poder del tomador para su uso, reparación o incorporación a la obra. La garantía es por la valoración de los bienes involucrados."
+            },
+            {
+                "id": 6,
+                "subtitle": "Garantía de fondo de reparo",
+                "text": "Cubre la obligación del contratista o proveedor de subsanar eventuales vicios ocultos, sustituyendo las retenciones sufridas por el tomador en cada certificación. Se libera al cumplirse el periodo de garantía."
+            }
+        ],
+        "customs": [
+            "Importaciones o exportaciones temporales",
+            "Tránsitos terrestres",
+            "Faltas de documentación",
+            "Envíos en consignación",
+            "Diferencia de derechos",
+            "Habilitación de depósitos",
+            "Fiscales régimen automotriz"
+        ],
+        "productsMobile": [
+            {
+                "id": 1,
+                "title": "CONSTRUCTION | SUPPLY | SERVICE",
+                "text": "Para respaldar proyectos de obras públicas a nivel local, provincial y nacional; obras privadas de índole industrial o proyectos de inversión; suministro de productos o prestación de servicios a entidades públicas y privadas. El costo resulta significativamente menor, permite no inmovilizar activos financieros ni ocupar líneas de crédito bancario y abarca una variedad de productos que permite abastecer diferentes necesidades. Oferta, cumplimiento de contrato, anticipo financiero, anticipo por acopio, tenencia o fondo de reparo son algunas de las alternativas de estos seguros de caución."
+            },
+            {
+                "id": 2,
+                "title": "ADUANERAS",
+                " text": "Bajo algunas condiciones y de acuerdo al cumplimiento de determinados requisitos y a la presentación de garantías, ciertas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. El seguro de caución es la opción más ágil y económica para importaciones y exportaciones temporales, tránsitos terrestres, faltas de documentación, envíos en consignación, diferencia de derechos, habilitación de depósitos o fiscales régimen automotriz, entre otras."
+            },
+            {
+                "id": 3,
+                "title": "JUDICIALES",
+                "text": "El seguro de caución es un instrumento ágil, idóneo y económicamente accesible que se encuentra a disposición de los litigantes (actor/demandado) para garantizar las obligaciones procesales judiciales cuando el código respectivo así lo exija. Se aplican cuando el juez o autoridad interviniente ordena una medida cautelar o en el caso en que se haya dispuesto la constitución de la contracautela."
+            },
+            {
+                "id": 4,
+                "title": "EXTERIOR",
+                "text": "Cuando empresas argentinas realizan proyectos fuera del país, con frecuencia requieren garantías en aquellos países en los que se encuentran trabajando. Para resolver esta situación, el mercado de seguros de caución ofrece la figura de “fronting”, por medio de la cual les ofrecemos a nuestros clientes el respaldo en el exterior por medio de una compañía colega que extiende las garantías requeridas."
+            },
+            {
+                "id": 5,
+                "title": "ALQUILER",
+                "text": "Un producto que se popularizó en los últimos años para garantizar el pago de cánones locativos y la sustitución del fondo de garantía. Permiten una gran celeridad en la gestión de reclamos e indemnizaciones por incumplimiento, lo que las transforma en una herramienta valiosa para respaldar obligaciones locativas, ya sean comerciales o particulares."
+            },
+            {
+                "id": 6,
+                "title": "DIRECTORES",
+                "text": "Este seguro de caución es ideal para cubrir la actividad de directores y socios gerentes de sociedades anónimas o de responsabilidad limitada; para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros."
+            },
+            {
+                "id": 7,
+                "title": "ACTIVIDADES | PROFESIONES",
+                "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.)."
+            }
+        ],
+        "button": "QUOTE",
+        "requisitesTitle": "REQUISITES",
+        "productSubtitle": "BONDS",
+        "callToAction": "OR THROUGH AN INSURANCE BROKER",
+        "callToActionMobile1": "OR THROUGH",
+        "callToActionMobile2":"AN INSURANCE BROKER",
+        "callToActionButton": "CONTACT US",
+        "productMenu": {
+            "category1": "CONSTRUCTION | SUPPLY | SERVICE BONDS",
+            "category2": "CUSTOMS BONDS",
+            "category3": "JUDICIAL BONDS",
+            "category4": "ABROAD BONDS",
+            "category5": "LEASE BONDS",
+            "category6": "DIRECTORS BONDS",
+            "category7": "ACTIVITIES | PROFESION BONDS",
+            "category8": "DOWNLOAD FORMS",
+            "category9": "DIGITAL SURETY"
+        },
+        "landingTitle1": "The surety insurance",
+        "landingTitle2": "you need is here.",
+        "titleMobile1": "The surety",
+        "titleMobile2": "insurance you need is here.",
+        "claim": "Ingresá desde tu computadora para obtener información ampliada, requisitos y formularios descargables."
+    
+    },
+    "ES": {
+        "products": [
+            {
+                "id": 1,
+                "title": "OBRAS | SUMINISTROS | SERVICIOS",
+                "text": "Un seguro de caución puede respaldar proyectos como obras públicas a nivel local, provincial y nacional; obras privadas de índole industrial o proyectos de inversión; suministro de productos o prestación de servicios a entidades públicas y privadas. El costo resulta significativamente menor, permite no inmovilizar activos financieros ni ocupar líneas de crédito bancario y abarca una variedad de productos que permite abastecer diferentes necesidades:",
+                "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/obras.jpg"
+            },
+            {
+                "id": 2,
+                "title": "ADUANERA",
+                "text": "Dadas ciertas condiciones, algunas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. Estas excepciones se otorgan a condición de que el importador/exportador cumpla determinados requisitos y ofrezca una garantía para el caso de no cumplimiento. El seguro de caución es la opción más ágil y económica para obligaciones como:",
+                "requisitesText1": "De acuerdo al tipo de operación se requerirá información sobre el origen de las mercaderías, destino, plazos o cualquier otro detalle que colabore con la comprensión del negocio que se solicita cubrir.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/Aduaneras.jpg"
+            },
+            {
+                "id": 3,
+                "title": "JUDICIALES",
+                "text": "El seguro de caución es un instrumento ágil, idóneo y económicamente accesible que se encuentra a disposición de los litigantes (actor/demandado) para garantizar las obligaciones procesales judiciales cuando el código respectivo así lo exija o el juzgado interviniente la acepte. Se aplican cuando el juez o autoridad interviniente ordena una medida cautelar (demandado) o en el caso en que se haya dispuesto la constitución de la contracautela (actor). Asimismo, la aceptación de este producto ha provocado que se amplíe su uso a otras situaciones procesales vinculadas a la AFIP, y otras cuestiones.",
+                "requisitesText1": "Breve resumen de la situación judicial de la obligación a garantizar, por parte del letrado interviniente. Y, en el caso de que ya exista, copia de la medida que traba el embargo.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/judiciales.jpg"
+            },
+            {
+                "id": 4,
+                "title": "EXTERIOR",
+                "text": "Cuando empresas argentinas realizan proyectos fuera del país, con frecuencia requieren garantías en aquellos países en los que se encuentran trabajando. Para resolver esta situación, el mercado de seguros de caución ofrece la figura de “fronting”, por medio de la cual les ofrecemos a nuestros clientes el respaldo en el exterior por medio de una compañía colega que extiende las garantías requeridas.",
+                "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
+                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/exterior.jpg"
+            },
+            {
+                "id": 5,
+                "title": "ALQUILER",
+                "text": "Un producto que se popularizó en los últimos años para garantizar el pago de cánones locativos, expensas, ocupación indebida, impuestos, y la sustitución del fondo de garantía, entre otras. Permiten una gran celeridad en la gestión de reclamos e indemnizaciones por incumplimiento, lo que las transforma en una herramienta valiosa para todas las partes del contrato.",
+                "requisitesText1": "Copia del contrato de locación donde se observe la información fundamental sobre el inmueble, los sujetos intervinientes, plazos, canon locativo y condiciones.",
+                "requisitesText2": "Copia del último balance. Solamente si es la primera vez que opera con nosotros.",
+                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/Alquiler.jpg"
+            },
+            {
+                "id": 6,
+                "title": "DIRECTORES",
+                "text": "Este seguro de caución es ideal para cubrir la actividad de directores y socios gerentes de sociedades anónimas o de responsabilidad limitada; para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros.",
+                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+                "requisitesText2": "",
+                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/directores.jpg"
+            },
+            {
+                "id": 7,
+                "title": "ACTIVIDADES | PROFESIONES",
+                "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.).",
+                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+                "requisitesText2": "",
+                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "img": "/img/Productos/actividades.jpg"
+            }
+        ],
+        "productsExtras": [
+            {
+                "id": 1,
+                "subtitle": "Garantía de oferta",
+                "text": "Cubre la obligación de mantener la oferta presentada y de firmar el contrato en caso de resultar adjudicado, presentando la garantía de ejecución de contrato."
+            },
+            {
+                "id": 2,
+                "subtitle": "Garantía de cumplimiento de contrato",
+                "text": "Cubre el cumplimiento de las obligaciones consignadas en el contrato en tiempo y forma."
+            },
+            {
+                "id": 3,
+                "subtitle": "Garantía de anticipo financiero",
+                "text": "Cubre la correcta aplicación de los importes recibidos, en los trabajos efectivamente contratados, liberándose conforme al efectivo avance del contrato."
+            },
+            {
+                "id": 4,
+                "subtitle": "Garantía de anticipo por acopio",
+                "text": "Cubre el buen uso de los importes recibidos en concepto de anticipo y con destino al acopio de materiales, liberándose con el efectivo acopio documentado en obra."
+            },
+            {
+                "id": 5,
+                "subtitle": "Garantía de tenencia",
+                "text": "Cubre el reintegro de los bienes al asegurado, que se consignen en poder del tomador para su uso, reparación o incorporación a la obra. La garantía es por la valoración de los bienes involucrados."
+            },
+            {
+                "id": 6,
+                "subtitle": "Garantía de fondo de reparo",
+                "text": "Cubre la obligación del contratista o proveedor de subsanar eventuales vicios ocultos, sustituyendo las retenciones sufridas por el tomador en cada certificación. Se libera al cumplirse el periodo de garantía."
+            }
+        ],
+        "customs": [
+            "Importaciones o exportaciones temporales",
+            "Tránsitos terrestres",
+            "Faltas de documentación",
+            "Envíos en consignación",
+            "Diferencia de derechos",
+            "Habilitación de depósitos",
+            "Fiscales régimen automotriz"
+        ],
+        "productsMobile": [
+            {
+                "id": 1,
+                "title": "OBRAS | SUMINISTROS | SERVICIOS",
+                "text": "Para respaldar proyectos de obras públicas a nivel local, provincial y nacional; obras privadas de índole industrial o proyectos de inversión; suministro de productos o prestación de servicios a entidades públicas y privadas. El costo resulta significativamente menor, permite no inmovilizar activos financieros ni ocupar líneas de crédito bancario y abarca una variedad de productos que permite abastecer diferentes necesidades. Oferta, cumplimiento de contrato, anticipo financiero, anticipo por acopio, tenencia o fondo de reparo son algunas de las alternativas de estos seguros de caución."
+            },
+            {
+                "id": 2,
+                "title": "ADUANERAS",
+                " text": "Bajo algunas condiciones y de acuerdo al cumplimiento de determinados requisitos y a la presentación de garantías, ciertas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. El seguro de caución es la opción más ágil y económica para importaciones y exportaciones temporales, tránsitos terrestres, faltas de documentación, envíos en consignación, diferencia de derechos, habilitación de depósitos o fiscales régimen automotriz, entre otras."
+            },
+            {
+                "id": 3,
+                "title": "JUDICIALES",
+                "text": "El seguro de caución es un instrumento ágil, idóneo y económicamente accesible que se encuentra a disposición de los litigantes (actor/demandado) para garantizar las obligaciones procesales judiciales cuando el código respectivo así lo exija. Se aplican cuando el juez o autoridad interviniente ordena una medida cautelar o en el caso en que se haya dispuesto la constitución de la contracautela."
+            },
+            {
+                "id": 4,
+                "title": "EXTERIOR",
+                "text": "Cuando empresas argentinas realizan proyectos fuera del país, con frecuencia requieren garantías en aquellos países en los que se encuentran trabajando. Para resolver esta situación, el mercado de seguros de caución ofrece la figura de “fronting”, por medio de la cual les ofrecemos a nuestros clientes el respaldo en el exterior por medio de una compañía colega que extiende las garantías requeridas."
+            },
+            {
+                "id": 5,
+                "title": "ALQUILER",
+                "text": "Un producto que se popularizó en los últimos años para garantizar el pago de cánones locativos y la sustitución del fondo de garantía. Permiten una gran celeridad en la gestión de reclamos e indemnizaciones por incumplimiento, lo que las transforma en una herramienta valiosa para respaldar obligaciones locativas, ya sean comerciales o particulares."
+            },
+            {
+                "id": 6,
+                "title": "DIRECTORES",
+                "text": "Este seguro de caución es ideal para cubrir la actividad de directores y socios gerentes de sociedades anónimas o de responsabilidad limitada; para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros."
+            },
+            {
+                "id": 7,
+                "title": "ACTIVIDADES | PROFESIONES",
+                "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.)."
+            }
+        ],
+        "button": "COTIZÁ",
+        "requisitesTitle": "REQUISITOS",
+        "productSubtitle": "GARANTÍA",
+        "callToAction": "CON NOSOTROS O A TRAVÉS DE TU PRODUCTOR ASESOR DE SEGUROS",
+        "callToActionMobile1":"CON NOSOTROS O A TRAVÉS DE TU PRODUCTOR",
+        "callToActionMobile2":"ASESOR DE SEGUROS",
+        "callToActionButton": "CONTACTATE",
+        "productMenu": {
+            "category1": "GARANTÍAS DE OBRAS | SUMINISTROS | SERVICIOS",
+            "category2": "GARANTÍAS ADUANERAS",
+            "category3": "GARANTÍAS JUDICIALES",
+            "category4": "GARANTÍAS DE EXTERIOR",
+            "category5": "GARANTÍAS DE ALQUILER",
+            "category6": "GARANTÍAS DE DIRECTORES",
+            "category7": "GARANTÍAS DE ACTIVIDADES | PROFESIONES",
+            "category8": "DESCARGAR FORMULARIOS",
+            "category9": "PÓLIZA DIGITAL"
+        },
+        "landingTitle1": "El seguro de caución",
+        "landingTitle2": "que necesitás está acá.",
+        "titleMobile1": "El seguro",
+        "titleMobile2": "de caución que necesitás está acá",
+        "claim": "Ingresá desde tu computadora para obtener información ampliada, requisitos y formularios descargables."
+    }
+}

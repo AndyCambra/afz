@@ -9,9 +9,13 @@ import CotizadorAlquilerCliente from './CotizadorAlquilerCliente'
 import { validation } from '../utils/validation'
 import { BrowserView, MobileView } from 'react-device-detect'
 import SubmenuCotizadores from './SubmenuCotizadores'
+import cotizadoresTexts from '../utils/Texts/cotizadoresTexts.json'
+import { useLangContext } from '../../Context/LangContext'
 
 
 const CotizadorAlquiler = () => {
+  const {selectedLanguage} = useLangContext()
+  const text = cotizadoresTexts[selectedLanguage];
     const [sent, setSent]= useState(false)
     const [sentThanks, setSentThanks]= useState(false)
     const [showForm, setShowForm]= useState(false)
@@ -100,23 +104,23 @@ const CotizadorAlquiler = () => {
         <div className="rent-block">
         <div className='rent-sub-menu'>
             <div className='items'>
-                <h5 className="item-rent-selected">ALQUILER</h5>   
+                <h5 className="item-rent-selected">{text.menuCategory1}</h5>   
               <Link to="/cotizador-directores" >
-                <h5 className="item-rent">DIRECTORES</h5>   
+                <h5 className="item-rent">{text.menuCategory2}</h5>   
               </Link> 
             </div>
             <div>
               <Link to="/productos/5" className='rent-home-link'>
-                <h5>VOLVER</h5>
+                <h5>{text.back}</h5>
               </Link>
             </div> 
           </div>
           {sentThanks === true? 
-          <div className='rent-title'><h2>GRACIAS {rentUser.userName} POR CONTACTARNOS!</h2><p>Vas a recibir un mail de confirmación a la brevedad</p> </div>: 
+          <div className='rent-title'><h2>{text.thanks1} {rentUser.userName} {text.thanks2}</h2><p>{text.confirmation}</p> </div>: 
           showForm === true? 
-          <div className='rent-title'><h2>COMPLETÁ EL FORMULARIO</h2></div>:
+          <div className='rent-title'><h2>{text.formTitle}</h2></div>:
           <div className='rent-title'>
-            <h2>INGRESÁ LOS DATOS</h2><h2>Y COTIZÁ DE FORMA INSTANTÁNEA</h2>
+            <h2>{text.dataTitle1}</h2><h2>{text.dataTitle2}</h2>
           </div>}
         </div>
         {sentThanks === true? <div className='rent-form'>
@@ -124,11 +128,11 @@ const CotizadorAlquiler = () => {
                 <BigButton className='school-button' name="HOME" /></Link>
         </div>: 
         showForm === true? <div className='rent-form'>
-            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel} errors={errors}/>
+            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel} errors={errors} clientData={text.clientData} placeholders={text.placeholders} />
             </div>:
         <div className='rent-form'>
-        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel}/>:
-          <CotizadorForm handleChangeRentData={handleChangeRentData} handleSubmitRentData={handleSubmitRentData} rentData={rentData} sent={sent} handleClick={handleClick} errors={errors}/>}
+        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} />:
+          <CotizadorForm handleChangeRentData={handleChangeRentData} handleSubmitRentData={handleSubmitRentData} rentData={rentData} sent={sent} handleClick={handleClick} errors={errors} formTexts={text.formTexts} />}
         </div>  }
         </div>
     </section>
@@ -142,11 +146,11 @@ const CotizadorAlquiler = () => {
       </div>
       <div className='bordeax-background'>
       {sentThanks === true? 
-          <div className='rent-title'><h2>GRACIAS {rentUser.userName} POR CONTACTARNOS!</h2><p>Vas a recibir un mail de confirmación a la brevedad</p> </div>: 
+          <div className='rent-title'><h2>{text.thanks1} {rentUser.userName} {text.thanks2}</h2><p>{text.confirmation}</p> </div>: 
           showForm === true? 
-          <div className='rent-title'><h2>COMPLETÁ EL FORMULARIO</h2></div>:
+          <div className='rent-title'><h2>{text.formTitle}</h2></div>:
           <div className='rent-title'>
-            <h2 className='contact-subtitle'>INGRESÁ LOS DATOS Y COTIZÁ DE FORMA INSTANTÁNEA</h2>
+            <h2 className='contact-subtitle'>{text.dataTitleMobile}</h2>
           </div>}
           {sentThanks === true? <div className='rent-form'>
         </div>: 

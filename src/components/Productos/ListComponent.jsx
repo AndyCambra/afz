@@ -1,18 +1,10 @@
 import React from 'react'
 
-const aduanas=[
-"Importaciones o exportaciones temporales",
-"Tránsitos terrestres", 
-"Faltas de documentación",
-"Envíos en consignación",
-"Diferencia de derechos",
-"Habilitación de depósitos", 
-"Fiscales régimen automotriz"]
 
-const ListComponent = () => {
+const ListComponent = ({customs}) => {
   return (
     <>
-        {aduanas.map((item, id)=>{
+        {customs.map((item, id)=>{
             return( 
             <p key={item.id}>{item}</p>
             )

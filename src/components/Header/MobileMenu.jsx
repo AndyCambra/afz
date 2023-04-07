@@ -1,9 +1,17 @@
 import React from 'react'
 import HamButton from './HamButton'
 import { NavLink } from 'react-router-dom'
+import { useLangContext } from '../../Context/LangContext';
+import headerTexts from '.././utils/Texts/headerTexts.json'
+
 
 const MobileMenu = ({open, location, handleClick}) => {
+  const {handleLanguage, selectedLanguage} = useLangContext()
+  const text = headerTexts[selectedLanguage];
+
+  
   return (
+   
     <div className={open===true ?'headerMobileBox' :'hidden'}>  
     <NavLink to="/"> 
             {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/contacto' || location.pathname === '/nosotros' || location.pathname === '/cotizador-alquiler' || location.pathname === '/cotizador-directores' || location.pathname === '/carrousel' ? (
@@ -13,22 +21,23 @@ const MobileMenu = ({open, location, handleClick}) => {
             </NavLink>  
           <div className= {open===true ? "navbar-open" : "out"}>
                 <NavLink to="/nosotros" className='mobile-item' onClick={handleClick}>
-               NOSOTROS
+              {text.categorie1}
                 </NavLink>
                 <NavLink to="/landing" className='mobile-item' onClick={handleClick}>
-                PRODUCTOS
+                {text.categorie2}
                 </NavLink>
                 <NavLink to="/escuela" className='mobile-item' onClick={handleClick}>
-                ESCUELA DE CAUCIÓN
+                {text.categorie3}
                 </NavLink>
                 <NavLink to="/contacto" className='mobile-item' onClick={handleClick}>
-               CONTACTO
+                {text.categorie4}
                 </NavLink>    
           </div>
           <div className="ham-button">
-          <HamButton open={open} handleClick={handleClick} />
+          <HamButton open={open} handleClick={handleClick} handleLanguage={handleLanguage} selectedLanguage={selectedLanguage}/>
           </div>    
         </div>
+       
   )
 }
 

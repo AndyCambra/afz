@@ -6,8 +6,12 @@ import BigButton from '../utils/BigButton/BigButton'
 import './trabaja.css'
 import { validation } from '../utils/validation'
 import { CvForm } from './CvForm'
+import contactTexts from '../utils/Texts/contactTexts.json'
+import { useLangContext } from '../../Context/LangContext'
 
 const TrabajaConNosotros = () => {
+  const {selectedLanguage} = useLangContext()
+  const text = contactTexts[selectedLanguage];
     let [candidateInfo, setCandidateInfo]=useState({
         userName: "",
         userLastName: "",
@@ -44,18 +48,18 @@ const TrabajaConNosotros = () => {
         <div className='work-hero'>
             <div className="work-block">
                 <div className='sub-menu-work'>
-                    <div><h5 className="item-work-selected">TRABAJÁ CON NOSOTROS</h5></div>
+                    <div><h5 className="item-work-selected">{text.workButton}</h5></div>
                     <div><Link to="/" className='school-home-link'><h5>HOME</h5></Link></div> 
                 </div>
             </div>
             <div className='work-title'>
                 {sent===true ? <div>
-                <h2 className='contact-thanks'>Muchas gracias {candidateInfo.userName} por contactarnos!</h2>
-                <p className='contact-thanks-text'>Te llegará en breve un mail de confirmación.</p>
+                <h2 className='contact-thanks'>{text.thanks1} {candidateInfo.userName} {text.thanks2}</h2>
+                <p className='contact-thanks-text'>{text.confirmation}</p>
                 <div><Link to="/"><BigButton name= "HOME" className="contact-dark-button"/></Link></div></div>
-                :<h2>CONTANOS SOBRE VOS</h2>}
+                :<h2>{text.cvTitle}</h2>}
             </div>     
-             <CvForm sent={sent} handleSubmit={handleSubmit} handleChange={handleChange} errors={errors} candidateInfo={candidateInfo} className={'dark-input'} classDark={'dark-area'}/>
+             <CvForm sent={sent} handleSubmit={handleSubmit} handleChange={handleChange} errors={errors} candidateInfo={candidateInfo} className={'dark-input'} classDark={'dark-area'} formTexts={text.formTexts} sendButton={text.sendButton} placeholders={text.placeholders} />
             </div>
           </section>
       )

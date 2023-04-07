@@ -8,6 +8,13 @@
 .subMenuBox :nth-child(4){
     flex-grow: 1.5;
 }
+.subMenuBox :nth-child(4) .menu-item{
+    border-right: none;
+}
+.subMenuBox :nth-child(4) .menu-item-selected{
+    border-right: none;
+}
+
 .horizontalTitle{
     font-family: 'Sora', sans-serif;
     font-weight: 600;
@@ -19,19 +26,17 @@
     margin: 10px 0;  
 }
 .menu-item{
-    margin: 0;
-    font-family: 'Sora', sans-serif;
     font-size: 15px;
     color: #fff;
     font-weight: 300;
     border-right: 1.5px solid #D8CECE;
     padding-right: 8px;
     margin-right: 8px;
-    justify-content: center;
+  
  
 }
 .menu-item-home{
-    margin: 0;
+
     padding: 0;
     font-family: 'Sora', sans-serif;
     font-size: 15px;
@@ -39,8 +44,6 @@
     font-weight: 700;
 }
 .menu-item-selected{
-    margin: 0;
-    font-family: 'Sora', sans-serif;
     font-size: 15px;
     color: #fff;
     font-weight: 800;
@@ -48,9 +51,7 @@
     padding-right: 8px;
     margin-right: 8px; 
 }
-.subMenuBox :nth-child(4) .menu-item{
-    border-right: none;
-}
+
 @media (max-width: 1300px) {
     .menu-item{
         font-size: .8em;

@@ -1,0 +1,60 @@
+{
+    "EN":{
+        "title":"COBERTURA SIN FRONTERAS",
+        "text":"Estés donde estés, te ofrecemos asesoramiento integral y nuestra póliza digital que te brinda una amplia cobertura a nivel del país y de la región.",
+        "workButton": "WORK WITH US",
+        "thanks1":"Muchas gracias",
+        "thanks2":"por contactarnos!",
+        "confirmation":"Te llegará en breve un mail de confirmación.",
+        "cvTitle":"CONTANOS SOBRE VOS",
+        "formTitle":"DEJANOS UN MENSAJE",
+        "sendButton":"SEND",
+        "contactCategory": "CONTACT",
+        "formTexts":{
+            "firstName":"First Name",
+            "lastName":"Last Name",
+            "message":"Message",
+            "phone": "Phone",
+            "attachCv": "Attach your CV"
+        },
+        "placeholders":{
+            "firstName": "Ingresá tu nombre",
+            "lastName":" Ingresá tu apellido",
+            "email": "Ingresá tu mail",
+            "message": "Dejanos un mensaje",
+            "phone": "Ingresá tu número con código de área",
+            "dni": "Ingresá tu número sin puntos"
+            
+        }
+      
+    },
+    "ES":{
+        "title":"COBERTURA SIN FRONTERAS",
+        "text":"Estés donde estés, te ofrecemos asesoramiento integral y nuestra póliza digital que te brinda una amplia cobertura a nivel del país y de la región.",
+        "workButton": "TRABAJÁ CON NOSOTROS",
+        "thanks1":"Muchas gracias",
+        "thanks2":"por contactarnos!",
+        "confirmation":"Te llegará en breve un mail de confirmación.",
+        "cvTitle":"CONTANOS SOBRE VOS",
+        "formTitle":"DEJANOS UN MENSAJE",
+        "sendButton":"ENVIAR",
+        "contactCategory": "CONTACTO",
+        "formTexts":{
+            "firstName":"Nombre",
+            "lastName":"Apellido",
+            "message":"Mensaje",
+            "phone": "Teléfono",
+            "attachCv": "Adjuntá tu CV"
+        },
+        "placeholders":{
+            "firstName": "Ingresá tu nombre",
+            "lastName":" Ingresá tu apellido",
+            "email": "Ingresá tu mail",
+            "message": "Dejanos un mensaje",
+            "phone": "Ingresá tu número con código de área",
+            "dni": "Ingresá tu número sin puntos"
+        }
+      
+      
+    }
+}

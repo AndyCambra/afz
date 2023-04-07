@@ -6,9 +6,14 @@ import HexaBlancos from './videos/HexaBlancos.mp4'
 import SocialIcons from '../Footer/SocialIcons'
 import { BrowserView, MobileView } from 'react-device-detect';
 import HexaMobile from './videos/HexaMobile.mp4'
+import schoolText from '../utils/Texts/schoolText.json'
+import { useLangContext } from '../../Context/LangContext'
 
 
 const Escuela = () => {
+  const {selectedLanguage} = useLangContext()
+  const text = schoolText[selectedLanguage];
+
   return (
     <>
     <BrowserView>
@@ -20,18 +25,18 @@ const Escuela = () => {
           <div className='school-title'>
           <img src="img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
           <div>
-          <h1>Una capacitación <br></br>imprescindible.</h1>
+          <h1>{text.title1}<br></br>{text.title2}</h1>
           <div>
           <Link to='/escuela/info'>  
-          <BigButton className="school-button" name={'VER MÁS'} />
+          <BigButton className="school-button" name={text.moreButton} />
           </Link> 
           <Link to='/escuela/inscripcion'>  
-          <BigButton className="school-button" name={'INSCRIBITE'} />
+          <BigButton className={ selectedLanguage === "EN" ? "display-none":"school-button" } name={text.incriptionButton} />
           </Link>
           </div>
           </div>
           </div>
-          <p className='social-text'>Seguinos para conocer todas las convocatorias y los nuevos cursos.</p>
+          <p className='social-text'>{text.socialText}</p>
           <SocialIcons className="social-school-box" classCircle="icon-circle-bordeaux" classIcon="social-school-icon" classIconBig="social-school-icon-big"/>
         </div>  
       </section>
@@ -43,13 +48,13 @@ const Escuela = () => {
       <div className='school-mobile-logo-box'>
         <img src="img/LogoEscuelaAFZ.png" alt="Escuela de Caución AFZ"></img>
         <div>
-        <h1 className='school-mobile-title'>Una capacitación imprescindible.</h1>
+        <h1 className={ selectedLanguage === "EN"? "en-mobile-title" :'school-mobile-title'}>{text.titleMobile1}<br></br>{text.titleMobile2}</h1>
         <div className='school-button-box'>
         <Link to="/escuela/inscripcion">
-        <BigButton className="school-button" name={'INSCRIBITE'} />
+        <BigButton className={ selectedLanguage === "EN" ? "display-none":"school-button" } name={text.incriptionButton} />
         </Link>
         <Link to="/escuela/info">
-        <BigButton className="school-button" name={'VER MÁS'} />
+        <BigButton className="school-button" name={text.moreButton} />
         </Link>
         </div>
         </div>

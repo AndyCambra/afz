@@ -1,16 +1,14 @@
-[
-    {
-        "lang":"es",
+{
+    "ES": {
         "title1": "Somos líderes",
-        "title2": "en seguros de caución",
+        "title2": "en seguros de caución.",
         "productButton": "PRODUCTOS",
         "contactButton": "CONTACTO"
     },
-    {
-        "lang":"en",
+    "EN": {
         "title1": "We are leaders",
-        "title2": "in surety insurance",
+        "title2": "in surety insurance.",
         "productButton": "PRODUCTS",
         "contactButton": "CONTACT"
     }
-]
+}
