@@ -1,0 +1,147 @@
+{
+    "EN":{
+        "menuCategory1":"LEASE",
+        "menuCategory2":"DIRECTORS",
+        "back":"BACK",
+        "thanks1":"Gracias",
+        "thanks2":"por contactarnos!",
+        "confirmation":"Vas a recibir un mail de confirmación a la brevedad.",
+        "formTitle": "COMPLETÁ EL FORMULARIO",
+        "dataTitle1": "INGRESÁ LOS DATOS",
+        "dataTitle2": "Y COTIZÁ DE FORMA INSTANTÁNEA",
+        "dataTitleMobile":"INGRESÁ LOS DATOS Y COTIZÁ DE FORMA INSTANTÁNEA",
+        "formTexts":{
+            "explain":"Ingresá el monto sin puntos ni comas.",
+            "leaseLabel":"Alquiler mensual",
+            "expensesLabel":"Expensas",
+            "timeLabel":"Duración:",
+            "year2":"2 años",
+            "year3":"3 años",
+            "quoteButton":"COTIZAR",
+            "sume":"Monto a asegurar",
+            "$":"$",
+            "question":"¿Cómo se define el monto?"
+        },
+        "responseData":{
+            "label": "Cotización",
+            "resultMessage1":"Correspondiente a un alquiler mensual de $",
+            "resultMessage2":"y expensas iniciales de $",
+            "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
+            "resultMessage4":" años.",
+            "againButton": "COTIZÁ VEZ",
+            "contractButton":"CONTRATÁ",
+            "directorResultMessage1":" Correspondiente a un monto de $",
+            "directorResultMessage2":".-  Valor final (IVA incluído) para un contrato anual."
+        },
+        "clientData":{
+            "firstName":"First Name",
+            "lastName":"Last Name",
+            "message":"Message",
+            "phone": "Phone",
+            "attach1": "Copia del contrato a firmar",
+            "attach2": "Últimos tres recibos de sueldo o certificación de ingresos firmada por escribano",
+            "cancel": "CANCEL",
+            "send": "SEND"
+        },
+        "placeholders":{
+            "firstName": "Ingresá tu nombre",
+            "lastName":" Ingresá tu apellido",
+            "email": "Ingresá tu mail",
+            "message": "Dejanos un mensaje",
+            "phone": "Ingresá tu número con código de área",
+            "cuit": "Ingresá tu número sin puntos",
+            "adress":"Ingresá la dirección",
+            "company": "Razón Social"
+    
+    },
+    "directorData":{
+        "subtitle1": "Director's data",
+        "firstName":"First Name",
+        "lastName":"Last Name",
+        "adress":"Dirección",
+        "cancel": "CANCEL",
+        "send": "SEND",
+        "subtitle2":"Datos del Asegurado",
+        "company": "Empresa",
+        "button": "DATOS DE FACTURACIÓN",
+        "subtitle3":"Datos de facturación",
+        "name":"Name",
+        "phone": "Phone"
+    }
+
+    
+    },
+    "ES":{
+        "menuCategory1":"ALQUILER",
+        "menuCategory2":"DIRECTORES",
+        "back":"VOLVER",
+        "thanks1":"Gracias",
+        "thanks2":"por contactarnos!",
+        "confirmation":"Vas a recibir un mail de confirmación a la brevedad.",
+        "formTitle": "COMPLETÁ EL FORMULARIO",
+        "dataTitle1": "INGRESÁ LOS DATOS",
+        "dataTitle2": "Y COTIZÁ DE FORMA INSTANTÁNEA",
+        "dataTitleMobile":"INGRESÁ LOS DATOS Y COTIZÁ DE FORMA INSTANTÁNEA",
+        "formTexts":{
+            "explain":"Ingresá el monto sin puntos ni comas.",
+            "leaseLabel":"Alquiler mensual",
+            "expensesLabel":"Expensas",
+            "timeLabel":"Duración:",
+            "year2":"2 años",
+            "year3":"3 años",
+            "quoteButton":"COTIZAR",
+            "sume":"Monto a asegurar",
+            "$":"$",
+            "question":"¿Cómo se define el monto?",
+            "socialCapitalLabel":"Capital social de la empresa",
+            "directorQuatityLabel":"Cantidad de directores"
+        },
+        "responseData":{
+            "label": "Cotización",
+            "resultMessage1":"Correspondiente a un alquiler mensual de $",
+            "resultMessage2":"y expensas iniciales de $",
+            "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
+            "resultMessage4":" años.",
+            "againButton": "COTIZÁ VEZ",
+            "contractButton":"CONTRATÁ",
+            "directorResultMessage1":" Correspondiente a un monto de $",
+            "directorResultMessage2":".-  Valor final (IVA incluído) para un contrato anual."
+        },
+        "clientData":{
+            "firstName":"First Name",
+            "lastName":"Last Name",
+            "message":"Message",
+            "phone": "Phone",
+            "attach1": "Copia del contrato a firmar",
+            "attach2": "Últimos tres recibos de sueldo o certificación de ingresos firmada por escribano",
+            "cancel": "CANCELAR",
+            "send": "ENVIAR"
+        },
+        "placeholders":{
+            "firstName": "Ingresá tu nombre",
+            "lastName":" Ingresá tu apellido",
+            "email": "Ingresá tu mail",
+            "message": "Dejanos un mensaje",
+            "phone": "Ingresá tu número con código de área",
+            "cuit": "Ingresá tu número sin guiones",
+            "adress":"Ingresá la dirección",
+            "company": "Razón Social",
+            "name":"Ingresá el nombre"
+    
+    },
+    "directorData":{
+        "subtitle1": "Datos del Director",
+        "firstName":"Nombre",
+        "lastName":"Apellido",
+        "adress":"Dirección",
+        "cancel": "CANCELAR",
+        "send": "ENVIAR",
+        "subtitle2":"Datos del Asegurado",
+        "company": "Empresa",
+        "button": "DATOS DE FACTURACIÓN",
+        "subtitle3":"Datos de facturación",
+        "name":"Nombre",
+        "phone": "Teléfono"
+    }
+}
+}

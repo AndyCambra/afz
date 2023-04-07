@@ -7,7 +7,25 @@
         "thanks2":"por contactarnos!",
         "confirmation":"Te llegará en breve un mail de confirmación.",
         "cvTitle":"CONTANOS SOBRE VOS",
-        "formTitle":"DEJANOS UN MENSAJE"
+        "formTitle":"DEJANOS UN MENSAJE",
+        "sendButton":"SEND",
+        "contactCategory": "CONTACT",
+        "formTexts":{
+            "firstName":"First Name",
+            "lastName":"Last Name",
+            "message":"Message",
+            "phone": "Phone",
+            "attachCv": "Attach your CV"
+        },
+        "placeholders":{
+            "firstName": "Ingresá tu nombre",
+            "lastName":" Ingresá tu apellido",
+            "email": "Ingresá tu mail",
+            "message": "Dejanos un mensaje",
+            "phone": "Ingresá tu número con código de área",
+            "dni": "Ingresá tu número sin puntos"
+            
+        }
       
     },
     "ES":{
@@ -18,7 +36,25 @@
         "thanks2":"por contactarnos!",
         "confirmation":"Te llegará en breve un mail de confirmación.",
         "cvTitle":"CONTANOS SOBRE VOS",
-        "formTitle":"DEJANOS UN MENSAJE"
+        "formTitle":"DEJANOS UN MENSAJE",
+        "sendButton":"ENVIAR",
+        "contactCategory": "CONTACTO",
+        "formTexts":{
+            "firstName":"Nombre",
+            "lastName":"Apellido",
+            "message":"Mensaje",
+            "phone": "Teléfono",
+            "attachCv": "Adjuntá tu CV"
+        },
+        "placeholders":{
+            "firstName": "Ingresá tu nombre",
+            "lastName":" Ingresá tu apellido",
+            "email": "Ingresá tu mail",
+            "message": "Dejanos un mensaje",
+            "phone": "Ingresá tu número con código de área",
+            "dni": "Ingresá tu número sin puntos"
+        }
+      
       
     }
 }

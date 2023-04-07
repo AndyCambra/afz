@@ -2,28 +2,26 @@ import React from 'react'
 import BigButton from "../utils/BigButton/BigButton";
 import { isMobile } from 'react-device-detect';
 
-const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick }) => {
+const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick, responseData }) => {
   return (
     
       <form className={isMobile? "bill-first-form":"rent-form"}>
-        <p className="rent-label">Cotización</p>
+        <p className="rent-label">{responseData.label}</p>
         <div className="amount-result">
           $ {result}
         </div>
         <p>
-          Correspondiente a un monto de ${amount.clientAmount}.- 
-          Valor final (IVA incluído) para un
-          contrato anual.
+         {responseData.directorResultMessage1}{amount.clientAmount}{responseData.directorResultMessage2}
         </p>
         <div className="rent-result-box">
           <BigButton
             type="submit"
-            name="COTIZÁ VEZ"
+            name={responseData.againButton}
             className="rent-button-secondary"
             onClick={handleCancel}
           />
           <button type="button" onClick={handleClick} className={ isMobile? "contact-dark-button" :"rent-button"}>
-            CONTRATÁ
+           {responseData.contractButton}
           </button>
         </div>
       </form>

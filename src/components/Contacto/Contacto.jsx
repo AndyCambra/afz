@@ -80,13 +80,14 @@ console.log(contactInfo)
         </Link>
         </div>
         <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}
-        thanks1={text.thanks1} thanks2={text.thanks2} confirmation={text.confirmation} formTitle={text.formTitle} />
+        thanks1={text.thanks1} thanks2={text.thanks2} confirmation={text.confirmation} formTitle={text.formTitle} 
+        send={text.sendButton} formTexts={text.formTexts} placeholders={text.placeholders} />
       </div>
     </section>
     </BrowserView>
     <MobileView>
       <div className='first-box-mobile'>
-        <SubmenuContactoMobile handleClick={handleClick} change={change}/>
+        <SubmenuContactoMobile handleClick={handleClick} change={change} contactCategory={text.contactCategory} workButton={text.workButton} />
         <div className='img-box'>
         <img src="/img/MobileImages/ContactoMobile.jpg" alt="" />
         </div>
@@ -97,7 +98,8 @@ console.log(contactInfo)
           <ContactoTitleAndText title={text.title} text={text.text}/>
           <ContactoAdress />
           <ContactForm sent={sent} contactInfo={contactInfo} handleSubmit={handleSubmit} errors={errors} handleChange={handleChange}
-          formName={text.formName} namePlaceholder={text.namePlaceholder} sendButton={text.sendButton} />
+        thanks1={text.thanks1} thanks2={text.thanks2} confirmation={text.confirmation} formTitle={text.formTitle} 
+        send={text.sendButton} formTexts={text.formTexts} placeholders={text.placeholders}  />
           </>) 
           :( 
           <>
@@ -106,7 +108,7 @@ console.log(contactInfo)
                 <p className='contact-thanks-text'>{text.confirmation}</p>
                 <div><Link to="/"><BigButton name= "HOME" className="contact-dark-button"/></Link></div></div>
                 :<h2 className='contact-subtitle'>{text.cvTitle}</h2>}
-          <CvForm sent={sent} handleSubmit={handleSubmit} handleChange={handleCandidate} errors={errors} candidateInfo={candidateInfo} classDark={'white-area'} className={'white-input'}/>
+          <CvForm sent={sent} handleSubmit={handleSubmit} handleChange={handleCandidate} errors={errors} candidateInfo={candidateInfo} classDark={'white-area'} className={'white-input'} formTexts={text.formTexts} sendButton={text.sendButton} placeholders={text.placeholders} />
           </>
           )
         }
