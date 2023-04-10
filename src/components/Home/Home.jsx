@@ -5,10 +5,15 @@ import { Link } from 'react-router-dom'
 import { useLangContext } from '../../Context/LangContext'
 import homeTexts from '.././utils/Texts/homeTexts.json'
 import HomeVideo from './video/AFZ01.mp4'
+import { useEffect } from 'react'
 
 const Home = () => {
 const { selectedLanguage } = useLangContext()
 const text = homeTexts[selectedLanguage];
+
+useEffect(()=>{
+  window.scrollTo(0,0);
+},[])
 
   return (
    

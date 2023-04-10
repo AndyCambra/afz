@@ -17,7 +17,7 @@ const CotizadorDirectoresQuestion = ({handleSubmitData, amount, handleChangeDire
         <input name="quantity" className="light-input-rent" value={amount.quantity} type="number" onChange={e => handleChangeDirectorData(e, 'quantity', 'number', true, 2, 0)} required={true} />
          {errors['quantity'] && <p className='error-white'>{errors['quantity']}</p>}
     </div>
-    <div className='inscription-send'>
+    <div className='button-send'>
     <BigButton type="submit" name= {formText.quoteButton} className={ isMobile? "contact-dark-button" :"rent-button"}/>
     </div>
 </form>
