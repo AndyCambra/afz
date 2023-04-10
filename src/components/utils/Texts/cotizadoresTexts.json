@@ -20,7 +20,8 @@
             "quoteButton":"COTIZAR",
             "sume":"Monto a asegurar",
             "$":"$",
-            "question":"¿Cómo se define el monto?"
+            "question":"¿Cómo se define el monto?",
+            "directorQuantityLabel":"Cantidad de directores"
         },
         "responseData":{
             "label": "Cotización",
@@ -94,7 +95,7 @@
             "$":"$",
             "question":"¿Cómo se define el monto?",
             "socialCapitalLabel":"Capital social de la empresa",
-            "directorQuatityLabel":"Cantidad de directores"
+            "directorQuantityLabel":"Cantidad de directores"
         },
         "responseData":{
             "label": "Cotización",
