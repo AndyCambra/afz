@@ -5,21 +5,21 @@
     width: 90%;
     background-color: #9b2743;
     border-radius: 30px;
-    margin: -40% 5% 20%;
+    margin: -60% 5% 20%;
     position: relative;
     text-align: center;
     padding: 2px;
   
 }
 .card-name{
-    font-size: 14px;
+    font-size: 12px;
    font-weight: 700;
    color: #fff;
   
 }
 .card-position{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
    
 }
 .staffPositions{
@@ -34,9 +34,11 @@
 .video-container{
     width: 100%;
 }
-.video-container img{
+.video{
     width: 100%;
 }
+
+
 @media (max-width: 1024px) {
     .card-container img{
         width: 100%;
