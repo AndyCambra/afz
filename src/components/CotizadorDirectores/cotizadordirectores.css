@@ -1,7 +1,7 @@
 .directors-backgound{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 80.4%),  url(../../../public/img/CotizadorDirectores.jpg);
     background-size: cover ;
-    height: 97vh;
+    height: 99vh;
     width: 100vw;
 }
 .dark-block{
@@ -46,6 +46,7 @@
     text-align: right;
     width: 100%;
     margin-top: 4px;
+    padding-bottom: 10px;
 }
 .bill-form{
     grid-column: 5/7;

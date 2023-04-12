@@ -21,11 +21,12 @@
             "sume":"Monto a asegurar",
             "$":"$",
             "question":"¿Cómo se define el monto?",
-            "directorQuantityLabel":"Cantidad de directores"
+            "directorQuantityLabel":"Cantidad de directores",
+            "selection": "Make a selection"
         },
         "responseData":{
             "label": "Cotización",
-            "resultMessage1":"Correspondiente a un alquiler mensual de $",
+            "resultMessage1":"Pago único correspondiente a un alquiler mensual de $",
             "resultMessage2":"y expensas iniciales de $",
             "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
             "resultMessage4":" años.",
@@ -95,11 +96,12 @@
             "$":"$",
             "question":"¿Cómo se define el monto?",
             "socialCapitalLabel":"Capital social de la empresa",
-            "directorQuantityLabel":"Cantidad de directores"
+            "directorQuantityLabel":"Cantidad de directores",
+            "selection": "Elegí una opción"
         },
         "responseData":{
             "label": "Cotización",
-            "resultMessage1":"Correspondiente a un alquiler mensual de $",
+            "resultMessage1":"Pago único correspondiente a un alquiler mensual de $",
             "resultMessage2":"y expensas iniciales de $",
             "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
             "resultMessage4":" años.",

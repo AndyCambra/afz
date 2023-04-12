@@ -2,13 +2,13 @@ import React from "react";
 import BigButton from "../utils/BigButton/BigButton";
 import { isMobile } from "react-device-detect";
 
-const CotizadorResponse = ({ result, rentData, handleCancel, handleClick, responseData }) => {
+const CotizadorResponse = ({ result, rentData, handleCancel, handleClick, responseData, finalResult }) => {
   return (
     <div>
       <form className="rent-form">
         <p className="rent-label">{responseData.label}</p>
         <div className="rent-result">
-          $ {result}
+          $ {finalResult}
         </div>
         <p>
         {responseData.resultMessage1}{rentData.rent} {responseData.resultMessage2}{rentData.expenses}{responseData.resultMessage3}{rentData.years} {responseData.resultMessage4}
