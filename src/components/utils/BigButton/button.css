@@ -136,7 +136,24 @@
     color: #fff;
     border: 1.5px solid #D8CECE;
 }
-
+.director-button{
+    background: rgba(217, 217, 217, 0.5);
+    border: 1.5px solid #9B2743;
+    box-shadow: 3px 3px 4px 3px #00000026;
+    border-radius: 24px;
+    width: 160px;
+    height: 38px;
+    font-family: 'Sora', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #9B2743;
+}
+.director-button:hover{
+    background: #9B2743;
+    font-weight: 800;
+    color: #fff;
+    border: 1.5px solid #D8CECE;
+}
 .rent-button-secondary{
     background: rgba(217, 217, 217, 0.3);
     border: 1.5px solid  rgba(255, 255, 255, 0.7);

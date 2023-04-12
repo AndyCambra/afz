@@ -33,7 +33,7 @@ const DatosDeFacturacion = ({handleSubmitThanks, clientData, errors, handleChang
     </div>
     <div className='director-result-box'>
     <button type="button" className="rent-button-secondary" onClick={handleCancel}>{directorData.cancel}</button>
-    <BigButton type="submit" name= {directorData.send}  className={isMobile ? "contact-dark-button":"rent-button"}/>
+    <BigButton type="submit" name= {directorData.send}  className={isMobile ? "contact-dark-button":"director-button"}/>
     </div>
     </form>
   )
