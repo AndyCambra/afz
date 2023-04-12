@@ -26,13 +26,37 @@
 }
 @keyframes fadein{
     0%{opacity:0}
-    80%{opacity:0}
+    90%{opacity:0}
     100%{opacity:1}
 }
 
 @-webkit-keyframes fadein{
     0%{opacity:0}
-    80%{opacity:0}
+    90%{opacity:0}
+    100%{opacity:1}
+}
+.hero-mobile{
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 60%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    padding: 20px 40px 0 40px;
+    width: 100vw;
+    animation:10s ease 0s normal forwards 1 fadeinMobile;
+    -webkit-animation:10s ease 0s normal forwards 1 fadeinMobile;
+    opacity:1
+}
+@keyframes fadeinMobile{
+    0%{opacity:0}
+    90%{opacity:0}
+    100%{opacity:1}
+}
+
+@-webkit-keyframes fadeinMobile{
+    0%{opacity:0}
+    90%{opacity:0}
     100%{opacity:1}
 }
 .gradient{ 

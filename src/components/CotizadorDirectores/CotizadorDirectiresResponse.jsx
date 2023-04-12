@@ -20,7 +20,7 @@ const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick
             className="rent-button-secondary"
             onClick={handleCancel}
           />
-          <button type="button" onClick={handleClick} className={ isMobile? "contact-dark-button" :"rent-button"}>
+          <button type="button" onClick={handleClick} className={ isMobile? "contact-dark-button" :"director-button"}>
            {responseData.contractButton}
           </button>
         </div>

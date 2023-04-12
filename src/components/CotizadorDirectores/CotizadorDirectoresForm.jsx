@@ -3,16 +3,6 @@ import { Link } from 'react-router-dom'
 import BigButton from '../utils/BigButton/BigButton'
 import { isMobile } from 'react-device-detect'
 
-const directorsAmounts=[
-  {id:1, amount:"300000", number: "$300.000"},
-  {id:2, amount:"400000", number: "$400.000"},
-  {id:3, amount:"500000", number: "$500.000"},
-  {id:4, amount:"600000", number: "$600.000"},
-  {id:5, amount:"700000", number: "$700.000"},
-  {id:6, amount:"800000", number: "$800.000"},
-  {id:7, amount:"900000", number: "$900.000"},
-  {id:8, amount:"1000000", number: "$1.000.000"}
-]
 
 
 
@@ -33,7 +23,7 @@ const CotizadorDirectoresForm = ({handleSubmitData, amount, handleChangeDirector
                      <Link className='question-label'onClick={handleClickToQuestion}>{formTexts.question}</Link>
                 </div>
                 <div className={isMobile? "button-box" :'button-send'}>
-                <BigButton type="submit" name= {formTexts.quoteButton} className={ isMobile? "contact-dark-button" :"rent-button"}/>
+                <BigButton type="submit" name= {formTexts.quoteButton} className={ isMobile? "contact-dark-button" :"director-button"}/>
                 </div>
     </form>
   )
