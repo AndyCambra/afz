@@ -78,8 +78,9 @@ const CotizadorAlquiler = () => {
           setSentThanks(true)
           setAllRentData({...rentData, ...rentUser})
         }
-    const result = ((parseInt(rentData.rent) + parseInt(rentData.expenses))*.1)*parseInt(rentData.years)
-    const finalResult = parseInt(result)
+    const result = ((parseInt(rentData.rent) + parseInt(rentData.expenses))* (12*parseInt(rentData.years)))*0.15
+    const finalResult = result.toLocaleString('de-DE')
+    console.log(finalResult.toLocaleString('de-DE'))
     
 
    const handleClick=(e)=>{
@@ -131,7 +132,7 @@ const CotizadorAlquiler = () => {
             <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel} errors={errors} clientData={text.clientData} placeholders={text.placeholders} />
             </div>:
         <div className='rent-form'>
-        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} />:
+        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} finalResult={finalResult} />:
           <CotizadorForm handleChangeRentData={handleChangeRentData} handleSubmitRentData={handleSubmitRentData} rentData={rentData} sent={sent} handleClick={handleClick} errors={errors} formTexts={text.formTexts} />}
         </div>  }
         </div>
@@ -139,7 +140,7 @@ const CotizadorAlquiler = () => {
     </BrowserView>
     <MobileView>
     <div className='first-box-mobile'>
-        <SubmenuCotizadores/>
+        <SubmenuCotizadores text={text}/>
         <div className='img-box'>
         <img src="/img/MobileImages/LlavesMobile.jpg" alt="" />
         </div>
@@ -155,11 +156,11 @@ const CotizadorAlquiler = () => {
           {sentThanks === true? <div className='rent-form'>
         </div>: 
            showForm === true? <div className='rent-form'>
-            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel} errors={errors}/>
+            <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel} errors={errors} clientData={text.clientData} placeholders={text.placeholders}/>
             </div>:
         <div className='rent-form'>
-        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel}/>:
-          <CotizadorForm handleChangeRentData={handleChangeRentData} handleSubmitRentData={handleSubmitRentData} rentData={rentData} sent={sent} handleClick={handleClick} errors={errors}/>}
+        {sent === true ? <CotizadorResponse sent={sent} result={finalResult} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} finalResult={finalResult}/>:
+          <CotizadorForm handleChangeRentData={handleChangeRentData} handleSubmitRentData={handleSubmitRentData} rentData={rentData} sent={sent} handleClick={handleClick} errors={errors} formTexts={text.formTexts} />}
         </div>  }
           
         </div>

@@ -9,8 +9,8 @@ const CotizadorDirectoresQuestion = ({handleSubmitData, amount, handleChangeDire
     <p className='rent-label'>{formText.socialCapitalLabel}</p>
     <div className='input-box'>
         <i className='i'>$</i>
-        <input name="clientAmount" className="light-input-rent" value={amount.clientAmount} type="number" onChange={e => handleChangeDirectorData(e, 'clientAmount', 'number', true, 15, 5)} required={true} />
-         {errors['clientAmount'] && <p className='error-white'>{errors['clientAmount']}</p>}
+        <input name="customAmount" className="light-input-rent" value={amount.customAmount} type="number" onChange={e => handleChangeDirectorData(e, 'customAmount', 'number', true, 15, 5)} required={true} />
+         {errors['customAmount'] && <p className='error-white'>{errors['customAmount']}</p>}
     </div>
     <p className='rent-label'>{formText.directorQuantityLabel}</p>
     <div className='input-box'>
