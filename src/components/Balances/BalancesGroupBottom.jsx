@@ -3,7 +3,7 @@ import BalanceNumbersBottom from './BalanceNumberBottom';
 import BalancesCardBottom from './BalancesCardBottom'
 
 
-const BalancesGroupBottom = ({number, cardTopImg, cardTopAlt}) => {
+const BalancesGroupBottom = ({number, cardTopImg, cardTopAlt, fileDownload}) => {
     const [isShown, setIsShown] = useState(false);
 
 
@@ -12,7 +12,7 @@ const BalancesGroupBottom = ({number, cardTopImg, cardTopAlt}) => {
     <div onMouseEnter={()=> setIsShown(true)} onMouseLeave={()=>setIsShown(false)}  >
   <BalanceNumbersBottom number={number} /> 
 {isShown &&(
-        <BalancesCardBottom cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number}/>
+        <BalancesCardBottom cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number} fileDownload={fileDownload}/>
   )}
    </div>
 </> 

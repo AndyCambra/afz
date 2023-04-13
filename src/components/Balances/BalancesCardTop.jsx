@@ -2,7 +2,7 @@ import React from 'react'
 import './balancesCard.css'
 import { Icon } from '@iconify/react'
 
-const BalancesCardTop = ({cardTopImg, cardTopAlt, number}) => {
+const BalancesCardTop = ({cardTopImg, cardTopAlt, number, fileDownload}) => {
   return (
     <div className='balances-card-container'>
      
@@ -13,7 +13,8 @@ const BalancesCardTop = ({cardTopImg, cardTopAlt, number}) => {
       <h5 className='card-number'>{number}</h5> 
       </div>
       <div>
-      <Icon icon="gg:software-download" className='download-icon' />
+      <a href={fileDownload} target="_blank" rel="noopener noreferrer" download={fileDownload}> 
+      <Icon icon="gg:software-download" className='download-icon' /> </a>
       </div>
       </div>
     </div>
@@ -21,3 +22,4 @@ const BalancesCardTop = ({cardTopImg, cardTopAlt, number}) => {
 }
 
 export default BalancesCardTop
+

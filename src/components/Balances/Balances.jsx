@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import BalancesGroup from './BalancesGroup'
 import BalancesGroupBottom from './BalancesGroupBottom'
 import { useEffect } from 'react'
-import { topCardInfo, bottomCardInfo } from '../utils/Texts/cardInfo'
+import { topCardInfo, bottomCardInfo } from './cardInfo'
 import  balancesTexts  from '../utils/Texts/balancesTexts.json'
 import { useLangContext } from '../../Context/LangContext'
 
@@ -40,12 +40,12 @@ const Balances = (props) => {
         {  <div className='card-balance-box'>
             {topCardInfo.map((itemBalance)=>{
               return(
-              <BalancesGroup number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg}/>
+              <BalancesGroup number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload}/>
               )
             })}
              {bottomCardInfo.map((itemBalance)=>{
               return(
-              <BalancesGroupBottom number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg}/>
+              <BalancesGroupBottom number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload}/>
               )
             })}
           </div>}  
