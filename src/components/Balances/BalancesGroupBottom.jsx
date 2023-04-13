@@ -10,10 +10,11 @@ const BalancesGroupBottom = ({number, cardTopImg, cardTopAlt, fileDownload}) => 
   return (
     <>
     <div onMouseEnter={()=> setIsShown(true)} onMouseLeave={()=>setIsShown(false)}  >
-  <BalanceNumbersBottom number={number} /> 
+  <BalanceNumbersBottom number={number} isShown={isShown}/> 
 {isShown &&(
+   <div className='slider-bottom'>
         <BalancesCardBottom cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number} fileDownload={fileDownload}/>
-  )}
+ </div> )}
    </div>
 </> 
   )
