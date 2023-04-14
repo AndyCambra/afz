@@ -4,7 +4,7 @@ import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
 import { useLangContext } from '../../Context/LangContext'
 import homeTexts from '.././utils/Texts/homeTexts.json'
-import HomeVideo from './video/AFZ02.mp4'
+import HomeVideo from './video/AFZ01.mp4'
 import MobileVideo from './video/AFZ1VERTICAL.mp4'
 import { useEffect } from 'react'
 import { BrowserView, MobileView } from 'react-device-detect';

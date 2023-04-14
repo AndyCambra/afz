@@ -19,9 +19,7 @@
     grid-gap: 30px;
     padding: 20px 40px 0 40px;
     width: 100vw;
-    animation:8s ease 0s normal forwards 1 fadein;
-    -webkit-animation:8s ease 0s normal forwards 1 fadein;
-    opacity:1
+    
 
 }
 @keyframes fadein{
@@ -44,8 +42,8 @@
     grid-gap: 30px;
     padding: 20px 40px 0 40px;
     width: 100vw;
-    animation:10s ease 0s normal forwards 1 fadeinMobile;
-    -webkit-animation:10s ease 0s normal forwards 1 fadeinMobile;
+    animation:9s ease 0s normal forwards 1 fadeinMobile;
+    -webkit-animation:9s ease 0s normal forwards 1 fadeinMobile;
     opacity:1
 }
 @keyframes fadeinMobile{
@@ -68,6 +66,15 @@
 }
 .homeTitle{
     grid-column: 2/7;
+    animation:8s ease 0s normal forwards 1 fadein;
+    -webkit-animation:8s ease 0s normal forwards 1 fadein;
+    opacity:1
+}
+.mobile-button-box{
+    animation:9s ease 0s normal forwards 1 fadein;
+    -webkit-animation:9s ease 0s normal forwards 1 fadein;
+    opacity:1
+
 }
 @media (max-width: 1024px) {
     .homeTitle{
@@ -106,7 +113,10 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            row-gap: 10px
+            row-gap: 10px;
+            animation:10s ease 0s normal forwards 1 fadein;
+            -webkit-animation:10s ease 0s normal forwards 1 fadein;
+            opacity:1
 
          }
 
