@@ -26,14 +26,14 @@
         },
         "responseData":{
             "label": "Cotización",
-            "resultMessage1":"Pago único correspondiente a un alquiler mensual de $",
-            "resultMessage2":"y expensas iniciales de $",
+            "resultMessage1":"Pago único correspondiente a un alquiler mensual de ",
+            "resultMessage2":"y expensas iniciales de ",
             "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
             "resultMessage4":" años.",
             "againButton": "COTIZÁ VEZ",
             "contractButton":"CONTRATÁ",
-            "directorResultMessage1":" Correspondiente a un monto de $",
-            "directorResultMessage2":".-  Valor final (IVA incluído) para un contrato anual."
+            "directorResultMessage1":" Correspondiente a un monto de ",
+            "directorResultMessage2":"Valor final (IVA incluído) para un contrato anual."
         },
         "clientData":{
             "firstName":"First Name",
@@ -101,14 +101,14 @@
         },
         "responseData":{
             "label": "Cotización",
-            "resultMessage1":"Pago único correspondiente a un alquiler mensual de $",
-            "resultMessage2":"y expensas iniciales de $",
+            "resultMessage1":"Pago único correspondiente a un alquiler mensual de ",
+            "resultMessage2":"y expensas iniciales de ",
             "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
             "resultMessage4":" años.",
             "againButton": "COTIZÁ VEZ",
             "contractButton":"CONTRATÁ",
-            "directorResultMessage1":" Correspondiente a un monto de $",
-            "directorResultMessage2":".-  Valor final (IVA incluído) para un contrato anual."
+            "directorResultMessage1":" Correspondiente a un monto de ",
+            "directorResultMessage2":"Valor final (IVA incluído) para un contrato anual."
         },
         "clientData":{
             "firstName":"First Name",
