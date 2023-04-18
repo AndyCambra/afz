@@ -2,7 +2,7 @@ import React from "react";
 import BigButton from "../utils/BigButton/BigButton";
 import { isMobile } from "react-device-detect";
 
-const CotizadorResponse = ({ result, rentData, handleCancel, handleClick, responseData, formatter }) => {
+const CotizadorResponse = ({ result, handleCancel, handleClick, responseData, formatter }) => {
   return (
     <div>
       <form className="rent-form">
@@ -10,9 +10,15 @@ const CotizadorResponse = ({ result, rentData, handleCancel, handleClick, respon
         <div className="rent-result">
           {formatter.format(result)}
         </div>
-        <p>
-        {responseData.resultMessage1}{formatter.format(rentData.rent)} {responseData.resultMessage2}{formatter.format(rentData.expenses)}{responseData.resultMessage3}{rentData.years} {responseData.resultMessage4}
-        </p>
+        <p className="rent-label">{responseData.labelSix}</p>
+        <div className="rent-result">
+          {formatter.format(result/6)}
+        </div>
+        <p className="rent-label">{responseData.labelDiscount}</p>
+        <div className="rent-result">
+          {formatter.format(result*.7)}
+        </div>
+       
         <div className="rent-result-box">
           <BigButton
             type="submit"
@@ -30,3 +36,4 @@ const CotizadorResponse = ({ result, rentData, handleCancel, handleClick, respon
 };
 
 export default CotizadorResponse;
+

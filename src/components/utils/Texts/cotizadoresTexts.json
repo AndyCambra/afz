@@ -13,7 +13,7 @@
         "formTexts":{
             "explain":"Ingresá el monto sin puntos ni comas.",
             "leaseLabel":"Alquiler mensual",
-            "expensesLabel":"Expensas",
+            "expensesLabel":"Expensas y gastos",
             "timeLabel":"Duración:",
             "year2":"2 años",
             "year3":"3 años",
@@ -25,11 +25,9 @@
             "selection": "Make a selection"
         },
         "responseData":{
-            "label": "Cotización",
-            "resultMessage1":"Pago único correspondiente a un alquiler mensual de ",
-            "resultMessage2":"y expensas iniciales de ",
-            "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
-            "resultMessage4":" años.",
+            "label": "Valor de la póliza",
+            "labelSix": "En 6 cuotas sin interés de:",
+            "labelDiscount": "Con un descuento del 30% en un solo pago de:",
             "againButton": "COTIZÁ VEZ",
             "contractButton":"CONTRATÁ",
             "directorResultMessage1":" Correspondiente a un monto de ",
@@ -87,7 +85,7 @@
         "formTexts":{
             "explain":"Ingresá el monto sin puntos ni comas.",
             "leaseLabel":"Alquiler mensual",
-            "expensesLabel":"Expensas",
+            "expensesLabel":"Expensas y gastos",
             "timeLabel":"Duración:",
             "year2":"2 años",
             "year3":"3 años",
@@ -100,11 +98,9 @@
             "selection": "Elegí una opción"
         },
         "responseData":{
-            "label": "Cotización",
-            "resultMessage1":"Pago único correspondiente a un alquiler mensual de ",
-            "resultMessage2":"y expensas iniciales de ",
-            "resultMessage3":". Valor final (IVA incluído) para un contrato de alquiler de ",
-            "resultMessage4":" años.",
+            "label": "Valor de la póliza",
+            "labelSix": "En 6 cuotas sin interés de:",
+            "labelDiscount": "Con un descuento del 30% en un solo pago de:",
             "againButton": "COTIZÁ VEZ",
             "contractButton":"CONTRATÁ",
             "directorResultMessage1":" Correspondiente a un monto de ",

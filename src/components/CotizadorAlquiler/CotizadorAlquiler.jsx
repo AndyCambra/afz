@@ -24,7 +24,7 @@ const CotizadorAlquiler = () => {
     let [rentData, setRentData]=useState({
         rent: null,
         expenses: null,
-        years:"",
+      
       })
       let [rentUser, setRentUser]=useState({
         userName: "",
@@ -82,7 +82,7 @@ const CotizadorAlquiler = () => {
           setSentThanks(true)
           setAllRentData({...rentData, ...rentUser})
         }
-    const result = ((parseInt(rentData.rent) + parseInt(rentData.expenses))* (12*parseInt(rentData.years)))*0.15
+    const result = ((parseInt(rentData.rent) + parseInt(rentData.expenses))*1.8)
     
    const handleClick=(e)=>{
     e.preventDefault();
@@ -133,7 +133,7 @@ const CotizadorAlquiler = () => {
             <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel} errors={errors} clientData={text.clientData} placeholders={text.placeholders} />
             </div>:
         <div className='rent-form'>
-        {sent === true ? <CotizadorResponse sent={sent} result={result} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} /* finalResult={finalResult} */ formatter={formatter}/>:
+        {sent === true ? <CotizadorResponse sent={sent} result={result} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} /* finalResult={finalResult} */ formatter={formatter}/>:
           <CotizadorForm handleChangeRentData={handleChangeRentData} handleSubmitRentData={handleSubmitRentData} rentData={rentData} sent={sent} handleClick={handleClick} errors={errors} formTexts={text.formTexts} />}
         </div>  }
         </div>
@@ -160,7 +160,7 @@ const CotizadorAlquiler = () => {
             <CotizadorAlquilerCliente handleChange={handleChange} handleSubmitThanks={handleSubmitThanks} rentUser={rentUser} handleCancel={handleCancel} errors={errors} clientData={text.clientData} placeholders={text.placeholders}/>
             </div>:
         <div className='rent-form'>
-        {sent === true ? <CotizadorResponse sent={sent} result={result} rentData={rentData} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} /* finalResult={finalResult} */ formatter={formatter}/>:
+        {sent === true ? <CotizadorResponse sent={sent} result={result} handleClick={handleClick} handleCancel={handleCancel} responseData={text.responseData} /* finalResult={finalResult} */ formatter={formatter}/>:
           <CotizadorForm handleChangeRentData={handleChangeRentData} handleSubmitRentData={handleSubmitRentData} rentData={rentData} sent={sent} handleClick={handleClick} errors={errors} formTexts={text.formTexts} />}
         </div>  }
           
