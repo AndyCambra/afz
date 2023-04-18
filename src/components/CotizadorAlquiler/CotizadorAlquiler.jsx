@@ -83,10 +83,7 @@ const CotizadorAlquiler = () => {
           setAllRentData({...rentData, ...rentUser})
         }
     const result = ((parseInt(rentData.rent) + parseInt(rentData.expenses))* (12*parseInt(rentData.years)))*0.15
-    const finalResult = formatter.format(result)
-   
     
-
    const handleClick=(e)=>{
     e.preventDefault();
     setShowForm(true)
