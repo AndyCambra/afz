@@ -79,24 +79,7 @@ const videos2=[
     type: "video/mp4",
     peopleName:"Mariano Nimo",
     peoplePosition:"Gerente general"
-    },
-    
-    {
-        id: 16,
-        companyPace: '',
-        videoStaff: "/img/MobileImages/PuebaVideoMobile.mp4",
-        type: "video/mp4",
-    peopleName:"Mariano Nimo",
-    peoplePosition:"Gerente general"
-    },
-    {
-        id: 17,
-        companyPace: '',
-        videoStaff: "/img/MobileImages/PuebaVideoMobile.mp4",
-    type: "video/mp4",
-    peopleName:"Mariano Nimo",
-    peoplePosition:"Gerente general"
-    },
+    }
 
  
     ]

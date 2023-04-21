@@ -1,5 +1,5 @@
 .rent-backgound{
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 80.4%),  url(../../../public/img/AlquilerLlaves.jpg);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 19.6%, rgba(0, 0, 0, 0.5) 100%),  url(../../../public/img/AlquilerLlaves.jpg);
     background-size: cover ;
     height: 97vh;
     width: 100vw;
@@ -9,7 +9,7 @@
     width: 100vw;
     box-sizing: border-box;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
    column-gap: 30px;

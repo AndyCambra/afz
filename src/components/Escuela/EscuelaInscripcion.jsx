@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../utils/Imput/input.css'
 import { useState } from 'react'
-import BigButton from '../utils/BigButton/BigButton'
 import { validation } from '../utils/validation'
 import { BrowserView, MobileView } from 'react-device-detect';
 import EscuelaForm from './EscuelaForm'
@@ -15,7 +14,8 @@ const EscuelaInscripcion = () => {
     company: "",
     email: "",
     phone:"",
-    dni:""
+    dni:"",
+    howToKnow:""
   })
   const [sent, setSent]= useState(false)
   const [errors, setErrors]= useState({})

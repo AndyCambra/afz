@@ -107,10 +107,10 @@
             "directorResultMessage2":"Valor final (IVA incluído) para un contrato anual."
         },
         "clientData":{
-            "firstName":"First Name",
-            "lastName":"Last Name",
-            "message":"Message",
-            "phone": "Phone",
+            "firstName":"Nombre",
+            "lastName":"Apellido",
+            "message":"Mensaje",
+            "phone": "Teléfono",
             "attach1": "Copia del contrato a firmar",
             "attach2": "Últimos tres recibos de sueldo o certificación de ingresos firmada por escribano",
             "cancel": "CANCELAR",

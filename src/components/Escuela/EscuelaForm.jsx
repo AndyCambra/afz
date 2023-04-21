@@ -3,6 +3,7 @@ import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
 import { isMobile } from 'react-device-detect'
 
+
 const EscuelaForm = ({errors, infoInput, sent, handleSubmit, handleChange}) => {
   return (
     <>
@@ -18,6 +19,7 @@ const EscuelaForm = ({errors, infoInput, sent, handleSubmit, handleChange}) => {
           <h2>COMPLETÁ EL FORMULARIO</h2>}
   </div>  
     <form className= {sent===true ? 'display-none':'inscription-form'}  onSubmit={handleSubmit}>
+    <div className='form-first-col'>
     <div className='input-box'>
     <label className='label-black'>Nombre</label>
       <input name="userName" className="light-input" value={infoInput.userName} type="onlyletters" onChange={ e => handleChange(e, 'userName', 'onlyletters', true, 75, 3)} placeholder="Ingresá tu nombre" required={true}/>
@@ -48,8 +50,20 @@ const EscuelaForm = ({errors, infoInput, sent, handleSubmit, handleChange}) => {
       <input name="dni" className="light-input" value={infoInput.dni} type="number" onChange={e => handleChange(e, 'dni', 'number', true, 15, 7)} placeholder="Ingresá tu número sin puntos" required={true}/>
       {errors['dni'] && <p className='error'>{errors['dni']}</p>}
     </div>
-    </form>
-    <form className= {sent===true ? 'display-none':'selection-box'} onSubmit={handleSubmit}>
+    <div className='input-box'>
+    <label className='label-black'>¿Cómo llegaste a la Escuela de Caución?</label>
+    <select value={infoInput.howToKnow} required={true} onChange={e => handleChange(e, 'howToKnow', 'text', true)} className="select-box-school">
+       <option disabled value="" className='option'>Seleccione una opción</option>
+       <option className='option' value="Redes">Redes</option>
+       <option className='option' value="Ejecutivo de AFZ">Ejecutivo de AFZ</option>
+       <option className='option' value="Charlas">Charlas</option>
+       <option className='option' value="Referido">Referido</option>
+       <option className='option' value="Otro">Otro</option>
+           
+    </select>
+    </div>
+    </div>
+    <div className= {sent===true ? 'display-none':'selection-box'} >
     <h4 className='subtitle-school-form'>Elegí los cursos a los que querés asistir</h4>
     <div className='input-checkbox'>
     <input name="Introducción al Seguro de Caución" value="Introducción al Seguro de Caución" className='check' type="checkbox" onChange={handleChange} /> 
@@ -72,6 +86,7 @@ const EscuelaForm = ({errors, infoInput, sent, handleSubmit, handleChange}) => {
               <BigButton name="CANCELAR" className="inscription-cancel-button" /></Link>
     <BigButton type="submit" name= "ENVIAR" className="inscription-button"/>
    
+    </div>
     </div>
     </form>
     </>

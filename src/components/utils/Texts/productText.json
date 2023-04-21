@@ -115,7 +115,7 @@
             {
                 "id": 2,
                 "title": "ADUANERAS",
-                " text": "Bajo algunas condiciones y de acuerdo al cumplimiento de determinados requisitos y a la presentación de garantías, ciertas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. El seguro de caución es la opción más ágil y económica para importaciones y exportaciones temporales, tránsitos terrestres, faltas de documentación, envíos en consignación, diferencia de derechos, habilitación de depósitos o fiscales régimen automotriz, entre otras."
+                "text": "Bajo algunas condiciones y de acuerdo al cumplimiento de determinados requisitos y a la presentación de garantías, ciertas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. El seguro de caución es la opción más ágil y económica para importaciones y exportaciones temporales, tránsitos terrestres, faltas de documentación, envíos en consignación, diferencia de derechos, habilitación de depósitos o fiscales régimen automotriz, entre otras."
             },
             {
                 "id": 3,
@@ -228,7 +228,7 @@
                 "id": 7,
                 "title": "ACTIVIDADES | PROFESIONES",
                 "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.).",
-                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y facturación de los últimos 12 meses.",
                 "requisitesText2": "",
                 "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
                 "img": "/img/Productos/actividades.jpg"
@@ -284,7 +284,7 @@
             {
                 "id": 2,
                 "title": "ADUANERAS",
-                " text": "Bajo algunas condiciones y de acuerdo al cumplimiento de determinados requisitos y a la presentación de garantías, ciertas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. El seguro de caución es la opción más ágil y económica para importaciones y exportaciones temporales, tránsitos terrestres, faltas de documentación, envíos en consignación, diferencia de derechos, habilitación de depósitos o fiscales régimen automotriz, entre otras."
+                "text": "Bajo algunas condiciones y de acuerdo al cumplimiento de determinados requisitos y a la presentación de garantías, ciertas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. El seguro de caución es la opción más ágil y económica para importaciones y exportaciones temporales, tránsitos terrestres, faltas de documentación, envíos en consignación, diferencia de derechos, habilitación de depósitos o fiscales régimen automotriz, entre otras."
             },
             {
                 "id": 3,
@@ -314,7 +314,7 @@
         ],
         "button": "COTIZÁ",
         "requisitesTitle": "REQUISITOS",
-        "productSubtitle": "GARANTÍA",
+        "productSubtitle": "GARANTÍAS",
         "callToAction": "CON NOSOTROS O A TRAVÉS DE TU PRODUCTOR ASESOR DE SEGUROS",
         "callToActionMobile1":"CON NOSOTROS O A TRAVÉS DE TU PRODUCTOR",
         "callToActionMobile2":"ASESOR DE SEGUROS",

@@ -41,7 +41,7 @@
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 30px;
     padding: 20px 40px 0 40px;
-  
+    grid-template-rows:auto;
 }
 .card-box{ 
     grid-column: 2/7;  
@@ -49,6 +49,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 25px;
     width: 100%;
+    
 
 }
 .group-photo{

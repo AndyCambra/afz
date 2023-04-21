@@ -34,8 +34,10 @@ console.log(selectedLanguage)
           <DescargarItemComplex title="Descargar e Instalar el Adobe Acrobat Reader DC" />
           <div className='vimeo-box'>
           <ReactPlayer
-          url="https://player.vimeo.com/video/405943096?byline=0&amp;controls=false&amp;portrait=0&amp;title=0"
-          controls
+          url="https://www.youtube.com/watch?v=fhK2dO44WdI"
+          controls="true"
+          playsinline="true"
+          playing="true"
           width="100%"
           className='video-size'
           />
@@ -56,7 +58,7 @@ console.log(selectedLanguage)
           </div>
         <div className='vimeo-box'>
           <ReactPlayer
-          url="https://player.vimeo.com/video/427442056?byline=0&amp;portrait=0&title=0"
+          url="https://www.youtube.com/watch?v=PEfrDlmvxik"
           controls
           width="100%"
           className='video-size'
@@ -68,7 +70,7 @@ console.log(selectedLanguage)
           </div>
           <div className='vimeo-box'>
           <ReactPlayer
-          url="https://player.vimeo.com/video/405943001?byline=0&amp;portrait=0&title=0"
+          url="https://www.youtube.com/watch?v=iKbw69UMfUg"
           controls
           width="100%"
           className='video-size'

@@ -3,17 +3,23 @@
     background-size: cover ;
     min-height: 97vh;
     width: 100vw;
+    margin-bottom: -370px;
+
 }
 .contact-grid{
-    position: absolute;
-    margin-top: 15%;
+    min-height: 72vh;
+    margin: 0px 40px 0 40px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 150px 200px;
+    grid-template-rows: 150px 200px 40px;
     grid-gap: 30px;
-    padding: 20px 40px 0 40px;
-    width: 94vw;
+    padding-top: 200px;
+ 
 }
+.push{
+    height: 366px;
+}
+
 .contact-block{
      grid-column: 1/4;
      grid-row: 1;

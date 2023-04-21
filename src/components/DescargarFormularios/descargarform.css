@@ -1,18 +1,13 @@
 .forms-background{
     position: relative;
     min-height: 97vh; 
-    display: flex;
-    align-items: flex-end;
- 
 }
 .forms-content{
     width: 100vw;
-    min-height: 100%;
     padding-top: 140px;
-   
 }
 .form-box{
-    margin: 0 40px 120px 40px ;
+    margin: 0 40px 123px 40px ;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 50px auto;
@@ -126,18 +121,17 @@
     color: #1e0606;
     font-size: .85em;
     padding: 5px 2px;
+}
+.form-photo-box{
+    width: 100vw;
+    height: 28vh;
+    overflow: hidden;
 
 }
-.forms-photo{
-   
-        width: 100vw;
-        height: 28vh;
-        object-fit: cover;
-        padding: 0;
-    
-        
-    
+.forms-photo-box img{
+   object-fit: cover;
 }
+
 
 @media only screen and (min-width: 1440px){
     .form-box{

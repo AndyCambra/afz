@@ -45,7 +45,7 @@ const Nosotros = () => {
             <img src="img/GrupoAfz.jpg" alt="Foto grupal" className='group-photo'/>
             </div>
             <div className="work-button">
-        <BigButton className="small-button" name={text.button.name} />
+        <a href="/trabaja-con-nosotros"><BigButton className="small-button" name={text.button.name} /></a>
         </div> 
       </section> 
       <section className='re-backgound'ref={reinsurersRef}>
@@ -66,9 +66,9 @@ const Nosotros = () => {
       </section>
           <div className='fundations-box'>
           <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt={text.alts.logo1} /></a> 
-          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt={text.alts.logo2}/></a> 
+          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.png' alt={text.alts.logo2}/></a> 
           <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt={text.alts.logo3} /></a>
-          <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt={text.alts.logo4} /></a>
+          <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.png' alt={text.alts.logo4} /></a>
           <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt={text.alts.logo5} /></a>
           </div>
 {/*       <a href='/carrousel'>
