@@ -75,11 +75,7 @@
     justify-content: left ;
     align-items: center; 
 }
-.rent-radio-title{
-    margin-right: 30px;
-    font-weight: 700;
-    margin-bottom: 3px;
-}
+
 .rent-send{
     text-align: right;
     margin-top: 30px;

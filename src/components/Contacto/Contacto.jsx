@@ -30,7 +30,8 @@ const Contacto = () => {
     phone:"",
     dni:"",
     content:"",
-    cv:""
+    cv:"",
+    broker:""
   })
   const [sent, setSent]= useState(false)
   const [errors, setErrors]= useState({})
