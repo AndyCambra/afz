@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
-import BalancesCardTop from './BalancesCardTop'
-import BalanceNumbers from './BalanceNumbers'
+import BalanacesCardFinal from './BalanacesCardFinal'
+
 
 
 
@@ -13,11 +13,7 @@ console.log(isShown)
     <>
   
  <div onMouseEnter={()=> setIsShown(true)} onMouseLeave={()=>setIsShown(false)}  >
-  <BalanceNumbers number={number} isShown={isShown} /> 
-{isShown &&(
-  <div className='slider'>
-        <BalancesCardTop cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number} fileDownload={fileDownload}/>
-  </div>)}
+  <BalanacesCardFinal number={number} fileDownload={fileDownload} isShown={isShown} cardTopAlt={cardTopAlt} cardTopImg={cardTopImg} />
    </div> 
 </> 
   )

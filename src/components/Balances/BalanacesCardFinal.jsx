@@ -2,13 +2,14 @@ import React from 'react'
 import { Icon } from '@iconify/react'
 
 
-const BalancesCardBottom = ({cardTopImg, cardTopAlt, isShown, number, fileDownload}) => {
+const BalanacesCardFinal = ({number, fileDownload, isShown, cardTopAlt, cardTopImg}) => {
+ 
   return (
     <>
     <div className='card-container'>
         
-     <div className='number-block-bottom' >
-        <div className={isShown ===true? "background-black-bottom":"background-none-bottom"}>
+     <div className='number-block-final' >
+        <div className={isShown ===true? "background-black":"background-none"}>
            <div>
             <h5 className='card-number'>{number}</h5>
             </div>
@@ -19,8 +20,8 @@ const BalancesCardBottom = ({cardTopImg, cardTopAlt, isShown, number, fileDownlo
       </div>
       </div>
      {isShown===true &&
-     <div className='slider-box-bottom'>
-        <div className='cover-box-bottom'>
+     <div className='slider-box'>
+        <div className='cover-box'>
       <img src={cardTopImg} alt={cardTopAlt}/>
       </div>
       </div>}
@@ -29,4 +30,4 @@ const BalancesCardBottom = ({cardTopImg, cardTopAlt, isShown, number, fileDownlo
   )
 }
 
-export default BalancesCardBottom
+export default BalanacesCardFinal

@@ -37,18 +37,22 @@ const Balances = (props) => {
                 <h5 className={selectedLanguage === "EN" ? "horizontal-title-en":'horizontal-title-b'}>{text.title}</h5>
           </div>
           </div> 
-        {  <div className='card-balance-box'>
+        {  <div>
+          <div className='card-balance-box'>
             {topCardInfo.map((itemBalance)=>{
               return(
               <BalancesGroup number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload}/>
               )
             })}
+            </div>
+            <div className='card-balances-box-botom'>
              {bottomCardInfo.map((itemBalance)=>{
               return(
               <BalancesGroupBottom number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload}/>
               )
             })}
-          </div>}  
+            </div></div>
+          }
       </section>
   )
 }

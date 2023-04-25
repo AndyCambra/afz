@@ -39,7 +39,7 @@ const Nosotros = () => {
         </div>
         </div>
         <div className='video-grid'>
-        <Staff />
+        <Staff videos={text.videos} videos2={text.videos2}/>
         </div>
         <div>
             <img src="img/GrupoAfz.jpg" alt="Foto grupal" className='group-photo'/>

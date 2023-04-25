@@ -25,8 +25,17 @@ console.log(selectedLanguage)
           <p className='digital-text'>{digitalText.firstText}</p>
           <h6 className={selectedLanguage === "EN" ? 'display-none':'digital-subtitle'}>¿Cómo visualizar las pólizas con Legalización y Certificación?</h6>
           <p className={selectedLanguage === "EN" ? 'display-none':'digital-text'}>A continuación, un breve instructivo en el cual mostramos 4 simples pasos para acceder a nuestras pólizas Legalizadas o Certificadas.</p>
-          
-          <video poster="../imagenes/video_instructivo_polizas.jpg" title="¿Como visualizar las pólizas con Legalización y Certificación?" preload="auto" controls="controls" src="/img/PolizaDigitalTutoriales/tutorial_Afianzadora.mp4" type="video/mp4" className={selectedLanguage === "EN" ? 'display-none':'digital-video'}></video>
+          <div className={selectedLanguage === "EN" ? 'display-none':'vimeo-box'}>
+          <ReactPlayer
+          url="https://www.youtube.com/watch?v=XCcexLp19t4"
+          controls="true"
+          playsinline="true"
+          playing="true"
+          width="100%"
+          className='video-size'
+          />
+          </div>
+         
           <h6 className={selectedLanguage === "EN" ? 'display-none':'digital-subtitle'}>¿Cómo verificar la validez de una firma digital?</h6>
           
           <div className={selectedLanguage ==="EN" && "display-none"}>
@@ -98,3 +107,4 @@ console.log(selectedLanguage)
 }
 
 export default PolizaDigital
+

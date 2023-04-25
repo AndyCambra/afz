@@ -1,5 +1,4 @@
 import React from 'react'
-import './balancesCard.css'
 import { Icon } from '@iconify/react'
 
 const BalancesCardTop = ({cardTopImg, cardTopAlt, number, fileDownload}) => {
