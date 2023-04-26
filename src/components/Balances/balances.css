@@ -52,7 +52,10 @@
     color: #fff;
     font-weight: 400; 
 }
-
+.card-number-none{
+    color:#1e0606;
+   margin-bottom: 22%;
+}
 .home-link h5{
     font-family: 'Sora', sans-serif;
     font-size: 15px;
@@ -61,34 +64,434 @@
     align-items: flex-end;
     text-decoration: none;
 }
+.horizontal-title-b{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 6px;
+}
+.horizontal-title-en{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 6px;
+}
 .card-balance-box{
     margin: 0 40px ;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto 250px;
-    gap: 30px;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    height: fit-content;
-    padding-top: 250px;
+    justify-content: space-between;
+    height: 220px;
+    padding-top: 4%;
+  
+}
+.card-balances-box-botom{
+    margin: 0 40px ;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 220px;
+    padding-top: 1%;
+}
+.card-container{
+    width: 130px;
+    height: 220px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.number-block-final{
+    display: flex;
+    align-items: flex-end ;
+    width: 100%;
+    height: 220px;
+  
+}
+.number-block-bottom{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 220px;
+
+}
+.background-black{
+    box-sizing: border-box;
+    background-color: #1e0606;
+    padding: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end ;
+    z-index: 1;
+    max-height: 220px;
+    
+}
+.background-black-bottom{
+    box-sizing: border-box;
+    background-color: #1e0606;
+    padding: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+    max-height: 220px;
+}
+.slider-box{
+   
+ 
+    position: relative;
+
+    background-color: #1e0606;
+    margin-top: -220px;
+    overflow: hidden;
+    animation: 1s slide-up;
+  
+}
+.slider-box-bottom{
+
+    position: relative;
+    background-color: #1e0606;
+    margin-top: -220px;
+    overflow: hidden;
+    animation: 1s slide-down;
   
 }
 
+.cover-box{
+    box-sizing: border-box;
+    display: flex;
+   justify-content: center;
+   align-items: flex-start;
+    height: 220px;
+   
+}
+.cover-box-bottom{
+    box-sizing: border-box;
+    align-items: flex-end;
+    padding: 8px;
+    height: 220px;
+
+}
+.cover-box img{
+    height: 150px;
+    margin-top: 10px;
+}
+.cover-box-bottom img{
+    height: 150px;
+    margin-top: 10px;
+    
+}
+@keyframes slide-up {
+    from {
+    margin-top: 0%;
+    /*   height: 240px; */
+    }
+    to {
+      margin-top: -220px;
+    /*   height: 240px; */
+      overflow: show;
+    }
+  }
+  @keyframes slide-down {
+    from {
+    margin-top: -320%;
+    
+    }
+    to {
+      margin-top: -220px;
+   
+      overflow: show;
+    }
+  }
+.background-none{
+    padding: 3%;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end ;
+  
+}
+.background-none-bottom{
+    padding: 3%;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+}
+.card-number{
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: 300;
+}
+.download-icon{
+    color: #fff;
+    width: 1.9em;
+    height:1.9em;
+    margin: 0;
+    padding: 0; 
+}
+.dowload-none{
+    display: none;
+}
 
 @media only screen and (min-width: 1440px){
-    .balance-grid{
-        margin: 0 320px ;
-
-    }
+ 
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-    .card-balance-box{
-        column-gap: 12px;
-        padding-top: 180px;
+@media only screen and (min-width: 1023px) and (max-width: 1261px){
+    .card-number{
+        font-size: 1.6em;
     }
+    .download-icon{
+        width: 1.6em;
+        height:1.6em;
+
+    }
+    .card-balance-box{
+        height: 180px;
+    }
+    .card-container{
+        width: 110px;
+        height: 180px;
+    }
+    .number-block-final{ 
+        height: 180px;
+    }
+    .background-none{
+        height: 180px;
+    }
+    .background-black{
+       max-height: 180px;
+        z-index: 1;
+    }
+    .slider-box{  
+        height: 180px;
+        margin-top: -180px;
+    }
+    .cover-box{
+        height: 180px;
+    }
+    .cover-box img{
+        height: 120px;
+        margin-top: 10px;
+    }
+    @keyframes slide-up {
+        from {
+        margin-top: 0%;
+      
+        }
+        to {
+          margin-top: -180px;
+       
+          overflow: show;
+        }
+      }
+      .number-block-bottom{ 
+        height: 180px;
+    }
+    .background-none-bottom{
+        height: 180px;
+    }
+    .background-black-bottom{
+       max-height: 180px;
+        z-index: 1;
+    }
+    .slider-box-bottom{  
+        height: 180px;
+        margin-top: -180px;
+    }
+    .cover-box-bottom{
+        height: 180px;
+    }
+    .cover-box-bottom img{
+        height: 120px;
+        margin-top: 2px;
+    }
+    @keyframes slide-down {
+        from {
+        margin-top: -320%;
+        }
+        to {
+          margin-top: -180px;
+       
+          overflow: show;
+        }
+      }
+
+}
+@media only screen and (min-width: 980px) and (max-width: 1023px){
+   
     .balance-block{ 
         grid-column: 1/5;
+    }
+    .card-balance-box{
+        padding-top: 4%;
+        height: 160px;
+    }
+    .card-number{
+        font-size: 1.5em;
+    }
+    .download-icon{
+        width: 1.5em;
+        height:1.5em;
+    }
+    .card-container{
+        width: 100px;
+        height: 160px;
+    }
+    .number-block-final{ 
+        height: 160px;
+    }
+    .background-none{
+        height: 160px;
+    }
+    .background-black{
+       max-height: 160px;
+        z-index: 1;
+    }
+    .slider-box{  
+        height: 160px;
+        margin-top: -160px;
+    }
+    .cover-box{
+        height: 160px;
+    }
+    .cover-box img{
+        height: 105px;
+        margin-top: 10px;
+        width: 88%;
+    }
+    @keyframes slide-up {
+        from {
+        margin-top: 0%;
+      
+        }
+        to {
+          margin-top: -160px;
+       
+          overflow: show;
+        }
+      }
+      .number-block-bottom{ 
+        height: 160px;
+    }
+    .background-none-bottom{
+        height: 160px;
+    }
+    .background-black-bottom{
+       max-height: 160px;
+        z-index: 1;
+    }
+    .slider-box-bottom{  
+        height: 160px;
+        margin-top: -160px;
+    }
+    .cover-box-bottom{
+        height: 160px;
+    }
+    .cover-box-bottom img{
+        height: 105px;
+        margin-top: 2px;
+    }
+    @keyframes slide-down {
+        from {
+        margin-top: -320%;
+        }
+        to {
+          margin-top: -160px;
+       
+          overflow: show;
+        }
+      }
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 980px){
+    .balance-block{ 
+        grid-column: 1/6;
     
     }
+    .card-balance-box{
+        margin-top: 0%;
+        height: 130px;
+    }
+    .card-number{
+        font-size: 1.2em;
+    }
+    .download-icon{
+        width: 1.2em;
+        height:1.2em;
+    }
+        .card-container{
+            width: 90px;
+            height: 130px;
+        }
+        .number-block-final{ 
+            height: 130px;
+        }
+        .background-none{
+            height: 130px;
+        }
+        .background-black{
+           max-height: 130px;
+            z-index: 1;
+        }
+        .slider-box{  
+            height: 130px;
+            margin-top: -130px;
+        }
+        .cover-box{
+            height: 130px;
+        }
+        .cover-box img{
+            height: 100px;
+            margin-top: 8px;
+            width: 88%;
+        }
+        @keyframes slide-up {
+            from {
+            margin-top: 0%;
+          
+            }
+            to {
+              margin-top: -130px;
+           
+              overflow: show;
+            }
+          }
+          .number-block-bottom{ 
+            height: 130px;
+        }
+        .background-none-bottom{
+            height: 130px;
+        }
+        .background-black-bottom{
+           max-height: 130px;
+            z-index: 1;
+        }
+        .slider-box-bottom{  
+            height: 130px;
+            margin-top: -130px;
+        }
+        .cover-box-bottom{
+            height: 130px;
+        }
+        .cover-box-bottom img{
+            height: 95px;
+            margin-top: -12px;
+        }
+        @keyframes slide-down {
+            from {
+            margin-top: -320%;
+            }
+            to {
+              margin-top: -130px;
+           
+              overflow: show;
+            }
+          }
+    }
+   
     
-}

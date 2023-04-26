@@ -23,10 +23,12 @@
     font-size: 15px;
     color: #fff;
 }
+.certifications-block{
+    grid-column: 1/4;
+}
 
 
-
-@media (max-width: 1300px) {
+@media only screen and (min-width: 1023px) and (max-width: 1137px){
     .item-certifications{
         font-size: .8em;
     }
@@ -36,6 +38,10 @@
     .item-home{
         font-size: .8em;
     }
+    .certifications-block{
+        grid-column: 1/5;
+    }
+    
 }     
 
 @media (max-width: 1000px) {
@@ -47,5 +53,8 @@
     }
     .item-home{
         font-size: .7em;
+    }
+    .certifications-block{
+        grid-column: 1/6;
     }     
     }

@@ -67,23 +67,7 @@ const videosMobile=[
             videoStaff: "img/Gustavo.jpg",
         peopleName:"Mariano Nimo",
         peoplePosition:"Gerente general"
-        },
-        
-        {
-            id: 10,
-            companyPace: '',
-            videoStaff: "img/Gustavo.jpg",
-        peopleName:"Mariano Nimo",
-        peoplePosition:"Gerente general"
-        },
-        {
-            id: 11,
-            companyPace: '',
-            videoStaff: "img/Gustavo.jpg",
-        peopleName:"Mariano Nimo",
-        peoplePosition:"Gerente general"
-        },
-    
+        }
      
         ]
         export default videosMobile

@@ -6,6 +6,7 @@ export const validation = (e, name, type, required = false, maxLength = false, m
     const err = { ...errors }
     const filterMail = /.*@[a-z0-9.-]*/i;
     const noNumbers = /^[a-zA-Z][a-zA-Z ]*$/;
+    const onlyNumbers = /^\d+$/
     switch (type) {
       case 'onlyletters':
         changedInfoInput[name] = e.target.value;
@@ -44,6 +45,9 @@ export const validation = (e, name, type, required = false, maxLength = false, m
           }
           if(minLength && !err[name]) {
             err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+          }
+          if(onlyNumbers.test(value) === false){
+            err[name] = 'Ingresar solo números'
           }
           break;
        case 'email':

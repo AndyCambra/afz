@@ -1,21 +1,18 @@
 import {useState} from 'react'
-import BalanceNumbersBottom from './BalanceNumberBottom';
 import BalancesCardBottom from './BalancesCardBottom'
 
 
-const BalancesGroupBottom = ({number, cardTopImg, cardTopAlt}) => {
+const BalancesGroupBottom = ({number, cardTopImg, cardTopAlt, fileDownload, id}) => {
     const [isShown, setIsShown] = useState(false);
 
 
   return (
     <>
+  
     <div onMouseEnter={()=> setIsShown(true)} onMouseLeave={()=>setIsShown(false)}  >
-  <BalanceNumbersBottom number={number} /> 
-{isShown &&(
-        <BalancesCardBottom cardTopImg={cardTopImg} cardTopAlt={cardTopAlt} number={number}/>
-  )}
-   </div>
-</> 
+     <BalancesCardBottom number={number} fileDownload={fileDownload} isShown={isShown} cardTopAlt={cardTopAlt} cardTopImg={cardTopImg} id={id} />
+      </div> 
+   </> 
   )
 }
 

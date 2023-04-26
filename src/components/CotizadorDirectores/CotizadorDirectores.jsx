@@ -6,7 +6,6 @@ import { useState } from 'react'
 import CotizadorDirectoresQuestion from './CotizadorDirectoresQuestion'
 import CotizadorDirectiresResponse from './CotizadorDirectiresResponse'
 import CotizadorDirectoresClientForm from './CotizadorDirectoresClientForm'
-import DatosDeFacturacion from './DatosDeFacturacion'
 import BigButton from '../utils/BigButton/BigButton'
 import { validation } from '../utils/validation'
 import { BrowserView, MobileView } from 'react-device-detect'
@@ -15,15 +14,17 @@ import cotizadoresTexts from '../utils/Texts/cotizadoresTexts.json'
 import { useLangContext } from '../../Context/LangContext'
 
 const directorsAmounts=[
-  {id:1, amount:"300000", number: "$300.000", bondPrice: "13000"},
-  {id:2, amount:"400000", number: "$400.000", bondPrice: "15000"},
-  {id:3, amount:"500000", number: "$500.000", bondPrice: "17000"},
-  {id:4, amount:"600000", number: "$600.000", bondPrice: "19000"},
-  {id:5, amount:"700000", number: "$700.000", bondPrice: "21000"},
-  {id:6, amount:"800000", number: "$800.000", bondPrice: "22000"},
-  {id:7, amount:"900000", number: "$900.000", bondPrice: "23000"},
-  {id:8, amount:"1000000", number: "$1.000.000", bondPrice: "24000"}
+  {id:1, amount:300000, bondPrice: "13000"},
+  {id:2, amount:400000, bondPrice: "15000"},
+  {id:3, amount:500000, bondPrice: "17000"},
+  {id:4, amount:600000, bondPrice: "19000"},
+  {id:5, amount:700000, bondPrice: "21000"},
+  {id:6, amount:800000, bondPrice: "22000"},
+  {id:7, amount:900000, bondPrice: "23000"},
+  {id:8, amount:1000000, bondPrice: "24000"}
 ]
+
+
 const CotizadorDirectores = () => {
   const {selectedLanguage} = useLangContext()
   const text = cotizadoresTexts[selectedLanguage];
@@ -55,6 +56,11 @@ const CotizadorDirectores = () => {
     
     const [allDirectorData, setAllDirectorData]= useState([])
 
+    const formatter = new Intl.NumberFormat('es-ar', {
+      style: 'currency',
+      currency: 'ARS',
+      maximumFractionDigits: 0,
+    });
 
     let finalAmount= (amount.customAmount*.6)/amount.quantity
     let result = 0
@@ -75,12 +81,9 @@ const CotizadorDirectores = () => {
       result= 22000
     }if(amount.clientAmount <= 900000 && amount.clientAmount > 800000){
       result= 23000
-    }if(amount.clientAmount <= 1000000 && amount.clientAmount > 900000){
-      result= 24000
-    }if(amount.clientAmount > 1000000){
+    }if(amount.clientAmount > 900000){
       result= 24000
     }
-
 
 
       const handleChangeDirectorData=(e, name, type, required = false, maxLength = false, minLength = false)=>{
@@ -166,22 +169,20 @@ const CotizadorDirectores = () => {
             <div><h2>{text.dataTitle1}</h2><h2>{text.dataTitle2}</h2></div>
           </div>}
           </div>
-          {sentThanks === true? <div className='rent-form'>
+          {sentThanks === true? <div className='button-container'>
             <Link to= "/" >
                 <BigButton className='school-button' name="HOME" /></Link>
         </div>: 
-          goToBill=== true && <div className='bill-form'>
-           <DatosDeFacturacion handleSubmitThanks={handleSubmitThanks} clientData={clientData} errors={errors} handleChange={handleChange} handleCancel={handleCancel} directorData={text.directorData} placeholders={text.placeholders}/>
-            </div>}
+          goToBill=== true && <div></div>}
           {
             showForm === true && sentThanks===false ? 
                     <CotizadorDirectoresClientForm handleSubmitThanks={handleSubmitThanks} handleChange={handleChange} clientData={clientData} handleCancel={handleCancel} errors={errors} goToBillData={goToBillData} goToBill={goToBill} directorData={text.directorData} placeholders={text.placeholders} /> :
             sent === true && sentThanks===false? <div className='rent-form' >
-                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} /></div>:
+                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} formatter={formatter}/></div>:
             <div className='rent-form' >
                 {goToQuestion === true && <CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts} /> }
             <div>
-            {goToQuestion === false && sentThanks===false &&<CotizadorDirectoresForm handleSubmitData={handleSubmitData} amount={amount} handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} handleClickToQuestion={handleClickToQuestion} formTexts={text.formTexts}  directorsAmounts={directorsAmounts} />}
+            {goToQuestion === false && sentThanks===false &&<CotizadorDirectoresForm handleSubmitData={handleSubmitData} amount={amount} handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} handleClickToQuestion={handleClickToQuestion} formTexts={text.formTexts}  directorsAmounts={directorsAmounts} formatter={formatter}/>}
             </div>
             </div>}
     </div>
@@ -196,27 +197,22 @@ const CotizadorDirectores = () => {
       </div>
       <div className='bordeax-background-director'>
       {sentThanks === true? 
-            <div className='rent-title'><h2>{text.thanks1} {clientData.name}{text.thanks2}</h2><p>{text.confirmation}</p> </div>: 
+            <div ><h2>{text.thanks1} {clientData.name}{text.thanks2}</h2><p>{text.confirmation}</p> </div>: 
          
             showForm === true ?  <div> <h2 className='director-subtitle'>{text.formTitle}</h2></div> :
-            <div className='rent-title'>
+            <div>
             <div><h2 className='director-subtitle'>{text.dataTitleMobile}</h2></div>
             </div>}
         
-          {sentThanks === true? <div></div>: 
-       
-          goToBill=== true && <div className='bill-form'>
-           <DatosDeFacturacion handleSubmitThanks={handleSubmitThanks} clientData={clientData} errors={errors} handleChange={handleChange} handleCancel={handleCancel} directorData={text.directorData} placeholders={text.placeholders}/>
-            </div>}
           {
             showForm === true && sentThanks===false ? 
                    <div> <CotizadorDirectoresClientForm handleSubmitThanks={handleSubmitThanks} handleChange={handleChange} clientData={clientData} handleCancel={handleCancel} errors={errors} goToBillData={goToBillData} goToBill={goToBill} directorData={text.directorData} placeholders={text.placeholders} /> </div>:
             sent === true && sentThanks===false? <div className='bill-first-form' >
-                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} /></div>:
+                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} formatter={formatter}/></div>:
             <div className='bill-first-form' >
-                {goToQuestion === true && <CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts}  /> }
+                {(goToQuestion === true && sentThanks===false) && <CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts}  /> }
             <div>
-            {goToQuestion === false && sentThanks===false &&<CotizadorDirectoresForm handleSubmitData={handleSubmitData} amount={amount} handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} handleClickToQuestion={handleClickToQuestion} formTexts={text.formTexts} directorsAmounts={directorsAmounts} />}
+            {goToQuestion === false && sentThanks===false &&<CotizadorDirectoresForm handleSubmitData={handleSubmitData} amount={amount} handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} handleClickToQuestion={handleClickToQuestion} formTexts={text.formTexts} directorsAmounts={directorsAmounts} formatter={formatter}/>}
             </div>
             </div>}
             </div>

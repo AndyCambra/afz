@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react'
 
 const VideoCard = ({companyPlace,videoStaff,peopleName,peoplePosition}) => {
   return (
-    <div className='card-container'>
+    <div className='card-container-staff'>
         <div className='staffPositions'>
         <h5 >{companyPlace}</h5>
         </div>

@@ -18,7 +18,7 @@ const Cerfitificaciones = () => {
   return (
     <section className='certifications-backgound' >
     <div className='balance-grid'>
-      <div className="balance-block">
+      <div className="certifications-block">
         <div className='sub-menu-balance'>
             <div className='items'>
                 <Link to="/balances">

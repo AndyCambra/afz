@@ -29,6 +29,13 @@ const ContactForm = ({sent, contactInfo, handleSubmit, errors, handleChange, tha
             <input name="email" className="white-input" value={contactInfo.email} type="email" onChange={e => handleChange(e, 'email', 'email', true, 75, 8)} placeholder={placeholders.email}  required={true}/>
             {errors['email'] && <p className='error-white'>{errors['email']}</p>}
         </div>   
+        <div className='radio-box'>
+        <p className='radio-title'>Sos productor de seguros?</p>
+        <p className='rent-label'>SI</p>
+            <input name="broker" value={true}  className='radio' type="radio" onChange={handleChange} required={true}/> 
+        <p className='rent-label'>NO</p>
+            <input name="broker" value={false} className='radio' type="radio" onChange={handleChange} required={true}/> 
+    </div>
         <div className='input-box-content'> 
         <label className='label-white'>{formTexts.message}</label>
             <textarea name="content" className="white-area" value={contactInfo.content} type="text" onChange={e => handleChange(e, 'content', 'text', true, 250, 3)} placeholder={placeholders.message}  required={true}/>
@@ -43,3 +50,4 @@ const ContactForm = ({sent, contactInfo, handleSubmit, errors, handleChange, tha
 }
 
 export default ContactForm
+

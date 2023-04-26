@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import BalancesGroup from './BalancesGroup'
 import BalancesGroupBottom from './BalancesGroupBottom'
 import { useEffect } from 'react'
-import { topCardInfo, bottomCardInfo } from '../utils/Texts/cardInfo'
+import { topCardInfo, bottomCardInfo } from './cardInfo'
 import  balancesTexts  from '../utils/Texts/balancesTexts.json'
 import { useLangContext } from '../../Context/LangContext'
 
@@ -37,18 +37,23 @@ const Balances = (props) => {
                 <h5 className={selectedLanguage === "EN" ? "horizontal-title-en":'horizontal-title-b'}>{text.title}</h5>
           </div>
           </div> 
-        {  <div className='card-balance-box'>
-            {topCardInfo.map((itemBalance)=>{
+        {  <div>
+          <div className='card-balance-box'>
+            {topCardInfo.map((itemBalance, key)=>{
               return(
-              <BalancesGroup number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg}/>
+              <BalancesGroup number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload}/>
               )
             })}
-             {bottomCardInfo.map((itemBalance)=>{
+            </div>
+            <div className='card-balances-box-botom'>
+             {bottomCardInfo.map((itemBalance, key)=>{
+            
               return(
-              <BalancesGroupBottom number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg}/>
+              <BalancesGroupBottom number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload} id={itemBalance.id}/>
               )
             })}
-          </div>}  
+            </div></div>
+          }
       </section>
   )
 }

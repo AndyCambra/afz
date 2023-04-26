@@ -181,8 +181,10 @@
     font-size: 13px;
     font-weight: 600;
     color: #fff;
-    margin: 2px 0 2px 5px;
+    margin: 4px 0 2px 5px;
     letter-spacing: .5px ;
+    box-shadow: 2px 2px 3px 2px #00000026;
+    padding: 3px 10px;
 }
 .small-button-call-mobile{
     background-color: #fff;

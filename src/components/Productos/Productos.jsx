@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom'
 import { BrowserView} from 'react-device-detect';
 import productTexts from '../utils/Texts/productText.json'
 import { useLangContext } from '../../Context/LangContext'
+import { CallToAction } from './CallToAction'
 
 const Productos = () => {
   const {id} = useParams()
@@ -30,18 +31,20 @@ const Productos = () => {
             category5={text.productMenu.category5} category6={text.productMenu.category6} category7={text.productMenu.category7} category8={text.productMenu.category8} category9={text.productMenu.category9}/> 
             <Title title={product.title} requisitesTitle={text.requisitesTitle} subtitle={text.productSubtitle}/>
             <div className='product-text'>
-            <TextComponent text={product.text}/>
+            <TextComponent text={product.text} />
             <div className={product.id===2? "list":"display-none"}><ListComponent customs={text.customs} /></div>
             <div className={product.id===1? "extra-text":"display-none"}><SubTextComponent productsExtras={text.productsExtras}/></div>
             <div className={product.id===5? "product-button":"display-none"}><Link to='/cotizador-alquiler'><BigButton className="light-button" name={text.button} /></Link></div>
             <div className={product.id===6? "product-button":"display-none"}><Link to='/cotizador-directores'><BigButton className="light-button" name={text.button} /></Link></div>
+            <CallToAction callToAction={text.callToAction} name={text.callToActionButton}/>
             </div>
+            
             <Requisites requisitesText1={product.requisitesText1} 
                         requisitesText2={product.requisitesText2} 
                         requisitesText3={product.requisitesText3} 
                         />                
           </div>
-        <HorizontalPhoto img={product.img} alt={product.title} callToAction={text.callToAction} name={text.callToActionButton}/>
+        <HorizontalPhoto img={product.img} alt={product.title} />
         </div>
         <div class="push"></div>
     </div>

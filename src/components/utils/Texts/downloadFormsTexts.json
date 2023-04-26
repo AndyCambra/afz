@@ -33,12 +33,16 @@
                 "text": "Nos brinda información acerca de los pasivos de la empresa, en cuanto a montos, plazos y características. Deberá ser firmado por el titular de la empresa con certificación de Contador Público"
             },
             "item7": {
-                "title": "Individuals",
-                "fileDownload": "RG_202_2015_PnasFisicas.pdf"
+                "title": "Personas Jurídicas",
+                "fileDownload": "/pdfs/Personas_JurídicasAFZ2023.pdf" 
             },
             "item8": {
-                "title": "Legal Persons",
-                "fileDownload": "RG_202_2015_Pnas_Juridicas.pdf"
+                "title": "Personas Físicas",
+                "fileDownload": "/pdfs/Persona_HumanaAFZ2023.pdf"
+            },
+            "item9": {
+                "title": "Personas Politicamente Expuestas",
+                "fileDownload": "/pdfs/DDJJPersonaExpuestaPoliticamenteAFZ2023.pdf"
             }
         }
     },
@@ -76,12 +80,16 @@
                 "text": "Nos brinda información acerca de los pasivos de la empresa, en cuanto a montos, plazos y características. Deberá ser firmado por el titular de la empresa con certificación de Contador Público"
             },
             "item7": {
-                "title": "Personas Físicas",
-                "fileDownload": "RG_202_2015_PnasFisicas.pdf"
+                "title": "Personas Jurídicas",
+                "fileDownload": "/pdfs/Personas_JurídicasAFZ2023.pdf" 
             },
             "item8": {
                 "title": "Personas Físicas",
-                "fileDownload": "RG_202_2015_Pnas_Juridicas.pdf"
+                "fileDownload": "/pdfs/Persona_HumanaAFZ2023.pdf"
+            },
+            "item9": {
+                "title": "Personas Politicamente Expuestas",
+                "fileDownload": "/pdfs/DDJJPersonaExpuestaPoliticamenteAFZ2023.pdf"
             }
         }
     }

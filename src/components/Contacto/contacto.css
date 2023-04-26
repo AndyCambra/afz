@@ -1,19 +1,25 @@
 .contact-backgound{
-    background: url(../../../public/img/Contacto.jpg);
+    background: linear-gradient(90deg, rgba(255, 254, 254, 0) 35.42%, rgba(255, 255, 255, 0.20) 100%), url(../../../public/img/Contacto.jpg);
     background-size: cover ;
     min-height: 97vh;
     width: 100vw;
+    margin-bottom: -370px;
+
 }
 .contact-grid{
-    position: absolute;
-    margin-top: 15%;
+    min-height: 75vh;
+    margin: 0px 40px 0 40px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 150px 200px;
+    grid-template-rows: 100px 200px 40px;
     grid-gap: 30px;
-    padding: 20px 40px 0 40px;
-    width: 94vw;
+    padding-top: 220px;
+ 
 }
+.push{
+    height: 366px;
+}
+
 .contact-block{
      grid-column: 1/4;
      grid-row: 1;
@@ -33,7 +39,7 @@
 }
 .contact-subtitle{
     color: #fff;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 .highlight-top{
@@ -64,6 +70,13 @@
     grid-column: 1;
     justify-content: left;
 }
+.radio-title{
+    margin-right: 30px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    font-size: .8em;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     .contact-backgound{

@@ -37,11 +37,14 @@
 }
 .digital-video{
     width: 80%;
-    height: 80%;
+    height: 100%;
     margin-bottom: 16px;
+   margin-left: 60px;
+   border: 2px solid #9b2743;
 }
 .vimeo-box{
     margin-top: 16px;
+    width: 80%;
 }
 .two-column{
     margin-top: 16px;
@@ -103,6 +106,12 @@
     width: auto; 
     height: auto; 
   }
+/* .video-size{
+    height: 80%;
+    top: 0;
+    left: 0;
+
+} */
 
 @media only screen and (min-width: 1440px){
     
@@ -138,9 +147,7 @@
         grid-column: 2/7;
        }
        .vimeo-box{
-        position: relative;
-
-       
+        position: relative;   
        }
        .video-size{
         position: absolute;

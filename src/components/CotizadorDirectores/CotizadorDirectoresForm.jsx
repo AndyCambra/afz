@@ -6,7 +6,7 @@ import { isMobile } from 'react-device-detect'
 
 
 
-const CotizadorDirectoresForm = ({handleSubmitData, amount, handleChangeDirectorData, directorsAmounts, handleClickToQuestion, formTexts}) => {
+const CotizadorDirectoresForm = ({handleSubmitData, amount, handleChangeDirectorData, directorsAmounts, handleClickToQuestion, formTexts, formatter}) => {
 
   return (
     <form onSubmit={handleSubmitData}>
@@ -16,8 +16,9 @@ const CotizadorDirectoresForm = ({handleSubmitData, amount, handleChangeDirector
              <select value={amount.clientAmount} onChange={e => handleChangeDirectorData(e, 'clientAmount', 'number', true, 15, 5)} className="select-box">
              <option disabled value="">{formTexts.selection}</option>
              {directorsAmounts.map((item, key)=>{
+             
                   return(
-              <option className='option' value={item.amount}>{item.number}</option>
+              <option className='option' key={item.id} value={item.amount}>{formatter.format(item.amount)}</option>
               ) })}
                 </select> 
                      <Link className='question-label'onClick={handleClickToQuestion}>{formTexts.question}</Link>
@@ -30,3 +31,10 @@ const CotizadorDirectoresForm = ({handleSubmitData, amount, handleChangeDirector
 }
 
 export default CotizadorDirectoresForm
+
+/* const newNumber= {...directorsAmounts.amount.toLocalString('es-ar',{
+  style: 'currency',
+  currency: 'ARS',
+  minimumFractionDigits: 2
+}
+)} */

@@ -47,11 +47,13 @@ const DescargarFormularios = () => {
             <div className='tirth-col-second-part'> 
               <DescargarItemComplex title={textDownload.cols.item7.title} fileDownload={textDownload.cols.item7.fileDownload}/>
               <DescargarItemComplex title={textDownload.cols.item8.title} fileDownload={textDownload.cols.item8.fileDownload}/>
-
+              <DescargarItemComplex title={textDownload.cols.item9.title} fileDownload={textDownload.cols.item9.fileDownload}/>
             </div>
              
           </div>
-   <img src="/img/DescargarForm.jpg" alt="Descargar Formularios" className='forms-photo'/>
+          <div className='form-photo-box'>
+            <img src="/img/DescargarForm.jpg" alt="Descargar Formularios" />
+          </div>
       </div>
     </div>
   )

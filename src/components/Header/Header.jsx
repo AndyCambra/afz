@@ -34,9 +34,9 @@ const handleClick = () => {
         <div className='header-in'>
             <NavLink to="/"> 
             {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/prevencion-fraude' || location.pathname === '/prensa' ? (
-                <img src="/img/LogoAFZwbg.png" alt="Logo Afz" className='logoAfz' />
+                <img src="/img/LogoAFZb.png" alt="Logo Afz" className='logoAfz' />
             ):(             
-            <img src="/img/logoAfz.png" alt="Logo Afz" className='logoAfz' />)}
+            <img src="/img/LogoAFZw.png" alt="Logo Afz" className='logoAfz' />)}
             </NavLink>
             <div className='header-menu'>
             <div className='header-item'>

@@ -30,7 +30,8 @@ const Contacto = () => {
     phone:"",
     dni:"",
     content:"",
-    cv:""
+    cv:"",
+    broker:""
   })
   const [sent, setSent]= useState(false)
   const [errors, setErrors]= useState({})
@@ -70,7 +71,7 @@ console.log(contactInfo)
   return (
     <>
     <BrowserView>
-    <section className='contact-backgound' >
+    <div className='contact-backgound' >
     <div className='contact-grid'>
      <ContactoTitleAndText title={text.title} text={text.text}/>
       <ContactoAdress />
@@ -83,7 +84,8 @@ console.log(contactInfo)
         thanks1={text.thanks1} thanks2={text.thanks2} confirmation={text.confirmation} formTitle={text.formTitle} 
         send={text.sendButton} formTexts={text.formTexts} placeholders={text.placeholders} />
       </div>
-    </section>
+    </div>
+    <div class="push"></div>
     </BrowserView>
     <MobileView>
       <div className='first-box-mobile'>

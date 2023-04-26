@@ -44,11 +44,13 @@ const [slideBarData, setSlideBarData] = useState({
     
     
       >
-     {videosMobile.map((item)=>
+     {videosMobile.map((item, key)=>
         <SwiperSlide> 
-        {/*   key={item.id} */}
+         
             <video 
+             key={item.id}
              controls
+             playsInline
              autoPlay
              muted={false}
             className="video-size">
