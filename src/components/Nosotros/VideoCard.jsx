@@ -1,6 +1,6 @@
 import React from 'react'
 import './videoCard.css'
-import { Icon } from '@iconify/react'
+
 
 const VideoCard = ({companyPlace,videoStaff,peopleName,peoplePosition}) => {
   return (

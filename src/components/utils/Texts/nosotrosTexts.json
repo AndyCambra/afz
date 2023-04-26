@@ -41,10 +41,11 @@
       {
         "id": 1,
         "companyPace": "PARTNERS",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Gustavo Krieger",
-        "peoplePosition": "President"
+        "peoplePosition": "President",
+        "poster":"/img/Isa.png"
       },
       {
         "id": 2,
@@ -52,7 +53,8 @@
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
         "type": "video/mp4",
         "peopleName": "Juan José Saldaña",
-        "peoplePosition": "Vice President"
+        "peoplePosition": "Vice President",
+        "poster":"/img/Isa.png"
       },
       {
         "id": 3,
@@ -61,6 +63,7 @@
         "type": "video/mp4",
         "peopleName": "Mariano Nimo",
         "peoplePosition": "General Manager"
+        
       }
     ],
     "videos2": [
@@ -156,7 +159,7 @@
       {
         "id": 1,
         "companyPace": "SOCIOS",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Gustavo Krieger",
         "peoplePosition": "Presidente"
@@ -164,7 +167,7 @@
       {
         "id": 2,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Juan José Saldaña",
         "peoplePosition": "Vicepresidente"
@@ -172,7 +175,7 @@
       {
         "id": 3,
         "companyPace": "DIRECTOR",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Mariano Nimo",
         "peoplePosition": "Gerente General"
@@ -182,7 +185,7 @@
       {
         "id": 4,
         "companyPace": "MANAGERS",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Silvina Pandiani",
         "peoplePosition": "Gerente de Administración y Finanzas"
@@ -190,7 +193,7 @@
       {
         "id": 5,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Verónica Inglés",
         "peoplePosition": "Gerente de Legales"
@@ -198,7 +201,7 @@
       {
         "id": 6,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Enrique Camarero",
         "peoplePosition": "Gerente de Adm. de Riesgo y Operaciones"
@@ -206,7 +209,7 @@
       {
         "id": 7,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Agustín del Torchio",
         "peoplePosition": "Gerente Comercial"
@@ -214,7 +217,7 @@
       {
         "id": 8,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Vanesa Pascale",
         "peoplePosition": "Gerente de Legales"
@@ -222,7 +225,7 @@
       {
         "id": 9,
         "companyPace": "RESPONSABLES",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Tatiana Gradecky",
         "peoplePosition": "Relaciones Humanas"
