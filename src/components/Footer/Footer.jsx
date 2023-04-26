@@ -20,7 +20,7 @@ const text = footerTexts[selectedLanguage];
     <BrowserView>
     <div className='footerBox'>
         <div className='footer-in'>
-        <img src="/img/logoAfz.png" alt="Logo Afz" />
+        <img src="/img/LogoAFZw.png" alt="Logo Afz" />
         <div className='footerMenu'>
             {text.map((item,key)=>
             <div className='footerItem'>
@@ -47,7 +47,7 @@ const text = footerTexts[selectedLanguage];
     </BrowserView>
     <MobileView>
     <div className='footerBox'>
-        <div className='logo-box-mobile'> <img src="/img/logoAfz.png" alt="Logo Afz" />
+        <div className='logo-box-mobile'> <img src="/img/LogoAFZw.png" alt="Logo Afz" />
         </div>
         <SocialIcons className="social-box-mobile" classCircle="icon-circle" classIcon="social-icon" classIconBig="social-icon-big"/>
         <NavLink to="/">
