@@ -188,5 +188,14 @@
     justify-content: center;
     padding: 16px 20px;
 }
+.card-title-mobile{
+    width: 90%;
+    background-color: rgba(155, 39, 67, 0.8);
+    border-radius: 16px;
+    margin: -40% 5% 20%;
+    position: relative;
+    text-align: center;
+    padding: 2px;
+}
 
 }

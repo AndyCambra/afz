@@ -55,12 +55,12 @@ usText, usTitle, staffText, staffTitle, reisuranceText,reisuranceTitle, compromi
         </div>
         <div className='fundations-box'>
         <a href='https://www.asdra.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/Asdra.jpg' alt={alt1} className='fundations' /></a> 
-          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.jpg' alt={alt2} className='fundations-bigger' /></a> 
+          <a href='https://www.fev.org.ar/' target="_blank" rel="noreferrer"> <img src='img/LogosCompromiso/EspaciosVerdes.png' alt={alt2} className='fundations-bigger' /></a> 
           <a href='https://www.haciendocamino.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/HaciendoCamino.jpg' alt={alt3} className='fundations' /></a>
          
             </div>
             <div className='fundations-box'>
-            <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.jpg' alt={alt4} className='fundations' /></a>
+            <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.png' alt={alt4} className='fundations' /></a>
           <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt={alt5} className='fundations' /></a>
           </div>
     </div>

@@ -7,17 +7,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { useEffect, useState } from 'react';
 import SliderBar from './SliderBar';
-import videosMobile from '../utils/Texts/videosMobile';
+import nosotrosTexts from '.././utils/Texts/nosotrosTexts.json'
+import { useLangContext } from '../../Context/LangContext'
 
 
 
-
-const Carrousel = () => {
+const Carrousel = ({peopleName, peoplePosition, videoStaff}) => {
 const [slideBarData, setSlideBarData] = useState({
   slideCount: 0,
   activeSlide: 0
 })
-
+const {selectedLanguage} = useLangContext()
+const text = nosotrosTexts[selectedLanguage];
+const videosMobile= text.videos.concat(text.videos2)
+console.log(videosMobile)
   const slideBarManager=(swiper)=>{
     console.log(11)
     setSlideBarData({slideCount:swiper.slides.length, activeSlide: swiper.activeIndex})
@@ -51,12 +54,11 @@ const [slideBarData, setSlideBarData] = useState({
              key={item.id}
              controls
              playsInline
-             autoPlay
              muted={false}
             className="video-size">
             <source src={item.videoStaff} type={item.type} id={item.id} alt={item.alt} />
             </video>
-            <div className='card-title'>
+            <div className='card-title-mobile'>
             <p className='card-name'>{item.peopleName}</p>
             <p className='card-position'>{item.peoplePosition}</p>
             </div>
@@ -70,6 +72,4 @@ const [slideBarData, setSlideBarData] = useState({
   };
  
 export default Carrousel
-
-//<VideoCard key={item.id} companyPlace={item.companyPace} peopleName={item.peopleName} peoplePosition={item.peoplePosition} videoStaff={item.videoStaff} className='card' />
 
