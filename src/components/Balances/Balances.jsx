@@ -39,16 +39,17 @@ const Balances = (props) => {
           </div> 
         {  <div>
           <div className='card-balance-box'>
-            {topCardInfo.map((itemBalance)=>{
+            {topCardInfo.map((itemBalance, key)=>{
               return(
               <BalancesGroup number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload}/>
               )
             })}
             </div>
             <div className='card-balances-box-botom'>
-             {bottomCardInfo.map((itemBalance)=>{
+             {bottomCardInfo.map((itemBalance, key)=>{
+            
               return(
-              <BalancesGroupBottom number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload}/>
+              <BalancesGroupBottom number={itemBalance.year} cardTopAlt={itemBalance.cardTopAlt} cardTopImg={itemBalance.cardTopImg} fileDownload={itemBalance.fileDownload} id={itemBalance.id}/>
               )
             })}
             </div></div>
