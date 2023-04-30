@@ -32,7 +32,6 @@
 .first-col p{
     font-size: .8em;
     color: #1e0606;
-    margin-top: 5px;
 }
 .first-col-second-part{
     grid-row: 3;
