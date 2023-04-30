@@ -7,7 +7,7 @@ const SixLogos = () => (
     <a href='https://www.sompo-intl.com/insurance/' target="_blank" rel="noreferrer"> <img src="img/LogosRe1.jpg" alt="Sompo Internacional"/></a>
     </div>
     <div className='six-logos2'>
-    <a href='https://www.libertymutual.com/' target="_blank" rel="noreferrer"> <img src="img/LogosRe2.jpg" alt="Liberty Mutual"/></a>
+    <a href='https://www.libertymutualre.com/' target="_blank" rel="noreferrer"> <img src="img/LogosRe2.jpg" alt="Liberty Mutual"/></a>
     </div> 
     <div className='six-logos3'>
     <a href='https://www.hannover-re.com/' target="_blank" rel="noreferrer"><img src="img/LogosRe3.jpg" alt="Hannover re"/></a>
@@ -29,6 +29,9 @@ const SixLogos = () => (
     </div>
     <div className='six-logos9'>
     <a href='https://www.hamiltongroup.com/' target="_blank" rel="noreferrer"><img src="img/LogosRe9.jpg" alt="Hamilton"/></a>
+    </div>
+    <div className='six-logos10'>
+    <a href='https://www.acrargentina.com.ar/' target="_blank" rel="noreferrer"><img src="img/LogosRe10.jpg" alt="ACR Argentina"/></a>
     </div>
    
   </div>

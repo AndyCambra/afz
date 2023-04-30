@@ -36,7 +36,7 @@ const Productos = () => {
             <div className={product.id===1? "extra-text":"display-none"}><SubTextComponent productsExtras={text.productsExtras}/></div>
             <div className={product.id===5? "product-button":"display-none"}><Link to='/cotizador-alquiler'><BigButton className="light-button" name={text.button} /></Link></div>
             <div className={product.id===6? "product-button":"display-none"}><Link to='/cotizador-directores'><BigButton className="light-button" name={text.button} /></Link></div>
-            <CallToAction callToAction={text.callToAction} name={text.callToActionButton}/>
+            <CallToAction callToAction={text.callToAction} name={text.callToActionButton} className={selectedLanguage==="ES" ? "call-to-action" : "call-to-action-en"} />
             </div>
             
             <Requisites requisitesText1={product.requisitesText1} 

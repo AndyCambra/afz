@@ -63,7 +63,7 @@ const EscuelaForm = ({errors, infoInput, sent, handleSubmit, handleChange}) => {
     </select>
     </div>
     </div>
-    <div className= {sent===true ? 'display-none':'selection-box'} >
+    <div className= {sent===true ? 'display-none':(isMobile? "":'selection-box')} >
     <h4 className='subtitle-school-form'>Elegí los cursos a los que querés asistir</h4>
     <div className='input-checkbox'>
     <input name="Introducción al Seguro de Caución" value="Introducción al Seguro de Caución" className='check' type="checkbox" onChange={handleChange} /> 

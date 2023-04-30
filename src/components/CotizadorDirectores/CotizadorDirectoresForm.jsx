@@ -31,10 +31,3 @@ const CotizadorDirectoresForm = ({handleSubmitData, amount, handleChangeDirector
 }
 
 export default CotizadorDirectoresForm
-
-/* const newNumber= {...directorsAmounts.amount.toLocalString('es-ar',{
-  style: 'currency',
-  currency: 'ARS',
-  minimumFractionDigits: 2
-}
-)} */

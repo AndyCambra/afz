@@ -80,19 +80,11 @@
         "companyPace": "",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
         "type": "video/mp4",
-        "peopleName": "Verónica Inglés",
-        "peoplePosition": "Legal Dpt Manager"
-      },
-      {
-        "id": 6,
-        "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
-        "type": "video/mp4",
         "peopleName": "Enrique Camarero",
         "peoplePosition": "Risk Administration Manager"
       },
       {
-        "id": 7,
+        "id": 6,
         "companyPace": "",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
         "type": "video/mp4",
@@ -100,7 +92,7 @@
         "peoplePosition": "Comercial Manager"
       },
       {
-        "id": 8,
+        "id": 7,
         "companyPace": "",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
         "type": "video/mp4",
@@ -108,12 +100,28 @@
         "peoplePosition": "Legal Dpt Manager"
       },
       {
-        "id": 9,
+        "id": 8,
         "companyPace": "RESPONSABLES",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
         "type": "video/mp4",
         "peopleName": "Tatiana Gradecky",
         "peoplePosition": "Human Relations"
+      },
+      {
+        "id": 9,
+        "companyPace": "",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "type": "video/mp4",
+        "peopleName": "María Marta Segundo",
+        "peoplePosition": "Cobranzas"
+      },
+      {
+        "id": 10,
+        "companyPace": "",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "type": "video/mp4",
+        "peopleName": "Gustavo Báez",
+        "peoplePosition": "Coordinador de Operaciones"
       }
     ]
   },
@@ -184,7 +192,7 @@
     "videos2": [
       {
         "id": 4,
-        "companyPace": "MANAGERS",
+        "companyPace": "GERENTES",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Silvina Pandiani",
@@ -195,19 +203,11 @@
         "companyPace": "",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
-        "peopleName": "Verónica Inglés",
-        "peoplePosition": "Gerente de Legales"
-      },
-      {
-        "id": 6,
-        "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
-        "type": "video/mp4",
         "peopleName": "Enrique Camarero",
         "peoplePosition": "Gerente de Adm. de Riesgo y Operaciones"
       },
       {
-        "id": 7,
+        "id": 6,
         "companyPace": "",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
@@ -215,7 +215,7 @@
         "peoplePosition": "Gerente Comercial"
       },
       {
-        "id": 8,
+        "id": 7,
         "companyPace": "",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
@@ -223,12 +223,28 @@
         "peoplePosition": "Gerente de Legales"
       },
       {
-        "id": 9,
+        "id": 8,
         "companyPace": "RESPONSABLES",
         "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
         "type": "video/mp4",
         "peopleName": "Tatiana Gradecky",
         "peoplePosition": "Relaciones Humanas"
+      },
+      {
+        "id": 9,
+        "companyPace": "",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "type": "video/mp4",
+        "peopleName": "María Marta Segundo",
+        "peoplePosition": "Cobranzas"
+      },
+      {
+        "id": 10,
+        "companyPace": "",
+        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "type": "video/mp4",
+        "peopleName": "Gustavo Báez",
+        "peoplePosition": "Coordinador de Operaciones"
       }
     ]
   }
