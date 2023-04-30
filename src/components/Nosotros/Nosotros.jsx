@@ -58,7 +58,7 @@ const Nosotros = () => {
 
       </section>
       <section className='com-backgound'id='section4'ref={comRef}>
-      <div className='re-grid'>
+      <div className='compromise-grid'>
       <div className="team-block">
           <HorizontalSubMenu id={text.compromise.id} menuCategoryCompany={text.us.menuCategory} menuCategoryStaff={text.staff.menuCategory} menuCategoryReinsurers={text.reisurance.menuCategory} menuCategoryCompromise={text.compromise.menuCategory} usRef={usRef} teamRef={teamRef} reinsurersRef={reinsurersRef} comRef={comRef} title={text.compromise.title} text={text.compromise.text} />
           </div>
@@ -71,9 +71,6 @@ const Nosotros = () => {
           <a href='https://www.bancodealimentos.org.ar/' target="_blank" rel="noreferrer">  <img src='img/LogosCompromiso/BancoAlimentos.png' alt={text.alts.logo4} /></a>
           <a href='https://www.cuerpoyalma.org.ar/' target="_blank" rel="noreferrer">   <img src='img/LogosCompromiso/CuerpoAlma.jpg' alt={text.alts.logo5} /></a>
           </div>
-{/*       <a href='/carrousel'>
-          <BigButton name="CONOCENOS" className={'dark-button'} />
-          </a> */}
       </BrowserView>
       <MobileView>
         <NosotrosMobile usRef={usRef} teamRef={teamRef} comRef={comRef} reinsurersRef={reinsurersRef} handleButtonClicked={handleButtonClicked} 

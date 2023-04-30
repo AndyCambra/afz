@@ -12,7 +12,7 @@ import { useLangContext } from '../../Context/LangContext'
 
 
 
-const Carrousel = ({peopleName, peoplePosition, videoStaff}) => {
+const Carrousel = () => {
 const [slideBarData, setSlideBarData] = useState({
   slideCount: 0,
   activeSlide: 0
