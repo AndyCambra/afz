@@ -20,12 +20,12 @@ const [slideBarData, setSlideBarData] = useState({
 const {selectedLanguage} = useLangContext()
 const text = nosotrosTexts[selectedLanguage];
 const videosMobile= text.videos.concat(text.videos2)
-console.log(videosMobile)
   const slideBarManager=(swiper)=>{
-    console.log(11)
+    
     setSlideBarData({slideCount:swiper.slides.length, activeSlide: swiper.activeIndex})
+    console.log(3, swiper.activeIndex)
   }
-
+ 
     useEffect(()=>{
         window.scrollTo(0,0);
       },[])
@@ -39,13 +39,11 @@ console.log(videosMobile)
        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
-        loop={true}
+       
         onSlideChange={(swiper) => slideBarManager(swiper)}
         onSwiper={swiper => slideBarManager(swiper)}
         centeredSlides={true}
-      
-    
-    
+
       >
      {videosMobile.map((item, key)=>
         <SwiperSlide> 
