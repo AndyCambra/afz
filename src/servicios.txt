@@ -5,7 +5,7 @@ Formulario de Trabajá con nosotros:
 Post | Get
 
 Formulario de Inscripción Escuela:
-Post | Get
+Post | Get | Put (parala fecha del curso que vamos a tener que cambiarla eventualmente)
 
 Formulario de Cotizador Alquiler:
 Post | Get
