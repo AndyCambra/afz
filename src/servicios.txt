@@ -1,0 +1,21 @@
+Formulario de Contacto:
+Post | Get
+
+Formulario de Trabajá con nosotros:
+Post | Get
+
+Formulario de Inscripción Escuela:
+Post | Get
+
+Formulario de Cotizador Alquiler:
+Post | Get
+
+Formulario de Cotizador Directores:
+Post | Get 
+Put para actualizar los montos de la cotización
+
+Formulario de Contacto:
+Post | Get
+
+Formulario de Prensa:
+Post | Get | Put | Delete

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Icon } from '@iconify/react'
+import { Link } from 'react-router-dom'
 
-const PressCard = ({prensaData}) => {
+const PressCard = ({prensaData,id}) => {
   return (
     <div className='card-note'> 
                 <div className='head-note'>
@@ -11,7 +12,8 @@ const PressCard = ({prensaData}) => {
                 <div className='card-note-content'>
                     <h3>{prensaData.title}</h3>
                     <p className='card-text'>{prensaData.text.substring(0, 130)}...</p>
-                    <Icon icon="ic:baseline-plus" className='card-icon' />
+                    <Link to={`/prensa-detail/${id}`} className="more">
+                    <Icon icon="ic:baseline-plus" className='card-icon' /></Link>
                     <img src={prensaData.img} alt={prensaData.alt} className="card-note-img" />
                 </div>
             </div>   

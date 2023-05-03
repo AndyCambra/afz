@@ -1,15 +1,23 @@
 .press-background{
-    margin-bottom: -370px;
     min-height: 97%;
+    margin-bottom: -370px;
 }
 .press-box{
     padding-bottom: 48px;
     margin: 0 40px ;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 18px 250px;
+    grid-template-rows: 290px;
     column-gap: 30px;
-    row-gap: 16px;
+    row-gap: 24px;
+    align-items: flex-start;
+}
+.press-box-detail{
+    padding-bottom: 48px;
+    margin: 0 40px ;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 30px;
     align-items: flex-start;
 }
 
@@ -23,12 +31,16 @@
 .main-note-img img{
     grid-row: 1/3;
     width: 100%;
-    height: 285px;
+    height: 270px;
     object-fit: cover;
     
 }
-.head-note{
+.press-note-box{
     grid-column: 4/8;
+    
+}
+.head-note{
+    margin-bottom: 16px;
     color: #B7B6B6;
     font-size: 15px;
     text-transform: uppercase;
@@ -57,35 +69,66 @@
     color: #1e0606;
     font-family: 'Sora', sans-serif;
     font-size: 14px;
-    line-height: 20px;
-   
+    line-height: 20px; 
+   columns: 2;
 }
-
+.box-text-detail{
+    
+    margin-top: 10px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    color: #1e0606;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    line-height: 20px; 
+    columns: 2;
+}
 .more{
-    box-sizing: border-box;
-    display: flex;
-    margin-top: -10px;
-    background-color: #B7B6B6;
-    width: 130px;
-    height: 30px;
+    box-sizing: border-box;  
+    margin-top: 6 px;
     text-align: center;
     color: #fff;
-    align-self: flex-end;
-
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 .see{
     font-weight: 500;
     box-sizing: border-box;
+    background-color: #B7B6B6;
     padding-top: 5px;
     width: 100px;
     height: 30px;
-    border-right: 2px solid #fff;
     margin-right: 2px;
+    color: #fff;
+}
+.see-icon{
+    box-sizing: border-box;
+    background-color: #B7B6B6;
+    width: 30px;
+    height: 30px;
+    
 }
 .menu-note{
     border-bottom: 2px solid #9b2743;
     padding-bottom: 5px;
     margin: 5px 0;
+    color:#1e0606;
+}
+.menu-note-detail{
+    border-bottom: 2px solid #9b2743;
+    padding-bottom: 5px;
+    margin: 15px 0 5px 0;
+    color:#1e0606;
+    width: 30%;
+
+}
+.menu-note-detail a{
+    color:#1e0606;
+}
+.menu-note a.visited{
+    color:#1e0606;
 }
 .press-menu-link{
     color:#B7B6B6;

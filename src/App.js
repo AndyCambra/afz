@@ -25,6 +25,7 @@ import { Icon } from '@iconify/react';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Carrousel from './components/Nosotros/Carrousel';
 import { Provider } from './Context/LangContext';
+import PrensaDetail from './components/Prensa/PrensaDetail';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/cotizador-directores" element={<CotizadorDirectores />}></Route>
         <Route exact path="/cotizador-alquiler" element={<CotizadorAlquiler />}></Route>
         <Route exact path="/trabaja-con-nosotros" element={<TrabajaConNosotros />}></Route>
+        <Route exact path="/prensa-detail/:id" element={<PrensaDetail />}></Route>
         <Route exact path="/prensa" element={<Prensa />}></Route>
         <Route exact path="/contacto" element={<Contacto />}></Route>
         <Route exact path="/prevencion-fraude" element={<Fraude />}></Route>

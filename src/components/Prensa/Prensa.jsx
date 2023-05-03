@@ -22,6 +22,7 @@ const lastNote=prensaData[prensaData.length - 1]
             <div className='main-note-img'>
                 <img src={lastNote.img} alt={lastNote.alt} />
             </div>
+            <div className='press-note-box'>
                 <div className='head-note'>
                     <h5>{lastNote.media}</h5>
                     <h5 className='head-date'>{lastNote.publicationDate}</h5>
@@ -30,11 +31,15 @@ const lastNote=prensaData[prensaData.length - 1]
                     <h2>{lastNote.title}</h2>
                     <div className='box'>
                         <div className='box-text'>{lastNote.text.substring(0, 740)} ...</div>
-                        <div className="more">
-                            <div className='see'>Ver mas</div><Icon icon="ic:baseline-plus" className='icon-on-grey' />  
                         </div>
+                        <div >
+                            <Link to={`/prensa-detail/${lastNote.id}`} className="more">
+                            <div className='see'>Ver mas</div>
+                            <div className='see-icon'><Icon icon="ic:baseline-plus" className='icon-on-grey' /></div>
+                            </Link>
                     </div>
                 </div>
+            </div>
             <div>
                 <div className='menu-note'>
                         <h5>ULTIMAS NOTICIAS</h5>
@@ -45,7 +50,7 @@ const lastNote=prensaData[prensaData.length - 1]
             </div>
             <div className='second-grid'>
             {prensaData.map((item, key)=>
-            <PressCard key={item.id} prensaData={item} />)}
+            <PressCard key={item.id} prensaData={item} id={item.id} />)}
             </div>
             </div>
             
