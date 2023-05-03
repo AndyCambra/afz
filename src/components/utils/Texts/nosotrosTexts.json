@@ -41,7 +41,7 @@
       {
         "id": 1,
         "companyPace": "PARTNERS",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/GustavoKrieger.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Gustavo Krieger",
         "peoplePosition": "President",
@@ -50,7 +50,7 @@
       {
         "id": 2,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/VideosStaff/JuanJoseSaldana.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Juan José Saldaña",
         "peoplePosition": "Vice President",
@@ -59,7 +59,7 @@
       {
         "id": 3,
         "companyPace": "DIRECTOR",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/VideosStaff/MarianoNimo.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Mariano Nimo",
         "peoplePosition": "General Manager"
@@ -70,7 +70,7 @@
       {
         "id": 4,
         "companyPace": "MANAGERS",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/VideosStaff/SilvinaPandiani.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Silvina Pandiani",
         "peoplePosition": "Finance and Administration Manager"
@@ -86,7 +86,7 @@
       {
         "id": 6,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/VideosStaff/AgustindelTorchio.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Agustín del Torchio",
         "peoplePosition": "Comercial Manager"
@@ -94,7 +94,7 @@
       {
         "id": 7,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/VideosStaff/VanesaPascale.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Vanesa Pascale",
         "peoplePosition": "Legal Dpt Manager"
@@ -102,7 +102,7 @@
       {
         "id": 8,
         "companyPace": "RESPONSABLES",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff":  "/img/VideosStaff/TatianaGradecky.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Tatiana Gradecky",
         "peoplePosition": "Human Relations"
@@ -110,7 +110,7 @@
       {
         "id": 9,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/MariaMartaSegundo.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "María Marta Segundo",
         "peoplePosition": "Cobranzas"
@@ -118,10 +118,18 @@
       {
         "id": 10,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/GustavoBaez.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Gustavo Báez",
         "peoplePosition": "Coordinador de Operaciones"
+      },
+      {
+        "id": 11,
+        "companyPace": "",
+        "videoStaff": "/img/VideosStaff/MariaTeresaRosagaray.mov#t=0.1",
+        "type": "video/mp4",
+        "peopleName": "María Teresa Arrosagaray",
+        "peoplePosition": "Coordinadora IT"
       }
     ]
   },
@@ -167,7 +175,7 @@
       {
         "id": 1,
         "companyPace": "SOCIOS",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/GustavoKrieger.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Gustavo Krieger",
         "peoplePosition": "Presidente"
@@ -175,7 +183,7 @@
       {
         "id": 2,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/JuanJoseSaldana.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Juan José Saldaña",
         "peoplePosition": "Vicepresidente"
@@ -183,7 +191,7 @@
       {
         "id": 3,
         "companyPace": "DIRECTOR",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/MarianoNimo.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Mariano Nimo",
         "peoplePosition": "Gerente General"
@@ -193,7 +201,7 @@
       {
         "id": 4,
         "companyPace": "GERENTES",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/SilvinaPandiani.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Silvina Pandiani",
         "peoplePosition": "Gerente de Administración y Finanzas"
@@ -201,7 +209,7 @@
       {
         "id": 5,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/EnriqueCamarero.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Enrique Camarero",
         "peoplePosition": "Gerente de Adm. de Riesgo y Operaciones"
@@ -209,7 +217,7 @@
       {
         "id": 6,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/AgustindelTorchio.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Agustín del Torchio",
         "peoplePosition": "Gerente Comercial"
@@ -217,7 +225,7 @@
       {
         "id": 7,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/VanesaPascale.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Vanesa Pascale",
         "peoplePosition": "Gerente de Legales"
@@ -225,7 +233,7 @@
       {
         "id": 8,
         "companyPace": "RESPONSABLES",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/TatianaGradecky.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Tatiana Gradecky",
         "peoplePosition": "Relaciones Humanas"
@@ -233,7 +241,7 @@
       {
         "id": 9,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/MariaMartaSegundo.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "María Marta Segundo",
         "peoplePosition": "Cobranzas"
@@ -241,11 +249,19 @@
       {
         "id": 10,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4#t=0.1",
+        "videoStaff": "/img/VideosStaff/GustavoBaez.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Gustavo Báez",
         "peoplePosition": "Coordinador de Operaciones"
-      }
+      },
+      {
+      "id": 11,
+      "companyPace": "",
+      "videoStaff": "/img/VideosStaff/MariaTeresaRosagaray.mov#t=0.1",
+      "type": "video/mp4",
+      "peopleName": "María Teresa Arrosagaray",
+      "peoplePosition": "Coordinadora IT"
+    }
     ]
   }
 }

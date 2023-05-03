@@ -33,7 +33,7 @@ const handleClick = () => {
         </div>
         <div className='header-in'>
             <NavLink to="/"> 
-            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/prevencion-fraude' || location.pathname === '/prensa' ? (
+            {location.pathname.startsWith('/productos/') || location.pathname.startsWith('/escuela') || location.pathname === '/landing' || location.pathname === '/prevencion-fraude' || location.pathname === '/prensa' || location.pathname.startsWith('/prensa-detail')  ? (
                 <img src="/img/LogoAFZb.png" alt="Logo Afz" className='logoAfz' />
             ):(             
             <img src="/img/LogoAFZw.png" alt="Logo Afz" className='logoAfz' />)}

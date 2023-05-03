@@ -14,10 +14,8 @@ const SliderBar = ({slideBarData}) => {
  
   const ArrayBoxes =[]
   for (let i= 1; i <= slideCount; i= i+ 1){
-   ArrayBoxes[i]=<div className={activeSlide === i? "mark":"slider-mark"}></div>
-  
+   ArrayBoxes[i]=<div className={activeSlide === i-1? "mark":"slider-mark"}></div>
   }
- 
 
   return(
   <div className='slider-bar'>
