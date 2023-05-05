@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './cotizadordirectores.css'
 import CotizadorDirectoresForm from './CotizadorDirectoresForm'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import CotizadorDirectoresQuestion from './CotizadorDirectoresQuestion'
 import CotizadorDirectiresResponse from './CotizadorDirectiresResponse'
 import CotizadorDirectoresClientForm from './CotizadorDirectoresClientForm'
@@ -55,6 +55,10 @@ const CotizadorDirectores = () => {
       })
     
     const [allDirectorData, setAllDirectorData]= useState([])
+
+    useEffect(()=>{
+      window.scrollTo(0,0);
+    },[])
 
     const formatter = new Intl.NumberFormat('es-ar', {
       style: 'currency',

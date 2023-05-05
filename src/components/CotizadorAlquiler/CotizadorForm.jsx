@@ -20,13 +20,6 @@ const CotizadorForm = ({handleChangeRentData, handleSubmitRentData, rentData, er
         <input name="expenses" value={rentData.expenses} className='light-input-rent' type="number" onChange={e => handleChangeRentData(e, 'expenses', 'number', true, 15, 5)} required={true}  /> 
         {errors['expenses'] && <p className='error-white'>{errors['expenses']}</p>}
     </div>
-   {/*  <div className='radio-box'>
-        <p className='rent-radio-title'>{formTexts.timeLabel}</p>
-        <p className='rent-label'>{formTexts.year2}</p>
-            <input name="years" value={"2"}  className='radio' type="radio" onChange={handleChangeRentData} required={true}/> 
-        <p className='rent-label'>{formTexts.year3}</p>
-            <input name="years" value={"3"} className='radio' type="radio" onChange={handleChangeRentData} required={true}/> 
-    </div> */}
     <div className='rent-send'>
         <BigButton type="submit" name= {formTexts.quoteButton} className={isMobile ? "contact-dark-button":"rent-button"}/>
         </div>

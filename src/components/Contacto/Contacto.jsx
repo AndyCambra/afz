@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import'./contacto.css'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
@@ -37,6 +37,9 @@ const Contacto = () => {
   const [errors, setErrors]= useState({})
   const [change, setChange]= useState(false)
     
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
       
   const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
     const infoInput=contactInfo

@@ -15,7 +15,7 @@
     grid-template-rows: 50px auto;
     column-gap: 30px;
     align-items: flex-start;
-    height: fit-content;
+   
 }
 .menu-box{
     width: 180px;
@@ -201,7 +201,7 @@
     margin-left: 8px;
 }
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1460px){
     .product-box{
       padding-bottom: 6%;
       

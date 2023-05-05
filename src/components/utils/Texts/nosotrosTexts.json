@@ -88,7 +88,7 @@
         "companyPace": "",
         "videoStaff": "/img/VideosStaff/AgustindelTorchio.mov#t=0.1",
         "type": "video/mp4",
-        "peopleName": "Agustín del Torchio",
+        "peopleName": "Agustín Del Torchio",
         "peoplePosition": "Comercial Manager"
       },
       {
@@ -212,14 +212,14 @@
         "videoStaff": "/img/VideosStaff/EnriqueCamarero.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Enrique Camarero",
-        "peoplePosition": "Gerente de Adm. de Riesgo y Operaciones"
+        "peoplePosition": "Gerente de Adm. de Riesgos y Operaciones"
       },
       {
         "id": 6,
         "companyPace": "",
         "videoStaff": "/img/VideosStaff/AgustindelTorchio.mov#t=0.1",
         "type": "video/mp4",
-        "peopleName": "Agustín del Torchio",
+        "peopleName": "Agustín Del Torchio",
         "peoplePosition": "Gerente Comercial"
       },
       {
