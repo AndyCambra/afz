@@ -55,7 +55,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
       </Routes> 
      <Footer />
-      <a href="https://wa.me/5491136671594?text=Hola" className="floating" target="_blank" rel="noreferrer">
+      <a href="https://wa.me/5491160023137?text=Hola! Necesito información sobre un seguro de caucion de..." className="floating" target="_blank" rel="noreferrer">
       <Icon icon="logos:whatsapp-icon" className='icon' />
       </a>
       <ScrollToTop />
