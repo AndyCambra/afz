@@ -1,13 +1,13 @@
 {
     "EN":{
-        "title":"COBERTURA SIN FRONTERAS",
-        "text":"Estés donde estés, te ofrecemos asesoramiento integral y nuestra póliza digital que te brinda una amplia cobertura a nivel del país y de la región.",
+        "title":"BORDERLESS COVERAGE",
+        "text":"Wherever you are, we offer integral counseling and our digital policy will provide you with a wide coverage in the country and the region.",
         "workButton": "WORK WITH US",
-        "thanks1":"Muchas gracias",
-        "thanks2":"por contactarnos!",
-        "confirmation":"Te llegará en breve un mail de confirmación.",
-        "cvTitle":"CONTANOS SOBRE VOS",
-        "formTitle":"DEJANOS UN MENSAJE",
+        "thanks1":"Thank you",
+        "thanks2":"for your inquiry.",
+        "confirmation":"You will receive a reply email soon.",
+        "cvTitle":"TELL US ABOUT YOU",
+        "formTitle":"LEAVE A MESSAGE",
         "sendButton":"SEND",
         "contactCategory": "CONTACT",
         "formTexts":{
@@ -18,12 +18,12 @@
             "attachCv": "Attach your CV"
         },
         "placeholders":{
-            "firstName": "Ingresá tu nombre",
-            "lastName":" Ingresá tu apellido",
-            "email": "Ingresá tu mail",
-            "message": "Dejanos un mensaje",
-            "phone": "Ingresá tu número con código de área",
-            "dni": "Ingresá tu número sin puntos"
+            "firstName": "Enter your name",
+            "lastName":"Enter your last name",
+            "email": "Enter your email",
+            "message": "Leave us a message",
+            "phone": "Enter your number with area code",
+            "dni": "Enter your number with no hyphens"
             
         }
       

@@ -3,13 +3,13 @@
     {"id":1, "name": "STATEMENTS", "link":"/balances"}, 
     {"id":2, "name": "CERTIFICATIONS",  "link":"/certificaciones"},
     {"id":3, "name": "PRESS", "link":"/prensa"},
-    {"id":4, "name":  "FRAUD PREVENTION", "link":"/prevencion-fraude"}
+    {"id":4, "name": "FRAUD PREVENTION", "link":"/prevencion-fraude"}
 ],
 "ES":[
 
     {"id":1, "name": "BALANCES", "link":"/balances"}, 
     {"id":2, "name": "CERTIFICACIONES", "link":"/certificaciones"},
     {"id":3, "name": "PRENSA", "link":"/prensa"},
-    {"id":4, "name":  "PREVENCIÓN DEL FRAUDE", "link":"/prevencion-fraude"}
+    {"id":4, "name": "PREVENCIÓN DEL FRAUDE", "link":"/prevencion-fraude"}
 ]
 }

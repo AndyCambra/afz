@@ -7,7 +7,7 @@
     padding-top: 140px;
 }
 .form-box{
-    margin: 0 40px 123px 40px ;
+    margin: 0 40px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 50px auto;

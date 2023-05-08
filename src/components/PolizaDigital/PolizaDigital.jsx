@@ -30,9 +30,8 @@ console.log(selectedLanguage)
           url="https://www.youtube.com/watch?v=XCcexLp19t4"
           controls="true"
           playsinline="true"
-          playing="true"
           width="100%"
-          className='video-size'
+          className={selectedLanguage === "EN" ? 'display-none':'video-size'}
           />
           </div>
          
@@ -46,9 +45,8 @@ console.log(selectedLanguage)
           url="https://www.youtube.com/watch?v=fhK2dO44WdI"
           controls="true"
           playsinline="true"
-          playing="true"
           width="100%"
-          className='video-size'
+          className={selectedLanguage === "EN" ? 'display-none':'video-size'}
           />
           </div>
           <div className='two-column'>
@@ -82,7 +80,7 @@ console.log(selectedLanguage)
           url="https://www.youtube.com/watch?v=iKbw69UMfUg"
           controls
           width="100%"
-          className='video-size'
+          className={selectedLanguage === "EN" ? 'display-none':'video-size'}
           />
           </div>
           <div className='digital-block'>

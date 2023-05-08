@@ -3,148 +3,152 @@
         "products": [
             {
                 "id": 1,
-                "title": "CONSTRUCTION | SUPPLY | SERVICE",
-                "text": "Un seguro de caución puede respaldar proyectos como obras públicas a nivel local, provincial y nacional; obras privadas de índole industrial o proyectos de inversión; suministro de productos o prestación de servicios a entidades públicas y privadas. El costo resulta significativamente menor, permite no inmovilizar activos financieros ni ocupar líneas de crédito bancario y abarca una variedad de productos que permite abastecer diferentes necesidades:",
-                "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
-                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
-                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "title": "CONSTRUCTION | SUPPLYIES | SERVICES",
+                "text": "A surety bond may back up projects such as public works at local, provincial, and national levels; private industrial works or investment projects; product supplies or service rendering to public and private entities. Costs are significantly lower, without the need to block financial assets or fill credit lines, and it covers a wide variety of products that meet different needs:",
+                "requisitesText1": "A copy of the contract, the bidding conditions, the purchase order, the request note or the equivalent will be required in those cases where the liability does not arise from public regulation.",
+                "requisitesText2": "If it is a company, a copy of the last financial statements will be asked for. If it is an individual, a summary of the amounts invoiced in the last 12 months and some information about their assets will be required.",
+                "requisitesText3": "According to the risk assessment to be guaranteed.",
                 "img": "/img/Productos/obras.jpg"
             },
             {
                 "id": 2,
-                "title": "ADUANERA",
-                "text": "Dadas ciertas condiciones, algunas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. Estas excepciones se otorgan a condición de que el importador/exportador cumpla determinados requisitos y ofrezca una garantía para el caso de no cumplimiento. El seguro de caución es la opción más ágil y económica para obligaciones como:",
-                "requisitesText1": "De acuerdo al tipo de operación se requerirá información sobre el origen de las mercaderías, destino, plazos o cualquier otro detalle que colabore con la comprensión del negocio que se solicita cubrir.",
-                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
-                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "title": "CUSTOMS",
+                "text": "Under certain conditions, some Customs operations admit that the payment of foreign trade taxes be exempted or postponed. Such exceptions are granted if the importer/exporter meets specific requirements and offers some guarantee in case of non-compliance. The surety bond is the most agile and economical option for liabilities such as:",
+                "requisitesText1": "According to the type of operation, some information will be required about the origin and the destination of goods or any other detail that may contribute to understanding the transaction to be guaranteed.",
+                "requisitesText2": "If it is a company, a copy of the last financial statements will be asked for. If it is an individual, a summary of the amounts invoiced in the last 12 months and some information about their assets will be required. Only if it is the first time they operate with us.",
+                "requisitesText3": "According to the risk assessment to be guaranteed.",
                 "img": "/img/Productos/Aduaneras.jpg"
             },
             {
                 "id": 3,
-                "title": "JUDICIALES",
-                "text": "El seguro de caución es un instrumento ágil, idóneo y económicamente accesible que se encuentra a disposición de los litigantes (actor/demandado) para garantizar las obligaciones procesales judiciales cuando el código respectivo así lo exija o el juzgado interviniente la acepte. Se aplican cuando el juez o autoridad interviniente ordena una medida cautelar (demandado) o en el caso en que se haya dispuesto la constitución de la contracautela (actor). Asimismo, la aceptación de este producto ha provocado que se amplíe su uso a otras situaciones procesales vinculadas a la AFIP, y otras cuestiones.",
-                "requisitesText1": "Breve resumen de la situación judicial de la obligación a garantizar, por parte del letrado interviniente. Y, en el caso de que ya exista, copia de la medida que traba el embargo.",
-                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
-                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "title": "JUDICIAL",
+                "text": "The surety bond is an agile, suitable, and economically accessible tool available to the litigants (plaintiff/defendant), which guarantees the judicial procedural obligations when the corresponding code demands so or the intervening court accepts it. They are applied when the judge or intervening authority has ordered a preliminary injunction (defendant) or if an injunction bond (plaintiff) has been constituted. Likewise, as this product has been widely accepted, its use has spread to other AFIP-related procedural situations and other issues.",
+                "requisitesText1": "A summary will be asked from the intervening attorney about the judicial situation of the obligation to be guaranteed. If it already exists, a copy of the measure that attaches the lien will be required.",
+                "requisitesText2": "If it is a company, a copy of the last financial statements will be asked for. If it is an individual, a summary of the amounts invoiced in the last 12 months and some information about their assets will be required.",
+                "requisitesText3": "According to the risk assessment to be guaranteed.",
                 "img": "/img/Productos/judiciales.jpg"
             },
             {
                 "id": 4,
-                "title": "EXTERIOR",
-                "text": "Cuando empresas argentinas realizan proyectos fuera del país, con frecuencia requieren garantías en aquellos países en los que se encuentran trabajando. Para resolver esta situación, el mercado de seguros de caución ofrece la figura de “fronting”, por medio de la cual les ofrecemos a nuestros clientes el respaldo en el exterior por medio de una compañía colega que extiende las garantías requeridas.",
-                "requisitesText1": "Se solicitará copia del contrato, pliego licitatorio, orden de compra, nota de pedido o equivalente, en aquellos casos en que la obligación no surja de una norma pública.",
-                "requisitesText2": "Si es una sociedad, copia del último balance. Si es una persona física, resumen de los montos facturados durante los últimos 12 meses e información sobre activos. Solamente si es la primera vez que opera con nosotros.",
-                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "title": "INTERNATIONAL",
+                "text": "When Argentinian companies carry out projects outside the country, they frequently ask for bonds in those countries where they are working. To solve this situation, the bond market offers the so-called “fronting” which lets us offer our clients some support abroad so that a colleague company provides them with the necessary guarantees.",
+                "requisitesText1": "A copy of the contract, bidding conditions, purchase order, request note, or the equivalent will be required in those cases in which the obligation does not arise from public regulation.",
+                "requisitesText2": "If it is a company, a copy of the last financial statements will be asked for. If it is an individual, a summary of the amounts invoiced in the last 12 months and some information about their assets will be required.",
+                "requisitesText3": "According to the risk assessment to be guaranteed.",
                 "img": "/img/Productos/exterior.jpg"
             },
             {
                 "id": 5,
-                "title": "ALQUILER",
-                "text": "Un producto que se popularizó en los últimos años para garantizar el pago de cánones locativos, expensas, ocupación indebida, impuestos, y la sustitución del fondo de garantía, entre otras. Permiten una gran celeridad en la gestión de reclamos e indemnizaciones por incumplimiento, lo que las transforma en una herramienta valiosa para todas las partes del contrato.",
-                "requisitesText1": "Copia del contrato de locación donde se observe la información fundamental sobre el inmueble, los sujetos intervinientes, plazos, canon locativo y condiciones.",
-                "requisitesText2": "Copia del último balance. Solamente si es la primera vez que opera con nosotros.",
-                "requisitesText3": "De acuerdo a la evaluación del riesgo a garantizar.",
+                "title": "LEASE",
+                "text": "This product became popular in the last years to guarantee the payment of leases, expenses, unlawful occupation of property, taxes and to substitute the deposit fund, among others. It allows great speed in complaint management and non-compliance compensation, thus turning into a valuable tool for the parties to a contract.",
+                "requisitesText1": "A copy of the lease agreement showing the important data about the property, the intervening parties, terms, lease cannon, and terms and conditions.",
+                "requisitesText2": "A copy of the last financial statements will be asked for. Only if it is the first time they operate with us.",
+                "requisitesText3": "According to the risk assessment to be guaranteed.",
                 "img": "/img/Productos/Alquiler.jpg"
             },
             {
                 "id": 6,
-                "title": "DIRECTORES",
-                "text": "Este seguro de caución es ideal para cubrir la actividad de directores y socios gerentes de sociedades anónimas o de responsabilidad limitada; para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros.",
-                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+                "title": "DIRECTORS",
+                "text": "This surety bond is ideal to cover the Corporations/Inc.and LLC directors’ and managers’ activities; for tourist agencies, auctioneers, Customs importers, and exporters, among others.",
+                "requisitesText1": "Reference to the regime or the regulation which gives rise to the guarantee required. According to the liability to be covered, CUIT (Individual Taxpayer Identification Number) to verify credit background, last financial statements, and/or invoices of the last 12 months.",
                 "requisitesText2": "",
-                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "requisitesText3": "According to the risk assessment to be guaranteed.",
                 "img": "/img/Productos/directores.jpg"
             },
             {
                 "id": 7,
-                "title": "ACTIVIDADES | PROFESIONES",
-                "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.).",
-                "requisitesText1": "Referencia al régimen o a la norma de la cual surge la garantía solicitada. Dependiendo del riesgo a cubrir, número de CUIT para verificar antecedentes crediticios, último balance y/o facturación de los últimos 12 meses.",
+                "title": "ACTIVITIES | PROFESSIONS",
+                "text": "Due to its low cost and easy hiring process, this bond is the best option to cover penalties and sanctions in the performance of activities and/or professions ruled by public and private entities (state control organs, professional colleges, corporate organizations, etc.).",
+                "requisitesText1": "Reference to the regime or the regulation which gives rise to the guarantee required. According to the liability to be covered, CUIT (Individual Taxpayer Identification Number) to verify credit background, last financial statements, and/or invoices of the last 12 months.",
                 "requisitesText2": "",
-                "requisitesText3": "Consultar. De acuerdo a la evaluación del riesgo a garantizar.",
+                "requisitesText3": "According to the risk assessment to be guaranteed.",
                 "img": "/img/Productos/actividades.jpg"
             }
         ],
         "productsExtras": [
             {
                 "id": 1,
-                "subtitle": "Garantía de oferta",
-                "text": "Cubre la obligación de mantener la oferta presentada y de firmar el contrato en caso de resultar adjudicado, presentando la garantía de ejecución de contrato."
+                "subtitle": "Bid Bond",
+                "text": "It covers the liability to keep the suggested offer and sign the contract if allocated, presenting the guarantee of contract execution."
             },
             {
                 "id": 2,
-                "subtitle": "Garantía de cumplimiento de contrato",
-                "text": "Cubre el cumplimiento de las obligaciones consignadas en el contrato en tiempo y forma."
+                "subtitle": "Performance Bond",
+                "text": "It insures compliance with the liabilities stated in the contract in due time and form."
             },
             {
                 "id": 3,
-                "subtitle": "Garantía de anticipo financiero",
-                "text": "Cubre la correcta aplicación de los importes recibidos, en los trabajos efectivamente contratados, liberándose conforme al efectivo avance del contrato."
+                "subtitle": "Advance Payment Bond",
+                "text": "It covers the correct application of the amounts received to those works effectively hired, released according to the due performance of the contract."
             },
             {
                 "id": 4,
-                "subtitle": "Garantía de anticipo por acopio",
-                "text": "Cubre el buen uso de los importes recibidos en concepto de anticipo y con destino al acopio de materiales, liberándose con el efectivo acopio documentado en obra."
+                "subtitle": "Down Payment Bond to Purchase Material",
+                "text": "It guarantees the good use of the amounts received as a down payment and destined to purchase material, released together with the effective storage registered."
             },
             {
                 "id": 5,
-                "subtitle": "Garantía de tenencia",
-                "text": "Cubre el reintegro de los bienes al asegurado, que se consignen en poder del tomador para su uso, reparación o incorporación a la obra. La garantía es por la valoración de los bienes involucrados."
+                "subtitle": "Possession Bond",
+                "text": "It covers the reimbursement of goods, consigned when in the policyholders’ hands, to the insured, to be used, repaired, or incorporated into the work. The bond is on the valuation of the goods involved."
             },
             {
                 "id": 6,
-                "subtitle": "Garantía de fondo de reparo",
-                "text": "Cubre la obligación del contratista o proveedor de subsanar eventuales vicios ocultos, sustituyendo las retenciones sufridas por el tomador en cada certificación. Se libera al cumplirse el periodo de garantía."
+                "subtitle": "Repair Bond",
+                "text": "It covers the obligation of the contractor or supplier to cure eventual hidden defects, substituting the retentions that affect the policyholder in each certification. It is released once the guarantee term is over."
             }
         ],
         "customs": [
-            "Importaciones o exportaciones temporales",
-            "Tránsitos terrestres",
-            "Faltas de documentación",
-            "Envíos en consignación",
-            "Diferencia de derechos",
-            "Habilitación de depósitos",
-            "Fiscales régimen automotriz"
+            "Temporary imports or exports",
+            "Land Freight",
+            "Lack of documentation",
+            "Deliveries on consignment",
+            "Right differences",
+            "Warehouses authorizations",
+            "Automobile regime taxes"
         ],
         "productsMobile": [
             {
                 "id": 1,
-                "title": "CONSTRUCTION | SUPPLY | SERVICE",
-                "text": "Para respaldar proyectos de obras públicas a nivel local, provincial y nacional; obras privadas de índole industrial o proyectos de inversión; suministro de productos o prestación de servicios a entidades públicas y privadas. El costo resulta significativamente menor, permite no inmovilizar activos financieros ni ocupar líneas de crédito bancario y abarca una variedad de productos que permite abastecer diferentes necesidades. Oferta, cumplimiento de contrato, anticipo financiero, anticipo por acopio, tenencia o fondo de reparo son algunas de las alternativas de estos seguros de caución."
+                "title": "CONSTRUCTION | SUPPLYIES | SERVICES",
+                "text": "To support public works projects at local, provincial, and national levels, private industrial works or investment projects; supplies of products or services rendered to public and private entities. Costs are significantly lower, without the need to block financial assets or fill credit lines, and it covers a wide variety of products that meet different needs. Bid, performance, financial down payment, possession, or repair are some of the alternatives of these surety bond insurances."
             },
             {
                 "id": 2,
-                "title": "ADUANERAS",
-                "text": "Bajo algunas condiciones y de acuerdo al cumplimiento de determinados requisitos y a la presentación de garantías, ciertas operaciones aduaneras admiten que se exceptúe o posponga el pago de tributos al comercio exterior. El seguro de caución es la opción más ágil y económica para importaciones y exportaciones temporales, tránsitos terrestres, faltas de documentación, envíos en consignación, diferencia de derechos, habilitación de depósitos o fiscales régimen automotriz, entre otras."
+                "title": "CUSTOMS",
+                "text": "With specific conditions given, some Customs operations accept the exemption or postponement of foreign trade taxes payment. The surety bond insurance is the most agile and economical option for temporal imports and exports, land freight, lack of documentation, deliveries on consignment, rights differences, and bonded warehouse authorization in the automobile field, among others."
             },
             {
                 "id": 3,
-                "title": "JUDICIALES",
-                "text": "El seguro de caución es un instrumento ágil, idóneo y económicamente accesible que se encuentra a disposición de los litigantes (actor/demandado) para garantizar las obligaciones procesales judiciales cuando el código respectivo así lo exija. Se aplican cuando el juez o autoridad interviniente ordena una medida cautelar o en el caso en que se haya dispuesto la constitución de la contracautela."
+                "title": "JUDICIAL",
+                "text": "The surety bond is an agile, suitable, and economically accessible tool available to the litigants (plaintiff/defendant), which guarantees the judicial procedural obligations when the corresponding code demands so. They are applied when the judge or intervening authority has ordered a preliminary injunction (defendant) or if an injunction bond (plaintiff) has been constituted."
             },
             {
                 "id": 4,
-                "title": "EXTERIOR",
-                "text": "Cuando empresas argentinas realizan proyectos fuera del país, con frecuencia requieren garantías en aquellos países en los que se encuentran trabajando. Para resolver esta situación, el mercado de seguros de caución ofrece la figura de “fronting”, por medio de la cual les ofrecemos a nuestros clientes el respaldo en el exterior por medio de una compañía colega que extiende las garantías requeridas."
+                "title": "INTERNATIONAL",
+                "text": "When Argentinian companies carry out projects outside the country, they frequently ask for bonds in those countries where they are working. To solve this situation, the bond market offers the so-called “fronting” which lets us offer our clients some support abroad so that a colleague company provides them with the necessary guarantees."
             },
             {
                 "id": 5,
-                "title": "ALQUILER",
-                "text": "Un producto que se popularizó en los últimos años para garantizar el pago de cánones locativos y la sustitución del fondo de garantía. Permiten una gran celeridad en la gestión de reclamos e indemnizaciones por incumplimiento, lo que las transforma en una herramienta valiosa para respaldar obligaciones locativas, ya sean comerciales o particulares."
+                "title": "LEASE",
+                "text": "This product became popular in the last years to guarantee the payment of leases and to substitute the guarantee fund. It allows great speed in complaint management and non-compliance compensation, thus turning into a valuable tool to support lease obligations, either commercial or private."
             },
             {
                 "id": 6,
-                "title": "DIRECTORES",
-                "text": "Este seguro de caución es ideal para cubrir la actividad de directores y socios gerentes de sociedades anónimas o de responsabilidad limitada; para agencias de turismo, martilleros públicos, importadores y exportadores aduaneros, entre otros."
+                "title": "DIRECTORS",
+                "text": "This surety bond is ideal to cover the Corporations/Inc.and LLC directors’ and managers’ activities; for tourist agencies, auctioneers, Customs importers, and exporters, among others."
             },
             {
                 "id": 7,
-                "title": "ACTIVIDADES | PROFESIONES",
-                "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.)."
+                "title": "ACTIVITIES | PROFESSIONS",
+                "text": "Due to its low cost and easy hiring process, this bond is the best option to cover penalties and sanctions in the performance of activities and/or professions ruled by public and private entities (state control organs, professional colleges, corporate organizations, etc.)."
             }
         ],
-        "button": "QUOTE",
-        "requisitesTitle": "REQUISITES",
+        "requisitesSubtitle1": "Information about the liability to be insured",
+        "requisitesSubtitle2": "Information about the contracting party",
+        "requisitesSubtitle3": "Additional information",
+        "requisitesSubtitleLease":"Documentation",
+        "button": "GET A QUOTE",
+        "requisitesTitle": "REQUIREMENTS",
         "productSubtitle": "BONDS",
         "callToAction": "OR THROUGH AN INSURANCE BROKER",
         "callToActionMobile1": "OR THROUGH",
@@ -154,18 +158,18 @@
             "category1": "CONSTRUCTION | SUPPLY | SERVICE BONDS",
             "category2": "CUSTOMS BONDS",
             "category3": "JUDICIAL BONDS",
-            "category4": "ABROAD BONDS",
+            "category4": "INTERNATIONAL BONDS",
             "category5": "LEASE BONDS",
             "category6": "DIRECTORS BONDS",
-            "category7": "ACTIVITIES | PROFESION BONDS",
+            "category7": "ACTIVITIES | PROFESSIONS BONDS",
             "category8": "DOWNLOAD FORMS",
-            "category9": "DIGITAL SURETY"
+            "category9": "DIGITAL POLICY"
         },
-        "landingTitle1": "The surety insurance",
-        "landingTitle2": "you need is here.",
-        "titleMobile1": "The surety",
-        "titleMobile2": "insurance you need is here.",
-        "claim": "Ingresá desde tu computadora para obtener información ampliada, requisitos y formularios descargables."
+        "landingTitle1": "Here is the surety bond",
+        "landingTitle2": "you need.",
+        "titleMobile1": "Here is",
+        "titleMobile2": "the surety bond you need.",
+        "claim": "Entre from your PC to get enhanced information, requirements, and downloadable forms."
     
     },
     "ES": {
@@ -312,6 +316,10 @@
                 "text": "Por su bajo costo y fácil contratación, el seguro de caución es la mejor alternativa para cubrir penalidades y faltas en el desempeño de actividades y/o profesiones reguladas por instituciones públicas y privadas (organismos estatales de control, colegios profesionales, organizaciones empresariales, etc.)."
             }
         ],
+        "requisitesSubtitle1": "Información sobre la obligación a garantizar",
+        "requisitesSubtitle2": "Información sobre el contratante",
+        "requisitesSubtitle3": "Información adicional",
+        "requisitesSubtitleLease":"Documentación",
         "button": "COTIZÁ",
         "requisitesTitle": "REQUISITOS",
         "productSubtitle": "GARANTÍAS",

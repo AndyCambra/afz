@@ -76,7 +76,7 @@ const Nosotros = () => {
         <NosotrosMobile usRef={usRef} teamRef={teamRef} comRef={comRef} reinsurersRef={reinsurersRef} handleButtonClicked={handleButtonClicked} 
         menuCategoryCompany={text.us.menuCategory} menuCategoryCompromise={text.compromise.menuCategory} menuCategoryReinsurers={text.reisurance.menuCategory} menuCategoryStaff={text.staff.menuCategory} 
         usText={text.us.text} usTitle={text.us.title} staffText={text.staff.text} staffTitle={text.staff.title} reisuranceText={text.reisurance.text} reisuranceTitle={text.reisurance.title} compromiseText={text.compromise.text} compromiseTitle={text.compromise.title} 
-        buttonMobile={text.buttonMobile.name}  alt1={text.alts.logo1} alt2={text.alts.logo2} alt3={text.alts.logo3} alt4={text.alts.logo4} alt5={text.alts.logo5} />
+        buttonMobile={text.buttonMobile.name}  alt1={text.alts.logo1} alt2={text.alts.logo2} alt3={text.alts.logo3} alt4={text.alts.logo4} alt5={text.alts.logo5} selectedLanguage={selectedLanguage}/>
       </MobileView>
     </div>
     

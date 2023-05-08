@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 const NosotrosMobile = ({usRef, teamRef, comRef, reinsurersRef, menuCategoryCompany, menuCategoryCompromise, menuCategoryReinsurers, menuCategoryStaff, handleButtonClicked,
-usText, usTitle, staffText, staffTitle, reisuranceText,reisuranceTitle, compromiseText, compromiseTitle, buttonMobile, alt1, alt2, alt3, alt4, alt5}) => {
+usText, usTitle, staffText, staffTitle, reisuranceText,reisuranceTitle, compromiseText, compromiseTitle, buttonMobile, alt1, alt2, alt3, alt4, alt5, selectedLanguage}) => {
   const [isActive, setIsActive]=useState(false)
 
   const handleClick = nextRef => {
@@ -33,7 +33,7 @@ usText, usTitle, staffText, staffTitle, reisuranceText,reisuranceTitle, compromi
           <p className='text-us-mobile'>{staffText}</p>
           <div className='center-button'>
             <Link to='/carrousel'>
-          <BigButton name={buttonMobile} className={'dark-button'} />
+          <BigButton name={buttonMobile} className={selectedLanguage === 'EN' ? "learn-button": 'dark-button'} />
           </Link>
           </div>
         </div>

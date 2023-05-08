@@ -1,108 +1,108 @@
 {
     "EN": {
-        "title1": "An essential",
+        "title1": "A must-have",
         "title2": "training",
-        "titleMobile1": "An",
-        "titleMobile2": "essential training",
+        "titleMobile1": "A",
+        "titleMobile2": "must-have training",
         "moreButton": "SEE MORE",
-        "incriptionButton": "INSCRIBITE",
-        "socialText": "Seguinos para conocer todas las convocatorias y los nuevos cursos.",
+        "incriptionButton": "ENROLL",
+        "socialText": "Follow us to learn about all the meetings and new courses.",
         "schoolInfo": {
             "menuSchool": "THE SCHOOL",
-            "menuProgram": "THE PROGRAM",
-            "text": "Somos especialistas y líderes en seguros de caución. Por eso, tenemos la única escuela de caución del mercado y te ofrecemos una capacitación imprescindible para ampliar tus oportunidades de negocio. Para dominar los diferentes tipos de riesgo y las mejores técnicas de comercialización. Para asesorar mejor a tus clientes. Para gestionar con efectividad las cobranzas. Un programa único que abarca todo lo que necesitás para profesionalizarte, desarrollar habilidades específicas y adquirir confianza. Dictado por un equipo multidisciplinario y altamente capacitado. Transformate vos también en un especialista. Inscribite y accedé a una capacitación única en el mercado del seguro de caución.",
+            "menuProgram": "THE SYLLABUS",
+            "text": "We are specialists and leaders in surety bonds. Therefore, we have the only school of surety bonds in the market and we offer you a must-have training to widen your business opportunities, to master the different types of risks and the best trading techniques, to offer your clients some counseling, and to manage collection effectively. It is a unique program that covers everything you need to become a professional, develop specific skills, and improve your self-confidence. A multidisciplinary and highly-trained team is in charge of this school. You may become a specialist, too. Enroll and access a unique training course in the surety bonds market.",
             "infoTitle": "NEXT ACTIVITIES"
         },
         "courses":[
             {"id": 11,
              "date": "Miércoles 19 de octubre",
-             "title": "Introduction of Surety Bond Insurance and Commercialization" },
+             "title": "Introduction to the Surety Bond and Trading" },
              {"id": 12,
             "date": "Miércoles 26 de octubre",
-             "title": "Cobranza y Refacturación" },
+             "title": "Collection and reinvoicing" },
              {"id": 13,
              "date": "Miércoles 02 de noviembre",
-             "title": "Suscripción de Riesgos y Análisis de Tomadores" },
+             "title": "Risk subscription and policyholders analysis" },
              {"id": 14,
               "date": "Miércoles 09 de noviembre",
-             "title": "Garantías Judiciales y Siniestros"}
+             "title": "Judicial bonds and accidents"}
         
         ],
         "programTitle": "CONTENTS",
         "firstColumn": [
             {
                 "id": 1,
-                "title": "Introduction of Surety Bond Insurance and Commercialization"
+                "title": "Introduction to the Surety Bond and Trading"
             },
             {
                 "id": 2,
-                "topic": "El ABC del seguro de caución, empezando desde cero."
+                "topic": "The ABC of the surety bond from scratch"
             },
             {
                 "id": 3,
-                "topic": "Toda la información necesaria para detectar alternativas de negocio."
+                "topic": "All the necessary information to spot business alternatives."
             },
             {
                 "id": 4,
-                "topic": "Estrategias para la venta."
+                "topic": "Sales strategies."
             },
             {
                 "id": 5,
-                "topic": "Técnicas de cross selling para, a partir del seguro de caución, incrementar la cartera de Patrimoniales, ART y otros intereses asegurables."
+                "topic": "Cross-selling techniques to build up, from the surety bond, your assets portfolio, ART (workers’ compensation), and other insurable risks."
             },
             {
                 "id": 6,
-                "title": "Suscripción de Riesgos y Análisis de Tomadores"
+                "title": "Risk subscription and policyholders analysis"
             },
             {
                 "id": 7,
-                "topic": "Parámetros de calificación."
+                "topic": "Scoring parameters."
             },
             {
                 "id": 8,
-                "topic": "Cómo presentar los negocios de manera exitosa."
+                "topic": "How to present business successfully."
             },
             {
                 "id": 9,
-                "topic": "Cuestiones estratégicas a tener en cuenta al presentar un negocio."
+                "topic": "Strategic issues to consider at the time of presenting some business."
             }
         ],
         "secondColumn": [
             {
                 "id": 1,
-                "title": "Garantías Judiciales y Siniestros"
+                "title": "Judicial bonds and accidents"
             },
             {
                 "id": 2,
-                "topic": "Herramientas para detección de garantías judiciales."
+                "topic": "Tools to sport judicial bonds."
             },
             {
                 "id": 3,
-                "topic": "Comó asesorar al cliente."
+                "topic": "How to advise the client."
             },
             {
                 "id": 4,
-                "topic": "Mecanismos de ejecución de garantías de caución."
+                "topic": "Surety bond execution mechanisms."
             },
             {
                 "id": 5,
-                "topic": "El siniestro como parte del negocio."
+                "topic": "The accident, as part of the business."
             },
             {
                 "id": 6,
-                "title": "Cobranza y Refacturación"
+                "title": "Collection and reinvoicing"
             },
             {
                 "id": 7,
-                "topic": "Cómo gestionar las cobranzas de manera profesional."
+                "topic": "How to deal with collection professionally."
             },
             {
                 "id": 8,
-                "topic": "Cómo administrar refacturaciones."
+                "topic": "How to run reinvoicing."
             },
             {
                 "id": 9,
-                "topic": "La tecnología como aliada para la solución del “talón de Aquiles” del negocio."
+                "topic": "Technology, as an ally to solving the business “Achilles heel”"
             }
         ]
     },

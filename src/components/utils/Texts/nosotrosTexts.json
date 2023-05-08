@@ -3,32 +3,32 @@
     "reisurance": {
       "id": 1,
       "menuCategory": "REINSURERS",
-      "title": "THE REINSURERS",
-      "text": "Nuestro cuadro de reaseguro garantiza solvencia y dinamismo en la capacidad de operación, cualquiera sea la magnitud de los proyectos."
+      "title": "REINSURERS",
+      "text": "Our reinsurance group guarantees solvency and dynamics in its operation capacity, whichever the project's magnitude."
     },
     "staff": {
       "id": 2,
       "menuCategory": "TEAM",
       "title": "THE TEAM",
-      "text": "Contamos con un grupo directivo conformado por reconocidos referentes del mercado internacional. Nuestro equipo está integrado por profesionales de diferentes disciplinas, cada uno con la más alta capacitación en su especialidad. "
+      "text": "Our management team is made up of renowned referents of the international market. Our team consists of professionals from different fields, who build, from diversity, a highly-dynamic and inclusive management model."
     },
     "us": {
       "id": 3,
       "menuCategory": "COMPANY",
       "title": "THE COMPANY",
-      "text": "Somos una compañía especialista en Seguros de Caución que reúne experiencia e innovación. Brindamos las mejores herramientas para satisfacer la demanda de Productores, Tomadores y Asegurados en un mercado dinámico y competitivo."
+      "text": "Our Company specializes in Surety Bond and we boast both experience and innovation. We provide the best tools to meet Producers’, Policyholders’ and the Insured’s demands in a dynamic and competitive market."
     },
     "compromise": {
       "id": 4,
       "menuCategory": "COMPROMISE",
       "title": "OUR COMPROMISE",
-      "text": "Creemos en la Responsabilidad Social, tanto en las prácticas diarias que equilibran y mejoran la relación entre el trabajo y la vida personal, como en la extensión de esas prácticas a la construcción de una sociedad inclusiva que promueva el bienestar de todos. Por eso, además de traducir esta convicción en un apoyo permanente a nuestros colaboradores, somos parte de diferentes iniciativas que llevan adelante organizaciones del tercer sector."
+      "text": "We believe in Social Responsibility, both in everyday practice, which balances and improves the relationship between professional and personal life and in its extension to the construction of an inclusive society that fosters everyone’s welfare. Therefore, apart from converting this conviction into permanent support for our collaborators, we are part of different initiatives carried out by the third-sector organizers."
     },
     "button": {
       "name": "WORK WITH US"
     },
     "buttonMobile": {
-      "name": "MEET US"
+      "name": "LEARN ABOUT US"
     },
     "alts": {
       "logo1": "Logo Asdra",
@@ -53,7 +53,7 @@
         "videoStaff": "/img/VideosStaff/JuanJoseSaldana.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Juan José Saldaña",
-        "peoplePosition": "Vice President",
+        "peoplePosition": "Vice-president",
         "poster":"/img/Isa.png"
       },
       {
@@ -62,7 +62,7 @@
         "videoStaff": "/img/VideosStaff/MarianoNimo.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Mariano Nimo",
-        "peoplePosition": "General Manager"
+        "peoplePosition": "CEO"
         
       }
     ],
@@ -78,7 +78,7 @@
       {
         "id": 5,
         "companyPace": "",
-        "videoStaff": "/img/MobileImages/PuebaVideoMobile.mp4",
+        "videoStaff": "/img/VideosStaff/EnriqueCamarero.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Enrique Camarero",
         "peoplePosition": "Risk Administration Manager"
@@ -101,7 +101,7 @@
       },
       {
         "id": 8,
-        "companyPace": "RESPONSABLES",
+        "companyPace": "RESPONSIBLE AUTHORITIES",
         "videoStaff":  "/img/VideosStaff/TatianaGradecky.mov#t=0.1",
         "type": "video/mp4",
         "peopleName": "Tatiana Gradecky",

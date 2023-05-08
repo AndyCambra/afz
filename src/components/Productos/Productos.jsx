@@ -42,6 +42,11 @@ const Productos = () => {
             <Requisites requisitesText1={product.requisitesText1} 
                         requisitesText2={product.requisitesText2} 
                         requisitesText3={product.requisitesText3} 
+                        requisitesSubtitle1={text.requisitesSubtitle1}
+                        requisitesSubtitle2={text.requisitesSubtitle2}
+                        requisitesSubtitle3={text.requisitesSubtitle3}
+                        requisitesSubtitleLease={text.requisitesSubtitleLease}
+                        id={product.id}
                         />                
           </div>
         <HorizontalPhoto img={product.img} alt={product.title} />
