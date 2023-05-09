@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./escuela.css"
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
@@ -13,6 +13,10 @@ import { useLangContext } from '../../Context/LangContext'
 const Escuela = () => {
   const {selectedLanguage} = useLangContext()
   const text = schoolText[selectedLanguage];
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
 
   return (
     <>

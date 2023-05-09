@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import'./contacto.css'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
-import { validation } from '../utils/validation'
+import { Validation } from '../utils/validation'
 import ContactForm from './ContactForm'
 import { BrowserView, MobileView } from 'react-device-detect'
 import SubmenuContactoMobile from './SubmenuContactoMobile'
@@ -43,14 +43,14 @@ const Contacto = () => {
       
   const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
     const infoInput=contactInfo
-    const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)     
+    const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)     
       setContactInfo({...changedInfoInput, [e.target.name]:value});
       setErrors(err);
       } 
 
   const handleCandidate=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const infoInput=candidateInfo
-        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
         
             setCandidateInfo({...changedInfoInput, [e.target.name]:value});
             setErrors(err);

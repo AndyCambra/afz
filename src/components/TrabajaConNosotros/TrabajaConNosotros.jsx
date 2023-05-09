@@ -4,7 +4,7 @@ import '../utils/Imput/input.css'
 import { useState } from 'react'
 import BigButton from '../utils/BigButton/BigButton'
 import './trabaja.css'
-import { validation } from '../utils/validation'
+import { Validation } from '../utils/validation'
 import { CvForm } from './CvForm'
 import contactTexts from '../utils/Texts/contactTexts.json'
 import { useLangContext } from '../../Context/LangContext'
@@ -26,7 +26,7 @@ const TrabajaConNosotros = () => {
     
       const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const infoInput=candidateInfo
-        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
         
             setCandidateInfo({...changedInfoInput, [e.target.name]:value});
             setErrors(err);

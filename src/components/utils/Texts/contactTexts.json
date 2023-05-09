@@ -15,7 +15,10 @@
             "lastName":"Last Name",
             "message":"Message",
             "phone": "Phone",
-            "attachCv": "Attach your CV"
+            "attachCv": "Attach your CV",
+            "broker": "Are you an insurance broker?",
+            "yes": "Yes",
+            "no":"No"
         },
         "placeholders":{
             "firstName": "Enter your name",
@@ -44,7 +47,10 @@
             "lastName":"Apellido",
             "message":"Mensaje",
             "phone": "Teléfono",
-            "attachCv": "Adjuntá tu CV"
+            "attachCv": "Adjuntá tu CV",
+            "broker": "¿Sos productor de seguros?",
+            "yes": "Sí",
+            "no":"No"
         },
         "placeholders":{
             "firstName": "Ingresá tu nombre",

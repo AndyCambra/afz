@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../utils/Imput/input.css'
 import { useState } from 'react'
-import { validation } from '../utils/validation'
+import { Validation } from '../utils/validation'
 import { BrowserView, MobileView } from 'react-device-detect';
 import EscuelaForm from './EscuelaForm'
 
@@ -21,7 +21,7 @@ const EscuelaInscripcion = () => {
   const [errors, setErrors]= useState({})
 
   const handleChange = (e, name, type, required = false, maxLength = false, minLength = false) => {
-  const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+  const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
         setinfoInput({...changedInfoInput, [e.target.name]:value});
         setErrors(err);
       }

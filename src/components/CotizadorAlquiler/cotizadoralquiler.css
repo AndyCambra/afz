@@ -110,9 +110,13 @@
     font-style: normal;
 }
 .input-explain{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
+.legal-bond{
+    font-size: 12px;
+    color: #FFF;
+    margin-top: 100px;
+}
 
 @media only screen and (min-width: 1023px) and (max-width: 1261px){
    .rent-form{

@@ -1,5 +1,5 @@
-export const validation = (e, name, type, required = false, maxLength = false, minLength = false, infoInput, errors) => {
-   
+export const Validation = (e, name, type, required = false, maxLength = false, minLength = false, infoInput, errors) => {
+
   console.log(e)
   const value= e.target.value
     const changedInfoInput = { ...infoInput, [e.target.name]:value }; 

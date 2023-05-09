@@ -8,7 +8,7 @@ const CotizadorDirectoresClientForm = ({handleChange, clientData, errors, handle
         <div className={isMobile? "":'director-form'} > 
         <form className="form" onSubmit={handleSubmitThanks}>
           <div className={isMobile? "":'first-section'}>
-        <p className='director-subtitle-form'>{directorData.subtitle1}</p>
+        <p className={isMobile? "":'director-subtitle-form'}>{directorData.subtitle1}</p>
         <div className='input-box'>
         <label className='label-white'>{directorData.firstName}</label>
           <input name="name" className="light-input-client" value={clientData.name} type="onlyletters" onChange={e => handleChange(e, 'name', 'onlyletters', true, 75, 3)} placeholder={placeholders.firstName} required={true}/>
@@ -34,7 +34,7 @@ const CotizadorDirectoresClientForm = ({handleChange, clientData, errors, handle
           <input name="adress" value={clientData.adress} className='light-input-client' type="text" onChange={e => handleChange(e, 'adress', 'text', true, 100, 10)} placeholder={placeholders.adress}required={true}/> 
           {errors['adress'] && <p className='error-white'>{errors['adress']}</p>}
         </div>
-        <p className='second-director-subtitle-form'>{directorData.subtitle2}</p>
+        <p className={isMobile? "":'second-director-subtitle-form'}>{directorData.subtitle2}</p>
         <div className='input-box'>
         <label className='label-white'>{directorData.company}</label>
           <input name="companyName" className="light-input-client" value={clientData.companyName} type="text" onChange={e => handleChange(e, 'companyName', 'text', true, 75, 3)} placeholder={placeholders.company} required={true}/>
