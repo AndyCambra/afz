@@ -7,11 +7,12 @@ import CotizadorDirectoresQuestion from './CotizadorDirectoresQuestion'
 import CotizadorDirectiresResponse from './CotizadorDirectiresResponse'
 import CotizadorDirectoresClientForm from './CotizadorDirectoresClientForm'
 import BigButton from '../utils/BigButton/BigButton'
-import { validation } from '../utils/validation'
+import { Validation } from '../utils/validation'
 import { BrowserView, MobileView } from 'react-device-detect'
 import SubmenuCotizadores from '../CotizadorAlquiler/SubmenuCotizadores'
 import cotizadoresTexts from '../utils/Texts/cotizadoresTexts.json'
 import { useLangContext } from '../../Context/LangContext'
+import errorTexts from '../utils/Texts/errorTexts.json'
 
 const directorsAmounts=[
   {id:1, amount:300000, bondPrice: "13000"},
@@ -28,6 +29,7 @@ const directorsAmounts=[
 const CotizadorDirectores = () => {
   const {selectedLanguage} = useLangContext()
   const text = cotizadoresTexts[selectedLanguage];
+  const errorMessages = errorTexts[selectedLanguage];
     const [sent, setSent]= useState(false)
     const [errors, setErrors]= useState({})
     const [showForm, setShowForm]= useState(false)
@@ -55,7 +57,8 @@ const CotizadorDirectores = () => {
       })
     
     const [allDirectorData, setAllDirectorData]= useState([])
-
+      console.log(allDirectorData)
+      
     useEffect(()=>{
       window.scrollTo(0,0);
     },[])
@@ -92,14 +95,14 @@ const CotizadorDirectores = () => {
 
       const handleChangeDirectorData=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const infoInput=amount
-        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
               setErrors(err);
               setAmount({...changedInfoInput, [e.target.name]:value});
             }
 
       const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{ 
         const infoInput= clientData
-        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
         setErrors(err);
         setClientData({...changedInfoInput, [e.target.name]:value})
     } 
@@ -184,7 +187,7 @@ const CotizadorDirectores = () => {
             sent === true && sentThanks===false? <div className='rent-form' >
                 <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} formatter={formatter}/></div>:
             <div className='rent-form' >
-                {goToQuestion === true && sentThanks===false &&<CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts} /> }
+                {goToQuestion === true && sentThanks===false &&<CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts} explain={text.explain} /> }
             <div>
             {goToQuestion === false && sentThanks===false &&<CotizadorDirectoresForm handleSubmitData={handleSubmitData} amount={amount} handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} handleClickToQuestion={handleClickToQuestion} formTexts={text.formTexts}  directorsAmounts={directorsAmounts} formatter={formatter}/>}
             </div>
@@ -212,9 +215,9 @@ const CotizadorDirectores = () => {
             showForm === true && sentThanks===false ? 
                    <div> <CotizadorDirectoresClientForm handleSubmitThanks={handleSubmitThanks} handleChange={handleChange} clientData={clientData} handleCancel={handleCancel} errors={errors} goToBillData={goToBillData} goToBill={goToBill} directorData={text.directorData} placeholders={text.placeholders} /> </div>:
             sent === true && sentThanks===false? <div className='bill-first-form' >
-                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} formatter={formatter}/></div>:
+                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} formatter={formatter} selectedLanguage={selectedLanguage}/></div>:
             <div className='bill-first-form' >
-                {(goToQuestion === true && sentThanks===false) && <CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts}  /> }
+                {(goToQuestion === true && sentThanks===false) && <CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts} explain={text.explain} /> }
             <div>
             {goToQuestion === false && sentThanks===false &&<CotizadorDirectoresForm handleSubmitData={handleSubmitData} amount={amount} handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} handleClickToQuestion={handleClickToQuestion} formTexts={text.formTexts} directorsAmounts={directorsAmounts} formatter={formatter}/>}
             </div>

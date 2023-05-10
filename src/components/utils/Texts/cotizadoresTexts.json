@@ -10,6 +10,8 @@
         "dataTitle1": "ENTER THE DATE",
         "dataTitle2": "AND OBTAIN AN INSTANT QUOTE",
         "dataTitleMobile":"ENTER THE DATE AND OBTAIN AN INSTANT QUOTE",
+        "legal":"Issuance confirmation subject to the analysis of documentation and information provided.",
+        "explain":"Upon the company's social capital divided by the number of directors.",
         "formTexts":{
             "explain":"Enter the amount with no commas or dots.",
             "leaseLabel":"Monthly lease",
@@ -17,7 +19,8 @@
             "quoteButton":"GET A QUOTE",
             "sume":"Amount",
             "$":"$",
-            "question":"How do you define the amount?",
+            "question":"How to estimate the amount to be insured?",
+            "socialCapitalLabel":"Company’s social capital",
             "directorQuantityLabel":"The number of directors.",
             "selection": "Make a selection"
         },
@@ -58,7 +61,7 @@
         "adress":"Adress",
         "cancel": "CANCEL",
         "send": "SEND",
-        "subtitle2":"Director’s data",
+        "subtitle2":"Company’s data",
         "company": "Company’s name",
         "button": "INVOICING DATA",
         "subtitle3":"Invoicing data",
@@ -79,6 +82,8 @@
         "dataTitle1": "INGRESÁ LOS DATOS",
         "dataTitle2": "Y COTIZÁ DE FORMA INSTANTÁNEA",
         "dataTitleMobile":"INGRESÁ LOS DATOS Y COTIZÁ DE FORMA INSTANTÁNEA",
+        "legal":"Confirmación de emisión sujeta a análisis de la documentación e información suministrada.",
+        "explain":"El monto se calcula en base a el capital social de la empresa dividido la cantidad de directores.",
         "formTexts":{
             "explain":"Ingresá el monto sin puntos ni comas.",
             "leaseLabel":"Alquiler mensual",
@@ -89,7 +94,7 @@
             "quoteButton":"COTIZAR",
             "sume":"Monto a asegurar",
             "$":"$",
-            "question":"¿Cómo se define el monto?",
+            "question":"¿Cómo se calcula el monto a asegurar?",
             "socialCapitalLabel":"Capital social de la empresa",
             "directorQuantityLabel":"Cantidad de directores",
             "selection": "Elegí una opción"
@@ -101,7 +106,7 @@
             "againButton": "COTIZÁ OTRA VEZ",
             "contractButton":"CONTRATÁ",
             "directorResultMessage1":" Correspondiente a un monto de ",
-            "directorResultMessage2":". Valor final (IVA incluído) para un contrato anual."
+            "directorResultMessage2":". Valor final (IVA incluído) para una garantía con vigencia anual."
         },
         "clientData":{
             "firstName":"Nombre",

@@ -2,16 +2,17 @@ import React from 'react'
 import BigButton from '../utils/BigButton/BigButton'
 import { isMobile } from 'react-device-detect'
 
-const CotizadorDirectoresQuestion = ({handleSubmitData, amount, handleChangeDirectorData, errors, formText }) => {
+const CotizadorDirectoresQuestion = ({handleSubmitData, amount, handleChangeDirectorData, errors, formText, explain }) => {
   return (
     <form className='rent-form' onSubmit={handleSubmitData}>
-    <p className='input-explain'>{formText.explain}</p>
-    <p className='rent-label'>{formText.socialCapitalLabel}</p>
-    <div className='input-box'>
-        <i className='i'>$</i>
-        <input name="customAmount" className="light-input-rent" value={amount.customAmount} type="number" onChange={e => handleChangeDirectorData(e, 'customAmount', 'number', true, 15, 5)} required={true} />
-         {errors['customAmount'] && <p className='error-white'>{errors['customAmount']}</p>}
-    </div>
+      <p className='explain'>{explain}</p>
+      <p className='input-explain'>{formText.explain}</p>
+      <p className='rent-label'>{formText.socialCapitalLabel}</p>
+      <div className='input-box'>
+          <i className='i'>$</i>
+          <input name="customAmount" className="light-input-rent" value={amount.customAmount} type="number" onChange={e => handleChangeDirectorData(e, 'customAmount', 'number', true, 15, 5)} required={true} />
+          {errors['customAmount'] && <p className='error-white'>{errors['customAmount']}</p>}
+      </div>
     <p className='rent-label'>{formText.directorQuantityLabel}</p>
     <div className='input-box'>
         <input name="quantity" className="light-input-rent" value={amount.quantity} type="number" onChange={e => handleChangeDirectorData(e, 'quantity', 'number', true, 2, 0)} required={true} />

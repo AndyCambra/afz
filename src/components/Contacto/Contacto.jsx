@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import'./contacto.css'
 import BigButton from '../utils/BigButton/BigButton'
 import { Link } from 'react-router-dom'
-import { validation } from '../utils/validation'
+import { Validation } from '../utils/validation'
 import ContactForm from './ContactForm'
 import { BrowserView, MobileView } from 'react-device-detect'
 import SubmenuContactoMobile from './SubmenuContactoMobile'
@@ -12,10 +12,12 @@ import ContactoAdress from './ContactoAdress'
 import { CvForm } from '../TrabajaConNosotros/CvForm'
 import contactTexts from '../utils/Texts/contactTexts.json'
 import { useLangContext } from '../../Context/LangContext'
+import errorTexts from '../utils/Texts/errorTexts.json'
 
 const Contacto = () => {
   const {selectedLanguage} = useLangContext()
   const text = contactTexts[selectedLanguage];
+  const errorMessages = errorTexts[selectedLanguage];
 
   let [contactInfo, setContactInfo]=useState({
         userName: "",
@@ -43,14 +45,14 @@ const Contacto = () => {
       
   const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
     const infoInput=contactInfo
-    const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)     
+    const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)     
       setContactInfo({...changedInfoInput, [e.target.name]:value});
       setErrors(err);
       } 
 
   const handleCandidate=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const infoInput=candidateInfo
-        const {changedInfoInput, value, err}= validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
         
             setCandidateInfo({...changedInfoInput, [e.target.name]:value});
             setErrors(err);

@@ -30,10 +30,10 @@ const ContactForm = ({sent, contactInfo, handleSubmit, errors, handleChange, tha
             {errors['email'] && <p className='error-white'>{errors['email']}</p>}
         </div>   
         <div className='radio-box'>
-        <p className='radio-title'>Sos productor de seguros?</p>
-        <p className='rent-label'>SI</p>
+        <p className='radio-title'>{formTexts.broker}</p>
+        <p className='rent-label'>{formTexts.yes}</p>
             <input name="broker" value={true}  className='radio' type="radio" onChange={handleChange} required={true}/> 
-        <p className='rent-label'>NO</p>
+        <p className='rent-label'>{formTexts.no}</p>
             <input name="broker" value={false} className='radio' type="radio" onChange={handleChange} required={true}/> 
     </div>
         <div className='input-box-content'> 

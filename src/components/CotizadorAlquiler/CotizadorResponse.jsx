@@ -1,8 +1,10 @@
 import React from "react";
 import BigButton from "../utils/BigButton/BigButton";
 import { isMobile } from "react-device-detect";
+import { useLangContext } from '../../Context/LangContext'
 
-const CotizadorResponse = ({ result, handleCancel, handleClick, responseData, formatter }) => {
+const CotizadorResponse = ({ result, handleCancel, handleClick, responseData, formatter, legal }) => {
+  const {selectedLanguage} = useLangContext()
   return (
     <div>
       <form className="rent-form">
@@ -23,13 +25,14 @@ const CotizadorResponse = ({ result, handleCancel, handleClick, responseData, fo
           <BigButton
             type="submit"
             name={responseData.againButton}
-            className="rent-button-secondary"
+            className={selectedLanguage==="ES" ? "rent-button-secondary": isMobile ? "rent-button-secondary-mobile":"rent-button-secondary-en" }
             onClick={handleCancel}
           />
           <button type="button" onClick={handleClick} className={ isMobile ? "contact-dark-button": "rent-button"}>
            {responseData.contractButton}
           </button>
         </div>
+        <p className="legal-bond">{legal}</p>
       </form>
     </div>
   );

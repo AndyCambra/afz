@@ -1,0 +1,22 @@
+{
+    "EN":{
+        "requiredMessage":"The field is required",
+        "until": "The field must have up to",
+        "caracters": "characters",
+        "more": "The field must have over",
+        "onlyLetters": "Enter only letters",
+        "onlyNumbers":"Enter only numbers",
+        "validEmail":"Enter a valid email",
+        "pdfAttach": "Select a .pdf file"
+    },
+    "ES":{
+        "requiredMessage":"El campo es requerido",
+        "until": "El campo debe tener hasta",
+        "caracters": "caracteres",
+        "more": "El campo debe tener más de",
+        "onlyLetters": "Ingresar solo letras",
+        "onlyNumbers":"Ingresar solo números",
+        "validEmail":"Ingrese un mail válido",
+        "pdfAttach": "Seleccione un archivo .pdf"
+    }
+}
