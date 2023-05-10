@@ -1,6 +1,5 @@
-export const Validation = (e, name, type, required = false, maxLength = false, minLength = false, infoInput, errors) => {
+export const Validation = (e, name, type, required = false, maxLength = false, minLength = false, infoInput, errors, errorMessages) => {
 
-  console.log(e)
   const value= e.target.value
     const changedInfoInput = { ...infoInput, [e.target.name]:value }; 
     const err = { ...errors }
@@ -11,67 +10,67 @@ export const Validation = (e, name, type, required = false, maxLength = false, m
       case 'onlyletters':
         changedInfoInput[name] = e.target.value;
           if(required) {
-            err[name] = e.target.value ? false : 'El campo es requerido';
+            err[name] = e.target.value ? false : errorMessages.requiredMessage;
           }
           if(maxLength && !err[name]) {
-            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
+            err[name] = e.target.value.length > maxLength ? `${errorMessages.until} ${maxLength} ${errorMessages.caracters}` : false;
           }
           if(minLength && !err[name]) {
-            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+            err[name] = e.target.value.length < minLength ? `${errorMessages.more} ${minLength} ${errorMessages.caracters}` : false;
           }
           if(noNumbers.test(value) === false){
-            err[name] = 'Ingresar solo letras'
+            err[name] = errorMessages.onlyLetters
           }
           break;
       case 'text':
         changedInfoInput[name] = e.target.value;
           if(required) {
-            err[name] = e.target.value ? false : 'El campo es requerido';
+            err[name] = e.target.value ? false : errorMessages.requiredMessage;
           }
           if(maxLength && !err[name]) {
-            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
+            err[name] = e.target.value.length > maxLength ? `${errorMessages.until} ${maxLength} ${errorMessages.caracters}` : false;
           }
           if(minLength && !err[name]) {
-            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+            err[name] = e.target.value.length < minLength ? `${errorMessages.more} ${minLength} ${errorMessages.caracters}` : false;
           }
           break;
       case 'number':
         changedInfoInput[name] = e.target.value;
           if(required) {
-            err[name] = e.target.value ? false : 'El campo es requerido';
+            err[name] = e.target.value ? false : errorMessages.requiredMessage;
           }
           if(maxLength && !err[name]) {
-            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
+            err[name] = e.target.value.length > maxLength ? `${errorMessages.until} ${maxLength} ${errorMessages.caracters}` : false;
           }
           if(minLength && !err[name]) {
-            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+            err[name] = e.target.value.length < minLength ? `${errorMessages.more} ${minLength} ${errorMessages.caracters}` : false;
           }
           if(onlyNumbers.test(value) === false){
-            err[name] = 'Ingresar solo números'
+            err[name] = errorMessages.onlyNumbers
           }
           break;
        case 'email':
         changedInfoInput[name] = e.target.value;
           if(required) {
-            err[name] = e.target.value ? false : 'El campo es requerido';
+            err[name] = e.target.value ? false : errorMessages.requiredMessage;
           }
           if(maxLength && !err[name]) {
-            err[name] = e.target.value.length > maxLength ? `El campo debe tener hasta ${maxLength} caracteres` : false;
+            err[name] = e.target.value.length > maxLength ? `${errorMessages.until} ${maxLength} ${errorMessages.caracters}` : false;
           }
           if(minLength && !err[name]) {
-            err[name] = e.target.value.length < minLength ? `El campo debe tener más de ${minLength} caracteres` : false;
+            err[name] = e.target.value.length < minLength ? `${errorMessages.more} ${minLength} ${errorMessages.caracters}` : false;
           }
           if(filterMail.test(value) === false){
-            err[name] = 'Ingrese un mail válido'
+            err[name] = errorMessages.validEmail
           }
           break;
           case 'file':
             changedInfoInput[name] = e.target.value;
             if(required) {
-            err[name] = e.target.value ? false : 'El campo es requerido';
+            err[name] = e.target.value ? false : errorMessages.requiredMessage;
             }
             if(value.includes('.pdf') === false){
-            err[name] = 'Seleccione un archivo .pdf'
+            err[name] = errorMessages.pdfAttach
             }
             break;
     

@@ -11,11 +11,13 @@ import { BrowserView, MobileView } from 'react-device-detect'
 import SubmenuCotizadores from './SubmenuCotizadores'
 import cotizadoresTexts from '../utils/Texts/cotizadoresTexts.json'
 import { useLangContext } from '../../Context/LangContext'
+import errorTexts from '../utils/Texts/errorTexts.json'
 
 
 const CotizadorAlquiler = () => {
   const {selectedLanguage} = useLangContext()
   const text = cotizadoresTexts[selectedLanguage];
+  const errorMessages = errorTexts[selectedLanguage];
     const [sent, setSent]= useState(false)
     const [sentThanks, setSentThanks]= useState(false)
     const [showForm, setShowForm]= useState(false)
@@ -47,14 +49,14 @@ const CotizadorAlquiler = () => {
     });
       const handleChangeRentData=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const infoInput=rentData
-        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
               setErrors(err);
               setRentData({...changedInfoInput, [e.target.name]:value});
             }
 
     const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{
       const infoInput=rentUser
-      const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+      const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
         setErrors(err);
         setRentUser({...changedInfoInput, [e.target.name]:value})
     } 

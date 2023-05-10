@@ -5,9 +5,13 @@ import { useState } from 'react'
 import { Validation } from '../utils/validation'
 import { BrowserView, MobileView } from 'react-device-detect';
 import EscuelaForm from './EscuelaForm'
+import errorTexts from '../utils/Texts/errorTexts.json'
+import { useLangContext } from '../../Context/LangContext'
 
 
 const EscuelaInscripcion = () => {
+  const {selectedLanguage} = useLangContext()
+  const errorMessages = errorTexts[selectedLanguage];
   let [infoInput, setinfoInput]=useState({
     userName: "",
     userLastName: "",
@@ -21,7 +25,7 @@ const EscuelaInscripcion = () => {
   const [errors, setErrors]= useState({})
 
   const handleChange = (e, name, type, required = false, maxLength = false, minLength = false) => {
-  const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+  const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
         setinfoInput({...changedInfoInput, [e.target.name]:value});
         setErrors(err);
       }

@@ -1,6 +1,6 @@
 {
     "EN":{
-        "required":"The field is required",
+        "requiredMessage":"The field is required",
         "until": "The field must have up to",
         "caracters": "characters",
         "more": "The field must have over",
@@ -10,7 +10,7 @@
         "pdfAttach": "Select a .pdf file"
     },
     "ES":{
-        "required":"El campo es requerido",
+        "requiredMessage":"El campo es requerido",
         "until": "El campo debe tener hasta",
         "caracters": "caracteres",
         "more": "El campo debe tener más de",

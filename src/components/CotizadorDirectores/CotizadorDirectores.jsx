@@ -12,6 +12,7 @@ import { BrowserView, MobileView } from 'react-device-detect'
 import SubmenuCotizadores from '../CotizadorAlquiler/SubmenuCotizadores'
 import cotizadoresTexts from '../utils/Texts/cotizadoresTexts.json'
 import { useLangContext } from '../../Context/LangContext'
+import errorTexts from '../utils/Texts/errorTexts.json'
 
 const directorsAmounts=[
   {id:1, amount:300000, bondPrice: "13000"},
@@ -28,6 +29,7 @@ const directorsAmounts=[
 const CotizadorDirectores = () => {
   const {selectedLanguage} = useLangContext()
   const text = cotizadoresTexts[selectedLanguage];
+  const errorMessages = errorTexts[selectedLanguage];
     const [sent, setSent]= useState(false)
     const [errors, setErrors]= useState({})
     const [showForm, setShowForm]= useState(false)
@@ -93,14 +95,14 @@ const CotizadorDirectores = () => {
 
       const handleChangeDirectorData=(e, name, type, required = false, maxLength = false, minLength = false)=>{
         const infoInput=amount
-        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
               setErrors(err);
               setAmount({...changedInfoInput, [e.target.name]:value});
             }
 
       const handleChange=(e, name, type, required = false, maxLength = false, minLength = false)=>{ 
         const infoInput= clientData
-        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors)
+        const {changedInfoInput, value, err}= Validation(e, name, type, required,maxLength, minLength, infoInput, errors, errorMessages)
         setErrors(err);
         setClientData({...changedInfoInput, [e.target.name]:value})
     } 
