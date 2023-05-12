@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import "./header.css"
 import { useLocation } from 'react-router-dom'
 import { BrowserView, MobileView } from 'react-device-detect';
@@ -60,9 +60,9 @@ const handleClick = () => {
                 </NavLink>
             </div>
             <div className='header-item'>
-            <NavLink to='' className='header-category-special'>
+            <a href='https://afianzadora.online/Account/LogIn' className='header-category-special'>
             AFZ.ONLINE
-            </NavLink></div>
+            </a></div>
             </div>
         </div>      
     </div>
