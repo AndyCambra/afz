@@ -1,10 +1,24 @@
 {
     "EN":{
         "firstCol":"AFIANZADORA LATINOAMERICANA COMPAÑÍA DE SEGUROS S.A. Tucumán 117 P.3 - (C1049AAC) City of Buenos Aires. Telephone: 3986-2800 Afianzadora Latinoamericana Compañía De Seguros S.A. Is registered before the National Directorate of Personal Data Protection (DNPDP). See Disp. 10/08 | Insured Attention Service. Form Nº 960/NM",
-        "secondCol":"National Insurance Superintendence. Control Organ over the Insurance and Reinsurance Activity. 0800-666-8400. www.argentina.gob.ar/ssn  Registration No.: 0755"
+        "secondCol":"National Insurance Superintendence. Control Organ over the Insurance and Reinsurance Activity. 0800-666-8400. www.argentina.gob.ar/ssn  Registration No.: 0755",
+        "service":{
+            "firstText":"The insurance company offers an Insurance Customer Service to provide for inquiries and complaints put forward by the policyholders, the insured, beneficiaries, and/or rightful claimants.",
+            "subtitle":"The Insurance Customer Service is composed by:",
+            "responsible":"RESPONSIBLE:",
+            "substitute":"SUBSTITUTE:",
+            "lastText":"Should there be a complaint before the insurance company which has received no solution or has been totally or partially dismissed, or its admission has been denied, you may contact the National Insurance Superintendence at 0800-666-8400, or email at consultas@ssn.gob.ar or fill in the form available at www.argentina.gob.ar/ssn"
+        }
     },
     "ES":{
         "firstCol":"AFIANZADORA LATINOAMERICANA COMPAÑÍA DE SEGUROS S.A. Tucumán 117 P.3 - (C1049AAC) Ciudad de Buenos Aires. Teléfono: 3986-2800 Afianzadora Latinoamericana Compañía De Seguros S.A. se encuentra inscripta en la Direccion Nacional de Proteccion de Datos Personales (DNPDP). Ver Disp. 10/08 | Servicio de Atención al Asegurado. Formulario Nº 960/NM",
-        "secondCol":"Superintendencia de Seguros de la Nación Órgano de Control de la Actividad Aseguradora y Reaseguradora 0800-666-8400. www.argentina.gob.ar/ssn  N° de inscripción: 0755"
+        "secondCol":"Superintendencia de Seguros de la Nación Órgano de Control de la Actividad Aseguradora y Reaseguradora 0800-666-8400. www.argentina.gob.ar/ssn  N° de inscripción: 0755",
+        "service":{
+            "firstText":"La compañía de seguros dispone de un Servicio de Atención al Asegurado que atenderá las consultas y reclamos que presenten los tomadores de seguros, asegurados, beneficiarios y/o derechohabientes.",
+            "subtitle":"El Servicio de Atención al Asegurado está integrado por:",
+            "responsible":"RESPONSABLE:",
+            "substitute":"SUPLENTE:",
+            "lastText":"En caso de que existiera un reclamo ante la entidad aseguradora y que el mismo no haya sido resuelto o haya sido desestimado, total o parcialmente, o que haya sido denegada su admisión, podrá comunicarse con la Superintendencia de Seguros de la Nación por teléfono al 0800-666-8400, correo electrónico a consultas@ssn.gob.ar o formulario disponible en la página www.argentina.gob.ar/ssn"
+        }
     }
 }
