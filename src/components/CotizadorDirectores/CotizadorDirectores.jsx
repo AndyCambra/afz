@@ -185,7 +185,7 @@ const CotizadorDirectores = () => {
             showForm === true && sentThanks===false ? 
                     <CotizadorDirectoresClientForm handleSubmitThanks={handleSubmitThanks} handleChange={handleChange} clientData={clientData} handleCancel={handleCancel} errors={errors} goToBillData={goToBillData} goToBill={goToBill} directorData={text.directorData} placeholders={text.placeholders} /> :
             sent === true && sentThanks===false? <div className='rent-form' >
-                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} formatter={formatter}/></div>:
+                <CotizadorDirectiresResponse result={result} amount={amount} handleCancel={handleCancel} handleClick={handleClick} responseData={text.responseData} formatter={formatter} legal={text.legal}/></div>:
             <div className='rent-form' >
                 {goToQuestion === true && sentThanks===false &&<CotizadorDirectoresQuestion handleSubmitData={handleSubmitData} amount={amount}  handleChangeDirectorData={handleChangeDirectorData} errors={errors} sent={sent} formText={text.formTexts} explain={text.explain} /> }
             <div>

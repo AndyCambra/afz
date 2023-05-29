@@ -2,7 +2,7 @@ import React from 'react'
 import BigButton from "../utils/BigButton/BigButton";
 import { isMobile } from 'react-device-detect';
 import { useLangContext } from '../../Context/LangContext'
-const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick, responseData, formatter }) => {
+const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick, responseData, formatter, legal }) => {
   const {selectedLanguage} = useLangContext()
   console.log(selectedLanguage)
   return (
@@ -26,6 +26,7 @@ const CotizadorDirectiresResponse = ({ result, amount, handleCancel, handleClick
            {responseData.contractButton}
           </button>
         </div>
+        <p className="legal-bond">{legal}</p>
       </form>
     
   );
